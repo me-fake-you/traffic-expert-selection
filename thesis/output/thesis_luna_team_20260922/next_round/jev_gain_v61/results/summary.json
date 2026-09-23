@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETED_FIXED_FIVEFOLD_THREE_RESULT_PROBABILITY_DIAGNOSTIC",
+  "seed": 42,
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "train_rows": 120000,
+  "selection_rows": 20000,
+  "evaluation_read": false,
+  "models": 10,
+  "budgets": [
+    1.0,
+    1.1,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "lambdas": [
+    0.0,
+    0.01,
+    0.05
+  ],
+  "v60_results_exposed": true,
+  "not_jev_or_rlcd_reproduction": true,
+  "duration_seconds": 14.738305999999966,
+  "reproduction_command": "\"USER_HOME\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" \".\\output\\thesis_luna_team_20260922\\next_round\\jev_gain_v61\\run_jev_gain_v61.py\""
+}

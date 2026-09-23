@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "status": "preregistered_before_hikari2022_label_open",
+  "locked_at_local_date": "2026-09-01",
+  "experiment": "mad_etd_hikari2022_cross_version_semantic_replay_v1",
+  "claim_scope": "One-shot cross-version confirmation of semantic replay auditing using HIKARI-2021-frozen models on HIKARI-2022; not a claim of universal IDS performance.",
+  "source": {
+    "dataset": "HIKARI-2022 v1.4.0",
+    "path": "data/raw/hikari_2022/v1_4_0/ALLFLOWMETER_HIKARI2022.csv",
+    "sha256": "bbb662754dc877d6a2ae406c9089461bff7d02766c06f86b46116a08326d686e",
+    "prior_repository_reference_scan": {
+      "query": "hikari.?2022|hikari_2022|ALLFLOWMETER_HIKARI2022",
+      "searched": [
+        "src",
+        "tests",
+        "data/configs",
+        "data/designs",
+        "data/runs",
+        "data/releases",
+        "docs",
+        "output"
+      ],
+      "matches_before_protocol_lock": 0
+    }
+  },
+  "locked_models": [
+    {
+      "agent_name": "hikari2021_common_rf",
+      "path": "data/models/mad_etd_hikari_enterprise_intrusion_w155/common_rf_seed44.joblib",
+      "sha256": "c20729a27b5651c213491561655c4d18a97a9e9034a5bfd490ecb93769304713",
+      "selection_source": "HIKARI-2021 validation-only baseline lock"
+    },
+    {
+      "agent_name": "hikari2021_ranked_et",
+      "path": "data/models/mad_etd_hikari_enterprise_intrusion_w155/ranked_top24_extra_trees_seed42.joblib",
+      "sha256": "48d75605cfd993c2c0b9bde99480da6b9d0ba076fca07726344d1006987e46c7",
+      "selection_source": "HIKARI-2021 validation-only candidate lock"
+    },
+    {
+      "agent_name": "hikari2021_extended_hgb",
+      "path": "data/models/mad_etd_hikari_enterprise_intrusion_w155/extended_hgb_groupbalanced_seed42.joblib",
+      "sha256": "6949ad17dbef7820fe18b1de075dc93ce6d9da3bda4405808f050eaa8137f14f",
+      "selection_source": "HIKARI-2021 validation-only high-recall specialist"
+    }
+  ],
+  "sampling": {
+    "maximum_rows": 50000,
+    "rule": "Keep the 50,000 smallest unsigned 64-bit SHA-256 prefixes of 'mad-etd:hikari2022:v1:<zero-based-row-index>'.",
+    "content_or_label_dependent": false
+  },
+  "group_protocol": {
+    "group": "SHA-256 of the order-invariant originh/responh endpoint pair",
+    "role_rule": "calibration if SHA-256('mad-etd:hikari2022:role:' + group_hash) is even, otherwise evaluation",
+    "group_disjoint": true,
+    "evaluation_used_for_model_or_threshold_selection": false,
+    "calibration_use": "output-consistency guard calibration only"
+  },
+  "feature_policy": {
+    "model_feature_names": "exact names stored in the frozen HIKARI-2021 model wrappers",
+    "blocked": [
+      "uid",
+      "originh",
+      "originp",
+      "responh",
+      "responp",
+      "attack_category",
+      "Label",
+      "fwd_init_window_size",
+      "bwd_init_window_size",
+      "fwd_last_window_size",
+      "bwd_last_window_size"
+    ],
+    "payload_bytes_or_identifiers_used": false
+  },
+  "evaluation": {
+    "compromised_sources": "each of the three sources independently",
+    "attack": "label-aware extreme-wrong probability replacement, preserving the [0,1] contract",
+    "attack_fractions": [0.25, 1.0],
+    "audit_rates": [0.0, 0.001, 0.005],
+    "repeats": 10,
+    "base_seed": 2026,
+    "replay_tolerance": 1e-12,
+    "fusion_before_detection": "equal mean of all three locked sources",
+    "fusion_after_revocation": "equal mean of the two non-revoked peers",
+    "primary_security_metric": "harmful flip rate over attacked clean-correct evaluation decisions",
+    "secondary_metrics": [
+      "detection rate with exact 95% binomial interval",
+      "coverage",
+      "macro-F1",
+      "mismatches before detection",
+      "paired harmful-rate reduction with bootstrap interval and Wilcoxon test"
+    ]
+  },
+  "cost_protocol": {
+    "warmups": 2,
+    "timed_repetitions": 5,
+    "reported_scope": "locked-model replay inference only; excludes feature retrieval, storage, transport, revocation, and recovery"
+  },
+  "immutability_rule": "Any protocol change after this file is committed to disk requires a new experiment identifier and must not overwrite this result."
+}

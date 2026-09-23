@@ -1,0 +1,90 @@
+{
+  "sample_count": 9600,
+  "verdict_rates": {
+    "benign": 0.0,
+    "malicious": 0.0,
+    "suspicious": 0.7126041666666667,
+    "unknown": 0.28739583333333335
+  },
+  "coverage": 0.0,
+  "alert_rate": 0.7126041666666667,
+  "human_review_rate": 1.0,
+  "average_agent_calls": 3.46875,
+  "latency_ms": {
+    "mean": 42.328433479178784,
+    "p50": 42.37969999667257,
+    "p95": 49.532935037859716
+  },
+  "verdict_invariance_rate": 0.9966666666666667,
+  "mean_uncertainty_delta": 0.0009714789800621032,
+  "mean_conflict_delta": -0.0010765284666006396,
+  "memory_match_rate": 0.0,
+  "memory_top1_relevance": null,
+  "memory_topk_relevance": null,
+  "deliberation_trigger_rate": 1.0,
+  "supplemental_dispatch_rate": 0.46927083333333336,
+  "compliance_failure_count": 0,
+  "audit_completion_rate": 1.0,
+  "blocked_field_violation_count": 0,
+  "ood_signature_invariance_rate": 1.0,
+  "classification": {
+    "labeled_count": 0,
+    "covered_labeled_count": 0
+  },
+  "grouped_bootstrap_95ci": {
+    "coverage": {
+      "low": 0.0,
+      "high": 0.0
+    },
+    "alert_rate": {
+      "low": 0.6235364583333334,
+      "high": 0.7967890624999999
+    },
+    "human_review_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "average_agent_calls": {
+      "low": 3.353846354166667,
+      "high": 3.5865677083333334
+    },
+    "average_latency_ms": {
+      "low": 41.79401615662922,
+      "high": 42.874609424268485
+    },
+    "verdict_invariance_rate": {
+      "low": 0.9946875,
+      "high": 0.9983333333333333
+    },
+    "audit_completion_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "blocked_field_violation_rate": {
+      "low": 0.0,
+      "high": 0.0
+    },
+    "ood_signature_invariance_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "uncertainty_delta": {
+      "low": 0.0004905145592539568,
+      "high": 0.001526441137287491
+    },
+    "conflict_delta": {
+      "low": -0.0017064142010281777,
+      "high": -0.0005403726168358113
+    }
+  },
+  "feature_flags": {
+    "schema_version": "1.0",
+    "memory": true,
+    "planner_executor": true,
+    "deliberation": true,
+    "reflection": true,
+    "audit_critic": true,
+    "learning_queue": false,
+    "shadow_mode": false
+  }
+}

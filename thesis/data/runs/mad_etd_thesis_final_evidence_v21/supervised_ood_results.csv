@@ -1,0 +1,5 @@
+view,auroc,ood_tpr_at_95_percent_id_retention,strict_combined_gate_applicable,strict_combined_gate_passed
+stats,0.9461808100600688,0.2984837909027454,False,
+temporal,0.9971886965306136,0.9994970274321239,False,
+combined,0.9604004068355164,0.4361166166997002,True,False
+shift_error_identification,0.8153649391477964,,False,

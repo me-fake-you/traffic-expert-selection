@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "sample_count": 634630,
+  "total_agent_calls": 1600327,
+  "average_agent_calls": 2.521669319130832,
+  "total_latency_ms": 3512696.888497752,
+  "average_latency_ms": 5.535031259943199
+}

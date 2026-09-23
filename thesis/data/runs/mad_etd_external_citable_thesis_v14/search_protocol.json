@@ -1,0 +1,34 @@
+{
+  "arxiv": {
+    "max_results": 20,
+    "query": "multi-agent intrusion detection",
+    "result_count": 2,
+    "results": [
+      "arXiv:2606.10323",
+      "arXiv:2604.05458"
+    ],
+    "sort_by": "relevance",
+    "start_date": "2023-01-01"
+  },
+  "github_public_api": {
+    "broad_query": "multi-agent intrusion detection",
+    "exact_queries": {
+      "10575541": 0,
+      "2604.05458": 0,
+      "MARL-NIDS": 0,
+      "MAS-LSTM intrusion detection": 0,
+      "Semantic Multi-Agent Intrusion Detection": 0
+    },
+    "shortlisted_repository_count": 5
+  },
+  "independent_metadata_extraction_completed": true,
+  "retrieved_on": "2026-07-25",
+  "search_snippet_used_as_metric": false,
+  "selection_requirements": [
+    "DOI or directly verifiable preprint",
+    "author-linked public executable detection code",
+    "license or explicit reuse permission",
+    "compatible real network-flow dataset and task",
+    "safe-input adaptation without blocked fields"
+  ]
+}

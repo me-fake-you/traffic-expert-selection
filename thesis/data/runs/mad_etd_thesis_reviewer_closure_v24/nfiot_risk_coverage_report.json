@@ -1,0 +1,29 @@
+{
+  "status": "completed_v24_nfiot_risk_coverage",
+  "sample_count": 20000,
+  "coverage_points": 20,
+  "ranking": "confidence descending; sample order tie-break; labels not used",
+  "summary": {
+    "hgb": {
+      "aurc_trapezoid_coverage_0_05_to_1": 0.0004050008599931203,
+      "full_coverage_accuracy": 0.98775,
+      "full_coverage_macro_f1": 0.9719951990169469
+    },
+    "candidate": {
+      "aurc_trapezoid_coverage_0_05_to_1": 0.0006161363589111269,
+      "full_coverage_accuracy": 0.9881,
+      "full_coverage_macro_f1": 0.9728
+    }
+  },
+  "candidate_minus_hgb_aurc": 0.00021113549891800662,
+  "claim_scope": "fixed-model risk--coverage diagnostic; not an operating-point promotion",
+  "blocked_field_violation": 0,
+  "fusion_ownership_violation": 0,
+  "ood_override": 0,
+  "illegal_verdict_execution": 0,
+  "invalid_evidence_admitted": 0,
+  "fake_metric_count": 0,
+  "test_used_for_selection": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "promoted_runtime_created": false
+}

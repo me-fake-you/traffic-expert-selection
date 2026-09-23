@@ -1,0 +1,15 @@
+{
+  "experiment": "mad_etd_nfiot_positive_statistical_validation_w46",
+  "fake_metric_count": 0,
+  "promoted_general_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "sample_count": 20000,
+  "schema_version": "1.0",
+  "source_variants": [
+    "NF-BoT-IoT",
+    "NF-BoT-IoT-v2",
+    "NF-ToN-IoT",
+    "NF-ToN-IoT-v2"
+  ],
+  "status": "ran"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "experiment": "mad_etd_baseline_comparison_v1",
+  "manifest": ".\\data\\runs\\mad_etd_baseline_comparison\\selection_manifest.json",
+  "manifest_sha256": "fa12331770631ffe4d80f8b085c8b246846e34e9cc193d8e52afe3816a380948",
+  "component_modes": [
+    "stats_only",
+    "temporal_only",
+    "tls_only_if_available",
+    "stats_temporal_static",
+    "stats_temporal_tls_static"
+  ],
+  "runtime_modes": [
+    "runtime_safe_v2_7",
+    "runtime_safe_v3_0",
+    "runtime_safe_v3_0_without_capability_routing",
+    "runtime_safe_v3_0_full_call_all_supported_agents",
+    "static_multi_agent_ensemble"
+  ],
+  "robustness_modes": [
+    "runtime_safe_v3_0",
+    "static_multi_agent_ensemble"
+  ],
+  "adapted_multi_agent_baselines": [
+    "ma_ids_style_rag_planner",
+    "marl_budget_router",
+    "adaptive_online_ensemble",
+    "llm_collaborative_planner"
+  ],
+  "adapted_baselines_are_original_paper_reproductions": false,
+  "perturbations": [
+    "padding",
+    "dummy_packet",
+    "iat_jitter",
+    "sequence_truncation"
+  ],
+  "perturbation_strength": 0.2,
+  "perturbation_seed": 42,
+  "grouped_bootstrap_iterations": 1000,
+  "strict_field_audit": true,
+  "training": false,
+  "threshold_tuning": false,
+  "test_used": false,
+  "external_used_for_selection": false,
+  "cipherspectrum_locked_test_used": false,
+  "resume": true
+}

@@ -1,0 +1,90 @@
+{
+  "sample_count": 9600,
+  "verdict_rates": {
+    "benign": 0.0,
+    "malicious": 0.0033333333333333335,
+    "suspicious": 0.7092708333333333,
+    "unknown": 0.28739583333333335
+  },
+  "coverage": 0.0033333333333333335,
+  "alert_rate": 0.7126041666666667,
+  "human_review_rate": 0.9966666666666667,
+  "average_agent_calls": 3.3978125,
+  "latency_ms": {
+    "mean": 43.34676207309409,
+    "p50": 43.13954996177927,
+    "p95": 50.322404998587444
+  },
+  "verdict_invariance_rate": 1.0,
+  "mean_uncertainty_delta": 0.0,
+  "mean_conflict_delta": 0.0,
+  "memory_match_rate": 0.0,
+  "memory_top1_relevance": null,
+  "memory_topk_relevance": null,
+  "deliberation_trigger_rate": 1.0,
+  "supplemental_dispatch_rate": 0.0,
+  "compliance_failure_count": 0,
+  "audit_completion_rate": 1.0,
+  "blocked_field_violation_count": 0,
+  "ood_signature_invariance_rate": 1.0,
+  "classification": {
+    "labeled_count": 0,
+    "covered_labeled_count": 0
+  },
+  "grouped_bootstrap_95ci": {
+    "coverage": {
+      "low": 0.0016666666666666668,
+      "high": 0.0053125
+    },
+    "alert_rate": {
+      "low": 0.6235364583333334,
+      "high": 0.7967890624999999
+    },
+    "human_review_rate": {
+      "low": 0.9946875,
+      "high": 0.9983333333333333
+    },
+    "average_agent_calls": {
+      "low": 3.2733333333333334,
+      "high": 3.523244791666667
+    },
+    "average_latency_ms": {
+      "low": 42.91565053709837,
+      "high": 43.779657907813395
+    },
+    "verdict_invariance_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "audit_completion_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "blocked_field_violation_rate": {
+      "low": 0.0,
+      "high": 0.0
+    },
+    "ood_signature_invariance_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "uncertainty_delta": {
+      "low": 0.0,
+      "high": 0.0
+    },
+    "conflict_delta": {
+      "low": 0.0,
+      "high": 0.0
+    }
+  },
+  "feature_flags": {
+    "schema_version": "1.0",
+    "memory": false,
+    "planner_executor": false,
+    "deliberation": true,
+    "reflection": false,
+    "audit_critic": false,
+    "learning_queue": false,
+    "shadow_mode": true
+  }
+}

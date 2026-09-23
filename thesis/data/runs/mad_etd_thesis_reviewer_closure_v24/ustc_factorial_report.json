@@ -1,0 +1,126 @@
+{
+  "status": "completed_v24_ustc_factorial",
+  "source_artifact": "data/runs/mad_etd_ustc_group_heldout_hybrid_w98/sealed_group_cv.npz",
+  "source_sha256": "26a47d33290ec317f028df737ce7bf90586b27c452ea505d75df79f1741398f5",
+  "sample_count": 40000,
+  "group_count": 20,
+  "seed": 42,
+  "selection_source": "fold-specific validation groups only",
+  "acceptance_used_for_selection": false,
+  "metrics": {
+    "hgb_stats": {
+      "accuracy": 0.848525,
+      "macro_f1": 0.8458852821763954,
+      "weighted_f1": 0.8458852821763954,
+      "malicious_recall": 0.9794,
+      "ece": 0.14964850413420633,
+      "coverage": 1.0,
+      "selective_error": 0.15147500000000003
+    },
+    "hgb_hybrid": {
+      "accuracy": 0.9275,
+      "macro_f1": 0.9271404334855282,
+      "weighted_f1": 0.927140433485528,
+      "malicious_recall": 0.99775,
+      "ece": 0.0740405117091063,
+      "coverage": 1.0,
+      "selective_error": 0.07250000000000001
+    },
+    "tree_stats": {
+      "accuracy": 0.885675,
+      "macro_f1": 0.8843377564410235,
+      "weighted_f1": 0.8843377564410235,
+      "malicious_recall": 0.9932,
+      "ece": 0.05763872805061922,
+      "coverage": 1.0,
+      "selective_error": 0.11432500000000001
+    },
+    "tree_hybrid": {
+      "accuracy": 0.894525,
+      "macro_f1": 0.8933801005260251,
+      "weighted_f1": 0.8933801005260251,
+      "malicious_recall": 0.99815,
+      "ece": 0.07114404157336941,
+      "coverage": 1.0,
+      "selective_error": 0.10547499999999999
+    }
+  },
+  "contrasts": {
+    "sequence_effect_with_hgb": {
+      "contrast": "sequence_effect_with_hgb",
+      "left": "hgb_stats",
+      "right": "hgb_hybrid",
+      "macro_f1_delta": 0.08125515130913286,
+      "accuracy_delta": 0.07897500000000002,
+      "bootstrap_iterations": 1000,
+      "bootstrap_seed": 42,
+      "bootstrap_resampling_unit": "application_or_family_group",
+      "bootstrap_mean": 0.08145110023024893,
+      "bootstrap_ci95_lower": 0.01049331995539952,
+      "bootstrap_ci95_upper": 0.20404739369888045
+    },
+    "sequence_effect_with_tree": {
+      "contrast": "sequence_effect_with_tree",
+      "left": "tree_stats",
+      "right": "tree_hybrid",
+      "macro_f1_delta": 0.009042344085001597,
+      "accuracy_delta": 0.008850000000000025,
+      "bootstrap_iterations": 1000,
+      "bootstrap_seed": 42,
+      "bootstrap_resampling_unit": "application_or_family_group",
+      "bootstrap_mean": 0.009417195539300526,
+      "bootstrap_ci95_lower": -0.0014177620611920988,
+      "bootstrap_ci95_upper": 0.02021523067153549
+    },
+    "model_effect_with_stats": {
+      "contrast": "model_effect_with_stats",
+      "left": "hgb_stats",
+      "right": "tree_stats",
+      "macro_f1_delta": 0.03845247426462817,
+      "accuracy_delta": 0.037150000000000016,
+      "bootstrap_iterations": 1000,
+      "bootstrap_seed": 42,
+      "bootstrap_resampling_unit": "application_or_family_group",
+      "bootstrap_mean": 0.038783390752091376,
+      "bootstrap_ci95_lower": -0.008179945635753577,
+      "bootstrap_ci95_upper": 0.13049429617021827
+    },
+    "model_effect_with_hybrid": {
+      "contrast": "model_effect_with_hybrid",
+      "left": "hgb_hybrid",
+      "right": "tree_hybrid",
+      "macro_f1_delta": -0.03376033295950309,
+      "accuracy_delta": -0.03297499999999998,
+      "bootstrap_iterations": 1000,
+      "bootstrap_seed": 42,
+      "bootstrap_resampling_unit": "application_or_family_group",
+      "bootstrap_mean": -0.03325051393885701,
+      "bootstrap_ci95_lower": -0.15568703674171355,
+      "bootstrap_ci95_upper": 0.047263206132148954
+    },
+    "original_joint_contrast": {
+      "contrast": "original_joint_contrast",
+      "left": "hgb_stats",
+      "right": "tree_hybrid",
+      "macro_f1_delta": 0.047494818349629764,
+      "accuracy_delta": 0.04600000000000004,
+      "bootstrap_iterations": 1000,
+      "bootstrap_seed": 42,
+      "bootstrap_resampling_unit": "application_or_family_group",
+      "bootstrap_mean": 0.0482005862913919,
+      "bootstrap_ci95_lower": 0.004702353242287513,
+      "bootstrap_ci95_upper": 0.13500547200929824
+    }
+  },
+  "macro_f1_interaction": -0.07221280722413126,
+  "interpretation": "The original joint contrast is decomposed into view, model-family, and interaction effects; no single component receives the joint claim.",
+  "blocked_field_violation": 0,
+  "fusion_ownership_violation": 0,
+  "ood_override": 0,
+  "illegal_verdict_execution": 0,
+  "invalid_evidence_admitted": 0,
+  "fake_metric_count": 0,
+  "test_used_for_selection": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "promoted_runtime_created": false
+}

@@ -1,0 +1,5 @@
+mode,source_mode,reproduces_external_paper,external_numeric_result,macro_f1_delta_vs_runtime_safe_v3_0,verdict_agreement_with_runtime_safe_v3_0,ood_agreement_with_runtime_safe_v3_0,average_evidence_agent_calls,average_control_plane_calls,average_total_agent_calls,average_unsupported_agent_calls,latency_kind
+ma_ids_style_rag_planner,runtime_safe_v3_0,False,False,0.0,1.0,1.0,2.0,2.0,4.0,0.0,measured_evidence_runtime_only_control_plane_not_measured
+marl_budget_router,runtime_safe_v3_0,False,False,0.0,1.0,1.0,2.0,1.0,3.0,0.0,measured_evidence_runtime_only_control_plane_not_measured
+adaptive_online_ensemble,static_multi_agent_ensemble,False,False,0.0,1.0,1.0,3.0,1.0,4.0,1.0,measured_evidence_runtime_only_control_plane_not_measured
+llm_collaborative_planner,runtime_safe_v3_0,False,False,0.0,1.0,1.0,2.0,1.0,3.0,0.0,measured_evidence_runtime_only_control_plane_not_measured

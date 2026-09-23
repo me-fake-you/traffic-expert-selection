@@ -1,0 +1,72 @@
+{
+  "status": "completed_stratified_grouped_bootstrap",
+  "protocol": {
+    "heldout_group_count": 20,
+    "benign_group_count": 10,
+    "malicious_group_count": 10,
+    "heldout_groups_are_single_class": true,
+    "out_of_fold_sample_count": 40000,
+    "bootstrap_iterations": 10000,
+    "primary_bootstrap_seed": 42,
+    "sensitivity_bootstrap_seeds": [
+      43,
+      44
+    ],
+    "stratified_resampling": "sample 10 benign groups and 10 malicious groups with replacement in every replicate",
+    "training_seed_replication_available": false,
+    "reason": "the frozen artifacts contain one training seed; seeds 43/44 repeat only the grouped bootstrap, not model training"
+  },
+  "pooled_40000": {
+    "reference_macro_f1": 0.8458852821763954,
+    "candidate_macro_f1": 0.8933801005260251,
+    "macro_f1_delta": 0.047494818349629764
+  },
+  "bootstrap": [
+    {
+      "seed": 42,
+      "iterations": 10000,
+      "mean": 0.04801858519999356,
+      "median": 0.04658526563393206,
+      "ci95_lower": 0.004927133602732431,
+      "ci95_upper": 0.1275072471939901,
+      "positive_probability": 0.9995
+    },
+    {
+      "seed": 43,
+      "iterations": 10000,
+      "mean": 0.04783706936571232,
+      "median": 0.04633387740453632,
+      "ci95_lower": 0.004926008492413145,
+      "ci95_upper": 0.12787911688367498,
+      "positive_probability": 0.9994
+    },
+    {
+      "seed": 44,
+      "iterations": 10000,
+      "mean": 0.04774243876795589,
+      "median": 0.04625838795870191,
+      "ci95_lower": 0.004867450258731388,
+      "ci95_upper": 0.12713972007357752,
+      "positive_probability": 0.9997
+    }
+  ],
+  "model_selection_counts": [
+    {
+      "candidate_model_id": "hybrid_extra_trees",
+      "selected_fold_count": 9
+    },
+    {
+      "candidate_model_id": "hybrid_rf",
+      "selected_fold_count": 11
+    }
+  ],
+  "threshold_min": 0.2,
+  "threshold_max": 0.6,
+  "fake_metric_count": 0,
+  "model_retraining": false,
+  "runtime_modified": false,
+  "source_hashes": {
+    "data/runs/mad_etd_ustc_group_heldout_hybrid_w98/per_sample_predictions.csv": "e8b6f266eaf5ff03f53c6af7403a3f7d91b6915c386e5ab9234b6f13990c5dd6",
+    "data/runs/mad_etd_ustc_group_heldout_hybrid_w98/group_heldout_results.csv": "e15e4550d61d1478b91d21f63faadbf84c42ccca1f11c6f9a80361e993671556"
+  }
+}

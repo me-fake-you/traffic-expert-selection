@@ -1,0 +1,62 @@
+{
+  "status": "COMPLETED_DEVELOPMENT_DIAGNOSTIC",
+  "protocol_id": "thesis-luna-e0-e1-pilot-fold0-v1",
+  "outer_fold": 0,
+  "train_oof_rows": 24000,
+  "selection_rows": 4000,
+  "evaluation_rows_scored": 0,
+  "evaluation_labels_materialized": false,
+  "evaluation_labels_used": false,
+  "regressor_fit_once_on_train_oof": true,
+  "router_state_columns": [
+    "pT",
+    "abs(pT - 0.5)",
+    "binary_entropy(pT)"
+  ],
+  "second_view_used_only_for_offline_delta_and_selection_reporting": true,
+  "train_delta_support": {
+    "-1": 258,
+    "0": 23605,
+    "1": 137
+  },
+  "selection_delta_support": {
+    "-1": 0,
+    "0": 4000,
+    "1": 0
+  },
+  "e0_train_error_overlap": {
+    "both_correct": 19881,
+    "only_temporal_correct": 807,
+    "only_stats_correct": 214,
+    "both_wrong": 3098,
+    "disagreement": 1021
+  },
+  "e0_selection_error_overlap": {
+    "both_correct": 3999,
+    "only_temporal_correct": 0,
+    "only_stats_correct": 0,
+    "both_wrong": 1,
+    "disagreement": 0
+  },
+  "selection_groups": [
+    "benign:Weibo",
+    "malware:Virut"
+  ],
+  "selection_budget_rows": 400,
+  "input_hashes_saved": true,
+  "role_checks_passed": true,
+  "matched_budget_checks_passed": true,
+  "pilot_003_row_probability_prediction_metric_equality": true,
+  "internal_tests": {
+    "state_signature_is_first_probability_only": "PASS",
+    "state_matches_independent_manual_transform": "PASS",
+    "state_rejects_nonfinite_or_out_of_range_probability": "PASS",
+    "delta_domain_is_minus1_zero_plus1": "PASS",
+    "matched_budget_quota_and_paired_switch_count": "PASS"
+  },
+  "fresh_blind_test": false,
+  "real_end_to_end_latency_measured": false,
+  "final_generalization_claim": false,
+  "negative_damage_zero_is_not_a_safety_claim": true,
+  "duration_seconds": 2.155926099999988
+}

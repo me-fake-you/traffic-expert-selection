@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "agent": "stats",
+  "candidate_cross_validation": [
+    {
+      "candidate": "hist_small",
+      "family": "hist_gradient_boosting",
+      "folds": [
+        {
+          "PR_AUC": 0.999643149836454,
+          "macro_f1": 0.9972241638611592
+        },
+        {
+          "PR_AUC": 0.9387369116889037,
+          "macro_f1": 0.8080453844908106
+        },
+        {
+          "PR_AUC": 0.9932352546689858,
+          "macro_f1": 0.9632865890979689
+        }
+      ],
+      "mean_PR_AUC": 0.9772051053981144,
+      "mean_macro_f1": 0.9228520458166463
+    },
+    {
+      "candidate": "hist_medium",
+      "family": "hist_gradient_boosting",
+      "folds": [
+        {
+          "PR_AUC": 0.9998368821744001,
+          "macro_f1": 0.997507560870292
+        },
+        {
+          "PR_AUC": 0.919910521554313,
+          "macro_f1": 0.7889205140703615
+        },
+        {
+          "PR_AUC": 0.9908843220700831,
+          "macro_f1": 0.9660007475662618
+        }
+      ],
+      "mean_PR_AUC": 0.9702105752662655,
+      "mean_macro_f1": 0.9174762741689717
+    },
+    {
+      "candidate": "logistic_c0.1",
+      "family": "logistic_regression",
+      "folds": [
+        {
+          "PR_AUC": 0.9830878006893154,
+          "macro_f1": 0.7963593761356398
+        },
+        {
+          "PR_AUC": 0.8098810796679268,
+          "macro_f1": 0.7822485839173166
+        },
+        {
+          "PR_AUC": 0.9488118690448164,
+          "macro_f1": 0.6982731088395921
+        }
+      ],
+      "mean_PR_AUC": 0.913926916467353,
+      "mean_macro_f1": 0.7589603562975161
+    },
+    {
+      "candidate": "logistic_c1",
+      "family": "logistic_regression",
+      "folds": [
+        {
+          "PR_AUC": 0.9798569913012738,
+          "macro_f1": 0.7977556159572611
+        },
+        {
+          "PR_AUC": 0.7921330771260506,
+          "macro_f1": 0.7884176493788366
+        },
+        {
+          "PR_AUC": 0.9491100751837185,
+          "macro_f1": 0.7020422784663268
+        }
+      ],
+      "mean_PR_AUC": 0.9070333812036809,
+      "mean_macro_f1": 0.7627385146008082
+    },
+    {
+      "candidate": "logistic_c10",
+      "family": "logistic_regression",
+      "folds": [
+        {
+          "PR_AUC": 0.9746987412043788,
+          "macro_f1": 0.8102550277090521
+        },
+        {
+          "PR_AUC": 0.77156387981398,
+          "macro_f1": 0.7951604094890957
+        },
+        {
+          "PR_AUC": 0.9512241759415632,
+          "macro_f1": 0.7040534702276431
+        }
+      ],
+      "mean_PR_AUC": 0.8991622656533073,
+      "mean_macro_f1": 0.7698229691419303
+    }
+  ],
+  "calibrated_finalists": [
+    {
+      "candidate": "logistic_c0.1",
+      "family": "logistic_regression",
+      "PR_AUC": 0.9905911456061971,
+      "Brier_score": 0.031354246972701845,
+      "ECE": 0.016399589791680453
+    },
+    {
+      "candidate": "hist_small",
+      "family": "hist_gradient_boosting",
+      "PR_AUC": 0.9999957628701209,
+      "Brier_score": 0.0009001093515040192,
+      "ECE": 0.0009796934591384465
+    }
+  ],
+  "selected_candidate": "hist_small",
+  "selected_metrics": {
+    "PR_AUC": 0.9999957628701209,
+    "Brier_score": 0.0009001093515040192,
+    "ECE": 0.0009796934591384465
+  },
+  "decision_policy": {
+    "benign_max_probability": 0.39000000000000007,
+    "malicious_min_probability": 0.55,
+    "coverage": 1.0,
+    "selective_risk": 0.0009522564744104412,
+    "benign_false_positive_rate": 0.001607112326893486,
+    "malicious_recall": 0.999835472194801,
+    "constraints_satisfied": true,
+    "max_selective_risk": 0.1,
+    "max_benign_false_positive_rate": 0.05
+  },
+  "coverage_risk_curve": [
+    {
+      "target_risk": 0.01,
+      "coverage": 1.0,
+      "observed_risk": 0.0009522564744104412,
+      "minimum_confidence_margin": 0.07246963131839812
+    },
+    {
+      "target_risk": 0.05,
+      "coverage": 1.0,
+      "observed_risk": 0.0009522564744104412,
+      "minimum_confidence_margin": 0.07246963131839812
+    },
+    {
+      "target_risk": 0.1,
+      "coverage": 1.0,
+      "observed_risk": 0.0009522564744104412,
+      "minimum_confidence_margin": 0.07246963131839812
+    }
+  ]
+}

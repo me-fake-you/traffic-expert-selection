@@ -1,0 +1,33 @@
+{
+  "bootstrap_repeats": 1000,
+  "bootstrap_seed": 42,
+  "experiment": "mad_etd_nfiot_positive_statistical_validation_w46",
+  "metrics": {
+    "coverage": {
+      "ci95_lower": 0.93389875,
+      "ci95_upper": 0.9407512499999999,
+      "mean": 0.9374035000000001
+    },
+    "ece_delta": {
+      "ci95_lower": -0.003179198255288178,
+      "ci95_upper": -0.0007160821370140297,
+      "mean": -0.001903380042556023
+    },
+    "macro_f1_delta": {
+      "ci95_lower": 0.023287568413681188,
+      "ci95_upper": 0.029959485209741985,
+      "mean": 0.026447481606858943
+    },
+    "malicious_recall_delta": {
+      "ci95_lower": 0.00936662687477057,
+      "ci95_upper": 0.012437778083605704,
+      "mean": 0.010858585988372372
+    },
+    "selective_error_delta": {
+      "ci95_lower": -0.013225556809531414,
+      "ci95_upper": -0.010220268088908486,
+      "mean": -0.01168247477240802
+    }
+  },
+  "schema_version": "1.0"
+}

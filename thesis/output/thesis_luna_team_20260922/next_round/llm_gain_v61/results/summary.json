@@ -1,0 +1,79 @@
+{
+  "status": "completed_development_API_pilot",
+  "model": "nvidia/nemotron-3-ultra-550b-a55b",
+  "requests": 10,
+  "valid_responses": 7,
+  "rows": 320,
+  "unique_sample_hashes": 303,
+  "fold_records_overlap": true,
+  "jev_calls": 0,
+  "fine_tuning": false,
+  "fresh_blind_test": false,
+  "full_detection_latency_measured": false,
+  "descriptive_totals": [
+    {
+      "arm": "all_average",
+      "rows": 320,
+      "C": 35,
+      "D": 2,
+      "net": 33,
+      "simulated_second_calls": 320,
+      "errors": 16
+    },
+    {
+      "arm": "atomic",
+      "rows": 320,
+      "C": 6,
+      "D": 1,
+      "net": 5,
+      "simulated_second_calls": 30,
+      "errors": 44
+    },
+    {
+      "arm": "confidence",
+      "rows": 320,
+      "C": 7,
+      "D": 2,
+      "net": 5,
+      "simulated_second_calls": 30,
+      "errors": 44
+    },
+    {
+      "arm": "direct",
+      "rows": 320,
+      "C": 6,
+      "D": 0,
+      "net": 6,
+      "simulated_second_calls": 30,
+      "errors": 43
+    },
+    {
+      "arm": "first_only",
+      "rows": 320,
+      "C": 0,
+      "D": 0,
+      "net": 0,
+      "simulated_second_calls": 0,
+      "errors": 49
+    },
+    {
+      "arm": "hash_random",
+      "rows": 320,
+      "C": 0,
+      "D": 0,
+      "net": 0,
+      "simulated_second_calls": 30,
+      "errors": 49
+    },
+    {
+      "arm": "same_card_rule",
+      "rows": 320,
+      "C": 6,
+      "D": 1,
+      "net": 5,
+      "simulated_second_calls": 30,
+      "errors": 44
+    }
+  ],
+  "api_run_wall_seconds": 246.69574860000012
+}

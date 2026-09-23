@@ -1,0 +1,47 @@
+{
+  "protocol_id": "luna-gain-upgrade-fivefold-v1",
+  "created_date": "2026-09-22",
+  "status": "fixed_before_run",
+  "seed": 42,
+  "outer_folds": [0, 1, 2, 3, 4],
+  "roles": {
+    "fit": "Each fold's train-role genuine group-OOF rows from seed_42_fold_{fold}/oof_predictions.npz",
+    "selection": "Each fold's independent selection groups; labels decoded by sample_hash from provenance only for offline metrics",
+    "evaluation": "Never read or scored"
+  },
+  "expert_order": ["temporal", "stats"],
+  "base_methods": ["first_temporal", "first_stats", "all_average"],
+  "router_methods": ["confidence_budget", "hashrandom_budget", "probability_only_gain"],
+  "positive_gain_method": "probability_only_gain_positive_no_call: acquire only when predicted_delta > 0, without a fixed budget cap; report its realized budget",
+  "combination": "fixed_equal_average_after_acquisition: ((p_temporal + p_stats) / 2 >= 0.5)",
+  "budgets": [1.0, 1.1, 1.25, 1.5, 2.0],
+  "budget_definition": "expected evidence calls per row; K=round((budget-1)*N_selection) second calls for budgeted policies, deterministic tie breaks by sample_hash",
+  "probability_only_state": ["p_temporal", "abs(p_temporal-0.5)", "binary_entropy(p_temporal)"],
+  "forbidden_router_inputs": ["p_stats", "second-view features", "label", "group", "family", "filename", "capture", "future full-flow statistics", "evaluation rows"],
+  "expanded_state": {
+    "status": "excluded",
+    "reason": "Existing protocol documents temporal_packet_cap=64 but does not establish that every stored raw temporal/IAT/prefix feature is available at the pre-acquisition observation point; Stats is explicitly completed-segment and not prefix-restricted.",
+    "features": []
+  },
+  "regressor": {
+    "class": "sklearn.ensemble.HistGradientBoostingRegressor",
+    "max_iter": 100,
+    "max_leaf_nodes": 7,
+    "l2_regularization": 2.0,
+    "random_state": 20260922,
+    "early_stopping": false,
+    "search": false
+  },
+  "target": "Delta = 1[h_temporal != y] - 1[h_equal_average != y], values {-1,0,+1}; labels and p_stats are offline target construction only",
+  "comparison_rules": {
+    "confidence_budget": "lowest abs(p_temporal-0.5) first, exact K",
+    "hashrandom_budget": "SHA256(sample_hash) ascending, exact K",
+    "probability_only_gain": "highest fitted predicted_delta first, exact K",
+    "positive_gain_no_call": "all rows with fitted predicted_delta > 0; no budget cap",
+    "first_temporal": "temporal >= 0.5",
+    "first_stats": "stats >= 0.5",
+    "all_average": "always acquire stats and apply fixed average"
+  },
+  "required_outputs": ["models", "train_predictions", "selection_predictions", "group_results", "policy_metrics", "input_hashes", "split_roles", "boundary_tests", "run_log", "summary", "THESIS_READY.md"],
+  "interpretation_limits": ["Five folds share source groups and are not independent tests", "No confidence intervals", "No fresh blind test", "No real end-to-end latency claim", "Report positive and negative fold/group results", "Do not promote a method from selection outcomes to final generalization"]
+}

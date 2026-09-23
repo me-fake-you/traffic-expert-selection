@@ -1,0 +1,5 @@
+mode,method,pair_count,clean_coverage,perturbed_coverage,perturbed_selective_error,harmful_flip_count,harmful_flip_rate,binary_reversal_count,conservative_degradation_count,all_sample_malicious_recall
+actual_runtime_v3_0,equal_probability_average,3200,0.98625,0.8421875,0.06419294990723562,167,0.0521875,168,0,0.8270348837209303
+actual_runtime_v3_0,reliability_ood_aware_fusion,3200,0.1375,0.0521875,0.0,0,0.0,0,296,0.025193798449612403
+current_stats__v2_6_continuous,equal_probability_average,3200,1.0,1.0,0.039375,110,0.034375,110,0,0.9859496124031008
+current_stats__v2_6_continuous,reliability_ood_aware_fusion,3200,0.9425,0.883125,0.003538570417551309,0,0.0,0,215,0.9481589147286822

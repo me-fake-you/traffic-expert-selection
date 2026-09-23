@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0",
+  "fold": 1,
+  "holdout": {
+    "benign_application": "MySQL",
+    "malware_family": "Htbot"
+  },
+  "systems": {
+    "full": {
+      "schema_version": "1.0",
+      "mode": "full",
+      "metrics_status": "computed",
+      "sample_count": 95849,
+      "labeled_sample_count": 95849,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "PR_AUC": 0.9999599592530973,
+      "Brier_score": 0.00011168717349594426,
+      "ECE": 0.0004418499308415551,
+      "coverage": 0.9570574549551899,
+      "unknown_rate": 0.0007720477000281693,
+      "suspicious_rate": 0.0421704973447819,
+      "average_agent_calls": 2.11305282266899,
+      "average_latency_ms": 4.651890058325515,
+      "confusion_on_covered": {
+        "tp": 5709,
+        "fp": 0,
+        "tn": 86024,
+        "fn": 0
+      }
+    },
+    "stats_only": {
+      "schema_version": "1.0",
+      "mode": "stats_only",
+      "metrics_status": "computed",
+      "sample_count": 95849,
+      "labeled_sample_count": 95849,
+      "accuracy": 0.9999555595058217,
+      "macro_f1": 0.9998107169247468,
+      "precision": 1.0,
+      "recall": 0.9992905285562256,
+      "PR_AUC": 0.9997375422533176,
+      "Brier_score": 0.0005005568477738854,
+      "ECE": 0.0015013022603165827,
+      "coverage": 0.9390603970829117,
+      "unknown_rate": 0.01863347557095014,
+      "suspicious_rate": 0.04230612734613819,
+      "average_agent_calls": 1.0,
+      "average_latency_ms": 0.0,
+      "confusion_on_covered": {
+        "tp": 5634,
+        "fp": 0,
+        "tn": 84370,
+        "fn": 4
+      }
+    },
+    "temporal_only": {
+      "schema_version": "1.0",
+      "mode": "temporal_only",
+      "metrics_status": "computed",
+      "sample_count": 95849,
+      "labeled_sample_count": 95849,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "PR_AUC": 1.0,
+      "Brier_score": 0.21607945832950892,
+      "ECE": 0.39342186896213177,
+      "coverage": 0.09413765401829961,
+      "unknown_rate": 0.8643178332585629,
+      "suspicious_rate": 0.04154451272313744,
+      "average_agent_calls": 1.0,
+      "average_latency_ms": 0.0,
+      "confusion_on_covered": {
+        "tp": 2065,
+        "fp": 0,
+        "tn": 6958,
+        "fn": 0
+      }
+    },
+    "no_reject": {
+      "schema_version": "1.0",
+      "mode": "no_reject",
+      "metrics_status": "computed",
+      "sample_count": 95849,
+      "labeled_sample_count": 95849,
+      "accuracy": 0.9998748030756711,
+      "macro_f1": 0.9996578063786956,
+      "precision": 0.9992829338250359,
+      "recall": 0.9994877049180327,
+      "PR_AUC": 0.9999599592530973,
+      "Brier_score": 0.00011168717349594426,
+      "ECE": 0.0004418499308415551,
+      "coverage": 1.0,
+      "unknown_rate": 0.0,
+      "suspicious_rate": 0.0,
+      "average_agent_calls": 2.11305282266899,
+      "average_latency_ms": 0.0,
+      "confusion_on_covered": {
+        "tp": 9755,
+        "fp": 7,
+        "tn": 86082,
+        "fn": 5
+      }
+    }
+  },
+  "temporal_abstain_rate": 0.8643178332585629,
+  "audit_summary": {
+    "schema_version": "1.0",
+    "sample_count": 95849,
+    "completed_chain_count": 95849,
+    "audit_chain_completion_rate": 1.0,
+    "blocked_field_violation_count": 0,
+    "policy_adjustment_count": 0,
+    "event_counts": {
+      "FLOW_VALIDATED": 95849,
+      "FIELD_POLICY_APPLIED": 95849,
+      "RELIABILITY_ASSESSED": 95849,
+      "ROUTING_DECISION": 201448,
+      "POLICY_GUARD_EVALUATION": 201448,
+      "AGENT_EVIDENCE": 202534,
+      "INTERIM_FUSION": 106685,
+      "FINAL_FUSION": 95849,
+      "REPORT_GENERATED": 95849
+    },
+    "actor_counts": {
+      "FeatureCapture": 95849,
+      "FieldAuditAgent": 95849,
+      "PseudoFeatureGuardAgent": 95849,
+      "CoordinatorAgent": 201448,
+      "PolicyGuard": 201448,
+      "StatsDetectorAgent": 95849,
+      "TemporalBehaviorAgent": 95849,
+      "FusionAgent": 202534,
+      "ReporterAgent": 95849,
+      "FamilyAttributionAgent": 9750,
+      "TLSProtocolAgent": 1086
+    }
+  }
+}

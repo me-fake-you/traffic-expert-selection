@@ -1,0 +1,11 @@
+mode,sample_count,eligible_count,availability_rate,macro_f1,selective_macro_f1,coverage,selective_error,average_agent_calls,average_unsupported_agent_calls,p50_latency_ms,p95_latency_ms,latency_kind,audit_completion_rate,blocked_field_violation_count,fusion_ownership_violation_count,ood_override_count,illegal_verdict_execution_count
+stats_only,6000,6000,1.0,0.0,,0.0,0.0,1.0,0.0,,,evidence_sum_estimate_not_reported_as_runtime,1.0,0,0,0,0
+temporal_only,6000,6000,1.0,0.0,,0.0,0.0,1.0,0.0,,,evidence_sum_estimate_not_reported_as_runtime,1.0,0,0,0,0
+tls_only_if_available,6000,0,0.0,,,0.0,0.0,,,,,evidence_sum_estimate_not_reported_as_runtime,0.0,0,0,0,0
+stats_temporal_static,6000,6000,1.0,0.3699043611657198,1.0,0.23366666666666666,0.0,2.0,0.0,,,evidence_sum_estimate_not_reported_as_runtime,1.0,0,0,0,0
+stats_temporal_tls_static,6000,6000,1.0,0.3699043611657198,1.0,0.23366666666666666,0.0,3.0,0.0,,,evidence_sum_estimate_not_reported_as_runtime,1.0,0,0,0,0
+runtime_safe_v2_7,6000,6000,1.0,0.3699043611657198,1.0,0.23366666666666666,0.0,2.508166666666667,0.0,37.25829999893904,42.10679999960121,end_to_end,1.0,0,0,0,0
+runtime_safe_v3_0,6000,6000,1.0,0.3699043611657198,1.0,0.23366666666666666,0.0,2.0,0.0,37.225299998681294,42.08920000019134,end_to_end,1.0,0,0,0,0
+runtime_safe_v3_0_without_capability_routing,6000,6000,1.0,0.3699043611657198,1.0,0.23366666666666666,0.0,2.0,0.0,37.200499999016756,41.940499999327585,end_to_end,1.0,0,0,0,0
+runtime_safe_v3_0_full_call_all_supported_agents,6000,6000,1.0,0.3699043611657198,1.0,0.23366666666666666,0.0,2.0,0.0,37.13090000019292,41.986399999586865,end_to_end,1.0,0,0,0,0
+static_multi_agent_ensemble,6000,6000,1.0,0.3699043611657198,1.0,0.23366666666666666,0.0,3.0,1.0,37.18480000316049,42.18630000104895,end_to_end,1.0,0,0,0,0

@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "mode": "nvidia_coordinator",
+  "sample_count": 500,
+  "completed_chain_count": 500,
+  "audit_chain_completion_rate": 1.0,
+  "event_counts": {
+    "FLOW_VALIDATED": 500,
+    "FIELD_POLICY_APPLIED": 500,
+    "RELIABILITY_ASSESSED": 500,
+    "ROUTING_DECISION": 1000,
+    "POLICY_GUARD_EVALUATION": 1000,
+    "AGENT_EVIDENCE": 1000,
+    "INTERIM_FUSION": 500,
+    "FINAL_FUSION": 500,
+    "REPORT_GENERATED": 500
+  },
+  "actor_counts": {
+    "FeatureCapture": 500,
+    "FieldAuditAgent": 500,
+    "PseudoFeatureGuardAgent": 500,
+    "CoordinatorAgent": 1000,
+    "PolicyGuard": 1000,
+    "StatsDetectorAgent": 500,
+    "TemporalBehaviorAgent": 500,
+    "FusionAgent": 1000,
+    "ReporterAgent": 500
+  },
+  "blocked_field_violation_count": 0,
+  "policy_adjustment_count": 1000,
+  "required_event_presence": {
+    "field_policy": true,
+    "reliability": true,
+    "routing": true,
+    "policy_guard": true,
+    "agent_evidence": true,
+    "final_fusion": true,
+    "reporter": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "experiment": "case_memory_retrieval",
+  "stored_case_count": 2,
+  "query_count": 2,
+  "match_rate": 1.0,
+  "top1_group_accuracy": 1.0,
+  "evaluator_group_used_for_retrieval": false,
+  "locked_benchmark_used": false,
+  "verdict_fields_in_memory_hint": false,
+  "automatic_retraining": false
+}

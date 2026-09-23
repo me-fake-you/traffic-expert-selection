@@ -1,0 +1,17 @@
+{
+  "protocol_id": "luna-fivefold-oof-group-support-v1",
+  "created_date": "2026-09-22",
+  "status": "fixed_before_run",
+  "seed": 42,
+  "outer_folds": [0, 1, 2, 3, 4],
+  "input_scope": "Only seed_42_fold_{0..4}/oof_predictions.npz, the label-free group/sample_hash arrays from sealed_group_cv.npz, and split_manifest.json group-role metadata; no evaluation predictions, evaluation labels, retraining, or model selection.",
+  "expert_order": ["temporal", "stats"],
+  "h_temporal": "temporal >= 0.5",
+  "h_stats": "stats >= 0.5",
+  "h_equal_average": "(temporal + stats) / 2 >= 0.5",
+  "four_cells": ["both_correct", "only_temporal_correct", "only_stats_correct", "both_wrong"],
+  "delta": "1[h_temporal != y] - 1[h_equal_average != y], values {-1,0,+1}; C=delta +1 and D=delta -1",
+  "aggregation": "Per outer fold and train-role group, then pooled row-count summary; no fold selection.",
+  "independence_note": "Five train OOF folds share source groups and are not five independent tests; report overlap explicitly.",
+  "stop_or_interpretation": "Use support to distinguish combination complementarity from call-before routing opportunity; zero damage is not a safety guarantee."
+}

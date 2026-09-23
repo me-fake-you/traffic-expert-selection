@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "mode": "no_reject",
+  "sample_count": 93822,
+  "total_agent_calls": 236385,
+  "average_agent_calls": 2.519505020144529,
+  "total_latency_ms": 2167793.794607972,
+  "average_latency_ms": 23.105388870499155,
+  "llm_call_count": 0,
+  "llm_fallback_count": 0,
+  "llm_replay_count": 0
+}

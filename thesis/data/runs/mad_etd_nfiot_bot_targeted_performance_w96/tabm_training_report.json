@@ -1,0 +1,15 @@
+{
+  "best_validation_macro_f1_at_0_5": 0.995046469996812,
+  "config": {
+    "cat_cardinalities": [],
+    "d_block": 256,
+    "d_out": 2,
+    "dropout": 0.1,
+    "k": 16,
+    "n_blocks": 3,
+    "n_num_features": 24
+  },
+  "device": "cuda",
+  "epochs": 60,
+  "training_seconds": 21.56256590000703
+}

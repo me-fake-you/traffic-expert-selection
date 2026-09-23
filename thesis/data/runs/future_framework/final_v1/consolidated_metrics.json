@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "experiment": "future_framework_final_v1",
+  "seed": 42,
+  "bootstrap_resamples": 1000,
+  "paper_scale": {
+    "status": "passed",
+    "total_samples": 159822,
+    "expected_counts": {
+      "ustc_test": 93822,
+      "cesnet_50k": 50000,
+      "cipherspectrum_development": 9600,
+      "cipherspectrum_validation": 3200,
+      "cipherspectrum_locked_test": 3200
+    },
+    "locked_test_tuning_used": false
+  },
+  "perturbation": {
+    "status": "passed",
+    "source_sample_count": 9000,
+    "prediction_count": 324000
+  },
+  "llm_planner": {
+    "status": "passed",
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "expected_sample_count": 500,
+    "stability": {
+      "nvidia_planner": {
+        "mode": "nvidia_planner",
+        "status": "completed",
+        "sample_count": 100,
+        "repeat_count": 3,
+        "metrics": {
+          "plan_consistency": 0.65,
+          "verdict_invariance": 1.0,
+          "fallback_stability": 0.9,
+          "policy_guard_rejection_consistency": 0.9,
+          "illegal_verdict_execution_count": 0,
+          "audit_completion_rate": 1.0,
+          "blocked_field_violation_count": 0,
+          "fusion_ownership_violation_count": 0,
+          "ood_override_count": 0
+        }
+      },
+      "fallback": {
+        "mode": "fallback",
+        "status": "completed",
+        "sample_count": 100,
+        "repeat_count": 3,
+        "metrics": {
+          "plan_consistency": 1.0,
+          "verdict_invariance": 1.0,
+          "fallback_stability": 1.0,
+          "policy_guard_rejection_consistency": 1.0,
+          "illegal_verdict_execution_count": 0,
+          "audit_completion_rate": 1.0,
+          "blocked_field_violation_count": 0,
+          "fusion_ownership_violation_count": 0,
+          "ood_override_count": 0
+        }
+      }
+    },
+    "pricing_status": "pricing_not_configured"
+  },
+  "active_policy": {
+    "status": "passed",
+    "selected_policy": "budget_utility",
+    "fallback_to_current": false,
+    "exploratory_only": true
+  },
+  "hitl": {
+    "status": "partial_complete",
+    "real_review_count": 80,
+    "phase2_status": "cancelled",
+    "full_200_case_acceptance": false,
+    "hint_metrics": "not_applicable"
+  }
+}

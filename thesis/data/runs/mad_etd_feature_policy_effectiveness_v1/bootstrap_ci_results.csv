@@ -1,0 +1,5 @@
+comparison,dataset,iterations,macro_f1_delta,macro_f1_delta_ci95_lower,macro_f1_delta_ci95_upper,macro_f1_delta_mean,seed,selective_error_delta
+safe_common_plus_safe_conditional_vs_all_numeric_HGB,USTC-TFC2016,1000,-0.00391851315998093,-0.0210560383831917,0.0,-0.016056744748767164,42,0.002777777777777879
+safe_common_plus_safe_conditional_vs_all_numeric_HGB,NF-IoT,1000,-0.09612266801223562,-0.09612266801223562,-0.09612266801223562,-0.09612266801223561,42,0.06333333333333335
+safe_common_plus_safe_conditional_vs_all_numeric_HGB,CICIDS2017,1000,0.0,0.0,0.0,0.0,42,0.0
+safe_common_plus_safe_conditional_vs_all_numeric_HGB,DoHBrw-2020,1000,-0.0077775872983769645,-0.019886510927743038,7.835107210529586e-08,-0.00978127990928185,42,0.007525870178739513

@@ -1,0 +1,44 @@
+{
+  "status": "COMPLETED_DEVELOPMENT_DIAGNOSTIC",
+  "protocol_id": "thesis-luna-e0-e1-pilot-fold0-v1",
+  "outer_fold": 0,
+  "train_oof_rows": 24000,
+  "selection_rows": 4000,
+  "evaluation_rows_scored": 0,
+  "evaluation_labels_read": false,
+  "regressor_fit_once_on_train_oof": true,
+  "router_state_columns": [
+    "pT",
+    "abs(pT - 0.5)",
+    "binary_entropy(pT)"
+  ],
+  "second_view_used_only_for_offline_delta_and_selection_reporting": true,
+  "train_delta_support": {
+    "-1": 258,
+    "0": 23605,
+    "1": 137
+  },
+  "selection_delta_support": {
+    "-1": 0,
+    "0": 4000,
+    "1": 0
+  },
+  "selection_groups": [
+    "benign:Weibo",
+    "malware:Virut"
+  ],
+  "selection_budget_rows": 400,
+  "input_hashes_saved": true,
+  "role_checks_passed": true,
+  "matched_budget_checks_passed": true,
+  "internal_tests": {
+    "state_uses_first_probability_only": "PASS",
+    "delta_domain_is_minus1_zero_plus1": "PASS",
+    "matched_budget_quota_and_paired_switch_count": "PASS"
+  },
+  "fresh_blind_test": false,
+  "real_end_to_end_latency_measured": false,
+  "final_generalization_claim": false,
+  "negative_damage_zero_is_not_a_safety_claim": true,
+  "duration_seconds": 1.04206929999998
+}

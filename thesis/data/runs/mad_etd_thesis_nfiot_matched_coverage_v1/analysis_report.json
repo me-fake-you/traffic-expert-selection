@@ -1,0 +1,16 @@
+{
+  "status": "completed_nfiot_matched_coverage_diagnostic",
+  "sample_count": 20000,
+  "source_variant_count": 4,
+  "matched_coverages": [
+    0.9218,
+    0.9374
+  ],
+  "ranking_rule": "descending max(p,1-p), tie broken by sample_id; no label is used for ranking",
+  "ece_scope": "W46 ECE values are aggregate values over the full per-sample prediction table; matched-coverage rows do not recompute ECE",
+  "model_retraining": false,
+  "runtime_modified": false,
+  "fake_metric_count": 0,
+  "source_artifact": "data/runs/mad_etd_nfiot_positive_statistical_validation_w46/per_sample_predictions.csv",
+  "source_sha256": "8f475a61a586fee2e34afd659e162e9d01b6c73d242236ab5e1e79066fa5dae1"
+}

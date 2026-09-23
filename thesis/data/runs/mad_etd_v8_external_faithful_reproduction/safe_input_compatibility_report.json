@@ -1,0 +1,25 @@
+{
+  "blocked_fields": [
+    "label",
+    "family",
+    "sample_id",
+    "source_file",
+    "ip",
+    "port",
+    "timestamp",
+    "flow_id",
+    "attack_family",
+    "attack_name",
+    "provenance",
+    "split_metadata",
+    "pcap_alignment_metadata"
+  ],
+  "blocked_fields_removed_by_native_repo": false,
+  "can_enforce_mad_etd_safe_feature_policy_without_adapter": false,
+  "experiment": "mad_etd_v8_external_faithful_reproduction",
+  "reason": "native repository expects prebuilt packet/vector artifacts; direct safe-flow feature filtering is not exposed",
+  "safe_input_compatibility_checked": true,
+  "safe_input_compatible": false,
+  "schema_version": "1.0",
+  "target_repo": "INL-Laboratory/Continual-Federated-IDS"
+}

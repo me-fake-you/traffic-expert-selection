@@ -1,0 +1,23 @@
+entrypoint_path,expected_args,expected_data_path,requires_packet_vector,requires_native_dataset_format,uses_internal_split,can_accept_external_split,can_run_smoke
+Experiments/Multi-Agent/exp_cnn_distributed2017.py,hardcoded_or_none,hardcoded Results/Utils/DataController paths,True,True,True,False,True
+Distributed/Clients.py,hardcoded_or_none,not_detected_static_probe,False,False,False,False,True
+Distributed/SyncExp.py,hardcoded_or_none,hardcoded Results/Utils/DataController paths,False,False,False,False,True
+Distributed/AsyncExp.py,hardcoded_or_none,hardcoded Results/Utils/DataController paths,False,False,False,False,True
+Distributed/Agent.py,hardcoded_or_none,not_detected_static_probe,False,False,False,False,True
+Distributed/AsyncModules.py,hardcoded_or_none,hardcoded Results/Utils/DataController paths,False,True,False,False,True
+Distributed/Controller.py,hardcoded_or_none,not_detected_static_probe,False,False,False,False,True
+Distributed/Model_Constructor.py,hardcoded_or_none,not_detected_static_probe,False,False,False,False,True
+Distributed/config.py,hardcoded_or_none,not_detected_static_probe,False,False,False,False,True
+Distributed/data.py,hardcoded_or_none,hardcoded Results/Utils/DataController paths,True,True,True,False,True
+Distributed/reporter.py,hardcoded_or_none,not_detected_static_probe,False,False,False,False,True
+Distributed/test.py,hardcoded_or_none,not_detected_static_probe,False,False,False,False,True
+Experiments/Continual Pair-Wise/exp-cnn.py,hardcoded_or_none,hardcoded Results/Utils/DataController paths,True,True,True,False,True
+Experiments/Continual Pair-Wise/exp_lstm.py,hardcoded_or_none,hardcoded Results/Utils/DataController paths,True,True,True,False,True
+Experiments/Continual Step-Wise/exp_cnn_2017.py,hardcoded_or_none,hardcoded Results/Utils/DataController paths,True,True,True,False,True
+Experiments/Continual Step-Wise/exp_cnn_2018.py,hardcoded_or_none,hardcoded Results/Utils/DataController paths,True,True,True,False,True
+Experiments/Continual Step-Wise/exp_lstm_2017.py,hardcoded_or_none,hardcoded Results/Utils/DataController paths,True,True,True,False,True
+Experiments/Continual Step-Wise/exp_lstm_2018.py,hardcoded_or_none,hardcoded Results/Utils/DataController paths,True,True,True,False,True
+Experiments/Early Attack Detection/experiment.py,hardcoded_or_none,hardcoded Results/Utils/DataController paths,True,True,True,False,True
+Experiments/Multi-Agent/exp_cnn_distributed2018.py,hardcoded_or_none,hardcoded Results/Utils/DataController paths,True,True,True,False,True
+Experiments/Multi-Agent/exp_lstm_distributed2017.py,hardcoded_or_none,hardcoded Results/Utils/DataController paths,True,True,True,False,True
+Experiments/Multi-Agent/exp_lstm_distributed2018.py,hardcoded_or_none,hardcoded Results/Utils/DataController paths,True,True,True,False,True

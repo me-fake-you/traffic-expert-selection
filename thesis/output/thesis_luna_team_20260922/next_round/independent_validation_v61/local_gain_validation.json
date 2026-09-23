@@ -1,0 +1,161 @@
+{
+  "status": "PASS",
+  "validated_date": "2026-09-23",
+  "experiment": ".\\output\\thesis_luna_team_20260922\\next_round\\jev_gain_v61",
+  "checks": {
+    "source_row_roles": {
+      "status": "PASS",
+      "detail": {
+        "train": 120000,
+        "selection": 20000
+      }
+    },
+    "policy_row_count_and_folds": {
+      "status": "PASS",
+      "detail": {
+        "rows": 245,
+        "folds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    "no_actual_calls_column": {
+      "status": "PASS",
+      "detail": null
+    },
+    "policy_required_columns": {
+      "status": "PASS",
+      "detail": [
+        "fold",
+        "seed",
+        "policy",
+        "representation",
+        "target_budget",
+        "budget",
+        "rows",
+        "simulated_second_calls",
+        "effective_budget",
+        "call_rate",
+        "mean_score_acquired",
+        "C_D_reference",
+        "budget_semantics",
+        "macro_f1",
+        "malicious_recall",
+        "false_positive_rate",
+        "tn",
+        "fp",
+        "fn",
+        "tp",
+        "C",
+        "D",
+        "C_minus_D",
+        "utility_lambda_0_0",
+        "utility_lambda_0_01",
+        "utility_lambda_0_05",
+        "mean_delta"
+      ]
+    },
+    "model_count": {
+      "status": "PASS",
+      "detail": null
+    },
+    "full_row_probability_shapes": {
+      "status": "PASS",
+      "detail": {
+        "train": 120000,
+        "selection": 20000,
+        "train_score_columns": [
+          "probability_only_3d_score_plus_minus",
+          "post_first_temporal_43d_score_plus_minus"
+        ],
+        "selection_score_columns": [
+          "probability_only_3d_score_plus_minus",
+          "post_first_temporal_43d_score_plus_minus"
+        ]
+      }
+    },
+    "saved_probability_score_consistency": {
+      "status": "PASS",
+      "detail": null
+    },
+    "probability_metrics_15_rows": {
+      "status": "PASS",
+      "detail": {
+        "rows": 15,
+        "max_abs_error": 4.999999980020986e-11
+      }
+    },
+    "policy_metrics_recomputed": {
+      "status": "PASS",
+      "detail": {
+        "max_abs_metric_error": 1.1102230246251565e-16
+      }
+    },
+    "policy_budgets_recomputed": {
+      "status": "PASS",
+      "detail": {
+        "max_abs_budget_error": 2.220446049250313e-16
+      }
+    },
+    "utility_per_sample_formula": {
+      "status": "PASS",
+      "detail": {
+        "max_abs_utility_error": 6.938893903907228e-18,
+        "formula": "mean_delta=(C-D)/rows; utility=mean_delta-lambda*call_rate"
+      }
+    },
+    "source_label_access_boundary": {
+      "status": "PASS",
+      "detail": {
+        "source_key_hits": [
+          "group",
+          "sample_hash",
+          "x_hybrid"
+        ]
+      }
+    },
+    "saved_boundary_tests_all_pass": {
+      "status": "PASS",
+      "detail": {
+        "source_y_not_loaded": true,
+        "evaluation_not_read_or_scored": true,
+        "train_rows_each_fold_24000": true,
+        "selection_rows_each_fold_4000": true,
+        "exact_quota_all_budgeted_policies": true,
+        "three_classes_present_each_train_fold": true,
+        "no_probability_calibrator_fit": true,
+        "models_count_10": true,
+        "classifier_state_3d_or_43d_only": true
+      }
+    },
+    "model_state_forbidden_fields": {
+      "status": "PASS",
+      "detail": []
+    },
+    "input_hashes_recomputed": {
+      "status": "PASS",
+      "detail": {
+        ".\\output\\thesis_luna_team_20260922\\next_round\\jev_gain_v61\\preregistration.json": "752b8cb61a6d01b5059e138eab4477c366c8f6cc1bc25668ac4f9b51ff6ef64e",
+        ".\\output\\thesis_luna_team_20260922\\next_round\\jev_gain_v61\\run_jev_gain_v61.py": "19bbc17cae88c0b88ac0389e16452df071b7ff0f1b2caf214e0aefced999353d",
+        ".\\output\\thesis_luna_team_20260922\\next_round\\gain_upgrade\\train_predictions.csv.gz": "b5a252f994e08e7d7cb6a38c2bf9a485609ddf67a261fe6032b634932edda400",
+        ".\\output\\thesis_luna_team_20260922\\next_round\\gain_upgrade\\selection_predictions.csv.gz": "51fc605d97336e90586ea56cc061f1d9ee2411f959129e3ca3bd6d78204d2c88",
+        ".\\output\\thesis_luna_team_20260922\\next_round\\gain_upgrade\\policy_metrics.csv": "8c706d20e9dc961f3213b379ea6c97ac41a1374162cb03499d5a73e45c64bfad",
+        ".\\output\\thesis_luna_team_20260922\\next_round\\gain_upgrade\\input_hashes.json": "bdf6ceb8366fbd44e1028c7e3ebd9517a8d655ad7bc5ef82fbddae792902be7f",
+        ".\\output\\thesis_luna_team_20260922\\next_round\\jev_gain_v61\\results\\selection_classifier_probabilities.csv.gz": "c09a7d7edc8be235dca4f000034c6ba55d21a666a7c753c99ba1b39f97412410",
+        ".\\output\\thesis_luna_team_20260922\\next_round\\jev_gain_v61\\results\\train_classifier_probabilities.csv.gz": "9a340935fae11fab3a69ce0253bedbf3a0d90ff26a80915b89afe7d9224873d9",
+        ".\\output\\thesis_luna_team_20260922\\next_round\\jev_gain_v61\\results\\policy_metrics.csv": "4177ed1c926c8092d92dd3e1c2a915c1f959ad7455e9a9604ea25e674e19d27d",
+        ".\\output\\thesis_luna_team_20260922\\next_round\\jev_gain_v61\\results\\probability_metrics.json": "2da8e089cfb0a9a824c1425450834034766aef72ead39019903e1c31654028fd"
+      }
+    }
+  },
+  "failures": [],
+  "scope": "read-only independent recomputation; no experiment files modified",
+  "limits": [
+    "This validates saved numeric artifacts and static boundaries; it is not a fresh blind test.",
+    "Five folds share groups and are not independent tests."
+  ]
+}

@@ -1,0 +1,6 @@
+fold,train_group_count,validation_group_count,train_disagreement_count,validation_disagreement_count
+1,16,4,2857,1179
+2,16,4,4467,97
+3,16,4,4692,28
+4,16,4,4630,132
+5,16,4,2694,10

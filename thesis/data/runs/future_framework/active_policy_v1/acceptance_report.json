@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "experiment": "exploratory_active_policy_v1",
+  "acceptance_status": "passed",
+  "test_count": null,
+  "failures": [],
+  "selected_policy": "budget_utility",
+  "fallback_to_current": false,
+  "audit_completion_rate": 1.0,
+  "blocked_field_violation_count": 0,
+  "fusion_ownership_violation_count": 0,
+  "ood_override_count": 0,
+  "frozen_artifacts_unchanged": true,
+  "test_or_external_results_used_for_selection": false,
+  "test_label_tuning_used": false,
+  "cipherspectrum_locked_test_used": false,
+  "automatic_retraining": false,
+  "exploratory_only": true
+}

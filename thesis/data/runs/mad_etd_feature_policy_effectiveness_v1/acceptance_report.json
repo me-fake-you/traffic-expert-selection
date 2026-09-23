@@ -1,0 +1,54 @@
+{
+  "accepted_as_offline_governance_evidence": true,
+  "blocked_field_mutation_invariance": 1.0,
+  "blocked_field_violation": 0,
+  "dataset_count": 5,
+  "dohbrw_capture_group_count": 1305,
+  "dohbrw_class_count": 2,
+  "fake_metric_count": 0,
+  "fusion_ownership_violation": 0,
+  "hikari_group_held_out_status": "blocked_single_collection_group",
+  "illegal_verdict_execution": 0,
+  "ood_override": 0,
+  "promoted_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "source_leakage_evidence": [
+    {
+      "all_numeric_source_auc": 0.9446995930203301,
+      "dataset": "USTC-TFC2016",
+      "group_status": "available",
+      "safe_common_source_auc": 0.8954724298007246,
+      "source_leakage_reduced": true
+    },
+    {
+      "all_numeric_source_auc": 0.9987583590534979,
+      "dataset": "NF-IoT",
+      "group_status": "available",
+      "safe_common_source_auc": 0.9992592592592592,
+      "source_leakage_reduced": false
+    },
+    {
+      "all_numeric_source_auc": 0.9090145533001769,
+      "dataset": "CICIDS2017",
+      "group_status": "available",
+      "safe_common_source_auc": 0.8887519406034734,
+      "source_leakage_reduced": true
+    },
+    {
+      "all_numeric_source_auc": "not_available",
+      "dataset": "HIKARI-2021",
+      "group_status": "blocked_single_collection_group",
+      "safe_common_source_auc": "not_available",
+      "source_leakage_reduced": false
+    },
+    {
+      "all_numeric_source_auc": "not_available",
+      "dataset": "DoHBrw-2020",
+      "group_status": "available",
+      "safe_common_source_auc": "not_available",
+      "source_leakage_reduced": false
+    }
+  ],
+  "status": "completed_feature_policy_effectiveness_with_real_results",
+  "test_used_for_selection": false
+}

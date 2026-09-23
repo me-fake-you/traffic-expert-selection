@@ -1,0 +1,17 @@
+case_id,expected_admitted,actual_admitted,passed,reason_codes,audit_event_count
+valid_evidence,True,True,True,EVIDENCE_ADMISSION_ACCEPTED,1
+final_verdict_injection,False,False,True,ILLEGAL_FINAL_OR_OOD_OUTPUT|AGENT_EVIDENCE_SCHEMA_INVALID,1
+final_confidence_injection,False,False,True,ILLEGAL_FINAL_OR_OOD_OUTPUT|AGENT_EVIDENCE_SCHEMA_INVALID,1
+artifact_hash_mismatch,False,False,True,ARTIFACT_HASH_MISMATCH,1
+feature_policy_hash_mismatch,False,False,True,FEATURE_POLICY_HASH_MISMATCH,1
+stale_evidence,False,False,True,STALE_EVIDENCE_REJECTED,1
+llm_evidence_injection,False,False,True,SOURCE_KIND_MISMATCH|FORBIDDEN_ADVISORY_SOURCE,1
+schema_corruption,False,False,True,AGENT_EVIDENCE_SCHEMA_INVALID,1
+unsupported_evidence,False,False,True,EVIDENCE_UNSUPPORTED_OR_ABSTAINED,1
+ood_override_injection,False,False,True,ILLEGAL_FINAL_OR_OOD_OUTPUT|AGENT_EVIDENCE_SCHEMA_INVALID,1
+rag_evidence_injection,False,False,True,SOURCE_KIND_MISMATCH|FORBIDDEN_ADVISORY_SOURCE,1
+memory_evidence_injection,False,False,True,SOURCE_KIND_MISMATCH|FORBIDDEN_ADVISORY_SOURCE,1
+replayed_evidence,False,False,True,EVIDENCE_REPLAY_REJECTED,2
+request_nonexistent_agent,False,False,True,INVALID_OR_UNSUPPORTED_AGENT,1
+request_over_budget,False,False,True,BUDGET_EXCEEDED,1
+fallback_identity,False,False,True,FALLBACK_IDENTIFIED_AS_RULE_PLANNER,1

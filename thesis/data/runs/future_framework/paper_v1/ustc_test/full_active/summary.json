@@ -1,0 +1,99 @@
+{
+  "sample_count": 93822,
+  "verdict_rates": {
+    "benign": 0.07955490183539042,
+    "malicious": 0.05865362068597983,
+    "suspicious": 0.4524738334292597,
+    "unknown": 0.4093176440493701
+  },
+  "coverage": 0.13820852252137025,
+  "alert_rate": 0.5111274541152395,
+  "human_review_rate": 0.8617914774786297,
+  "average_agent_calls": 2.5340538466457763,
+  "latency_ms": {
+    "mean": 26.502518585184912,
+    "p50": 20.337499969173223,
+    "p95": 41.145800027879886
+  },
+  "verdict_invariance_rate": 0.9998827567095138,
+  "mean_uncertainty_delta": 3.4519240693580267e-05,
+  "mean_conflict_delta": -3.802429351454564e-05,
+  "memory_match_rate": 1.0,
+  "memory_top1_relevance": 0.8413271940483042,
+  "memory_topk_relevance": 0.9349939246658566,
+  "deliberation_trigger_rate": 1.0,
+  "supplemental_dispatch_rate": 0.0030483255526422373,
+  "compliance_failure_count": 0,
+  "audit_completion_rate": 1.0,
+  "blocked_field_violation_count": 0,
+  "ood_signature_invariance_rate": 1.0,
+  "classification": {
+    "labeled_count": 93822,
+    "covered_labeled_count": 12967,
+    "labeled_coverage": 0.13820852252137025,
+    "selective_accuracy": 1.0,
+    "selective_macro_f1": 1.0,
+    "confusion": {
+      "tp": 5503,
+      "fp": 0,
+      "tn": 7464,
+      "fn": 0
+    }
+  },
+  "grouped_bootstrap_95ci": {
+    "coverage": {
+      "low": 0.09635350012803023,
+      "high": 0.17677599322585227
+    },
+    "alert_rate": {
+      "low": 0.37064644429946436,
+      "high": 0.7707447156706472
+    },
+    "human_review_rate": {
+      "low": 0.8232240067741478,
+      "high": 0.9036464998719698
+    },
+    "average_agent_calls": {
+      "low": 2.400546262768596,
+      "high": 2.781519424518975
+    },
+    "average_latency_ms": {
+      "low": 23.901073913187194,
+      "high": 29.45893299769862
+    },
+    "verdict_invariance_rate": {
+      "low": 0.999687304478737,
+      "high": 1.0
+    },
+    "audit_completion_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "blocked_field_violation_rate": {
+      "low": 0.0,
+      "high": 0.0
+    },
+    "ood_signature_invariance_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "uncertainty_delta": {
+      "low": 0.0,
+      "high": 9.206502146919187e-05
+    },
+    "conflict_delta": {
+      "low": -0.00010141323494206609,
+      "high": 0.0
+    }
+  },
+  "feature_flags": {
+    "schema_version": "1.0",
+    "memory": true,
+    "planner_executor": true,
+    "deliberation": true,
+    "reflection": true,
+    "audit_critic": true,
+    "learning_queue": false,
+    "shadow_mode": false
+  }
+}

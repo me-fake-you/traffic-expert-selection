@@ -1,0 +1,5 @@
+result_id,status,reason,positive_subresult
+learned_tls_clean_superiority,not_supported,records-only and robust TLS candidates did not beat the safe HGB clean-classification reference,harmful flips and exact stability improved under predefined perturbations
+combined_ood_gate,not_accepted,combined AUROC 0.9604 is below the preregistered 0.97 gate,temporal-view domain-origin OOD AUROC is 0.9972
+faithful_external_reproduction,count_zero,official-code adapters use MAD-ETD safe-input and resource-bounded protocols,official code participates in auditable adapted same-query comparisons
+ustc_full_fusion_three_seed_promotion,not_promoted,"all three full-Fusion runs miss the preregistered gain, grouped-CI, malicious-recall, and worst-group gates","seed 43 and seed 44 have small positive Macro-F1 point estimates, but both grouped intervals include zero"

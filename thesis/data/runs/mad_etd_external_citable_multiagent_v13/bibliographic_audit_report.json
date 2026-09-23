@@ -1,0 +1,28 @@
+{
+  "all_selected_identities_directly_verifiable": true,
+  "audit_completion": 1.0,
+  "bibliographic_record_count": 6,
+  "blocked_field_violation": 0,
+  "fake_metric_count": 0,
+  "fusion_ownership_violation": 0,
+  "illegal_verdict_execution_count": 0,
+  "jisa_2021_status": "blocked_original_metric_table_not_directly_verified",
+  "new_mad_etd_detector_created": false,
+  "ood_override_count": 0,
+  "promoted_runtime_created": false,
+  "runtime_hash_before": "c8d87e022b55ec30ffa98a51e021985720becffe13a8083887aaa91421773a59",
+  "runtime_safe_v3_0_remains_default": true,
+  "secondary_metric_copy_used": false,
+  "selected_citable_system_count": 5,
+  "selected_citable_systems": [
+    "Continual-Federated-IDS",
+    "ZTA-FL",
+    "MARL-NIDS",
+    "MA-IDS",
+    "MAS-LSTM"
+  ],
+  "status": "audited_v13_five_citable_systems",
+  "supervised_metrics_generated": false,
+  "test_or_acceptance_used_for_selection": false,
+  "training_started": false
+}

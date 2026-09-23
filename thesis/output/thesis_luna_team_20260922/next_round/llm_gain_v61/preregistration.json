@@ -1,0 +1,105 @@
+{
+  "protocol": "llm-direct-vs-atomic-gain-v61",
+  "sealed_unix": 1790136489.5201604,
+  "sampling": "Every fixed fold: 32 lowest first confidence plus 32 SHA256-ranked remaining cases; no labels, delta or second probabilities used for selection.",
+  "rows_per_fold": 64,
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "quota": 6,
+  "evidence_calls_per_case_simulated": 1.09375,
+  "model": "nvidia/nemotron-3-ultra-550b-a55b",
+  "temperature": 0,
+  "max_tokens": 6000,
+  "max_inference_requests": 10,
+  "automatic_retries": 0,
+  "max_concurrency": 2,
+  "timeout_seconds": 90,
+  "schedule": [
+    {
+      "fold": 0,
+      "arm": "direct",
+      "prompt_path": ".\\output\\thesis_luna_team_20260922\\next_round\\llm_gain_v61\\prompts\\fold_0_direct.json",
+      "prompt_sha256": "134d366697f31d3c7f99e025ca29cf746c2c60e6f6feabf5149bb03f48faf377"
+    },
+    {
+      "fold": 0,
+      "arm": "atomic",
+      "prompt_path": ".\\output\\thesis_luna_team_20260922\\next_round\\llm_gain_v61\\prompts\\fold_0_atomic.json",
+      "prompt_sha256": "e1164538471d27f50db53387c9a68a2d8fc27070f028d6571547c31bb9f99863"
+    },
+    {
+      "fold": 1,
+      "arm": "atomic",
+      "prompt_path": ".\\output\\thesis_luna_team_20260922\\next_round\\llm_gain_v61\\prompts\\fold_1_atomic.json",
+      "prompt_sha256": "33433969bc4880a89d8bd83f7ba015e4c0c40f68173d2750038fd4cfdaec7ae8"
+    },
+    {
+      "fold": 1,
+      "arm": "direct",
+      "prompt_path": ".\\output\\thesis_luna_team_20260922\\next_round\\llm_gain_v61\\prompts\\fold_1_direct.json",
+      "prompt_sha256": "f096c1f78d7337d06c72f97c7c9d35c9be1c44d526f09150a067ee598f3693f5"
+    },
+    {
+      "fold": 2,
+      "arm": "direct",
+      "prompt_path": ".\\output\\thesis_luna_team_20260922\\next_round\\llm_gain_v61\\prompts\\fold_2_direct.json",
+      "prompt_sha256": "3d00c2c50e34dd50531b84e1e3bc4f459b4d1490d00611c4716111c678913f6a"
+    },
+    {
+      "fold": 2,
+      "arm": "atomic",
+      "prompt_path": ".\\output\\thesis_luna_team_20260922\\next_round\\llm_gain_v61\\prompts\\fold_2_atomic.json",
+      "prompt_sha256": "2388df401d011d9f89fc0acc94933fbb6179e49ee8f0d753ac18acb7d5a9601e"
+    },
+    {
+      "fold": 3,
+      "arm": "atomic",
+      "prompt_path": ".\\output\\thesis_luna_team_20260922\\next_round\\llm_gain_v61\\prompts\\fold_3_atomic.json",
+      "prompt_sha256": "8150dd5aeaba679e54bcccd29a82e46781ef64182c7e1fbcd43fccea93e41c86"
+    },
+    {
+      "fold": 3,
+      "arm": "direct",
+      "prompt_path": ".\\output\\thesis_luna_team_20260922\\next_round\\llm_gain_v61\\prompts\\fold_3_direct.json",
+      "prompt_sha256": "22e95f8a877f8a07624f8df91b92fcd3478e7c1fcef17d00d526a7e979ef6926"
+    },
+    {
+      "fold": 4,
+      "arm": "direct",
+      "prompt_path": ".\\output\\thesis_luna_team_20260922\\next_round\\llm_gain_v61\\prompts\\fold_4_direct.json",
+      "prompt_sha256": "0c27da40ebdb80d65e0a6d841a0795718eaec225d828a1e87542fcbb975b26ff"
+    },
+    {
+      "fold": 4,
+      "arm": "atomic",
+      "prompt_path": ".\\output\\thesis_luna_team_20260922\\next_round\\llm_gain_v61\\prompts\\fold_4_atomic.json",
+      "prompt_sha256": "3e449a0794fd9c93852eda4d4d8ba26709ff42676dce8863deca90d42e6def0f"
+    }
+  ],
+  "files": {
+    ".\\output\\thesis_luna_team_20260922\\next_round\\llm_gain_v61\\run_pilot.py": "0323b511a63706e96c04c790ce9ee146cbae67025ebdd3ca58689262e16ccefe",
+    ".\\output\\thesis_luna_team_20260922\\next_round\\gain_upgrade\\train_predictions.csv.gz": "b5a252f994e08e7d7cb6a38c2bf9a485609ddf67a261fe6032b634932edda400",
+    ".\\output\\thesis_luna_team_20260922\\next_round\\gain_upgrade\\selection_predictions.csv.gz": "51fc605d97336e90586ea56cc061f1d9ee2411f959129e3ca3bd6d78204d2c88",
+    ".\\output\\thesis_luna_team_20260922\\next_round\\llm_gain_v61\\results\\scorer_only_queries.csv": "b64dcc350e1793a7eaf14c38d5a13cc4585c79de75d1edd462a91532615f650d",
+    ".\\output\\thesis_luna_team_20260922\\next_round\\llm_gain_v61\\results\\training_cards.json": "f5ab5a8b623d3864f2b47bad54e31cb840e50df242e0412ef4c6279c3301453d",
+    ".\\output\\thesis_luna_team_20260922\\next_round\\llm_gain_v61\\results\\baseline_decisions.json": "c299db84596b75ece70ea5bb345be543252106b6831bdb119d58a97ebd563e8d"
+  },
+  "prompt_invariance_to_scorer_labels_and_future_evidence": true,
+  "same_knowledge": true,
+  "same_model": true,
+  "same_downstream_rule": true,
+  "public_traffic_dataset_derivatives_only": true,
+  "user_data_labels_sent": false,
+  "not_streaming": "Batch allocation with fixed K; atomic and direct answer different intermediate questions but share final task.",
+  "primary_outcome": "C-D on selected queries; probability metrics only for atomic. No CI.",
+  "invalid_response_fallback": "same_card_rule; raw model status and fallback reported separately",
+  "scope": "Development stress/mixed slice of already exposed data, overlapping folds, not a representative or blind test.",
+  "api_timing_scope": "Actual model request wall time including network, excluding cached downstream expert inference. Not end-to-end detection latency.",
+  "jev_used": false,
+  "fine_tuning": false
+}

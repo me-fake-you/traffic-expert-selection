@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "strategies": {
+    "off": {
+      "schema_version": "1.0",
+      "mode": "off",
+      "metrics_status": "skipped_no_labels",
+      "sample_count": 1000,
+      "labeled_sample_count": 0,
+      "accuracy": null,
+      "macro_f1": null,
+      "precision": null,
+      "recall": null,
+      "PR_AUC": null,
+      "Brier_score": null,
+      "ECE": null,
+      "coverage": 0.273,
+      "unknown_rate": 0.066,
+      "suspicious_rate": 0.661,
+      "average_agent_calls": 2.897,
+      "average_latency_ms": 12.042900700413156,
+      "selective_error_rate": null,
+      "benign_false_positive_rate": null,
+      "malicious_detection_rate": null,
+      "confusion_on_covered": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      }
+    },
+    "soft": {
+      "schema_version": "1.0",
+      "mode": "soft",
+      "metrics_status": "skipped_no_labels",
+      "sample_count": 1000,
+      "labeled_sample_count": 0,
+      "accuracy": null,
+      "macro_f1": null,
+      "precision": null,
+      "recall": null,
+      "PR_AUC": null,
+      "Brier_score": null,
+      "ECE": null,
+      "coverage": 0.0,
+      "unknown_rate": 0.974,
+      "suspicious_rate": 0.026,
+      "average_agent_calls": 2.897,
+      "average_latency_ms": 12.042900700413156,
+      "selective_error_rate": null,
+      "benign_false_positive_rate": null,
+      "malicious_detection_rate": null,
+      "confusion_on_covered": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      }
+    },
+    "hybrid": {
+      "schema_version": "1.0",
+      "mode": "hybrid",
+      "metrics_status": "skipped_no_labels",
+      "sample_count": 1000,
+      "labeled_sample_count": 0,
+      "accuracy": null,
+      "macro_f1": null,
+      "precision": null,
+      "recall": null,
+      "PR_AUC": null,
+      "Brier_score": null,
+      "ECE": null,
+      "coverage": 0.0,
+      "unknown_rate": 0.974,
+      "suspicious_rate": 0.026,
+      "average_agent_calls": 2.897,
+      "average_latency_ms": 12.042900700413156,
+      "selective_error_rate": null,
+      "benign_false_positive_rate": null,
+      "malicious_detection_rate": null,
+      "confusion_on_covered": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      }
+    },
+    "stats_gate_only": {
+      "schema_version": "1.0",
+      "mode": "stats_gate_only",
+      "metrics_status": "skipped_no_labels",
+      "sample_count": 1000,
+      "labeled_sample_count": 0,
+      "accuracy": null,
+      "macro_f1": null,
+      "precision": null,
+      "recall": null,
+      "PR_AUC": null,
+      "Brier_score": null,
+      "ECE": null,
+      "coverage": 0.097,
+      "unknown_rate": 0.008,
+      "suspicious_rate": 0.895,
+      "average_agent_calls": 2.897,
+      "average_latency_ms": 12.042900700413156,
+      "selective_error_rate": null,
+      "benign_false_positive_rate": null,
+      "malicious_detection_rate": null,
+      "confusion_on_covered": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      }
+    },
+    "temporal_gate_only": {
+      "schema_version": "1.0",
+      "mode": "temporal_gate_only",
+      "metrics_status": "skipped_no_labels",
+      "sample_count": 1000,
+      "labeled_sample_count": 0,
+      "accuracy": null,
+      "macro_f1": null,
+      "precision": null,
+      "recall": null,
+      "PR_AUC": null,
+      "Brier_score": null,
+      "ECE": null,
+      "coverage": 0.262,
+      "unknown_rate": 0.107,
+      "suspicious_rate": 0.631,
+      "average_agent_calls": 2.897,
+      "average_latency_ms": 12.042900700413156,
+      "selective_error_rate": null,
+      "benign_false_positive_rate": null,
+      "malicious_detection_rate": null,
+      "confusion_on_covered": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      }
+    }
+  },
+  "audit_summary": {
+    "schema_version": "1.0",
+    "sample_count": 1000,
+    "completed_chain_count": 1000,
+    "audit_chain_completion_rate": 1.0,
+    "blocked_field_violation_count": 0,
+    "policy_adjustment_count": 0,
+    "event_counts": {
+      "FLOW_VALIDATED": 1000,
+      "FIELD_POLICY_APPLIED": 1000,
+      "RELIABILITY_ASSESSED": 1000,
+      "ROUTING_DECISION": 2897,
+      "POLICY_GUARD_EVALUATION": 2897,
+      "AGENT_EVIDENCE": 2897,
+      "INTERIM_FUSION": 1897,
+      "FINAL_FUSION": 1000,
+      "REPORT_GENERATED": 1000
+    },
+    "actor_counts": {
+      "FeatureCapture": 1000,
+      "FieldAuditAgent": 1000,
+      "PseudoFeatureGuardAgent": 1000,
+      "CoordinatorAgent": 2897,
+      "PolicyGuard": 2897,
+      "StatsDetectorAgent": 1000,
+      "TemporalBehaviorAgent": 1000,
+      "FusionAgent": 2897,
+      "FamilyAttributionAgent": 897,
+      "ReporterAgent": 1000
+    }
+  },
+  "shift_distribution": {
+    "stats": {
+      "p05": 0.9732083728899901,
+      "p25": 0.9929145344663903,
+      "p50": 0.9978465742005697,
+      "p75": 0.9987727788454859,
+      "p95": 0.9999305346516313
+    },
+    "temporal": {
+      "p05": 0.9939762022806148,
+      "p25": 0.9971988101140308,
+      "p50": 0.9978681209717402,
+      "p75": 0.998661378284581,
+      "p95": 0.9997521070897373
+    },
+    "combined": {
+      "p05": 0.994447198810114,
+      "p25": 0.9976189268059432,
+      "p50": 0.9983328316391507,
+      "p75": 0.9990737953550837,
+      "p95": 0.9999536897677542
+    }
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "status": "PASS_WITH_CAVEATS",
+  "read_only": true,
+  "remote_calls_made": 0,
+  "original_files_modified": false,
+  "protocol": {
+    "name": "llm-direct-vs-atomic-gain-v61",
+    "rows": 320,
+    "fold_counts": {
+      "0": 64,
+      "1": 64,
+      "2": 64,
+      "3": 64,
+      "4": 64
+    },
+    "unique_sample_hashes": 303,
+    "quota": 6,
+    "same_model": true,
+    "same_downstream_rule": true,
+    "labels_sent": false,
+    "jev_used": false
+  },
+  "sealed_inputs": {
+    "files_hash_ok": true,
+    "prompt_hash_ok": true,
+    "selection_recomputed_from_p_temporal_and_sample_hash_only": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true
+    },
+    "sampling_strata_match": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true
+    },
+    "train_selection_groups_disjoint": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true
+    },
+    "case_ids_are_c00_to_c63_per_fold": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true
+    }
+  },
+  "prompt_isolation": {
+    "count": 10,
+    "common_state_equal_within_fold": true,
+    "case_schema_clean": true,
+    "hash_matches": true,
+    "state_hash_matches": true,
+    "common_state_contains_query_labels_or_p_stats": false
+  },
+  "response_validation": {
+    "valid_schema": true,
+    "valid_model_matches_requested": true,
+    "receipt_response_hashes": true,
+    "failure_transparent": true,
+    "valid_counts": {
+      "direct": 5,
+      "atomic": 2
+    },
+    "invalid_receipts": [
+      {
+        "fold": 1,
+        "arm": "atomic",
+        "status": "invalid_or_transport_failure",
+        "error_type": "ReadTimeout"
+      },
+      {
+        "fold": 2,
+        "arm": "atomic",
+        "status": "invalid_or_transport_failure",
+        "error_type": "ReadTimeout"
+      },
+      {
+        "fold": 3,
+        "arm": "atomic",
+        "status": "invalid_or_transport_failure",
+        "error_type": "ReadTimeout"
+      }
+    ]
+  },
+  "latency_and_tokens_valid_only": {
+    "direct": {
+      "valid_count": 5,
+      "wall_seconds": {
+        "min": 3.065908199999967,
+        "median": 10.600844899999856,
+        "max": 18.31091749999996,
+        "mean": 9.893037479999975
+      },
+      "tokens": {
+        "prompt_total": 15324,
+        "completion_total": 160,
+        "total": 15484
+      },
+      "folds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "atomic": {
+      "valid_count": 2,
+      "wall_seconds": {
+        "min": 48.62627489999977,
+        "median": 62.54345134999994,
+        "max": 76.46062780000011,
+        "mean": 62.54345134999994
+      },
+      "tokens": {
+        "prompt_total": 6424,
+        "completion_total": 7757,
+        "total": 14181
+      },
+      "folds": [
+        0,
+        4
+      ]
+    }
+  },
+  "score_recomputation": {
+    "policy_metrics_recomputed": true,
+    "fallback_statuses_match": true
+  },
+  "valid_same_fold_pairs_only": [
+    {
+      "fold": 0,
+      "arm": "direct",
+      "rows": 64,
+      "C": 0,
+      "D": 0,
+      "net": 0,
+      "simulated_second_calls": 6,
+      "errors": 1
+    },
+    {
+      "fold": 0,
+      "arm": "atomic",
+      "rows": 64,
+      "C": 0,
+      "D": 0,
+      "net": 0,
+      "simulated_second_calls": 6,
+      "errors": 1
+    },
+    {
+      "fold": 4,
+      "arm": "direct",
+      "rows": 64,
+      "C": 0,
+      "D": 0,
+      "net": 0,
+      "simulated_second_calls": 6,
+      "errors": 1
+    },
+    {
+      "fold": 4,
+      "arm": "atomic",
+      "rows": 64,
+      "C": 0,
+      "D": 0,
+      "net": 0,
+      "simulated_second_calls": 6,
+      "errors": 1
+    }
+  ],
+  "reported_development_totals": [
+    {
+      "arm": "all_average",
+      "rows": 320,
+      "C": 35,
+      "D": 2,
+      "net": 33,
+      "simulated_second_calls": 320,
+      "errors": 16
+    },
+    {
+      "arm": "atomic",
+      "rows": 320,
+      "C": 6,
+      "D": 1,
+      "net": 5,
+      "simulated_second_calls": 30,
+      "errors": 44
+    },
+    {
+      "arm": "confidence",
+      "rows": 320,
+      "C": 7,
+      "D": 2,
+      "net": 5,
+      "simulated_second_calls": 30,
+      "errors": 44
+    },
+    {
+      "arm": "direct",
+      "rows": 320,
+      "C": 6,
+      "D": 0,
+      "net": 6,
+      "simulated_second_calls": 30,
+      "errors": 43
+    },
+    {
+      "arm": "first_only",
+      "rows": 320,
+      "C": 0,
+      "D": 0,
+      "net": 0,
+      "simulated_second_calls": 0,
+      "errors": 49
+    },
+    {
+      "arm": "hash_random",
+      "rows": 320,
+      "C": 0,
+      "D": 0,
+      "net": 0,
+      "simulated_second_calls": 30,
+      "errors": 49
+    },
+    {
+      "arm": "same_card_rule",
+      "rows": 320,
+      "C": 6,
+      "D": 1,
+      "net": 5,
+      "simulated_second_calls": 30,
+      "errors": 44
+    }
+  ],
+  "issues": [],
+  "caveats": [
+    "Atomic+fallback net=5 is a mixed policy result, not pure atomic model effect; valid atomic responses exist only on folds 0 and 4.",
+    "The only same-fold direct/atomic valid pairs are folds 0 and 4; both have C=0, D=0, net=0, so they provide no detectable paired net difference.",
+    "run_pilot.py uses assert for live validation; running it with Python -O would disable those checks. The executed bundled interpreter was not optimized."
+  ],
+  "audit_source_sha256": {
+    "run_pilot.py": "0323b511a63706e96c04c790ce9ee146cbae67025ebdd3ca58689262e16ccefe",
+    "preregistration.json": "5af2ad5ff950c9cdaca438416dc52f9a2e897a97d385792ee5d2bd83ae2be91f",
+    "scorer_only_queries.csv": "b64dcc350e1793a7eaf14c38d5a13cc4585c79de75d1edd462a91532615f650d",
+    "selection_predictions.csv.gz": "51fc605d97336e90586ea56cc061f1d9ee2411f959129e3ca3bd6d78204d2c88",
+    "train_predictions.csv.gz": "b5a252f994e08e7d7cb6a38c2bf9a485609ddf67a261fe6032b634932edda400"
+  }
+}

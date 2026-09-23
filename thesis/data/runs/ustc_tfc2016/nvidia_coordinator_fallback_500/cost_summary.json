@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "mode": "nvidia_coordinator",
+  "sample_count": 500,
+  "total_agent_calls": 1000,
+  "average_agent_calls": 2.0,
+  "total_latency_ms": 510.5301995645277,
+  "average_latency_ms": 1.0210603991290554,
+  "llm_call_count": 0,
+  "llm_fallback_count": 0,
+  "llm_replay_count": 0
+}

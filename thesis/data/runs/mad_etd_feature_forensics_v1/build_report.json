@@ -1,0 +1,9 @@
+{
+  "dataset_count": 8,
+  "fake_metric_count": 0,
+  "feature_record_count": 355,
+  "inventory_sha256": "599f569f29cb9d7b1de6649f7b556405efe0ef9bcfef29d1c9b05d6a22372cff",
+  "new_detector_trained": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "status": "inventory_built"
+}

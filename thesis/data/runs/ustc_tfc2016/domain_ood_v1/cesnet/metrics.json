@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "strategies": {
+    "off": {
+      "schema_version": "1.0",
+      "mode": "off",
+      "metrics_status": "skipped_no_labels",
+      "sample_count": 499997,
+      "labeled_sample_count": 0,
+      "accuracy": null,
+      "macro_f1": null,
+      "precision": null,
+      "recall": null,
+      "PR_AUC": null,
+      "Brier_score": null,
+      "ECE": null,
+      "coverage": 0.2888097328583972,
+      "unknown_rate": 0.061372368234209405,
+      "suspicious_rate": 0.6498178989073935,
+      "average_agent_calls": 2.9069914419486516,
+      "average_latency_ms": 7.9671907853695325,
+      "selective_error_rate": null,
+      "benign_false_positive_rate": null,
+      "malicious_detection_rate": null,
+      "confusion_on_covered": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      }
+    },
+    "soft": {
+      "schema_version": "1.0",
+      "mode": "soft",
+      "metrics_status": "skipped_no_labels",
+      "sample_count": 499997,
+      "labeled_sample_count": 0,
+      "accuracy": null,
+      "macro_f1": null,
+      "precision": null,
+      "recall": null,
+      "PR_AUC": null,
+      "Brier_score": null,
+      "ECE": null,
+      "coverage": 0.0006880041280247682,
+      "unknown_rate": 0.9631797790786745,
+      "suspicious_rate": 0.03613221679330076,
+      "average_agent_calls": 2.9069914419486516,
+      "average_latency_ms": 7.9671907853695325,
+      "selective_error_rate": null,
+      "benign_false_positive_rate": null,
+      "malicious_detection_rate": null,
+      "confusion_on_covered": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      }
+    },
+    "hybrid": {
+      "schema_version": "1.0",
+      "mode": "hybrid",
+      "metrics_status": "skipped_no_labels",
+      "sample_count": 499997,
+      "labeled_sample_count": 0,
+      "accuracy": null,
+      "macro_f1": null,
+      "precision": null,
+      "recall": null,
+      "PR_AUC": null,
+      "Brier_score": null,
+      "ECE": null,
+      "coverage": 0.0006880041280247682,
+      "unknown_rate": 0.9633177799066794,
+      "suspicious_rate": 0.03599421596529579,
+      "average_agent_calls": 2.9069914419486516,
+      "average_latency_ms": 7.9671907853695325,
+      "selective_error_rate": null,
+      "benign_false_positive_rate": null,
+      "malicious_detection_rate": null,
+      "confusion_on_covered": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      }
+    },
+    "stats_gate_only": {
+      "schema_version": "1.0",
+      "mode": "stats_gate_only",
+      "metrics_status": "skipped_no_labels",
+      "sample_count": 499997,
+      "labeled_sample_count": 0,
+      "accuracy": null,
+      "macro_f1": null,
+      "precision": null,
+      "recall": null,
+      "PR_AUC": null,
+      "Brier_score": null,
+      "ECE": null,
+      "coverage": 0.09829858979153874,
+      "unknown_rate": 0.014602087612525676,
+      "suspicious_rate": 0.8870993225959356,
+      "average_agent_calls": 2.9069914419486516,
+      "average_latency_ms": 7.9671907853695325,
+      "selective_error_rate": null,
+      "benign_false_positive_rate": null,
+      "malicious_detection_rate": null,
+      "confusion_on_covered": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      }
+    },
+    "temporal_gate_only": {
+      "schema_version": "1.0",
+      "mode": "temporal_gate_only",
+      "metrics_status": "skipped_no_labels",
+      "sample_count": 499997,
+      "labeled_sample_count": 0,
+      "accuracy": null,
+      "macro_f1": null,
+      "precision": null,
+      "recall": null,
+      "PR_AUC": null,
+      "Brier_score": null,
+      "ECE": null,
+      "coverage": 0.2789836739020434,
+      "unknown_rate": 0.09412656475938856,
+      "suspicious_rate": 0.626889761338568,
+      "average_agent_calls": 2.9069914419486516,
+      "average_latency_ms": 7.9671907853695325,
+      "selective_error_rate": null,
+      "benign_false_positive_rate": null,
+      "malicious_detection_rate": null,
+      "confusion_on_covered": {
+        "tp": 0,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      }
+    }
+  },
+  "audit_summary": {
+    "schema_version": "1.0",
+    "sample_count": 499997,
+    "completed_chain_count": 499997,
+    "audit_chain_completion_rate": 1.0,
+    "blocked_field_violation_count": 0,
+    "policy_adjustment_count": 0,
+    "event_counts": {
+      "FLOW_VALIDATED": 499997,
+      "FIELD_POLICY_APPLIED": 499997,
+      "RELIABILITY_ASSESSED": 499997,
+      "ROUTING_DECISION": 1453487,
+      "POLICY_GUARD_EVALUATION": 1453487,
+      "AGENT_EVIDENCE": 1453487,
+      "INTERIM_FUSION": 953490,
+      "FINAL_FUSION": 499997,
+      "REPORT_GENERATED": 499997
+    },
+    "actor_counts": {
+      "FeatureCapture": 499997,
+      "FieldAuditAgent": 499997,
+      "PseudoFeatureGuardAgent": 499997,
+      "CoordinatorAgent": 1453487,
+      "PolicyGuard": 1453487,
+      "StatsDetectorAgent": 499997,
+      "TemporalBehaviorAgent": 499997,
+      "FusionAgent": 1453487,
+      "FamilyAttributionAgent": 453493,
+      "ReporterAgent": 499997
+    }
+  },
+  "shift_distribution": {
+    "stats": {
+      "p05": 0.812814041262417,
+      "p25": 0.9930997753953736,
+      "p50": 0.9978928844328154,
+      "p75": 0.9988653993099775,
+      "p95": 0.9999536897677542
+    },
+    "temporal": {
+      "p05": 0.993554784333168,
+      "p25": 0.9972731779871096,
+      "p50": 0.9980168567178979,
+      "p75": 0.9988101140307387,
+      "p95": 0.9997521070897373
+    },
+    "combined": {
+      "p05": 0.9937035200793257,
+      "p25": 0.9977193852255826,
+      "p50": 0.9984486072197652,
+      "p75": 0.9996033713435796,
+      "p95": 0.9999536897677542
+    }
+  }
+}

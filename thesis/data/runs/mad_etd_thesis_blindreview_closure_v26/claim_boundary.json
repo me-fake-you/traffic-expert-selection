@@ -1,0 +1,13 @@
+{
+  "forbidden": [
+    "MAD-ETD universally outperforms MoE, DCS, or cascade methods.",
+    "TLS classification performance is established by the branch test.",
+    "The alert projection replaces the four-state Fusion runtime.",
+    "A new default or promoted runtime was created."
+  ],
+  "supported": [
+    "A validation-trained learned gate is compared on frozen held-out experts.",
+    "TLS dispatch occurs only when capability and escalation conditions both hold.",
+    "The frozen Fusion ranking is reported across multiple coverage points."
+  ]
+}

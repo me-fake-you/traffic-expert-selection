@@ -1,0 +1,4 @@
+method,aggregation_scope,folds,mean_aurc,std_aurc,mean_base_error_rate,mean_rows,mean_tie_count,max_tie_size_seen
+risk_disagreement,descriptive_mean_across_folds_no_CI,5,0.022795113522903497,0.050803367677331325,0.08345,4000.0,78.0,1912
+risk_hgb,descriptive_mean_across_folds_no_CI,5,0.022902749270052262,0.05018165556509598,0.08345,4000.0,23.2,1997
+risk_pavg,descriptive_mean_across_folds_no_CI,5,0.022785949024517638,0.05080847988344742,0.08345,4000.0,78.0,1912

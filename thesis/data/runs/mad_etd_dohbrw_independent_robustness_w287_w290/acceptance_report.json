@@ -1,0 +1,133 @@
+{
+  "blocked_field_violation": 0,
+  "candidate_default_enabled": false,
+  "clean_macro_f1_drop": 0.010400583034863686,
+  "clean_metrics": {
+    "hgb": {
+      "accuracy": 0.9956896551724138,
+      "coverage": 0.9956896551724138,
+      "ece": 0.0026704822872192784,
+      "macro_f1": 0.9982817869415808,
+      "macro_precision": 1.0,
+      "macro_recall": 0.9965753424657534,
+      "malicious_recall": 0.9931506849315068,
+      "sample_count": 232,
+      "selective_error": 0.0,
+      "weighted_f1": 0.9978374214954379
+    },
+    "records_only": {
+      "accuracy": 0.9870689655172413,
+      "coverage": 0.9956896551724138,
+      "ece": 0.01472384244976081,
+      "macro_f1": 0.9878812039067171,
+      "macro_precision": 0.9885057471264368,
+      "macro_recall": 0.9873367314431347,
+      "malicious_recall": 0.9863013698630136,
+      "sample_count": 232,
+      "selective_error": 0.008658008658008658,
+      "weighted_f1": 0.9892317843470132
+    }
+  },
+  "coverage_drop": 0.0,
+  "ece_increase": 0.012053360162541531,
+  "exact_stability_delta": 0.07122093023255816,
+  "experiment": "mad_etd_dohbrw_independent_robustness_w287_w290",
+  "failed_gates": [
+    "clean_macro_f1_tradeoff",
+    "ece_tradeoff"
+  ],
+  "fake_metric_count": 0,
+  "fusion_ownership_violation": 0,
+  "gates": {
+    "blocked_field_violation_zero": true,
+    "clean_macro_f1_tradeoff": false,
+    "coverage_tradeoff": true,
+    "ece_tradeoff": false,
+    "exact_stability_ci_lower_positive": true,
+    "exact_stability_strictly_improved": true,
+    "fake_metric_count_zero": true,
+    "frozen_default_hashes_unchanged": true,
+    "fusion_ownership_violation_zero": true,
+    "harmful_flip_ci_upper_nonpositive": true,
+    "harmful_flip_not_worse": true,
+    "illegal_verdict_execution_zero": true,
+    "independent_from_w282_w285": true,
+    "malicious_recall_tradeoff": true,
+    "minimum_benign_groups": true,
+    "minimum_malicious_groups": true,
+    "minimum_malicious_tools": true,
+    "ood_override_zero": true,
+    "tests_passed": true,
+    "w71_locked_test_not_used": true,
+    "wrong_binary_ci_upper_nonpositive": true,
+    "wrong_binary_strictly_improved": true
+  },
+  "grouped_bootstrap": {
+    "clean_macro_f1_delta_ci95": [
+      -0.030548272738020556,
+      0.0018564602114788415
+    ],
+    "clean_macro_f1_delta_mean": -0.011039462625063955,
+    "exact_stability_delta_ci95": [
+      0.03492356198808636,
+      0.10823292100357314
+    ],
+    "exact_stability_delta_mean": 0.07110697310227589,
+    "group_counts": {
+      "benign": 4,
+      "malicious": 48
+    },
+    "harmful_flip_delta_ci95": [
+      -0.13365481805929919,
+      -0.07479995398302486
+    ],
+    "harmful_flip_delta_mean": -0.10406125726150327,
+    "iterations": 1000,
+    "method": "capture_label_stratified_grouped_bootstrap",
+    "perturbed_coverage_delta_ci95": [
+      -0.06569395203336802,
+      -0.016162324217065035
+    ],
+    "perturbed_coverage_delta_mean": -0.03933009544910235,
+    "seed": 42,
+    "wrong_binary_delta_ci95": [
+      -0.12695491392278122,
+      -0.06446222946725862
+    ],
+    "wrong_binary_delta_mean": -0.09677630319479252
+  },
+  "harmful_flip_delta": -0.10465116279069767,
+  "historical_w71_locked_test_reopened": false,
+  "illegal_verdict_execution_count": 0,
+  "malicious_recall_drop": 0.006849315068493178,
+  "ood_override_count": 0,
+  "optional_profile_created": false,
+  "production_ready": false,
+  "promoted_general_runtime_created": false,
+  "robustness_metrics": {
+    "hgb": {
+      "exact_stability": 0.8706395348837209,
+      "harmful_flip_rate": 0.11482558139534883,
+      "perturbed_coverage": 0.9854651162790697,
+      "perturbed_wrong_binary_rate": 0.11482558139534883,
+      "sample_count": 688,
+      "unknown_fallback_rate": 0.014534883720930232
+    },
+    "records_only": {
+      "exact_stability": 0.9418604651162791,
+      "harmful_flip_rate": 0.010174418604651164,
+      "perturbed_coverage": 0.9462209302325582,
+      "perturbed_wrong_binary_rate": 0.01744186046511628,
+      "sample_count": 688,
+      "unknown_fallback_rate": 0.05377906976744186
+    }
+  },
+  "runtime_safe_v3_0_remains_default": true,
+  "schema_version": "1.0",
+  "status": "not_promoted_independent_robustness_w290",
+  "test_count": 1423,
+  "tests_passed": true,
+  "training_performed": false,
+  "w285_acceptance_used_for_tuning": false,
+  "wrong_binary_delta": -0.09738372093023255
+}

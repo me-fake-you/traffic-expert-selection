@@ -1,0 +1,8 @@
+method,confidence_threshold,average_evidence_inference,accuracy,macro_f1,malicious_recall
+static_two_view_average,not_applicable,2.0,0.92765,0.9273377848121251,0.9932
+fixed_confidence_cascade,0.8,1.104675,0.886175,0.8848436048711962,0.9937
+fixed_confidence_cascade,0.9,1.3229250000000001,0.92905,0.9287517484064869,0.99375
+fixed_confidence_cascade,0.95,1.404125,0.9286,0.9282989243151563,0.9934
+fixed_confidence_cascade,0.975,1.4941,0.92765,0.9273377848121251,0.9932
+mad_etd_capability_aware_routing,frozen_policy,1.30295,0.92595,0.9256473520075055,0.98975
+mad_etd_rule_staged_routing,frozen_policy,1.30295,0.92595,0.9256473520075055,0.98975

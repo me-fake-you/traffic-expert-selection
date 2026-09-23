@@ -1,0 +1,152 @@
+[
+  {
+    "fold": 0,
+    "representation": "probability_only_3d",
+    "fit_rows": 24000,
+    "features": 3,
+    "fit_seconds": 0.4783006000000114,
+    "n_iter": 100,
+    "n_trees_per_iteration": 3,
+    "model_bytes": 282736,
+    "classes": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "fold": 0,
+    "representation": "post_first_temporal_43d",
+    "fit_rows": 24000,
+    "features": 43,
+    "fit_seconds": 1.3004340999998476,
+    "n_iter": 100,
+    "n_trees_per_iteration": 3,
+    "model_bytes": 345862,
+    "classes": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "fold": 1,
+    "representation": "probability_only_3d",
+    "fit_rows": 24000,
+    "features": 3,
+    "fit_seconds": 0.31557889999999134,
+    "n_iter": 100,
+    "n_trees_per_iteration": 3,
+    "model_bytes": 282512,
+    "classes": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "fold": 1,
+    "representation": "post_first_temporal_43d",
+    "fit_rows": 24000,
+    "features": 43,
+    "fit_seconds": 1.6035233000000062,
+    "n_iter": 100,
+    "n_trees_per_iteration": 3,
+    "model_bytes": 344070,
+    "classes": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "fold": 2,
+    "representation": "probability_only_3d",
+    "fit_rows": 24000,
+    "features": 3,
+    "fit_seconds": 0.3561293000000205,
+    "n_iter": 100,
+    "n_trees_per_iteration": 3,
+    "model_bytes": 282736,
+    "classes": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "fold": 2,
+    "representation": "post_first_temporal_43d",
+    "fit_rows": 24000,
+    "features": 43,
+    "fit_seconds": 1.3642479000000094,
+    "n_iter": 100,
+    "n_trees_per_iteration": 3,
+    "model_bytes": 348214,
+    "classes": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "fold": 3,
+    "representation": "probability_only_3d",
+    "fit_rows": 24000,
+    "features": 3,
+    "fit_seconds": 0.2871423000001414,
+    "n_iter": 100,
+    "n_trees_per_iteration": 3,
+    "model_bytes": 281392,
+    "classes": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "fold": 3,
+    "representation": "post_first_temporal_43d",
+    "fit_rows": 24000,
+    "features": 43,
+    "fit_seconds": 1.4134400999998888,
+    "n_iter": 100,
+    "n_trees_per_iteration": 3,
+    "model_bytes": 348102,
+    "classes": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "fold": 4,
+    "representation": "probability_only_3d",
+    "fit_rows": 24000,
+    "features": 3,
+    "fit_seconds": 0.36515540000004876,
+    "n_iter": 100,
+    "n_trees_per_iteration": 3,
+    "model_bytes": 282624,
+    "classes": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "fold": 4,
+    "representation": "post_first_temporal_43d",
+    "fit_rows": 24000,
+    "features": 43,
+    "fit_seconds": 1.5837805999999546,
+    "n_iter": 100,
+    "n_trees_per_iteration": 3,
+    "model_bytes": 343382,
+    "classes": [
+      -1,
+      0,
+      1
+    ]
+  }
+]

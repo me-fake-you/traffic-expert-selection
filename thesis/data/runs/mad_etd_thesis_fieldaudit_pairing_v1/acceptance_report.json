@@ -1,0 +1,22 @@
+{
+  "status": "passed_small_end_to_end_pairing",
+  "scope": "two deterministic example-flow pairs; no retraining and no performance claim",
+  "pair_count": 2,
+  "mutated_fields": [
+    "trace_id",
+    "sample_id",
+    "context IP/port/SNI/application",
+    "provenance source_file/dataset",
+    "labels binary/family/attack_name"
+  ],
+  "detector_input_semantic_hash_agreement": 1.0,
+  "agent_evidence_semantic_field_agreement": 1.0,
+  "fusion_verdict_agreement": 1.0,
+  "max_confidence_absolute_difference": 0.0,
+  "max_uncertainty_absolute_difference": 0.0,
+  "ood_signature_agreement": 1.0,
+  "blocked_field_violation": 0,
+  "automatic_training": false,
+  "runtime_modified": false,
+  "fake_metric_count": 0
+}

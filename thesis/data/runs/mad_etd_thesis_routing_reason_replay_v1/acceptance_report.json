@@ -1,0 +1,19 @@
+{
+  "status": "completed_frozen_manifest_routing_reason_replay",
+  "sample_count": 6000,
+  "average_decision_count": 2.0,
+  "average_dispatch_round_count": 0.0,
+  "average_requested_agent_count": 0.0,
+  "tls_available_case_count": 0,
+  "tls_requested_case_count": 0,
+  "budget_stop_count": 0,
+  "reason_code_counts": {
+    "DECISION_THRESHOLD_REACHED": 1402,
+    "INITIAL_MULTI_VIEW_EVIDENCE": 6000,
+    "NO_PRODUCTIVE_AGENT_REMAINS": 4598
+  },
+  "model_retraining": false,
+  "runtime_modified": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "fake_metric_count": 0
+}

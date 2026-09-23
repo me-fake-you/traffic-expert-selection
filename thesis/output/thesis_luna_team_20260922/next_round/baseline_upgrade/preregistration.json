@@ -1,0 +1,17 @@
+{
+  "id": "thesis-v60-baseline-development-v1",
+  "status": "locked_before_execution",
+  "seed": 42,
+  "folds": [0,1,2,3,4],
+  "fit_role": "24k train-role labels from genuine OOF archive; same row indices for concatenated classifier",
+  "scoring_role": "4k selection per fold, previously exposed historical development",
+  "evaluation_scoring": false,
+  "source_y_array_read": false,
+  "methods": ["stats", "temporal", "probability_average", "oof_weighted_average", "feature_concatenation"],
+  "expert_parameters": {"max_iter":220,"learning_rate":0.05,"max_leaf_nodes":31,"l2_regularization":0.1,"early_stopping":false,"random_state":42},
+  "weighted_average": "maximize train OOF binary Macro-F1 across temporal weights [0,.25,.5,.75,1]; ties nearest .5 then lower weight; locked before selection inference",
+  "classification_threshold": 0.5,
+  "statistical_scope": "five fold summaries and descriptive mean; overlapping samples, no independent-fold CI, no fresh blind-test claim",
+  "training_budget": "one concatenated HGB per fold; no hyperparameter search; inherited frozen single-view models",
+  "cost_claim": "none; wall training time logged, no end-to-end speed claim"
+}

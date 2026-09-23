@@ -1,0 +1,5 @@
+diagnostic,isolated_only,performance_baseline,expected_exposure,defense_tested,promotable
+no_FieldAudit,True,False,blocked/label/context fields may reach DetectorInput,FieldAudit fail-closed and mutation invariance,False
+no_PolicyGuard,True,False,illegal or unsupported plans may execute,PolicyGuard allow-list/capability/budget checks,False
+no_AdmissionGate,True,False,forged/stale/unsafe evidence may enter Fusion input,AgentEvidenceAdmissionGate fail-closed checks,False
+no_Fusion_ownership,True,False,non-Fusion component may seize verdict ownership,"schema, PolicyGuard and AdmissionGate ownership controls",False

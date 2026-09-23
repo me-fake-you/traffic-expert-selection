@@ -1,0 +1,2 @@
+protocol_status,real_review_count,phase2_status,mean_review_seconds,median_review_seconds,p95_review_seconds,needs_more_evidence_rate,hint_relevance_rate,hint_acceptance_rate,verdict_invariance_rate
+partial_complete,80,cancelled,134.50211250000004,9.3005,31.117049999999946,1.0,not_applicable,not_applicable,1.0

@@ -1,0 +1,37 @@
+{
+  "status": "completed_descriptive_supplement",
+  "post_run_analysis": true,
+  "valid_atomic_only": true,
+  "probability_class_order": [
+    -1,
+    0,
+    1
+  ],
+  "rows": [
+    {
+      "fold": 0,
+      "rows": 64,
+      "target_minus_zero_plus_counts": [
+        0,
+        64,
+        0
+      ],
+      "multiclass_brier": 0.00020503833884126852,
+      "nll_natural_log_clip_1e_15": 0.005068213323870241,
+      "maximum_probability_sum_error": 0.0
+    },
+    {
+      "fold": 4,
+      "rows": 64,
+      "target_minus_zero_plus_counts": [
+        0,
+        63,
+        1
+      ],
+      "multiclass_brier": 0.25232451951169066,
+      "nll_natural_log_clip_1e_15": 0.8514506196818029,
+      "maximum_probability_sum_error": 0.0
+    }
+  ],
+  "limitation": "Surviving 2 of 5 batches only; timeout exclusion is informative. These scores do not compare all arms or establish general calibration. No probabilities imputed for failed requests."
+}

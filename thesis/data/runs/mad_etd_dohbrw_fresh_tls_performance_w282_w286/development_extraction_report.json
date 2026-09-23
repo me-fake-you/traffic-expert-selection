@@ -1,0 +1,22 @@
+{
+  "acceptance_opened": false,
+  "aligned_flow_count": 4107,
+  "alignment_metadata_enters_detector_input": false,
+  "blocked_field_violation": 0,
+  "calibration_sample_count": 624,
+  "development_capture_count": 163,
+  "experiment": "mad_etd_dohbrw_fresh_tls_performance_w282_w286",
+  "fake_metric_count": 0,
+  "firefox_capture_assignment_count": 3,
+  "flow_sha256": "384ce5a1effb7c7d8a981d31bf837ded1a9ab8e49107a1af847006ba1d665047",
+  "label_counts": {
+    "benign": 3691,
+    "malicious": 416
+  },
+  "non_doh_supervised_count": 0,
+  "schema_version": "1.0",
+  "selection_sample_count": 624,
+  "split_manifest_sha256": "3da0a0393f022ac0c07ad00d22ebe864035d2c07c5670992c535ff15c891de8e",
+  "status": "ready_for_w284_training",
+  "train_sample_count": 2859
+}

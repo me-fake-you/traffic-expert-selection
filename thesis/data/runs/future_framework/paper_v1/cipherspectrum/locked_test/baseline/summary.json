@@ -1,0 +1,90 @@
+{
+  "sample_count": 3200,
+  "verdict_rates": {
+    "benign": 0.0,
+    "malicious": 0.001875,
+    "suspicious": 0.5865625,
+    "unknown": 0.4115625
+  },
+  "coverage": 0.001875,
+  "alert_rate": 0.5884375,
+  "human_review_rate": 0.998125,
+  "average_agent_calls": 3.199375,
+  "latency_ms": {
+    "mean": 33.20717840682846,
+    "p50": 31.483749975450337,
+    "p95": 34.698604993172914
+  },
+  "verdict_invariance_rate": 1.0,
+  "mean_uncertainty_delta": 0.0,
+  "mean_conflict_delta": 0.0,
+  "memory_match_rate": 0.0,
+  "memory_top1_relevance": null,
+  "memory_topk_relevance": null,
+  "deliberation_trigger_rate": 0.0,
+  "supplemental_dispatch_rate": 0.0,
+  "compliance_failure_count": 0,
+  "audit_completion_rate": 1.0,
+  "blocked_field_violation_count": 0,
+  "ood_signature_invariance_rate": 1.0,
+  "classification": {
+    "labeled_count": 0,
+    "covered_labeled_count": 0
+  },
+  "grouped_bootstrap_95ci": {
+    "coverage": {
+      "low": 0.00030468750000000043,
+      "high": 0.004375
+    },
+    "alert_rate": {
+      "low": 0.40807031250000003,
+      "high": 0.7553671875
+    },
+    "human_review_rate": {
+      "low": 0.995625,
+      "high": 0.9996953125
+    },
+    "average_agent_calls": {
+      "low": 3.0931171875000003,
+      "high": 3.33471875
+    },
+    "average_latency_ms": {
+      "low": 31.704304854455586,
+      "high": 36.10149452550513
+    },
+    "verdict_invariance_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "audit_completion_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "blocked_field_violation_rate": {
+      "low": 0.0,
+      "high": 0.0
+    },
+    "ood_signature_invariance_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "uncertainty_delta": {
+      "low": 0.0,
+      "high": 0.0
+    },
+    "conflict_delta": {
+      "low": 0.0,
+      "high": 0.0
+    }
+  },
+  "feature_flags": {
+    "schema_version": "1.0",
+    "memory": false,
+    "planner_executor": false,
+    "deliberation": false,
+    "reflection": false,
+    "audit_critic": false,
+    "learning_queue": false,
+    "shadow_mode": true
+  }
+}

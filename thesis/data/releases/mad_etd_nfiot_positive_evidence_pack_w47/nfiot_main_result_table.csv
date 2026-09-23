@@ -1,0 +1,2 @@
+result,dataset,reference,candidate,macro_f1_delta,macro_f1_delta_ci95_lower,macro_f1_delta_ci95_upper,malicious_recall_delta,selective_error_delta,selective_error_delta_ci95_upper,ece_delta,coverage,claim_boundary
+W46 NF-IoT selective calibration,NF-BoT-IoT/NF-ToN-IoT,HGB default 0.5,runtime_nf_iot_calibrated_v5_12 default-off selective calibration,0.026535132777504522,0.023287568413681188,0.029959485209741985,0.010906380348411626,-0.011716609771708963,-0.010220268088908486,-0.0017976211767643225,0.9374,NF-IoT-only; default-off; not CICIDS2017; not general runtime promotion

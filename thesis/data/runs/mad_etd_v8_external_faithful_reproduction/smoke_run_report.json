@@ -1,0 +1,9 @@
+{
+  "experiment": "mad_etd_v8_external_faithful_reproduction",
+  "faithful_same_split_completed_count": 0,
+  "fake_metric_count": 0,
+  "native_smoke_run_attempted": true,
+  "schema_version": "1.0",
+  "smoke_run_completed_count": 0,
+  "status": "native_smoke_attempted"
+}

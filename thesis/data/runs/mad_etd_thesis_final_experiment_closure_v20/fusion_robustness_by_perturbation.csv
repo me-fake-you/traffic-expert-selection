@@ -1,0 +1,9 @@
+mode,perturbation,pair_count,average_harmful_flip_count,fusion_harmful_flip_count,fusion_conservative_degradation_count
+actual_runtime_v3_0,dummy_packet,800,91,0,102
+actual_runtime_v3_0,iat_jitter,800,0,0,12
+actual_runtime_v3_0,padding,800,18,0,80
+actual_runtime_v3_0,sequence_truncation,800,58,0,102
+current_stats__v2_6_continuous,dummy_packet,800,15,0,24
+current_stats__v2_6_continuous,iat_jitter,800,3,0,5
+current_stats__v2_6_continuous,padding,800,11,0,57
+current_stats__v2_6_continuous,sequence_truncation,800,81,0,129

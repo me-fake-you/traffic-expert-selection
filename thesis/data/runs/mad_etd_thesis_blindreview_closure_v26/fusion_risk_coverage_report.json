@@ -1,0 +1,43 @@
+{
+  "alert_projection": {
+    "alert": [
+      "suspicious",
+      "malicious"
+    ],
+    "non_alert": [
+      "benign",
+      "unknown"
+    ]
+  },
+  "aurc_trapezoid_over_reported_grid": 0.00016666666666666682,
+  "blocked_field_violation": 0,
+  "claim_scope": "The curve diagnoses ranking and alert polarity on the frozen Fusion replay. It does not promote a threshold or replace four-state Fusion.",
+  "coverage_points": [
+    0.23366666666666666,
+    0.5,
+    0.8,
+    0.9,
+    0.95,
+    1.0
+  ],
+  "fake_metric_count": 0,
+  "full_projection_metrics": {
+    "accuracy": 0.9933333333333333,
+    "macro_f1": 0.9933292745675035,
+    "malicious_recall": 0.9870717517776342
+  },
+  "fusion_ownership_violation": 0,
+  "illegal_verdict_execution": 0,
+  "invalid_evidence_admitted": 0,
+  "labels_used_for_ranking": false,
+  "ood_override": 0,
+  "operational_terminal_coverage": 0.23366666666666666,
+  "projection_is_runtime_verdict": false,
+  "projection_selected_on_labels": false,
+  "promoted_runtime_created": false,
+  "ranking": "confidence*(1-uncertainty) descending; sample_id tie-break",
+  "runtime_safe_v3_0_remains_default": true,
+  "sample_count": 6000,
+  "status": "completed_v26_fusion_risk_coverage",
+  "test_used_for_selection": false
+}

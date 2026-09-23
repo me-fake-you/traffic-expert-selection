@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0",
+  "strategies": {
+    "off": {
+      "schema_version": "1.0",
+      "mode": "off",
+      "metrics_status": "computed",
+      "sample_count": 93822,
+      "labeled_sample_count": 93822,
+      "accuracy": 0.9998851875543309,
+      "macro_f1": 0.9998828368491408,
+      "precision": 1.0,
+      "recall": 0.9997988852496696,
+      "PR_AUC": 0.999981733050519,
+      "Brier_score": 0.0016461270007552828,
+      "ECE": 0.008502086885494822,
+      "coverage": 0.6498369252414146,
+      "unknown_rate": 0.20241521178401653,
+      "suspicious_rate": 0.14774786297456888,
+      "average_agent_calls": 2.519505020144529,
+      "average_latency_ms": 5.691394676094125,
+      "selective_error_rate": 0.00011481244566911053,
+      "benign_false_positive_rate": 0.0,
+      "malicious_detection_rate": 0.7143971587526431,
+      "confusion_on_covered": {
+        "tp": 34799,
+        "fp": 0,
+        "tn": 26163,
+        "fn": 7
+      }
+    },
+    "soft": {
+      "schema_version": "1.0",
+      "mode": "soft",
+      "metrics_status": "computed",
+      "sample_count": 93822,
+      "labeled_sample_count": 93822,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "PR_AUC": 0.9999806679461463,
+      "Brier_score": 0.0018249156752219123,
+      "ECE": 0.008630053400732335,
+      "coverage": 0.1383257658118565,
+      "unknown_rate": 0.4092856686065102,
+      "suspicious_rate": 0.4523885655816333,
+      "average_agent_calls": 2.519505020144529,
+      "average_latency_ms": 5.691394676094125,
+      "selective_error_rate": 0.0,
+      "benign_false_positive_rate": 0.0,
+      "malicious_detection_rate": 0.11319825090841905,
+      "confusion_on_covered": {
+        "tp": 5514,
+        "fp": 0,
+        "tn": 7464,
+        "fn": 0
+      }
+    },
+    "hybrid": {
+      "schema_version": "1.0",
+      "mode": "hybrid",
+      "metrics_status": "computed",
+      "sample_count": 93822,
+      "labeled_sample_count": 93822,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "PR_AUC": 0.9999188521359219,
+      "Brier_score": 0.018127709847211404,
+      "ECE": 0.0334752259060831,
+      "coverage": 0.1383257658118565,
+      "unknown_rate": 0.4093176440493701,
+      "suspicious_rate": 0.45235659013877344,
+      "average_agent_calls": 2.519505020144529,
+      "average_latency_ms": 5.691394676094125,
+      "selective_error_rate": 0.0,
+      "benign_false_positive_rate": 0.0,
+      "malicious_detection_rate": 0.11319825090841905,
+      "confusion_on_covered": {
+        "tp": 5514,
+        "fp": 0,
+        "tn": 7464,
+        "fn": 0
+      }
+    },
+    "stats_gate_only": {
+      "schema_version": "1.0",
+      "mode": "stats_gate_only",
+      "metrics_status": "computed",
+      "sample_count": 93822,
+      "labeled_sample_count": 93822,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "PR_AUC": 0.9999770447991829,
+      "Brier_score": 0.01695383978141377,
+      "ECE": 0.03373162434461573,
+      "coverage": 0.15130779561296923,
+      "unknown_rate": 0.4008334932105476,
+      "suspicious_rate": 0.4478587111764831,
+      "average_agent_calls": 2.519505020144529,
+      "average_latency_ms": 5.691394676094125,
+      "selective_error_rate": 0.0,
+      "benign_false_positive_rate": 0.0,
+      "malicious_detection_rate": 0.13274209110878446,
+      "confusion_on_covered": {
+        "tp": 6466,
+        "fp": 0,
+        "tn": 7730,
+        "fn": 0
+      }
+    },
+    "temporal_gate_only": {
+      "schema_version": "1.0",
+      "mode": "temporal_gate_only",
+      "metrics_status": "computed",
+      "sample_count": 93822,
+      "labeled_sample_count": 93822,
+      "accuracy": 0.9998851310326721,
+      "macro_f1": 0.9998827600836135,
+      "precision": 1.0,
+      "recall": 0.9997988852496696,
+      "PR_AUC": 0.9999605103612094,
+      "Brier_score": 0.002058155201252894,
+      "ECE": 0.007839711562907588,
+      "coverage": 0.6495171708128158,
+      "unknown_rate": 0.20260706444117585,
+      "suspicious_rate": 0.1478757647460084,
+      "average_agent_calls": 2.519505020144529,
+      "average_latency_ms": 5.691394676094125,
+      "selective_error_rate": 0.00011486896732798372,
+      "benign_false_positive_rate": 0.0,
+      "malicious_detection_rate": 0.7143971587526431,
+      "confusion_on_covered": {
+        "tp": 34799,
+        "fp": 0,
+        "tn": 26133,
+        "fn": 7
+      }
+    }
+  },
+  "audit_summary": {
+    "schema_version": "1.0",
+    "sample_count": 93822,
+    "completed_chain_count": 93822,
+    "audit_chain_completion_rate": 1.0,
+    "blocked_field_violation_count": 0,
+    "policy_adjustment_count": 0,
+    "event_counts": {
+      "FLOW_VALIDATED": 93822,
+      "FIELD_POLICY_APPLIED": 93822,
+      "RELIABILITY_ASSESSED": 93822,
+      "ROUTING_DECISION": 236304,
+      "POLICY_GUARD_EVALUATION": 236304,
+      "AGENT_EVIDENCE": 236385,
+      "INTERIM_FUSION": 142563,
+      "FINAL_FUSION": 93822,
+      "REPORT_GENERATED": 93822
+    },
+    "actor_counts": {
+      "FeatureCapture": 93822,
+      "FieldAuditAgent": 93822,
+      "PseudoFeatureGuardAgent": 93822,
+      "CoordinatorAgent": 236304,
+      "PolicyGuard": 236304,
+      "StatsDetectorAgent": 93822,
+      "TemporalBehaviorAgent": 93822,
+      "FusionAgent": 236385,
+      "ReporterAgent": 93822,
+      "FamilyAttributionAgent": 48660,
+      "TLSProtocolAgent": 81
+    }
+  },
+  "shift_distribution": {
+    "stats": {
+      "p05": 0.04045198786671915,
+      "p25": 0.2353717553893533,
+      "p50": 0.4907032208766527,
+      "p75": 0.7374904485145993,
+      "p95": 0.9986106930326255
+    },
+    "temporal": {
+      "p05": 0.05369360436291522,
+      "p25": 0.2620723847297967,
+      "p50": 0.5124938026772434,
+      "p75": 0.7482399603371344,
+      "p95": 0.947942488844819
+    },
+    "combined": {
+      "p05": 0.04045198786671915,
+      "p25": 0.2353717553893533,
+      "p50": 0.5326067664667862,
+      "p75": 0.7850047467988052,
+      "p95": 0.9986106930326255
+    }
+  }
+}

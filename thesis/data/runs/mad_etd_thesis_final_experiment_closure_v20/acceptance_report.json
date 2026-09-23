@@ -1,0 +1,85 @@
+{
+  "acceptance_gates": {
+    "faithful_reproduction_count_zero": true,
+    "fake_metric_count_zero": true,
+    "five_citable_external_systems_present": true,
+    "fusion_default_harmful_flip_reduction_positive": true,
+    "n_baiot_acceptance_not_reopened": true,
+    "promoted_runtime_created_false": true,
+    "runtime_hash_unchanged": true,
+    "test_or_acceptance_used_for_selection_false": true,
+    "training_performed_false": true,
+    "ustc_point_delta_vs_probability_average_positive": true
+  },
+  "acceptance_gates_passed": true,
+  "blocked_field_violation": 0,
+  "experiment": "mad_etd_thesis_final_experiment_closure_v20",
+  "external_multiagent": {
+    "claim_scope": "tiered context, not a fair performance ranking",
+    "direct_same_dataset_task_split_comparison_count": 0,
+    "faithful_reproduction_count": 0,
+    "numerically_positive_count": 5,
+    "official_code_participating_count": 2,
+    "system_count": 5
+  },
+  "fake_metric_count": 0,
+  "fusion_ownership_violation": 0,
+  "fusion_robustness": {
+    "actual_runtime_v3_0": {
+      "claim_scope": "frozen paired perturbation diagnostic; Fusion trades coverage for fewer harmful binary transitions",
+      "fusion_harmful_flip_count": 0,
+      "fusion_perturbed_coverage": 0.0521875,
+      "fusion_perturbed_selective_error": 0.0,
+      "harmful_flip_reduction_count": 167,
+      "pair_count": 3200,
+      "probability_average_harmful_flip_count": 167,
+      "probability_average_perturbed_coverage": 0.8421875,
+      "probability_average_perturbed_selective_error": 0.06419294990723562
+    },
+    "current_stats__v2_6_continuous": {
+      "claim_scope": "frozen paired perturbation diagnostic; Fusion trades coverage for fewer harmful binary transitions",
+      "fusion_harmful_flip_count": 0,
+      "fusion_perturbed_coverage": 0.883125,
+      "fusion_perturbed_selective_error": 0.003538570417551309,
+      "harmful_flip_reduction_count": 110,
+      "pair_count": 3200,
+      "probability_average_harmful_flip_count": 110,
+      "probability_average_perturbed_coverage": 1.0,
+      "probability_average_perturbed_selective_error": 0.039375
+    }
+  },
+  "illegal_verdict_execution": 0,
+  "n_baiot": {
+    "acceptance_reopened": false,
+    "best_observed_ordinary_macro_f1": 0.9513549679508508,
+    "best_observed_ordinary_method": "fixed_reference_specialist_half",
+    "candidate_macro_f1": 0.9880636434556768,
+    "claim_scope": "post-selection validation diagnostic only; the sealed acceptance stores final predictions but not per-agent probabilities",
+    "delta_vs_best_observed_ordinary": 0.03670867550482593,
+    "formal_same_acceptance_ordinary_ensemble_available": false,
+    "selection_row_count": 25578,
+    "stored_acceptance_has_per_agent_probabilities": false,
+    "validation_device_count": 2,
+    "validation_point_estimate_positive": true
+  },
+  "ood_override": 0,
+  "promoted_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "runtime_sha256_after": "c8d87e022b55ec30ffa98a51e021985720becffe13a8083887aaa91421773a59",
+  "runtime_sha256_before": "c8d87e022b55ec30ffa98a51e021985720becffe13a8083887aaa91421773a59",
+  "status": "accepted_v20_positive_thesis_evidence_closure",
+  "test_or_acceptance_used_for_selection": false,
+  "training_performed": false,
+  "ustc": {
+    "candidate_macro_f1": 0.9490777356432796,
+    "claim_scope": "same frozen USTC acceptance; positive point estimate versus equal probability averaging; grouped interval must be reported",
+    "delta_vs_simple_average": 0.020786323511970184,
+    "group_ci_lower_gt_zero": false,
+    "group_count": 20,
+    "group_delta_positive_share": 0.964,
+    "point_estimate_positive": true,
+    "sample_ci_lower_gt_zero": true,
+    "sample_count": 10000,
+    "simple_average_macro_f1": 0.9282914121313094
+  }
+}

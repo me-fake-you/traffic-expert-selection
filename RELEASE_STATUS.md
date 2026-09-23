@@ -1,5 +1,11 @@
 # Release status
 
+## Thesis companion extension
+
+The author separately authorized expansion to thesis **code and experiments only**, explicitly withholding the full thesis. The new [`thesis/`](thesis/README.md) collection contains screened aggregates and selected implementation/configuration files. Its [scope](thesis/RELEASE_SCOPE.md), [source manifest](thesis/SOURCE_MANIFEST.csv), and [actual checks](thesis/VALIDATION.md) are separate from the short-paper evidence below. The existing manuscript and its measured results are unchanged.
+
+## Original controlled-study release
+
 - GitHub account verified: `me-fake-you`.
 - Repository name chosen by the author: `traffic-expert-selection`.
 - Publication was explicitly authorized by the author on 2026-09-23 for the curated code, aggregate results, showcase page and author-review PDF.

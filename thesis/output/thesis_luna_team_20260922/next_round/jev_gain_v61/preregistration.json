@@ -1,0 +1,51 @@
+{
+  "protocol_id": "luna-jev-gain-v61-three-result-probability",
+  "created_date": "2026-09-23",
+  "status": "fixed_before_run_development_extension",
+  "prior_results_exposed": true,
+  "prior_results_note": "v60 gain_upgrade selection results were already observed; this is a development extension and not a new blind test.",
+  "seed": 42,
+  "outer_folds": [0, 1, 2, 3, 4],
+  "roles": {
+    "fit": "Each fixed fold train-role genuine OOF rows (24000 rows) from v60 train_predictions.",
+    "selection": "Each fixed fold selection rows (4000 rows), used only for scoring after fitting.",
+    "evaluation": "Never read or scored; SOURCE y is never loaded."
+  },
+  "source_contract": {
+    "reuse": "v60 saved train/selection labels, expert probabilities, delta, sample_hash and group; SOURCE only x_hybrid/sample_hash/group.",
+    "forbidden": ["SOURCE y", "evaluation labels", "evaluation predictions", "p_stats as router state", "selection labels for fitting", "group/family/filename as model features"],
+    "temporal_state": "p_temporal, abs(p_temporal-0.5), binary entropy plus the same 40 paid Temporal input features",
+    "post_first_scope": "The 40 Temporal inputs are already paid by the first expert; this is offline post-first-expert analysis, not early-prefix or zero-cost."
+  },
+  "models": {
+    "class": "sklearn.ensemble.HistGradientBoostingClassifier",
+    "target": "delta in {-1, 0, +1}",
+    "feature_variants": {
+      "probability_only_3d": ["p_temporal", "abs(p_temporal-0.5)", "binary_entropy(p_temporal)"],
+      "post_first_temporal_43d": ["the probability_only_3d features", "the same 40 Temporal input features"]
+    },
+    "max_iter": 100,
+    "max_leaf_nodes": 7,
+    "l2_regularization": 2.0,
+    "random_state": 20260922,
+    "early_stopping": false,
+    "search": false,
+    "calibration": "none; reported probabilities are not claimed to be calibrated"
+  },
+  "policies": {
+    "ordering_score": "P(delta=+1)-P(delta=-1), descending",
+    "budgeted": [1.0, 1.1, 1.25, 1.5, 2.0],
+    "budget_rule": "K=round((budget-1)*N_selection), exact K; deterministic SHA256(sample_hash) tie break",
+    "positive_gain_stop": "select all rows with predicted net gain > 0; report realized simulated calls",
+    "comparison_panels": ["first_temporal", "first_stats", "all_average", "confidence_budget", "hashrandom_budget", "probability_only_gain_regression", "post_first_temporal_gain_regression", "probability_only_gain_classifier", "post_first_temporal_gain_classifier"]
+  },
+  "metrics": {
+    "classification": ["macro_f1", "malicious_recall", "false_positive_rate", "C", "D", "C_minus_D", "simulated_second_calls", "effective_budget"],
+    "utility": "C_minus_D - lambda * simulated_second_calls / rows",
+    "lambda_values": [0.0, 0.01, 0.05],
+    "primary_lambda": 0.01,
+    "probability": ["multiclass Brier", "NLL", "per_class_ECE_10_equal_width_bins", "per_class_positive_count", "per_class_mean_probability", "full_row_probabilities"],
+    "prior_baseline": "train-role class-prior probabilities, evaluated on selection"
+  },
+  "limits": ["five folds share source groups and are not independent tests", "no confidence intervals", "no fresh blind test", "no real acceleration or latency claim", "do not call this Jev or RLCD reproduction", "do not change protocol for positive results"]
+}

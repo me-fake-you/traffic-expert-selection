@@ -1,0 +1,66 @@
+{
+  "status": "COMPLETED_FIVEFOLD_GAIN_UPGRADE_SELECTION_DIAGNOSTIC",
+  "seed": 42,
+  "outer_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "train_oof_rows": 120000,
+  "selection_rows": 20000,
+  "evaluation_rows_scored": 0,
+  "evaluation_labels_used": false,
+  "base_expert_retraining": false,
+  "probability_only_gain_model_per_fold": true,
+  "post_first_temporal_gain_model_per_fold": true,
+  "expanded_quality_temporal_model": "included_as_post_first_expert_offline_branch",
+  "expanded_temporal_is_early_prefix": false,
+  "expanded_temporal_is_zero_cost": false,
+  "policy_names": [
+    "all_average",
+    "confidence_budget",
+    "first_stats",
+    "first_temporal",
+    "hashrandom_budget",
+    "positive_gain_no_call",
+    "post_first_temporal_gain",
+    "post_first_temporal_positive_gain_no_call",
+    "probability_only_gain"
+  ],
+  "budgets": [
+    1.0,
+    1.1,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "train_delta_support": {
+    "-1": 4350,
+    "0": 114714,
+    "1": 936
+  },
+  "selection_delta_support": {
+    "-1": 4,
+    "0": 19923,
+    "1": 73
+  },
+  "positive_gain_no_call_rows": 5,
+  "fold_overlap_not_independent": true,
+  "confidence_intervals": false,
+  "fresh_blind_test": false,
+  "boundary_tests": {
+    "state_signature_only_p_temporal": true,
+    "forbidden_router_inputs_absent": true,
+    "expanded_state_post_first_expert_only": true,
+    "expanded_state_has_40_paid_temporal_inputs": true,
+    "all_fit_rows_are_train_oof": true,
+    "matched_budget_counts_passed": true,
+    "evaluation_rows_scored_zero": true,
+    "evaluation_labels_not_used": true,
+    "no_retraining_of_base_experts": true
+  },
+  "duration_seconds": 6.4143794999999955,
+  "reproduction_command": "\"USER_HOME\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" \".\\output\\thesis_luna_team_20260922\\next_round\\gain_upgrade\\run_gain_upgrade.py\""
+}

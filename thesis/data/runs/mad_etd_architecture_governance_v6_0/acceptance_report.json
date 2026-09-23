@@ -1,0 +1,22 @@
+{
+  "acceptance_gates": {
+    "agent_evidence_v2_schema_complete": true,
+    "claim_ledger_has_forbidden_claims": true,
+    "claim_ledger_has_safe_claims": true,
+    "fake_metric_count": 0,
+    "negative_result_ledger_generated": true,
+    "promoted_runtime_created": false,
+    "runtime_profile_registry_generated": true,
+    "runtime_safe_v3_0_remains_default": true
+  },
+  "default_runtime": "runtime_safe_v3_0",
+  "document": "docs/MAD_ETD_ARCHITECTURE_GOVERNANCE_V6_0.md",
+  "document_cn": "docs/MAD_ETD_ARCHITECTURE_GOVERNANCE_V6_0_CN.md",
+  "experiment": "mad_etd_architecture_governance_v6_0",
+  "fake_metric_count": 0,
+  "final_evidence_pack": "data/runs/mad_etd_architecture_governance_v6_0/final_evidence_pack.json",
+  "promoted_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "schema_version": "1.0",
+  "status": "passed"
+}

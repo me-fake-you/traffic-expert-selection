@@ -1,0 +1,4 @@
+result_id,result,scope,status,classification_improvement_claimed
+P1,Average evidence-agent calls decreased from 3.0 to 2.0.,frozen same-data static-full-call comparison,supported,False
+P2,Unsupported calls decreased from 1.0 to 0.0.,frozen same-data capability-routing comparison,supported,False
+P3,Verdict and OOD agreement were both 1.0.,frozen same-data dynamic-versus-static comparison,supported,False

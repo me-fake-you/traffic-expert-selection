@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "experiment": "future_framework_final_v1",
+  "acceptance_status": "pending_ultra",
+  "final_acceptance_ready": false,
+  "failures": [
+    "required upstream experiment is pending_ultra"
+  ],
+  "upstream_statuses": {
+    "paper": "passed",
+    "framework": "passed",
+    "perturbation": "passed",
+    "llm": "pending_ultra",
+    "active_policy": "passed",
+    "hitl": "partial_complete"
+  },
+  "tests_passed": true,
+  "test_count": 223,
+  "seed": 42,
+  "bootstrap_resamples": 1000,
+  "audit_completion_rate": null,
+  "blocked_field_violation_count": null,
+  "fusion_ownership_violation_count": null,
+  "ood_override_count": null,
+  "cipherspectrum_locked_test_used_for_selection_or_tuning": false,
+  "hitl_real_review_count": 80,
+  "hitl_full_200_case_acceptance": false,
+  "llm_classification_gain_claim": false,
+  "memory_rag_classification_gain_claim": false,
+  "frozen_core_hashes_match_reference": true
+}

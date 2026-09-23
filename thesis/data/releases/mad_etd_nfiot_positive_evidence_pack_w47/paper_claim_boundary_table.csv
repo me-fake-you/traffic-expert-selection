@@ -1,0 +1,4 @@
+claim_id,safe_claim,supporting_artifact,forbidden_overclaim,safe_to_claim
+nfiot_positive_statistical_result,NF-IoT default-off selective calibration has statistically supported dataset-specific positive evidence.,W46 acceptance_report.json; bootstrap_ci_table.csv,Do not extend this NF-IoT-only result to CICIDS2017 or all ETD datasets.,True
+efficiency_static_ensemble,runtime_safe_v3_0 reduces evidence-agent calls from 3.0 to 2.0 versus static ensemble while preserving verdict/OOD agreement.,baseline_comparison acceptance_report.json,Do not state numerical superiority over every external multi-agent IDS paper.,True
+runtime_promotion_boundary,runtime_safe_v3_0 remains default; W47 creates no broadly promoted runtime.,W47 acceptance_report.json,Do not state that the default runtime was replaced.,True

@@ -1,0 +1,4 @@
+dataset,static_request_attempts,capability_aware_request_attempts,static_executed_evidence_calls,capability_aware_executed_evidence_calls,static_unsupported_calls,capability_aware_unsupported_calls
+USTC-TFC2016,3.0,1.0,1.0,1.0,2.0,0.0
+NF-IoT,3.0,1.0,1.0,1.0,2.0,0.0
+CICIoT2023,3.0,1.0,1.0,1.0,2.0,0.0

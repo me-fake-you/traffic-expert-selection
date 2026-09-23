@@ -1,0 +1,12 @@
+{
+  "admission_rate": 1.0,
+  "admitted_count": 100,
+  "experiment": "mad_etd_admission_gate_resilience_w271_w275",
+  "interpretation": "AdmissionGate validates structure, registry bindings, context, and authority; it does not establish semantic truth.",
+  "negative_result": true,
+  "probe_count": 100,
+  "schema_valid_count": 100,
+  "schema_version": "1.0",
+  "stage": "w273_contract_conforming_semantic_boundary",
+  "synthetic_payloads_only": true
+}

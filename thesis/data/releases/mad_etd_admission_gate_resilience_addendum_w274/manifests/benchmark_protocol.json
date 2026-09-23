@@ -1,0 +1,25 @@
+{
+  "classification_metrics_generated": false,
+  "detector_training_performed": false,
+  "experiment": "mad_etd_admission_gate_resilience_w271_w275",
+  "fake_metric_count": 0,
+  "full_probability_payload_available": false,
+  "metadata_admission_scope": "real frozen W82/W85 request/handoff identity and semantic metadata",
+  "mutation_count": 5000,
+  "payload_mutation_scope": "synthetic AgentEvidenceV2 smoke payload only",
+  "promoted_runtime_created": false,
+  "random_seed": 42,
+  "runtime_safe_v3_0_remains_default": true,
+  "schema_version": "1.0",
+  "selection_or_tuning_performed": false,
+  "source_case_count": 6000,
+  "source_hashes": {
+    "acceptance_report.json": "71ffed7b5c053bbb7cb9f310f14b13498b9de389701d8fd4fce114d416926eb1",
+    "evidence_handoff_trace.jsonl": "663f4fde31983823fde77303d23edf1a498112dc7c3c86e88e175c36543a151d",
+    "evidence_request_trace.jsonl": "0d7b0fc9190973cf5ea56febbfcbd2fc39377fae099f0f393567dc061ec3580c",
+    "shadow_comparison.csv": "ba6cb65fd20555877a031e600bbff5c9afcfeaef2c5b3756264391a8004b23fd"
+  },
+  "source_trace_count": 12002,
+  "stage": "w271_frozen_trace_protocol",
+  "status": "ready_for_executable_metadata_admission"
+}

@@ -1,0 +1,4 @@
+system,available,official_code_participating,same_training_samples,same_acceptance_query,faithful_reproduction,status
+Continual-Federated-IDS,True,True,False,True,False,accepted_cfids_official_code_participating_adapted_same_split_v10
+ZTA-FL subset adapter,True,True,False,True,False,accepted_ztafl_official_code_participating_adapted_same_split_v11
+ZTA-FL exact-train adapter,True,True,True,True,False,completed_ztafl_adapter_without_required_positive_ci_v11

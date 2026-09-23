@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.0",
+  "stage": "ustc_optimization_complete_external_validation_pending",
+  "nested_outer_metrics": {
+    "schema_version": "1.0",
+    "mode": "nested_outer_pooled",
+    "metrics_status": "computed",
+    "sample_count": 634630,
+    "labeled_sample_count": 634630,
+    "accuracy": 0.9769730585398477,
+    "macro_f1": 0.97694979893366,
+    "precision": 0.9700043660049481,
+    "recall": 0.985482169402663,
+    "PR_AUC": 0.9938841864622829,
+    "Brier_score": 0.03045337672774585,
+    "ECE": 0.028189162385442515,
+    "coverage": 0.7704473472732143,
+    "unknown_rate": 0.12091139719206467,
+    "suspicious_rate": 0.10864125553472102,
+    "average_agent_calls": 2.521669319130832,
+    "average_latency_ms": 5.495556964039616,
+    "selective_error_rate": 0.023026941460152286,
+    "benign_false_positive_rate": 0.024608811542197368,
+    "malicious_detection_rate": 0.7594082668957723,
+    "confusion_on_covered": {
+      "tp": 246611,
+      "fp": 7626,
+      "tn": 231079,
+      "fn": 3633
+    },
+    "benign_coverage": 0.7702919432441939,
+    "malicious_coverage": 0.7705956439131493,
+    "minimum_class_coverage": 0.7702919432441939
+  },
+  "nested_ood_auroc": 0.5078739723620225,
+  "selected_policy_sha256": "d6ce019fb72e5a00cbdfaacf81230ef5c8fd16a44558c00e1c0af7bf11e81c20",
+  "acceptance": {
+    "macro_f1_at_least_0_95": true,
+    "coverage_at_least_0_65": true,
+    "selective_error_at_most_0_05": true,
+    "benign_fpr_at_most_0_05": true,
+    "minimum_class_coverage_at_least_0_50": true,
+    "nested_ood_auroc_at_least_0_97": false
+  },
+  "external_dataset_used_for_training_or_thresholds": false,
+  "cesnet_status": "pending_frozen_validation"
+}

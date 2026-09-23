@@ -1,0 +1,12 @@
+reference_mode,candidate_mode,iterations,seed,resampling_unit,macro_f1_delta_mean,macro_f1_delta_ci95_lower,macro_f1_delta_ci95_upper
+strongest_single_agent,factorial_hgb_plus_temporal,1000,42,application_or_family_group,-0.05380886160418477,-0.16549892032719515,-7.476320296307963e-05
+strongest_single_agent,factorial_tree_plus_temporal,1000,42,application_or_family_group,0.015337185829411753,-0.006051060997616317,0.0552140334088351
+strongest_single_agent,fixed_weight_ensemble,1000,42,application_or_family_group,-0.043582997627395544,-0.16572731488328296,0.03503893401321285
+strongest_single_agent,full_mad_etd_fusion,1000,42,application_or_family_group,-0.003450371301705219,-0.014847781595571024,0.0023134616260155694
+strongest_single_agent,reliability_only_fusion,1000,42,application_or_family_group,0.01328270420016661,-0.010880683818908835,0.05306806053995839
+strongest_single_agent,reliability_plus_ood_fusion,1000,42,application_or_family_group,0.01328270420016661,-0.010880683818908835,0.05306806053995839
+strongest_single_agent,simple_probability_average,1000,42,application_or_family_group,0.013990836907846868,-0.008736076736006626,0.053526572831315504
+strongest_single_agent,stats_hgb_only,1000,42,application_or_family_group,-0.08387306151421925,-0.2009617755908047,-0.015268324915993538
+strongest_single_agent,stats_tree_only,1000,42,application_or_family_group,-0.06573214055750155,-0.1911018672320014,0.023941147882617028
+strongest_single_agent,temporal_only,1000,42,application_or_family_group,0.0,0.0,0.0
+strongest_single_agent,validation_selected_single_agent,1000,42,application_or_family_group,-0.0014841170450236615,-0.03886118158327247,0.04723250737817142

@@ -1,0 +1,9 @@
+method,prefix_packets,round_count,root_wall_round_median_ns,root_wall_round_min_ns,root_wall_round_max_ns,note
+allavg,16,3,4419895700,3957604900,4823096600,"three rounds; range/median only, no robust p95 claim"
+allavg,8,3,4154332200,4108073300,4219251800,"three rounds; range/median only, no robust p95 claim"
+fixed_low_confidence,16,3,4153182200,3930818800,4267354100,"three rounds; range/median only, no robust p95 claim"
+fixed_low_confidence,8,3,4064096200,3904370300,4602238200,"three rounds; range/median only, no robust p95 claim"
+stats,16,3,3816335600,3796608000,4184036100,"three rounds; range/median only, no robust p95 claim"
+stats,8,3,3997359300,3815253900,4107499400,"three rounds; range/median only, no robust p95 claim"
+temporal,16,3,4351929100,4271082900,4496227300,"three rounds; range/median only, no robust p95 claim"
+temporal,8,3,4128969400,4060881500,4325634500,"three rounds; range/median only, no robust p95 claim"

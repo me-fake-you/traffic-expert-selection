@@ -1,0 +1,44 @@
+{
+  "acceptance_score_definition": "max(benign_support, malicious_support) * (1 - fusion_uncertainty)",
+  "accepted_count": 34054,
+  "double_discount_applied": false,
+  "rows": [
+    {
+      "accepted_benign": 15285,
+      "accepted_count": 34054,
+      "accepted_malicious": 18769,
+      "accepted_malicious_proportion": 0.5511540494508721,
+      "benign_class_coverage": 0.76425,
+      "jaccard_with_full": 1.0,
+      "macro_f1": 0.9425064559874078,
+      "malicious_class_coverage": 0.93845,
+      "mode": "full_fusion",
+      "selective_error": 0.056058025488929346
+    },
+    {
+      "accepted_benign": 15806,
+      "accepted_count": 34054,
+      "accepted_malicious": 18248,
+      "accepted_malicious_proportion": 0.5358548188171727,
+      "benign_class_coverage": 0.7903,
+      "jaccard_with_full": 0.8504591642666957,
+      "macro_f1": 0.92131189036796,
+      "malicious_class_coverage": 0.9124,
+      "mode": "stats_only",
+      "selective_error": 0.0770834556880249
+    },
+    {
+      "accepted_benign": 14760,
+      "accepted_count": 34054,
+      "accepted_malicious": 19294,
+      "accepted_malicious_proportion": 0.5665707405884771,
+      "benign_class_coverage": 0.738,
+      "jaccard_with_full": 0.893150989548588,
+      "macro_f1": 0.965584426360653,
+      "malicious_class_coverage": 0.9647,
+      "mode": "temporal_only",
+      "selective_error": 0.0334762436130851
+    }
+  ],
+  "safe_conclusion": "Fusion forms a constrained acceptance ranking and four-valued risk stratification."
+}

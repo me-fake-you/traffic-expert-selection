@@ -1,0 +1,64 @@
+{
+  "status": "ready_for_w325_evidence_pack_finalization",
+  "experiment": "mad_etd_routing_efficiency_evidence_pack_w325",
+  "source_status_gates": {
+    "w322_capsule_passed": true,
+    "w323_capsule_passed": true,
+    "w324_capsule_passed": true,
+    "w324_statistical_result_accepted": true,
+    "all_three_w324_sources_passed": true,
+    "source_fake_metrics_zero": true,
+    "source_runtime_default_unchanged": true,
+    "source_promoted_runtime_not_created": true
+  },
+  "per_source_numeric_gates": {
+    "USTC-TFC2016": {
+      "source_passed_w324": true,
+      "seven_repetitions_present": true,
+      "request_attempts_three_to_one": true,
+      "executed_evidence_calls_one_to_one": true,
+      "unsupported_calls_two_to_zero": true,
+      "bootstrap_ci_lower_positive": true,
+      "verdict_agreement_one": true,
+      "ood_signature_agreement_one": true,
+      "classification_and_coverage_deltas_zero": true
+    },
+    "NF-IoT": {
+      "source_passed_w324": true,
+      "seven_repetitions_present": true,
+      "request_attempts_three_to_one": true,
+      "executed_evidence_calls_one_to_one": true,
+      "unsupported_calls_two_to_zero": true,
+      "bootstrap_ci_lower_positive": true,
+      "verdict_agreement_one": true,
+      "ood_signature_agreement_one": true,
+      "classification_and_coverage_deltas_zero": true
+    },
+    "CICIoT2023": {
+      "source_passed_w324": true,
+      "seven_repetitions_present": true,
+      "request_attempts_three_to_one": true,
+      "executed_evidence_calls_one_to_one": true,
+      "unsupported_calls_two_to_zero": true,
+      "bootstrap_ci_lower_positive": true,
+      "verdict_agreement_one": true,
+      "ood_signature_agreement_one": true,
+      "classification_and_coverage_deltas_zero": true
+    }
+  },
+  "source_datasets": [
+    "USTC-TFC2016",
+    "NF-IoT",
+    "CICIoT2023"
+  ],
+  "statistical_source_count": 3,
+  "gotham_development_context_included": true,
+  "paper_reported_external_metrics_included": false,
+  "classification_improvement_claim_supported": false,
+  "latency_scope": "governance replay, not production serving or full detector-stack latency",
+  "request_semantics_explicit": true,
+  "executed_evidence_call_semantics_explicit": true,
+  "fake_metric_count": 0,
+  "promoted_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true
+}

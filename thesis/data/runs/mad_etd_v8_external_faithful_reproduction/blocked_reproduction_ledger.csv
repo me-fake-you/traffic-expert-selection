@@ -1,0 +1,2 @@
+candidate_id,failure_type,failure_reason,safe_claim,forbidden_claim
+continual_federated_ids,blocked_dependency,packet_vector_format_required;hardcoded_external_data_paths;external_repo_internal_split_incompatible_with_frozen_split;missing_runtime_dependencies,official Continual-Federated-IDS reproduction was probed and blocked or limited under safe same-split protocol,faithful reproduction completed or MAD-ETD outperformed original Continual-Federated-IDS paper

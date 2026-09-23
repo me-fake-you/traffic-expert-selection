@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "experiment": "exploratory_active_policy_v1",
+  "dataset": "ustc_validation",
+  "source_sample_count": 6000,
+  "policies": [
+    "current",
+    "hard_ood_block",
+    "conflict_missing_view",
+    "budget_utility"
+  ],
+  "labels_exposed": true,
+  "resume_enabled": true,
+  "detector_ood_fusion_frozen": true,
+  "exploratory_only": true,
+  "summaries": {
+    "current": {
+      "sample_count": 6000,
+      "verdict_agreement_with_current": 1.0,
+      "coverage": 0.23283333333333334,
+      "alert_rate": 0.5136666666666667,
+      "average_agent_calls": 2.5056666666666665,
+      "mean_agent_calls_delta": 0.0,
+      "latency_ms": {
+        "p50": 40.50765000283718,
+        "p95": 49.59284002834465
+      },
+      "mean_uncertainty_delta": 0.0,
+      "mean_conflict_improvement": 0.0,
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "fusion_ownership_violation_count": 0,
+      "ood_override_count": 0,
+      "classification": {
+        "labeled_count": 6000,
+        "covered_count": 1397,
+        "coverage": 0.23283333333333334,
+        "selective_accuracy": 1.0,
+        "selective_macro_f1": 1.0,
+        "confusion": {
+          "tp": 383,
+          "tn": 1014,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "hard_ood_block": {
+      "sample_count": 6000,
+      "verdict_agreement_with_current": 1.0,
+      "coverage": 0.23283333333333334,
+      "alert_rate": 0.5136666666666667,
+      "average_agent_calls": 2.5056666666666665,
+      "mean_agent_calls_delta": 0.0,
+      "latency_ms": {
+        "p50": 40.585550013929605,
+        "p95": 49.77053498441819
+      },
+      "mean_uncertainty_delta": 0.0,
+      "mean_conflict_improvement": 0.0,
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "fusion_ownership_violation_count": 0,
+      "ood_override_count": 0,
+      "classification": {
+        "labeled_count": 6000,
+        "covered_count": 1397,
+        "coverage": 0.23283333333333334,
+        "selective_accuracy": 1.0,
+        "selective_macro_f1": 1.0,
+        "confusion": {
+          "tp": 383,
+          "tn": 1014,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "conflict_missing_view": {
+      "sample_count": 6000,
+      "verdict_agreement_with_current": 1.0,
+      "coverage": 0.23283333333333334,
+      "alert_rate": 0.5136666666666667,
+      "average_agent_calls": 2.5056666666666665,
+      "mean_agent_calls_delta": 0.0,
+      "latency_ms": {
+        "p50": 41.06755001703277,
+        "p95": 49.85360997961834
+      },
+      "mean_uncertainty_delta": 0.0,
+      "mean_conflict_improvement": 0.0,
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "fusion_ownership_violation_count": 0,
+      "ood_override_count": 0,
+      "classification": {
+        "labeled_count": 6000,
+        "covered_count": 1397,
+        "coverage": 0.23283333333333334,
+        "selective_accuracy": 1.0,
+        "selective_macro_f1": 1.0,
+        "confusion": {
+          "tp": 383,
+          "tn": 1014,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    },
+    "budget_utility": {
+      "sample_count": 6000,
+      "verdict_agreement_with_current": 1.0,
+      "coverage": 0.23283333333333334,
+      "alert_rate": 0.5136666666666667,
+      "average_agent_calls": 2.5056666666666665,
+      "mean_agent_calls_delta": 0.0,
+      "latency_ms": {
+        "p50": 40.661999984877184,
+        "p95": 49.858515011146665
+      },
+      "mean_uncertainty_delta": 0.0,
+      "mean_conflict_improvement": 0.0,
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "fusion_ownership_violation_count": 0,
+      "ood_override_count": 0,
+      "classification": {
+        "labeled_count": 6000,
+        "covered_count": 1397,
+        "coverage": 0.23283333333333334,
+        "selective_accuracy": 1.0,
+        "selective_macro_f1": 1.0,
+        "confusion": {
+          "tp": 383,
+          "tn": 1014,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    }
+  }
+}

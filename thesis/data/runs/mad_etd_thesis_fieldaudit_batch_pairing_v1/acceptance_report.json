@@ -1,0 +1,35 @@
+{
+  "status": "passed_batch_end_to_end_field_mutation_pairing",
+  "pair_count": 302,
+  "categories": {
+    "in_domain_benign": 100,
+    "in_domain_malicious": 100,
+    "ood_warning_or_hard": 100,
+    "tls_capability_example": 2
+  },
+  "tls_available_pair_count": 2,
+  "tls_unavailable_pair_count": 300,
+  "detector_input_semantic_hash_agreement": {
+    "numerator": 302,
+    "denominator": 302
+  },
+  "agent_evidence_semantic_field_agreement": {
+    "numerator": 302,
+    "denominator": 302
+  },
+  "fusion_verdict_agreement": {
+    "numerator": 302,
+    "denominator": 302
+  },
+  "ood_signature_agreement": {
+    "numerator": 302,
+    "denominator": 302
+  },
+  "max_confidence_absolute_difference": 0.0,
+  "max_uncertainty_absolute_difference": 0.0,
+  "blocked_field_violation": 0,
+  "scope": "300 frozen USTC validation pairs stratified across benign, malicious, and warning/hard OOD states, plus two deterministic TLS-capability examples; no retraining and no population-wide security guarantee",
+  "automatic_training": false,
+  "runtime_modified": false,
+  "fake_metric_count": 0
+}

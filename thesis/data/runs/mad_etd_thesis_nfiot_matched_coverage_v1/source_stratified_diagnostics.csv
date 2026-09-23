@@ -1,0 +1,5 @@
+source_variant,sample_count,malicious_count,malicious_ratio,hgb_full_coverage_macro_f1,candidate_selective_macro_f1,candidate_coverage,macro_f1_delta_different_coverage,interpretation
+NF-BoT-IoT,4897,4839,0.9881560138860527,0.9675285246740206,0.9892554773560428,0.9707984480294057,0.021726952682022183,descriptive source-stratified comparison; the two Macro-F1 values use different accepted sets
+NF-BoT-IoT-v2,5100,5072,0.9945098039215686,0.5947176506911686,0.9071509182312506,0.9582352941176471,0.31243326754008205,descriptive source-stratified comparison; the two Macro-F1 values use different accepted sets
+NF-ToN-IoT,5055,4779,0.94540059347181,0.971281453121838,0.9955394851593811,0.9004945598417409,0.024258032037543065,descriptive source-stratified comparison; the two Macro-F1 values use different accepted sets
+NF-ToN-IoT-v2,4948,2887,0.5834680679062247,0.994596215738047,0.9997662801043925,0.9205739692805174,0.005170064366345484,descriptive source-stratified comparison; the two Macro-F1 values use different accepted sets

@@ -1,0 +1,14 @@
+{
+  "core_missing_packages": [
+    "Keras",
+    "tensorflow"
+  ],
+  "dependency_probe_completed": true,
+  "dependency_probe_passed": false,
+  "experiment": "mad_etd_v8_external_faithful_reproduction",
+  "install_attempted": false,
+  "install_conflicts": "legacy pinned stack; probe-only, do not install into MAD-ETD runtime",
+  "requirement_count": 150,
+  "schema_version": "1.0",
+  "target_repo": "INL-Laboratory/Continual-Federated-IDS"
+}

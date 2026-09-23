@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "agent": "temporal",
+  "candidate_cross_validation": [
+    {
+      "candidate": "hist_small",
+      "family": "hist_gradient_boosting",
+      "folds": [
+        {
+          "PR_AUC": 1.0,
+          "macro_f1": 1.0
+        },
+        {
+          "PR_AUC": 0.9875196367161736,
+          "macro_f1": 0.6106151901699308
+        },
+        {
+          "PR_AUC": 1.0,
+          "macro_f1": 0.9998002942858
+        }
+      ],
+      "mean_PR_AUC": 0.9958398789053913,
+      "mean_macro_f1": 0.870138494818577
+    },
+    {
+      "candidate": "hist_medium",
+      "family": "hist_gradient_boosting",
+      "folds": [
+        {
+          "PR_AUC": 0.9999999999999999,
+          "macro_f1": 1.0
+        },
+        {
+          "PR_AUC": 0.9875196367161736,
+          "macro_f1": 0.6106151901699308
+        },
+        {
+          "PR_AUC": 1.0,
+          "macro_f1": 0.9998002942858
+        }
+      ],
+      "mean_PR_AUC": 0.9958398789053912,
+      "mean_macro_f1": 0.870138494818577
+    },
+    {
+      "candidate": "logistic_c0.1",
+      "family": "logistic_regression",
+      "folds": [
+        {
+          "PR_AUC": 0.9874545761955683,
+          "macro_f1": 0.7398056765406651
+        },
+        {
+          "PR_AUC": 0.9645790478104272,
+          "macro_f1": 0.6761831272735553
+        },
+        {
+          "PR_AUC": 0.9592319646077316,
+          "macro_f1": 0.6191641302123774
+        }
+      ],
+      "mean_PR_AUC": 0.9704218628712423,
+      "mean_macro_f1": 0.6783843113421993
+    },
+    {
+      "candidate": "logistic_c1",
+      "family": "logistic_regression",
+      "folds": [
+        {
+          "PR_AUC": 0.7633573985271125,
+          "macro_f1": 0.5788707827622784
+        },
+        {
+          "PR_AUC": 0.9663157611427082,
+          "macro_f1": 0.6952441429746555
+        },
+        {
+          "PR_AUC": 0.972557843133076,
+          "macro_f1": 0.6638527418707
+        }
+      ],
+      "mean_PR_AUC": 0.9007436676009656,
+      "mean_macro_f1": 0.645989222535878
+    },
+    {
+      "candidate": "logistic_c10",
+      "family": "logistic_regression",
+      "folds": [
+        {
+          "PR_AUC": 0.6096005215456539,
+          "macro_f1": 0.556110553024411
+        },
+        {
+          "PR_AUC": 0.9654306107677424,
+          "macro_f1": 0.6991222048024441
+        },
+        {
+          "PR_AUC": 0.9792974733291483,
+          "macro_f1": 0.6817782598051149
+        }
+      ],
+      "mean_PR_AUC": 0.8514428685475148,
+      "mean_macro_f1": 0.6456703392106568
+    }
+  ],
+  "calibrated_finalists": [
+    {
+      "candidate": "logistic_c0.1",
+      "family": "logistic_regression",
+      "PR_AUC": 0.9998739313994589,
+      "Brier_score": 0.002264033284511848,
+      "ECE": 0.00208873918033848
+    },
+    {
+      "candidate": "hist_small",
+      "family": "hist_gradient_boosting",
+      "PR_AUC": 1.0,
+      "Brier_score": 6.445721657329637e-11,
+      "ECE": 7.1653224292953415e-06
+    }
+  ],
+  "selected_candidate": "hist_small",
+  "selected_metrics": {
+    "PR_AUC": 1.0,
+    "Brier_score": 6.445721657329637e-11,
+    "ECE": 7.1653224292953415e-06
+  },
+  "decision_policy": {
+    "benign_max_probability": 0.05,
+    "malicious_min_probability": 0.55,
+    "coverage": 1.0,
+    "selective_risk": 0.0,
+    "benign_false_positive_rate": 0.0,
+    "malicious_recall": 1.0,
+    "constraints_satisfied": true,
+    "max_selective_risk": 0.1,
+    "max_benign_false_positive_rate": 0.05
+  },
+  "coverage_risk_curve": [
+    {
+      "target_risk": 0.01,
+      "coverage": 1.0,
+      "observed_risk": 0.0,
+      "minimum_confidence_margin": 0.4999154168992362
+    },
+    {
+      "target_risk": 0.05,
+      "coverage": 1.0,
+      "observed_risk": 0.0,
+      "minimum_confidence_margin": 0.4999154168992362
+    },
+    {
+      "target_risk": 0.1,
+      "coverage": 1.0,
+      "observed_risk": 0.0,
+      "minimum_confidence_margin": 0.4999154168992362
+    }
+  ]
+}

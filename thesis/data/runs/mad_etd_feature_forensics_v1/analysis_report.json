@@ -1,0 +1,22 @@
+{
+  "blocked_field_violation": 0,
+  "datasets_with_numeric_sample": [
+    "Annotated-TLS-2026",
+    "CESNET-TLS22",
+    "CICIDS2017",
+    "CipherSpectrum",
+    "HIKARI-2021",
+    "NF-BoT-IoT/NF-ToN-IoT",
+    "USTC-TFC2016"
+  ],
+  "fake_metric_count": 0,
+  "inventory_only_datasets": [
+    "DoHBrw-2020"
+  ],
+  "new_detector_trained": false,
+  "records": 355,
+  "runtime_safe_v3_0_remains_default": true,
+  "shortcut_suspect_count": 25,
+  "status": "forensics_computed_with_explicit_limitations",
+  "test_used_for_selection": false
+}

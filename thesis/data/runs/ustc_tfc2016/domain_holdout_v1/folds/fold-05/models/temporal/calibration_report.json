@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "agent": "temporal",
+  "candidate_cross_validation": [
+    {
+      "candidate": "hist_medium",
+      "family": "hist_gradient_boosting",
+      "folds": [
+        {
+          "PR_AUC": 0.999999929423922,
+          "macro_f1": 0.9897254499712864
+        },
+        {
+          "PR_AUC": 0.9999999989880353,
+          "macro_f1": 0.992391328225632
+        },
+        {
+          "PR_AUC": 0.9696929549687616,
+          "macro_f1": 0.6326965650125214
+        }
+      ],
+      "mean_PR_AUC": 0.989897627793573,
+      "mean_macro_f1": 0.8716044477364799
+    },
+    {
+      "candidate": "hist_small",
+      "family": "hist_gradient_boosting",
+      "folds": [
+        {
+          "PR_AUC": 0.999999929423922,
+          "macro_f1": 0.9897254499712864
+        },
+        {
+          "PR_AUC": 0.9999979187618286,
+          "macro_f1": 0.992391328225632
+        },
+        {
+          "PR_AUC": 0.9696929549687616,
+          "macro_f1": 0.6326965650125214
+        }
+      ],
+      "mean_PR_AUC": 0.9898969343848374,
+      "mean_macro_f1": 0.8716044477364799
+    },
+    {
+      "candidate": "logistic_c0.1",
+      "family": "logistic_regression",
+      "folds": [
+        {
+          "PR_AUC": 0.9942800436939809,
+          "macro_f1": 0.9722199145566769
+        },
+        {
+          "PR_AUC": 0.9999979123530409,
+          "macro_f1": 0.8898970125905457
+        },
+        {
+          "PR_AUC": 0.8784366022927212,
+          "macro_f1": 0.5437219241729082
+        }
+      ],
+      "mean_PR_AUC": 0.957571519446581,
+      "mean_macro_f1": 0.8019462837733768
+    },
+    {
+      "candidate": "logistic_c1",
+      "family": "logistic_regression",
+      "folds": [
+        {
+          "PR_AUC": 0.959085024652568,
+          "macro_f1": 0.8661616220159933
+        },
+        {
+          "PR_AUC": 0.9999832861515655,
+          "macro_f1": 0.9465148087919624
+        },
+        {
+          "PR_AUC": 0.8492375291318313,
+          "macro_f1": 0.6127914775768836
+        }
+      ],
+      "mean_PR_AUC": 0.9361019466453215,
+      "mean_macro_f1": 0.8084893027949464
+    },
+    {
+      "candidate": "logistic_c10",
+      "family": "logistic_regression",
+      "folds": [
+        {
+          "PR_AUC": 0.8457005789836028,
+          "macro_f1": 0.3250971689219152
+        },
+        {
+          "PR_AUC": 0.9999812060659548,
+          "macro_f1": 0.9473031881389169
+        },
+        {
+          "PR_AUC": 0.8325617305928046,
+          "macro_f1": 0.6237201288591617
+        }
+      ],
+      "mean_PR_AUC": 0.8927478385474541,
+      "mean_macro_f1": 0.6320401619733312
+    }
+  ],
+  "calibrated_finalists": [
+    {
+      "candidate": "logistic_c0.1",
+      "family": "logistic_regression",
+      "PR_AUC": 0.9990107392934889,
+      "Brier_score": 0.03986131134377754,
+      "ECE": 0.044731147165508515
+    },
+    {
+      "candidate": "hist_medium",
+      "family": "hist_gradient_boosting",
+      "PR_AUC": 1.0,
+      "Brier_score": 5.2514048239955924e-11,
+      "ECE": 6.736669512063166e-06
+    }
+  ],
+  "selected_candidate": "hist_medium",
+  "selected_metrics": {
+    "PR_AUC": 1.0,
+    "Brier_score": 5.2514048239955924e-11,
+    "ECE": 6.736669512063166e-06
+  },
+  "decision_policy": {
+    "benign_max_probability": 0.05,
+    "malicious_min_probability": 0.55,
+    "coverage": 1.0,
+    "selective_risk": 0.0,
+    "benign_false_positive_rate": 0.0,
+    "malicious_recall": 1.0,
+    "constraints_satisfied": true,
+    "max_selective_risk": 0.1,
+    "max_benign_false_positive_rate": 0.05
+  },
+  "coverage_risk_curve": [
+    {
+      "target_risk": 0.01,
+      "coverage": 1.0,
+      "observed_risk": 0.0,
+      "minimum_confidence_margin": 0.4999089332683757
+    },
+    {
+      "target_risk": 0.05,
+      "coverage": 1.0,
+      "observed_risk": 0.0,
+      "minimum_confidence_margin": 0.4999089332683757
+    },
+    {
+      "target_risk": 0.1,
+      "coverage": 1.0,
+      "observed_risk": 0.0,
+      "minimum_confidence_margin": 0.4999089332683757
+    }
+  ]
+}

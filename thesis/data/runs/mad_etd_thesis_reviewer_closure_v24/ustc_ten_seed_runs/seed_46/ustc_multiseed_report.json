@@ -1,0 +1,56 @@
+{
+  "acceptance_used_for_seed_selection": false,
+  "accuracy_delta": {
+    "maximum": 0.0,
+    "mean": 0.0,
+    "minimum": 0.0,
+    "positive_seed_count": 0,
+    "seed_count": 1,
+    "std": 0.0
+  },
+  "all_seed_rows": [
+    {
+      "acceptance_used_for_seed_selection": false,
+      "accuracy_delta": 0.0,
+      "average_evidence_calls": 1.0485,
+      "blocked_field_violation": 0,
+      "call_reduction_vs_static_two_call": 0.47575,
+      "candidate_accuracy": 0.9295,
+      "candidate_macro_f1": 0.9291676368439812,
+      "fusion_ownership_violation": 0,
+      "grouped_ci95_lower": 0.0,
+      "grouped_ci95_upper": 0.0,
+      "macro_f1_delta": 0.0,
+      "malicious_recall_delta": 0.0,
+      "reference_accuracy": 0.9295,
+      "reference_macro_f1": 0.9291676368439812,
+      "sample_count": 10000,
+      "seed": 46,
+      "worst_group_class_f1_delta": 0.0
+    }
+  ],
+  "audit_completion": 1.0,
+  "blocked_field_violation": 0,
+  "fake_metric_count": 0,
+  "fusion_ownership_violation": 0,
+  "illegal_verdict_execution_count": 0,
+  "macro_f1_delta": {
+    "maximum": 0.0,
+    "mean": 0.0,
+    "minimum": 0.0,
+    "positive_seed_count": 0,
+    "seed_count": 1,
+    "std": 0.0
+  },
+  "ood_override_count": 0,
+  "post_acceptance_robustness_analysis": true,
+  "promoted_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "same_training_validation_acceptance_manifests": true,
+  "seed_selection_performed": false,
+  "seeds": [
+    46
+  ],
+  "status": "completed_ustc_three_training_seed_robustness_v21",
+  "test_or_acceptance_used_for_selection": false
+}

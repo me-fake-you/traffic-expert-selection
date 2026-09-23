@@ -1,0 +1,118 @@
+{
+  "hgb": {
+    "accuracy": 0.999546485260771,
+    "coverage": 1.0,
+    "ece": 0.00044715660469295265,
+    "macro_f1": 0.9959462515236028,
+    "macro_precision": 0.9997665732959851,
+    "macro_recall": 0.9921875,
+    "malicious_recall": 0.984375,
+    "sample_count": 2205,
+    "selective": {
+      "coverage": 1.0,
+      "ece": 0.00044715660469295265,
+      "per_malicious_tool_recall": {
+        "dns2tcp": null,
+        "dnscat2": 0.9696969696969697,
+        "iodine": 1.0
+      },
+      "quad9": {
+        "coverage": 1.0,
+        "sample_count": 2156,
+        "selective_macro_f1": 1.0
+      },
+      "sample_count": 2205,
+      "selective_error": 0.00045351473922902497,
+      "selective_macro_f1": 0.9959462515236028
+    },
+    "selective_error": 0.00045351473922902497,
+    "weighted_f1": 0.9995447527132556
+  },
+  "records_handshake": {
+    "accuracy": 0.9972789115646259,
+    "coverage": 0.9977324263038548,
+    "ece": 0.0016812555681922057,
+    "macro_f1": 0.9914792434072639,
+    "macro_precision": 0.9997661365762395,
+    "macro_recall": 0.9834408570761326,
+    "malicious_recall": 0.96875,
+    "sample_count": 2205,
+    "selective": {
+      "coverage": 0.9977324263038548,
+      "ece": 0.0016812555681922057,
+      "per_malicious_tool_recall": {
+        "dns2tcp": null,
+        "dnscat2": 0.9696969696969697,
+        "iodine": 0.967741935483871
+      },
+      "quad9": {
+        "coverage": 0.9981447124304267,
+        "sample_count": 2156,
+        "selective_macro_f1": 1.0
+      },
+      "sample_count": 2205,
+      "selective_error": 0.00045454545454545455,
+      "selective_macro_f1": 0.9958830409356725
+    },
+    "selective_error": 0.00045454545454545455,
+    "weighted_f1": 0.998404704869913
+  },
+  "records_only": {
+    "accuracy": 0.9959183673469387,
+    "coverage": 0.9963718820861678,
+    "ece": 0.0011879851470897294,
+    "macro_f1": 0.99112803836845,
+    "macro_precision": 0.9997658079625293,
+    "macro_recall": 0.982740249883232,
+    "malicious_recall": 0.96875,
+    "sample_count": 2205,
+    "selective": {
+      "coverage": 0.9963718820861678,
+      "ece": 0.0011879851470897294,
+      "per_malicious_tool_recall": {
+        "dns2tcp": null,
+        "dnscat2": 0.9696969696969697,
+        "iodine": 0.967741935483871
+      },
+      "quad9": {
+        "coverage": 0.9967532467532467,
+        "sample_count": 2156,
+        "selective_macro_f1": 1.0
+      },
+      "sample_count": 2205,
+      "selective_error": 0.0004551661356395084,
+      "selective_macro_f1": 0.9958828765518857
+    },
+    "selective_error": 0.0004551661356395084,
+    "weighted_f1": 0.997722682204969
+  },
+  "rule": {
+    "accuracy": 0.9709750566893424,
+    "coverage": 1.0,
+    "ece": 0.23991647805933755,
+    "macro_f1": 0.49263690750115047,
+    "macro_precision": 0.4854875283446712,
+    "macro_recall": 0.5,
+    "malicious_recall": 0.0,
+    "sample_count": 2205,
+    "selective": {
+      "coverage": 1.0,
+      "ece": 0.23991647805933755,
+      "per_malicious_tool_recall": {
+        "dns2tcp": null,
+        "dnscat2": 0.0,
+        "iodine": 0.0
+      },
+      "quad9": {
+        "coverage": 1.0,
+        "sample_count": 2156,
+        "selective_macro_f1": 0.49825459622992785
+      },
+      "sample_count": 2205,
+      "selective_error": 0.029024943310657598,
+      "selective_macro_f1": 0.49263690750115047
+    },
+    "selective_error": 0.029024943310657598,
+    "weighted_f1": 0.9566762983763838
+  }
+}

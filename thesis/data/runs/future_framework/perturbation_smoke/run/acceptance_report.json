@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "experiment": "agentic_time_series_perturbation_v1",
+  "acceptance_status": "passed",
+  "test_count": null,
+  "source_sample_count": 30,
+  "prediction_count": 1080,
+  "failures": [],
+  "audit_completion_rate": 1.0,
+  "blocked_field_violation_count": 0,
+  "fusion_ownership_violation_count": 0,
+  "ood_override_count": 0,
+  "minimum_shadow_fusion_invariance": 1.0,
+  "frozen_artifacts_unchanged": true,
+  "cipherspectrum_locked_test_used": false,
+  "test_label_tuning_used": false,
+  "automatic_retraining": false
+}

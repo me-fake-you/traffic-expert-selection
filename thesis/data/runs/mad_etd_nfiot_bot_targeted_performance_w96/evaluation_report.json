@@ -1,0 +1,97 @@
+{
+  "accepted_dataset_specific_full_coverage_result": true,
+  "audit_completion": 1.0,
+  "automatic_deployment": false,
+  "blocked_field_violation": 0,
+  "bootstrap": {
+    "accuracy_delta": {
+      "ci95_lower": 0.009505240068242826,
+      "ci95_upper": 0.01681696319766035,
+      "mean": 0.013173287838167194
+    },
+    "iterations": 1000,
+    "macro_f1_delta": {
+      "ci95_lower": 0.009510733039311348,
+      "ci95_upper": 0.01681931580071969,
+      "mean": 0.013175821442688019
+    },
+    "malicious_recall_delta": {
+      "ci95_lower": 0.0004904304782236052,
+      "ci95_upper": 0.004833311208191704,
+      "mean": 0.0024200791729526694
+    },
+    "seed": 42
+  },
+  "candidate": {
+    "accuracy": 0.9955445544554455,
+    "candidate_type": "single",
+    "coverage": 1.0,
+    "ece": 0.0030093126604655877,
+    "macro_f1": 0.9955419312265648,
+    "malicious_recall": 0.9914098029307731,
+    "members": [
+      "random_forest_native"
+    ],
+    "selective_error": 0.004455445544554459,
+    "threshold": 0.33,
+    "weighted_f1": 0.9955441261731793,
+    "weights": [
+      1.0
+    ]
+  },
+  "candidate_default_enabled": false,
+  "candidate_metrics": {
+    "accuracy": 0.9958566902266635,
+    "coverage": 1.0,
+    "ece": 0.002427259877672999,
+    "macro_f1": 0.995856123091876,
+    "malicious_recall": 0.9916502946954814,
+    "selective_error": 0.004143309773336545,
+    "weighted_f1": 0.9958564893664262
+  },
+  "dataset_scope": "NF-BoT-IoT-v2",
+  "deltas": {
+    "accuracy": 0.013161101632951588,
+    "coverage": 0.0,
+    "ece": -0.006842178092486334,
+    "macro_f1": 0.013160550944690708,
+    "malicious_recall": 0.0024557956777996326,
+    "selective_error": -0.013161101632951588,
+    "weighted_f1": 0.01316078975865942
+  },
+  "experiment": "mad_etd_nfiot_bot_targeted_performance_w96",
+  "failed_gates": [],
+  "fake_metric_count": 0,
+  "fusion_ownership_violation": 0,
+  "gates": {
+    "acceptance_not_used_for_selection": true,
+    "accuracy_delta_at_least_0_005": true,
+    "blocked_field_violation_zero": true,
+    "coverage_is_one": true,
+    "ece_not_worse_by_0_005": true,
+    "fake_metric_count_zero": true,
+    "fusion_ownership_violation_zero": true,
+    "macro_f1_ci95_lower_gt_zero": true,
+    "macro_f1_delta_at_least_0_005": true,
+    "malicious_recall_not_lower": true,
+    "runtime_safe_v3_0_remains_default": true
+  },
+  "generalisation_claim_supported": false,
+  "illegal_verdict_execution_count": 0,
+  "ood_override_count": 0,
+  "promoted_runtime_created": false,
+  "reference_metrics": {
+    "accuracy": 0.9826955885937119,
+    "coverage": 1.0,
+    "ece": 0.009269437970159333,
+    "macro_f1": 0.9826955721471853,
+    "malicious_recall": 0.9891944990176817,
+    "selective_error": 0.017304411406288134,
+    "weighted_f1": 0.9826956996077668
+  },
+  "reference_model_id": "extra_trees_common",
+  "runtime_safe_v3_0_remains_default": true,
+  "sample_count": 4103,
+  "schema_version": "1.0",
+  "status": "accepted_dataset_specific_full_coverage_accuracy_f1_result"
+}

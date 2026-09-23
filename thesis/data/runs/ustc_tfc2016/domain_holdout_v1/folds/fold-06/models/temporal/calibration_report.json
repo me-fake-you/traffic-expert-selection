@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "agent": "temporal",
+  "candidate_cross_validation": [
+    {
+      "candidate": "hist_medium",
+      "family": "hist_gradient_boosting",
+      "folds": [
+        {
+          "PR_AUC": 1.0,
+          "macro_f1": 0.49943035816749964
+        },
+        {
+          "PR_AUC": 0.9998631235982957,
+          "macro_f1": 0.5785689703597139
+        },
+        {
+          "PR_AUC": 0.9312030302210667,
+          "macro_f1": 0.6191521872654927
+        }
+      ],
+      "mean_PR_AUC": 0.9770220512731207,
+      "mean_macro_f1": 0.5657171719309021
+    },
+    {
+      "candidate": "hist_small",
+      "family": "hist_gradient_boosting",
+      "folds": [
+        {
+          "PR_AUC": 1.0,
+          "macro_f1": 0.49943035816749964
+        },
+        {
+          "PR_AUC": 0.9998629757935145,
+          "macro_f1": 0.5785689703597139
+        },
+        {
+          "PR_AUC": 0.9312030302210667,
+          "macro_f1": 0.6191521872654927
+        }
+      ],
+      "mean_PR_AUC": 0.9770220020048604,
+      "mean_macro_f1": 0.5657171719309021
+    },
+    {
+      "candidate": "logistic_c0.1",
+      "family": "logistic_regression",
+      "folds": [
+        {
+          "PR_AUC": 0.9999999999999999,
+          "macro_f1": 0.47838369483271087
+        },
+        {
+          "PR_AUC": 0.9295072532332078,
+          "macro_f1": 0.9625838250428911
+        },
+        {
+          "PR_AUC": 0.6988766154075304,
+          "macro_f1": 0.39730345999540573
+        }
+      ],
+      "mean_PR_AUC": 0.8761279562135794,
+      "mean_macro_f1": 0.612756993290336
+    },
+    {
+      "candidate": "logistic_c1",
+      "family": "logistic_regression",
+      "folds": [
+        {
+          "PR_AUC": 0.9999999999999999,
+          "macro_f1": 0.4842474145538981
+        },
+        {
+          "PR_AUC": 0.7599434608458127,
+          "macro_f1": 0.741970507373114
+        },
+        {
+          "PR_AUC": 0.8162855313401876,
+          "macro_f1": 0.4685139743718064
+        }
+      ],
+      "mean_PR_AUC": 0.8587429973953333,
+      "mean_macro_f1": 0.5649106320996062
+    },
+    {
+      "candidate": "logistic_c10",
+      "family": "logistic_regression",
+      "folds": [
+        {
+          "PR_AUC": 1.0,
+          "macro_f1": 0.4865219913331286
+        },
+        {
+          "PR_AUC": 0.20595514794132624,
+          "macro_f1": 0.2463110801523017
+        },
+        {
+          "PR_AUC": 0.7614365215999134,
+          "macro_f1": 0.4690893243903917
+        }
+      ],
+      "mean_PR_AUC": 0.6557972231804131,
+      "mean_macro_f1": 0.400640798625274
+    }
+  ],
+  "calibrated_finalists": [
+    {
+      "candidate": "logistic_c0.1",
+      "family": "logistic_regression",
+      "PR_AUC": 0.9987444325966786,
+      "Brier_score": 0.03642746996492086,
+      "ECE": 0.04305648776032736
+    },
+    {
+      "candidate": "hist_medium",
+      "family": "hist_gradient_boosting",
+      "PR_AUC": 1.0,
+      "Brier_score": 2.539743997467438e-06,
+      "ECE": 0.0001470766676696514
+    }
+  ],
+  "selected_candidate": "hist_medium",
+  "selected_metrics": {
+    "PR_AUC": 1.0,
+    "Brier_score": 2.539743997467438e-06,
+    "ECE": 0.0001470766676696514
+  },
+  "decision_policy": {
+    "benign_max_probability": 0.07,
+    "malicious_min_probability": 0.55,
+    "coverage": 1.0,
+    "selective_risk": 0.0,
+    "benign_false_positive_rate": 0.0,
+    "malicious_recall": 1.0,
+    "constraints_satisfied": true,
+    "max_selective_risk": 0.1,
+    "max_benign_false_positive_rate": 0.05
+  },
+  "coverage_risk_curve": [
+    {
+      "target_risk": 0.01,
+      "coverage": 1.0,
+      "observed_risk": 0.0,
+      "minimum_confidence_margin": 0.43797917017943905
+    },
+    {
+      "target_risk": 0.05,
+      "coverage": 1.0,
+      "observed_risk": 0.0,
+      "minimum_confidence_margin": 0.43797917017943905
+    },
+    {
+      "target_risk": 0.1,
+      "coverage": 1.0,
+      "observed_risk": 0.0,
+      "minimum_confidence_margin": 0.43797917017943905
+    }
+  ]
+}

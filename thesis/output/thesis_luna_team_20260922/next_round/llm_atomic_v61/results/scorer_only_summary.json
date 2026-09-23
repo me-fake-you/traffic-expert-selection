@@ -1,0 +1,9 @@
+{
+  "scorer_only": true,
+  "rows": 48,
+  "labels_present": 48,
+  "labels_loaded_after_decisions_fixed": 48,
+  "canonical_prompt_label_leak_hits": 0,
+  "covered_historical_t19b_rows": 36,
+  "selection_category_used_in_prompt_or_rule": false
+}

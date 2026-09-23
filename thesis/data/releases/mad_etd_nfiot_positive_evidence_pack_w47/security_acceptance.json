@@ -1,0 +1,11 @@
+{
+  "blocked_field_violation": 0,
+  "experiment": "mad_etd_nfiot_positive_evidence_pack_w47",
+  "external_paper_metrics_used": false,
+  "fake_metric_count": 0,
+  "fusion_ownership_violation": 0,
+  "runtime_safe_v3_0_hash_after": "60082e76e387913676fd109b0c120bd68b6a2b80035e9083fe52b9d329d58f61",
+  "runtime_safe_v3_0_remains_default": true,
+  "schema_version": "1.0",
+  "status": "passed"
+}

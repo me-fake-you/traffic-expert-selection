@@ -1,0 +1,96 @@
+{
+  "status": "passed_w325_publication_routing_efficiency_evidence_pack",
+  "build_report": {
+    "status": "ready_for_w325_evidence_pack_finalization",
+    "experiment": "mad_etd_routing_efficiency_evidence_pack_w325",
+    "source_status_gates": {
+      "w322_capsule_passed": true,
+      "w323_capsule_passed": true,
+      "w324_capsule_passed": true,
+      "w324_statistical_result_accepted": true,
+      "all_three_w324_sources_passed": true,
+      "source_fake_metrics_zero": true,
+      "source_runtime_default_unchanged": true,
+      "source_promoted_runtime_not_created": true
+    },
+    "per_source_numeric_gates": {
+      "USTC-TFC2016": {
+        "source_passed_w324": true,
+        "seven_repetitions_present": true,
+        "request_attempts_three_to_one": true,
+        "executed_evidence_calls_one_to_one": true,
+        "unsupported_calls_two_to_zero": true,
+        "bootstrap_ci_lower_positive": true,
+        "verdict_agreement_one": true,
+        "ood_signature_agreement_one": true,
+        "classification_and_coverage_deltas_zero": true
+      },
+      "NF-IoT": {
+        "source_passed_w324": true,
+        "seven_repetitions_present": true,
+        "request_attempts_three_to_one": true,
+        "executed_evidence_calls_one_to_one": true,
+        "unsupported_calls_two_to_zero": true,
+        "bootstrap_ci_lower_positive": true,
+        "verdict_agreement_one": true,
+        "ood_signature_agreement_one": true,
+        "classification_and_coverage_deltas_zero": true
+      },
+      "CICIoT2023": {
+        "source_passed_w324": true,
+        "seven_repetitions_present": true,
+        "request_attempts_three_to_one": true,
+        "executed_evidence_calls_one_to_one": true,
+        "unsupported_calls_two_to_zero": true,
+        "bootstrap_ci_lower_positive": true,
+        "verdict_agreement_one": true,
+        "ood_signature_agreement_one": true,
+        "classification_and_coverage_deltas_zero": true
+      }
+    },
+    "source_datasets": [
+      "USTC-TFC2016",
+      "NF-IoT",
+      "CICIoT2023"
+    ],
+    "statistical_source_count": 3,
+    "gotham_development_context_included": true,
+    "paper_reported_external_metrics_included": false,
+    "classification_improvement_claim_supported": false,
+    "latency_scope": "governance replay, not production serving or full detector-stack latency",
+    "request_semantics_explicit": true,
+    "executed_evidence_call_semantics_explicit": true,
+    "fake_metric_count": 0,
+    "promoted_runtime_created": false,
+    "runtime_safe_v3_0_remains_default": true
+  },
+  "acceptance_gates": {
+    "build_ready": true,
+    "all_expected_artifacts_present": true,
+    "paper_reported_external_metrics_excluded": true,
+    "classification_improvement_not_claimed": true,
+    "request_and_execution_semantics_explicit": true,
+    "frozen_hashes_unchanged": true,
+    "fake_metric_count_zero": true,
+    "promoted_runtime_not_created": true,
+    "runtime_safe_v3_0_remains_default": true,
+    "tests_passed": true
+  },
+  "safe_claims": [
+    "Across three frozen source lanes, capability-aware routing reduced request attempts from 3.0 to 1.0 and unsupported attempts from 2.0 to 0.0.",
+    "Repeated counterbalanced governance replay produced strictly positive paired-bootstrap p95 latency-reduction intervals on all three W324 source lanes.",
+    "The replay preserved classification metrics, Fusion verdicts, and fixed in-domain OOD signatures."
+  ],
+  "forbidden_claims": [
+    "Capability routing improved Accuracy, Macro-F1, or recall",
+    "Executed detector inference calls fell from three to one",
+    "W325 measured production end-to-end serving latency",
+    "W325 validated external OOD detection accuracy",
+    "W325 promoted or replaced runtime_safe_v3_0"
+  ],
+  "fake_metric_count": 0,
+  "promoted_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "tests_passed": true,
+  "test_count": 1570
+}

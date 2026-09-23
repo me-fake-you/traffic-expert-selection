@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "experiment": "mad_etd_foolsgold_rsrat_mafsid_comparison_v1",
+  "source_artifact": "data/runs/mad_etd_mafsid_live_semantic_resilience_v1/official_agent_probabilities.npz",
+  "source_sha256": "d012b014ddca2d0187bcfd1d5685557d64808917248521465c42e61e91a66edc",
+  "foolsgold_scenario_results": "data/runs/mad_etd_foolsgold_mafsid_evidence_adapter_v1/scenario_results.csv",
+  "foolsgold_scenario_sha256": "322f7a14956c67d57618e9455d20689a7bc052a01e5fdf2fe1c62cf7d590768e",
+  "output_dir": "data/runs/mad_etd_foolsgold_rsrat_mafsid_comparison_v1",
+  "attack_types": [
+    "probability_permutation",
+    "extreme_wrong",
+    "runner_up_hijack",
+    "targeted_blend"
+  ],
+  "compromised_counts": [1, 2],
+  "attack_fraction": 1.0,
+  "audit_rates": [0.001, 0.005],
+  "repeats": 100,
+  "seed": 20260901,
+  "replay_tolerance": 1e-9,
+  "trusted_takeover": {
+    "detection": "first secret post-submission Bernoulli-audited mismatch per source",
+    "identity_action": "revoke the mismatching source for the rest of the stream",
+    "peer_response": "remove each revoked source and mean-fuse remaining reported evidence",
+    "rsrat_response": "replace each revoked source with its trusted locked-copy evidence and mean-fuse all five sources",
+    "coverage": 1.0,
+    "trusted_copy_compromise_in_scope": false
+  },
+  "statistics": {
+    "bootstrap_seed": 20260901,
+    "bootstrap_repeats": 10000,
+    "paired_unit": "attack scenario after averaging 100 replay schedules",
+    "paired_test": "two-sided Wilcoxon signed-rank with Pratt zeros",
+    "multiplicity": "Holm across eight audit-rate by source-count by response tests"
+  },
+  "claim_boundary": {
+    "retrospective": true,
+    "same_frozen_evidence": true,
+    "same_attack_scenarios": true,
+    "independent_takeover_confirmation": false,
+    "foolsgold_faithful_paper_reproduction": false,
+    "trusted_copy_assumed": true,
+    "pre_detection_harm_possible": true,
+    "safe_description": "retrospective same-evidence direct comparison of FoolsGold, peer removal, and RSRA-T"
+  }
+}

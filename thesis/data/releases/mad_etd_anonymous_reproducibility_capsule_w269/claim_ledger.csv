@@ -1,0 +1,5 @@
+claim_id,claim,support,safe_to_claim,boundary
+C1,Capability-aware routing reduces evidence-agent calls.,layered_ablation_results.csv,True,same frozen data; no accuracy-improvement claim
+C2,"AdmissionGate rejects forged, stale and advisory evidence.",threat_model_and_results.csv,True,default-off research prototype
+C3,Registry/PolicyGuard/AdmissionGate improve Accuracy or F1.,none,False,forbidden overclaim
+C4,MAD-ETD fairly outperforms all external multi-agent IDS.,none,False,external faithful reproduction remains incomplete

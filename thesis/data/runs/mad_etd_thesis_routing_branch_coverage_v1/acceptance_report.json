@@ -1,0 +1,8 @@
+{
+  "status": "completed_deterministic_routing_branch_coverage",
+  "scenario_count": 6,
+  "all_scenarios_audit_complete": true,
+  "illegal_agent_executed": false,
+  "fake_metric_count": 0,
+  "runtime_safe_v3_0_modified": false
+}

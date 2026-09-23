@@ -1,0 +1,5 @@
+method,accuracy,macro_f1,malicious_recall,request_temporal_rate,average_evidence_model_invocations
+stats_only,0.881,0.8798424717639464,0.97915,0.0,1.0
+static_two_view_average,0.92765,0.9273377848121251,0.9932,1.0,2.0
+fixed_confidence_cascade_0_90,0.925,0.9246817805227084,0.99,0.2489,1.2489
+logistic_gate,0.924125,0.9237691310054742,0.99245,0.708275,1.708275

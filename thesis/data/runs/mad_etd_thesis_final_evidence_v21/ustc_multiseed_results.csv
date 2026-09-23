@@ -1,0 +1,4 @@
+seed,sample_count,reference_accuracy,candidate_accuracy,accuracy_delta,reference_macro_f1,candidate_macro_f1,macro_f1_delta,malicious_recall_delta,grouped_ci95_lower,grouped_ci95_upper,worst_group_class_f1_delta,average_evidence_calls,call_reduction_vs_static_two_call,blocked_field_violation,fusion_ownership_violation,acceptance_used_for_seed_selection
+42,10000,0.9279,0.9492,0.021300000000000097,0.9275480217690761,0.9490777356432796,0.021529713874203438,0.0005999999999999339,0.00020803026852777296,0.06411393346538403,0.0,1.0671,0.46645000000000003,0,0,False
+43,10000,0.9256,0.9256,0.0,0.9252123005661348,0.9252123005661348,0.0,0.0,0.0,0.0,0.0,1.0941,0.45294999999999996,0,0,False
+44,10000,0.9242,0.9242,0.0,0.9237826337021531,0.9237826337021531,0.0,0.0,0.0,0.0,0.0,1.0582,0.4709,0,0,False

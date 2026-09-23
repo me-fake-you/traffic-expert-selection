@@ -1,0 +1,11 @@
+fold,group,rows,corrections,damage,neutral
+0,benign:Weibo,2000,0,0,2000
+0,malware:Virut,2000,0,0,2000
+1,benign:MySQL,2000,0,0,2000
+1,malware:Neris,2000,2,4,1994
+2,benign:Outlook,2000,0,0,2000
+2,malware:Zeus,2000,0,0,2000
+3,benign:Facetime,2000,0,0,2000
+3,malware:Geodo,2000,70,0,1930
+4,benign:Weibo,2000,0,0,2000
+4,malware:Miuref,2000,1,0,1999

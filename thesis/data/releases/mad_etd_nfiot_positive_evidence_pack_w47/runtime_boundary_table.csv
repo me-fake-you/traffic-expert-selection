@@ -1,0 +1,5 @@
+profile,default_enabled,scope,changed_by_w47,claim,agent_calls,unsupported_calls
+runtime_safe_v3_0,True,general safe runtime,False,remains default,,
+runtime_nf_iot_calibrated_v5_12,False,NF-BoT-IoT/NF-ToN-IoT only,False,dataset-specific optional profile,,
+static_multi_agent_ensemble,False,baseline comparison only,,,3.0,1.0
+runtime_safe_v3_0_efficiency_reference,True,baseline comparison reference,,,2.0,0.0

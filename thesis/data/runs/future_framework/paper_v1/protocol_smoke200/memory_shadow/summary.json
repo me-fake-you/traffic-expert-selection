@@ -1,0 +1,99 @@
+{
+  "sample_count": 200,
+  "verdict_rates": {
+    "benign": 0.155,
+    "malicious": 0.0,
+    "suspicious": 0.0,
+    "unknown": 0.845
+  },
+  "coverage": 0.155,
+  "alert_rate": 0.0,
+  "human_review_rate": 0.845,
+  "average_agent_calls": 2.24,
+  "latency_ms": {
+    "mean": 18.400348501163535,
+    "p50": 14.870949991745874,
+    "p95": 34.711010011960745
+  },
+  "verdict_invariance_rate": 1.0,
+  "mean_uncertainty_delta": 0.0,
+  "mean_conflict_delta": 0.0,
+  "memory_match_rate": 1.0,
+  "memory_top1_relevance": 0.69,
+  "memory_topk_relevance": 0.725,
+  "deliberation_trigger_rate": 0.0,
+  "supplemental_dispatch_rate": 0.0,
+  "compliance_failure_count": 0,
+  "audit_completion_rate": 1.0,
+  "blocked_field_violation_count": 0,
+  "ood_signature_invariance_rate": 1.0,
+  "classification": {
+    "labeled_count": 200,
+    "covered_labeled_count": 31,
+    "labeled_coverage": 0.155,
+    "selective_accuracy": 1.0,
+    "selective_macro_f1": 0.5,
+    "confusion": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 31,
+      "fn": 0
+    }
+  },
+  "grouped_bootstrap_95ci": {
+    "coverage": {
+      "low": 0.155,
+      "high": 0.155
+    },
+    "alert_rate": {
+      "low": 0.0,
+      "high": 0.0
+    },
+    "human_review_rate": {
+      "low": 0.845,
+      "high": 0.845
+    },
+    "average_agent_calls": {
+      "low": 2.24,
+      "high": 2.24
+    },
+    "average_latency_ms": {
+      "low": 18.400348501163535,
+      "high": 18.400348501163535
+    },
+    "verdict_invariance_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "audit_completion_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "blocked_field_violation_rate": {
+      "low": 0.0,
+      "high": 0.0
+    },
+    "ood_signature_invariance_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "uncertainty_delta": {
+      "low": 0.0,
+      "high": 0.0
+    },
+    "conflict_delta": {
+      "low": 0.0,
+      "high": 0.0
+    }
+  },
+  "feature_flags": {
+    "schema_version": "1.0",
+    "memory": true,
+    "planner_executor": false,
+    "deliberation": false,
+    "reflection": false,
+    "audit_critic": false,
+    "learning_queue": false,
+    "shadow_mode": true
+  }
+}

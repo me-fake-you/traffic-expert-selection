@@ -1,0 +1,33 @@
+{
+  "acceptance_used_for_selection": false,
+  "excluded_historical_rows_seen": 50000,
+  "group_count": 20,
+  "group_counts": {
+    "benign:BitTorrent": 500,
+    "benign:FTP": 500,
+    "benign:Facetime": 500,
+    "benign:Gmail": 500,
+    "benign:MySQL": 500,
+    "benign:Outlook": 500,
+    "benign:SMB": 500,
+    "benign:Skype": 500,
+    "benign:Weibo": 500,
+    "benign:WorldOfWarcraft": 500,
+    "malware:Cridex": 500,
+    "malware:Geodo": 500,
+    "malware:Htbot": 500,
+    "malware:Miuref": 500,
+    "malware:Neris": 500,
+    "malware:Nsis-ay": 500,
+    "malware:Shifu": 500,
+    "malware:Tinba": 500,
+    "malware:Virut": 500,
+    "malware:Zeus": 500
+  },
+  "historical_exclusion_count": 50000,
+  "per_group": 500,
+  "sample_count": 10000,
+  "sample_hash_overlap_count": 0,
+  "scanned_rows": 634630,
+  "status": "v61_fresh_acceptance_frozen"
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "experiment": "hitl_pilot_v1",
+  "protocol_status": "partial_complete",
+  "termination_reason": "reviewer_declined_phase2",
+  "real_review_count": 80,
+  "phase2_status": "cancelled",
+  "full_200_case_acceptance": false,
+  "paper_treatment": "80-case single-reviewer Phase-1 usability pilot",
+  "supported_claims": [
+    "Phase-1 workflow usability metrics",
+    "Fusion verdict invariance during feedback import",
+    "Audit and ownership safety for 80 reviewed cases"
+  ],
+  "unsupported_claims": [
+    "MemoryHint effectiveness",
+    "Hint-visible versus hint-hidden comparison",
+    "Inter-rater reliability",
+    "Population-level human-factors generalization",
+    "Completion of the preregistered 200-case HITL protocol"
+  ],
+  "phase1_metrics": {
+    "schema_version": "1.0",
+    "experiment": "hitl_pilot_v1",
+    "protocol_status": "partial_complete",
+    "termination_reason": "reviewer_declined_phase2",
+    "real_review_count": 80,
+    "phase1_review_count": 80,
+    "phase2_status": "cancelled",
+    "full_200_case_acceptance": false,
+    "mean_review_seconds": 134.50211250000004,
+    "median_review_seconds": 9.3005,
+    "p95_review_seconds": 31.117049999999946,
+    "needs_more_evidence_rate": 1.0,
+    "reviewer_outcome_distribution": {
+      "suspicious": 39,
+      "unknown": 41
+    },
+    "hint_relevance_rate": "not_applicable",
+    "hint_acceptance_rate": "not_applicable",
+    "hint_comparison_available": false,
+    "verdict_invariance_rate": 1.0,
+    "audit_completion_rate": 1.0,
+    "blocked_field_violation_count": 0,
+    "fusion_ownership_violation_count": 0,
+    "ood_override_count": 0,
+    "fusion_snapshot_violation_count": 0,
+    "frozen_artifacts_unchanged": true,
+    "current_verdict_modified": false,
+    "automatic_retraining": false,
+    "memory_case_count": 80,
+    "memory_feedback_count": 80,
+    "single_reviewer_pilot": true,
+    "inter_rater_claim": false,
+    "response_freeze": {
+      "schema_version": "1.0",
+      "experiment": "hitl_pilot_v1",
+      "phase": 1,
+      "real_review_count": 80,
+      "files": {
+        "phase1_responses.json": {
+          "sha256": "d0e744bdfc4b8e1a063ae2e98efa464deffa785b26e185f80440dcb8a94fd83e",
+          "size_bytes": 43459,
+          "frozen_copy": "data\\runs\\future_framework\\hitl_pilot_v1\\frozen_phase1_responses\\phase1_responses.json",
+          "frozen_copy_sha256": "d0e744bdfc4b8e1a063ae2e98efa464deffa785b26e185f80440dcb8a94fd83e"
+        },
+        "phase1_responses.csv": {
+          "sha256": "bc092120d70096a9e089793651319625ec36b2ab7ad325225611fcd1605bcca6",
+          "size_bytes": 88224,
+          "frozen_copy": "data\\runs\\future_framework\\hitl_pilot_v1\\frozen_phase1_responses\\phase1_responses.csv",
+          "frozen_copy_sha256": "bc092120d70096a9e089793651319625ec36b2ab7ad325225611fcd1605bcca6"
+        }
+      }
+    }
+  }
+}

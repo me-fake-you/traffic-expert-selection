@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0",
+  "strategies": {
+    "off": {
+      "schema_version": "1.0",
+      "mode": "off",
+      "metrics_status": "computed",
+      "sample_count": 29483,
+      "labeled_sample_count": 29483,
+      "accuracy": 0.998729728585341,
+      "macro_f1": 0.9985732629160353,
+      "precision": 1.0,
+      "recall": 0.998093301131308,
+      "PR_AUC": 0.9999999721439272,
+      "Brier_score": 0.005450430262604972,
+      "ECE": 0.02986159066968768,
+      "coverage": 0.8010378862395279,
+      "unknown_rate": 0.0013227961876335515,
+      "suspicious_rate": 0.1976393175728386,
+      "average_agent_calls": 2.7303191669775804,
+      "average_latency_ms": 5.36719913156664,
+      "selective_error_rate": 0.001270271414658932,
+      "benign_false_positive_rate": 0.0,
+      "malicious_detection_rate": 0.727037037037037,
+      "confusion_on_covered": {
+        "tp": 15704,
+        "fp": 0,
+        "tn": 7883,
+        "fn": 30
+      }
+    },
+    "soft": {
+      "schema_version": "1.0",
+      "mode": "soft",
+      "metrics_status": "computed",
+      "sample_count": 29483,
+      "labeled_sample_count": 29483,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "PR_AUC": 0.999999867239574,
+      "Brier_score": 0.005475886221228422,
+      "ECE": 0.029979827716459326,
+      "coverage": 0.27955092765322387,
+      "unknown_rate": 0.014177661703354475,
+      "suspicious_rate": 0.7062714106434216,
+      "average_agent_calls": 2.7303191669775804,
+      "average_latency_ms": 5.36719913156664,
+      "selective_error_rate": 0.0,
+      "benign_false_positive_rate": 0.0,
+      "malicious_detection_rate": 0.01787037037037037,
+      "confusion_on_covered": {
+        "tp": 386,
+        "fp": 0,
+        "tn": 7856,
+        "fn": 0
+      }
+    },
+    "hybrid": {
+      "schema_version": "1.0",
+      "mode": "hybrid",
+      "metrics_status": "computed",
+      "sample_count": 29483,
+      "labeled_sample_count": 29483,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "PR_AUC": 0.9999999807071968,
+      "Brier_score": 0.008014250264483096,
+      "ECE": 0.0352126265608458,
+      "coverage": 0.27955092765322387,
+      "unknown_rate": 0.014177661703354475,
+      "suspicious_rate": 0.7062714106434216,
+      "average_agent_calls": 2.7303191669775804,
+      "average_latency_ms": 5.36719913156664,
+      "selective_error_rate": 0.0,
+      "benign_false_positive_rate": 0.0,
+      "malicious_detection_rate": 0.01787037037037037,
+      "confusion_on_covered": {
+        "tp": 386,
+        "fp": 0,
+        "tn": 7856,
+        "fn": 0
+      }
+    },
+    "stats_gate_only": {
+      "schema_version": "1.0",
+      "mode": "stats_gate_only",
+      "metrics_status": "computed",
+      "sample_count": 29483,
+      "labeled_sample_count": 29483,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "PR_AUC": 1.0,
+      "Brier_score": 0.005219280451666917,
+      "ECE": 0.02957966531586595,
+      "coverage": 0.2800596954176983,
+      "unknown_rate": 0.002916935182986806,
+      "suspicious_rate": 0.7170233693993149,
+      "average_agent_calls": 2.7303191669775804,
+      "average_latency_ms": 5.36719913156664,
+      "selective_error_rate": 0.0,
+      "benign_false_positive_rate": 0.0,
+      "malicious_detection_rate": 0.018564814814814815,
+      "confusion_on_covered": {
+        "tp": 401,
+        "fp": 0,
+        "tn": 7856,
+        "fn": 0
+      }
+    },
+    "temporal_gate_only": {
+      "schema_version": "1.0",
+      "mode": "temporal_gate_only",
+      "metrics_status": "computed",
+      "sample_count": 29483,
+      "labeled_sample_count": 29483,
+      "accuracy": 0.9983492762211124,
+      "macro_f1": 0.9981461222769912,
+      "precision": 1.0,
+      "recall": 0.9975227085053675,
+      "PR_AUC": 0.9999983982241469,
+      "Brier_score": 0.005704596902033938,
+      "ECE": 0.03015541446630715,
+      "coverage": 0.8013431468982125,
+      "unknown_rate": 0.0010175355289488857,
+      "suspicious_rate": 0.1976393175728386,
+      "average_agent_calls": 2.7303191669775804,
+      "average_latency_ms": 5.36719913156664,
+      "selective_error_rate": 0.0016507237788876662,
+      "benign_false_positive_rate": 0.0,
+      "malicious_detection_rate": 0.727037037037037,
+      "confusion_on_covered": {
+        "tp": 15704,
+        "fp": 0,
+        "tn": 7883,
+        "fn": 39
+      }
+    }
+  },
+  "audit_summary": {
+    "schema_version": "1.0",
+    "sample_count": 29483,
+    "completed_chain_count": 29483,
+    "audit_chain_completion_rate": 1.0,
+    "blocked_field_violation_count": 0,
+    "policy_adjustment_count": 0,
+    "event_counts": {
+      "FLOW_VALIDATED": 29483,
+      "FIELD_POLICY_APPLIED": 29483,
+      "RELIABILITY_ASSESSED": 29483,
+      "ROUTING_DECISION": 80491,
+      "POLICY_GUARD_EVALUATION": 80491,
+      "AGENT_EVIDENCE": 80498,
+      "INTERIM_FUSION": 51015,
+      "FINAL_FUSION": 29483,
+      "REPORT_GENERATED": 29483
+    },
+    "actor_counts": {
+      "FeatureCapture": 29483,
+      "FieldAuditAgent": 29483,
+      "PseudoFeatureGuardAgent": 29483,
+      "CoordinatorAgent": 80491,
+      "PolicyGuard": 80491,
+      "StatsDetectorAgent": 29483,
+      "TemporalBehaviorAgent": 29483,
+      "FusionAgent": 80498,
+      "ReporterAgent": 29483,
+      "FamilyAttributionAgent": 21523,
+      "TLSProtocolAgent": 9
+    }
+  },
+  "shift_distribution": {
+    "stats": {
+      "p05": 0.0,
+      "p25": 0.480673198482933,
+      "p50": 0.4989254108723135,
+      "p75": 0.8950853350189634,
+      "p95": 0.8975031605562579
+    },
+    "temporal": {
+      "p05": 0.2661817170921559,
+      "p25": 0.30389658527544827,
+      "p50": 0.3304915906037159,
+      "p75": 0.43024602696566744,
+      "p95": 0.8714265857387758
+    },
+    "combined": {
+      "p05": 0.0,
+      "p25": 0.480673198482933,
+      "p50": 0.4989254108723135,
+      "p75": 0.8950853350189634,
+      "p95": 0.8975031605562579
+    }
+  }
+}

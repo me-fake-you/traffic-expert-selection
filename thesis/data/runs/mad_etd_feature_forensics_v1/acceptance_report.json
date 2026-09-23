@@ -1,0 +1,17 @@
+{
+  "accepted": true,
+  "blocked_field_violation": 0,
+  "dataset_count": 8,
+  "fake_metric_count": 0,
+  "fusion_ownership_violation": 0,
+  "illegal_verdict_execution": 0,
+  "missing_artifacts": [],
+  "new_detector_trained": false,
+  "ood_override": 0,
+  "promoted_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "status": "accepted_offline_feature_forensics_registry",
+  "test_count": 9,
+  "test_used_for_selection": false,
+  "tests_passed": true
+}

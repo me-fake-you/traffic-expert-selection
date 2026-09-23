@@ -1,0 +1,16 @@
+{
+  "all_present": true,
+  "presence": {
+    "v5_10_acceptance_report": true,
+    "v5_10_comparison": true,
+    "v5_10_results": true,
+    "v5_12_acceptance_report": true
+  },
+  "required_artifacts": {
+    "v5_10_acceptance_report": "data/runs/mad_etd_nf_iot_calibration_v5_10/acceptance_report.json",
+    "v5_10_comparison": "data/runs/mad_etd_nf_iot_calibration_v5_10/baseline_vs_candidate.csv",
+    "v5_10_results": "data/runs/mad_etd_nf_iot_calibration_v5_10/nf_iot_acceptance_results.csv",
+    "v5_12_acceptance_report": "data/runs/mad_etd_nf_iot_runtime_v5_12/acceptance_report.json"
+  },
+  "schema_version": "1.0"
+}

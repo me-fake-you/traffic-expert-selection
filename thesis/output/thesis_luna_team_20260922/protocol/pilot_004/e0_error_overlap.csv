@@ -1,0 +1,15 @@
+partition,group,rows,both_correct,only_temporal_correct,only_stats_correct,both_wrong,disagreement,temporal_to_stats_oracle_correctable,stats_to_temporal_oracle_correctable
+train_oof,benign:BitTorrent,2000,2000,0,0,0,0,0,0
+train_oof,benign:FTP,2000,1358,357,86,199,443,86,357
+train_oof,benign:Facetime,2000,346,54,0,1600,54,0,54
+train_oof,benign:Gmail,2000,1965,32,0,3,32,0,32
+train_oof,benign:SMB,2000,1952,41,7,0,48,7,41
+train_oof,benign:Skype,2000,462,253,0,1285,253,0,253
+train_oof,malware:Cridex,2000,2000,0,0,0,0,0,0
+train_oof,malware:Geodo,2000,1996,1,3,0,4,3,1
+train_oof,malware:Miuref,2000,2000,0,0,0,0,0,0
+train_oof,malware:Neris,2000,1961,28,6,5,34,6,28
+train_oof,malware:Nsis-ay,2000,1842,40,112,6,152,112,40
+train_oof,malware:Shifu,2000,1999,1,0,0,1,0,1
+selection,benign:Weibo,2000,2000,0,0,0,0,0,0
+selection,malware:Virut,2000,1999,0,0,1,0,0,0

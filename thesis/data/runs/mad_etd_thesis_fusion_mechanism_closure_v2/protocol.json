@@ -1,0 +1,13 @@
+{
+  "source_per_sample": ".\\data\\runs\\mad_etd_thesis_fusion_ablation_v1\\per_sample_fusion_ablation.csv",
+  "source_per_sample_sha256": "60fb2b1a0b8af8027844e7ec7bd139dc78fc5c6a9ef52363ddda94e3b992903b",
+  "source_hybrid_evidence": ".\\data\\runs\\mad_etd_thesis_fusion_ablation_v1\\local_evidence_hybrid.jsonl",
+  "source_hybrid_evidence_sha256": "e9c1e479faa5ef8968d7069c988d3c84bd172776317854e9d45b48d729fa83eb",
+  "sample_count": 6000,
+  "model_retraining": false,
+  "runtime_modified": false,
+  "labels_used_for_ranking_or_threshold_selection": false,
+  "matched_coverage_ranking": "confidence*(1-uncertainty), sample_id ascending tie break",
+  "sensitivity_scope": "frozen-evidence diagnostic; warning sensitivity changes the second-stage q_model penalty while holding post-OOD local support fixed",
+  "mechanism_overlap_warning": "trigger sets overlap; stage deltas are descriptive, not additive causal effects"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "completed_frozen_evidence_fusion_ablation",
+  "sample_count": 6000,
+  "all_configs_complete": true,
+  "model_retraining": false,
+  "runtime_modified": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "test_or_external_used_for_selection": false,
+  "fake_metric_count": 0,
+  "source_hashes": {
+    "data/runs/mad_etd_baseline_comparison/selection_manifest.json": "fa12331770631ffe4d80f8b085c8b246846e34e9cc193d8e52afe3816a380948",
+    "data/runs/mad_etd_thesis_fusion_ablation_v1/local_evidence_hybrid.jsonl": "e9c1e479faa5ef8968d7069c988d3c84bd172776317854e9d45b48d729fa83eb",
+    "data/runs/mad_etd_thesis_fusion_ablation_v1/local_evidence_ood_off.jsonl": "288afc0d1a1d92716661f232fc1e44e4470d041a8f932f0d8cbced0fcd71e93f"
+  }
+}

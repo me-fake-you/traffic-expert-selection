@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "experiment": "thesis_luna_equal_prefix_runtime_upgrade_pilot",
+  "status": "LOCKED_BEFORE_EXECUTION",
+  "purpose": "small real-PCAP development-only support audit and feature conversion timing",
+  "execution_scope": {
+    "max_total_packets": 20000,
+    "max_segments": 500,
+    "single_thread": true,
+    "selected_outer_fold": 0,
+    "selected_role": "train",
+    "selected_groups": [
+      "benign:SMB",
+      "benign:BitTorrent",
+      "benign:Skype",
+      "benign:FTP",
+      "benign:Facetime",
+      "benign:Gmail",
+      "malware:Nsis-ay",
+      "malware:Miuref",
+      "malware:Geodo",
+      "malware:Cridex",
+      "malware:Shifu",
+      "malware:Neris"
+    ],
+    "capture_order": "lexicographic capture path, stop when either cap is reached",
+    "prefixes": [4, 8, 16, 32, 64],
+    "no_model_inference": true,
+    "no_new_model_training": true,
+    "no_network": true
+  },
+  "inputs": {
+    "source_manifest": "output/mad_etd_icassp2027_upgrade_013/raw_pcap_run/source_manifest.csv",
+    "source_manifest_sha256": "ECCA65DAB2900F839114472F863292DBD3834A34BE8E05DC997BD201180D353A",
+    "split_manifest": "output/mad_etd_icassp2027_v55_r1/runs/nested_controls_001/split_manifest.json",
+    "split_manifest_sha256": "E195A1BB8D5F0BE986D67D19FB95D3B4048581FC91073FBD3889E4D8A3BE7CBA",
+    "parser_source": "output/mad_etd_icassp2027_upgrade_013/scripts/raw_all.py",
+    "parser_source_sha256": "2816E63DFAD98F23F6AF0822D6F7C6A463B4F1525FE7ADF15C2C2BEC82DD95B9",
+    "feature_source": "src/mad_etd/ustc_group_heldout_hybrid_w98.py",
+    "feature_source_sha256": "1B0637DBC59746F53DC22127754585AC59B0F6B3986FC47B25CC18EE485B1C7E",
+    "label_column_read": false,
+    "evaluation_captures_read": false,
+    "test_labels_read": false
+  },
+  "prefix_contract": {
+    "stats": "only first P packet lengths/directions and first P timestamps; duration ends at Pth packet",
+    "temporal": "only first P packet lengths/directions and first P-1 non-negative IATs",
+    "short_flow": "packet_count<P is retained as short_flow with no feature vector",
+    "future_guard": "mutate post-P tail in a synthetic Segment and require prefix vectors unchanged",
+    "filename_or_label_as_feature": false
+  },
+  "timing_contract": {
+    "clock": "time.perf_counter_ns",
+    "parse_stage": "PCAP/tshark parser and Segment materialization",
+    "feature_stage": "Stats and Temporal prefix conversion separately",
+    "stage_spans_non_overlapping": true,
+    "model_load_or_inference": "not measured in this pilot; no prefix bundle available",
+    "end_to_end_acceleration_claim": false
+  },
+  "failure_contract": {
+    "retain_short_rows": true,
+    "retain_parse_failures": true,
+    "retain_feature_failures": true,
+    "failure_ledger_statuses": ["ok", "short_flow", "parse_error", "feature_error", "timeout"],
+    "timeout_injection": "synthetic contract test only; no PCAP timeout deletion"
+  },
+  "locked_interpretation": "This pilot supports prefix availability and feature-conversion cost only. It cannot support quality, model fairness, real inference latency, or end-to-end acceleration claims."
+}

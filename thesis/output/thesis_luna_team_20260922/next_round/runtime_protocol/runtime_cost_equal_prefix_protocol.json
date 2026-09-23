@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0",
+  "experiment": "thesis_luna_runtime_cost_equal_prefix_v1",
+  "status": "PROTOCOL_ONLY_NOT_RUN",
+  "scope": "read-only design for a small development pilot; no large PCAP execution, no test labels, no network API",
+  "primary_question": "Does an actual lazy path reduce end-to-end cost under equal observable packet prefixes, after charging extraction, waiting, inference, routing, fusion, and API serialization?",
+  "historical_asymmetric_reference": {
+    "source": "output/mad_etd_icassp2027_upgrade_013/scripts/raw_all.py:27-34",
+    "stats_observation": "full segment counters and full segment duration",
+    "temporal_observation": "first 64 packet lengths, directions, and inter-arrival times",
+    "interpretation": "reference only; not a fair prefix comparison and not an acceleration claim"
+  },
+  "equal_prefix_grid": [4, 8, 16, 32, 64],
+  "prefix_rule": {
+    "stats": "derive packet count, bytes, direction totals, variance, and duration from the first P packets only; duration ends at packet P",
+    "temporal": "derive sequence features from the same first P packet lengths, directions, and P-1 inter-arrival values",
+    "training": "fit/calibrate a separate view bundle for each P in development roles; do not reuse full-segment Stats or 64-packet models as an equal-prefix claim",
+    "short_flow": "if observed packet_count < P, emit short_flow and do not pad, impute, or score it in the P-supported quality cohort",
+    "common_cohort": "for each P, compare views only on the same rows with packet_count >= P; report short-flow coverage beside every cost table",
+    "prefix_1": "not in the primary grid because the requested grid starts at 4; if added later, IAT-derived fields are explicitly unavailable rather than fabricated"
+  },
+  "support_audit": {
+    "before_model_scoring": true,
+    "allowed_inputs": "packet count and parser/schema status only",
+    "forbidden_inputs": "test labels, predictions, group/family labels, and acceptance decisions",
+    "required_outputs": [
+      "packet_count_histogram",
+      "supported_count_by_prefix",
+      "short_flow_count_by_prefix",
+      "unsupported_schema_count",
+      "missing_timestamp_or_length_count",
+      "parse_error_count"
+    ],
+    "claim_rule": "do not state that short flows are numerous at P=64 until this label-free histogram is measured"
+  },
+  "methods": [
+    "first_temporal_equal_prefix",
+    "first_stats_equal_prefix",
+    "full_call_equal_prefix",
+    "lazy_fixed_trigger_equal_prefix",
+    "lazy_runtime_router_equal_prefix"
+  ],
+  "controls": {
+    "first_only": "one selected view using the same P-specific bundle",
+    "full_call": "maximum-call-cost reference that always materializes both P-specific views, then applies one frozen combination rule; it is not a quality upper bound",
+    "lazy_fixed_trigger": "same order and combination rule, trigger fixed before measurement",
+    "lazy_runtime_router": "candidate first-state-only router; threshold and budget frozen before any acceptance scoring",
+    "random_budget_match": "optional development diagnostic matching the lazy call count; not a latency substitute"
+  },
+  "quality_reporting": {
+    "supported_cohort_table": "for rows with packet_count >= P and status ok, report quality metrics on the common P-supported cohort",
+    "all_request_deployment_table": "in the same table, report the locked deployment policy over every observed request, including short_flow, timeout, unsupported, and other failures",
+    "fallback_lock": "before evaluation, lock one fallback per method/P: partial-prefix only when its separately fitted/calibrated bundle is available, otherwise abstain; timeout uses the same prelocked fallback",
+    "short_flow_rule": "never drop short_flow rows from deployment denominators or describe supported-cohort quality as overall deployment quality",
+    "quality_upper_bound": "full_call is not an upper bound; an oracle/error-correction upper bound, if shown, must be explicitly non-deployable and separate from all baselines"
+  },
+  "timing": {
+    "clock": "time.perf_counter_ns for elapsed durations; event order uses monotonic timestamps",
+    "request_boundary": "start before raw segment acquisition or local API handler entry; stop after fusion result serialization",
+    "stages": [
+      "api_dispatch_ns",
+      "raw_io_and_parser_ns",
+      "observation_wait_ns",
+      "segmentization_ns",
+      "first_feature_ns",
+      "first_inference_ns",
+      "router_ns",
+      "second_feature_ns",
+      "second_inference_ns",
+      "fusion_ns",
+      "api_serialize_ns",
+      "report_ns",
+      "total_request_ns",
+      "unattributed_ns"
+    ],
+    "accounting": "nested stage spans are recorded once; total_request_ns is measured independently; unattributed_ns = total minus non-overlapping stage spans",
+    "waiting": "offline replay records observation_wait_ns as not_applicable; a future online run records arrival-to-prefix-ready time separately from CPU processing",
+    "model_load": "cold checkpoint load is a separate metric and excluded from warm per-request latency; report it rather than hiding it",
+    "network": "no external network or remote API in this protocol; local API dispatch and serialization are measured separately"
+  },
+  "execution_controls": {
+    "primary_batch_sizes": [1, 128],
+    "batch_1_purpose": "per-flow latency and p50/p95",
+    "batch_128_purpose": "throughput and amortized batch cost; final partial batch reported separately",
+    "workers": 1,
+    "native_threads": 1,
+    "gpu": false,
+    "method_order": "fixed interleaved order across rounds; same prefix, batch, and cache condition in each round",
+    "warmup": "three non-measured warmup batches after model load; record warmup rows separately",
+    "cold_run": "one isolated process per method/prefix for checkpoint-load and process-start timing",
+    "warm_run": "same process after warmup, with at least five interleaved measurement rounds",
+    "file_cache": "do not claim controlled OS file-cache state; record whether each round is cold-process or warm-process",
+    "cache_policy": "primary latency run disables feature/probability cache; a separate cache-hit diagnostic reports cache hits and actual model calls separately",
+    "randomness": "no stochastic model fitting during measurement; all hashes, model versions, and feature source hashes locked before scoring"
+  },
+  "failure_policy": {
+    "statuses": [
+      "ok",
+      "short_flow",
+      "unsupported_schema",
+      "missing_view",
+      "feature_error",
+      "model_error",
+      "router_error",
+      "fusion_error",
+      "timeout",
+      "api_error",
+      "cancelled"
+    ],
+    "denominator": "all observed eligible segment requests, including failures and short flows",
+    "timeout_grid": [0.0, 0.05, 0.2],
+    "timeout_rule": "fix timeout threshold and injected failure rate in development; never delete failed rows",
+    "charts": [
+      "stacked status-rate chart by prefix and method",
+      "successful-request latency p50/p95 chart with all-request latency beside it",
+      "short-flow and unsupported coverage chart",
+      "stage-failure count table including feature, second expert, router, fusion, and API"
+    ],
+    "reporting": "report counts and rates per method x prefix x batch x cache condition; failed requests remain in throughput and all-request denominator"
+  },
+  "artifacts": {
+    "per_request_trace": "request_id,prefix_packets,batch_size,cache_policy,status,stage_durations_ns,actual_first_calls,actual_second_calls,cache_hits,monotonic_event_log",
+    "summary_table": "method x prefix x batch x warm_state with count, short_flow_rate, failure_rate, mean, p50, p95, throughput",
+    "support_table": "prefix,observed_count,supported_count,short_flow_count,unsupported_count,parse_error_count",
+    "environment_manifest": "python,OS,CPU,RAM,tshark version,thread settings,model hashes,feature source hash,protocol hash",
+    "negative_results": "explicitly retain no-call, all-call, all-short-flow, timeout, and no-latency-improvement outcomes"
+  },
+  "data_boundaries": {
+    "test_labels_read": false,
+    "test_scores_read": false,
+    "network_access": false,
+    "new_training_in_this_turn": false,
+    "fresh_blind_claim": false,
+    "cached_probability_replay_is_latency_evidence": false
+  },
+  "stop_rules": {
+    "stop_before_full_run_if": [
+      "prefix support audit cannot produce a common cohort",
+      "Stats cannot be constructed from the same first P packets",
+      "stage timers overlap or leave an unexplained large residual",
+      "a method silently reads full-segment duration or bytes for a prefix row",
+      "failure rows are dropped or timeout rates are not reported"
+    ],
+    "success_is_not_assumed": "cost reduction is reportable only after equal-prefix fairness, complete stage accounting, stable repeated ordering, and failure-inclusive denominators pass"
+  }
+}

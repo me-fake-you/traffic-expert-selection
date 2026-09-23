@@ -1,5 +1,7 @@
 # Release validation
 
+This section records the original controlled-study release. The subsequent, separately scoped thesis-code extension is documented in [thesis/VALIDATION.md](thesis/VALIDATION.md); its checks do not replace or extend the original scientific evaluation.
+
 Checked locally with Python 3.12.14 and NumPy 1.26.4 on 2026-09-23. No fresh model fitting, inference, data download, or evaluation-population change was performed for this release.
 
 | Check | Observed result |

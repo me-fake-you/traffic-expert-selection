@@ -1,0 +1,20 @@
+{
+  "agent_calls_reduced": true,
+  "anonymous_capsule_passed": true,
+  "attack_success_rate_zero": true,
+  "audit_completion_is_one": true,
+  "blocked_field_violation_zero": true,
+  "fake_metric_count_zero": true,
+  "feature_flag_off_output_invariance_is_one": true,
+  "frozen_hashes_unchanged": true,
+  "full_pytest_passed": true,
+  "fusion_ownership_violation_zero": true,
+  "illegal_verdict_execution_zero": true,
+  "invalid_evidence_admitted_zero": true,
+  "ood_agreement_at_least_0_98": true,
+  "ood_override_zero": true,
+  "promoted_runtime_not_created": true,
+  "runtime_safe_v3_0_remains_default": true,
+  "unsupported_calls_zero": true,
+  "verdict_agreement_at_least_0_98": true
+}

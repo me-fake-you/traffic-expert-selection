@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "experiment": "llm_planner_evidence_registry",
+  "acceptance_status": "partial_complete",
+  "current_evidence_source": "data/runs/future_framework/llm_planner_v1/nemotron_ultra_500",
+  "feasibility_500_status": "passed",
+  "full_6000_online_status": "not_completed",
+  "historical_precheck_status": "api_unavailable",
+  "fallback_is_not_counted_as_real_llm": true,
+  "fake_llm_metrics_generated": false
+}

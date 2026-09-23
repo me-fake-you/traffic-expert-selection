@@ -1,0 +1,14 @@
+{
+  "anonymity_scan_passed": true,
+  "artifact_count": 19,
+  "capsule_path": "data/releases/mad_etd_anonymous_reproducibility_capsule_w269/mad_etd_anonymous_reproducibility_capsule_w269.zip",
+  "capsule_sha256": "ee11e726ab40c9e98860d7a623a393637ac6695e1b8fd0b55bdf298b418fc15a",
+  "experiment": "mad_etd_layered_security_governance_w266_w270",
+  "fake_metric_count": 0,
+  "promoted_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "schema_version": "1.0",
+  "stage": "w269_anonymous_reproducibility_capsule",
+  "status": "ready_for_final_acceptance",
+  "synthetic_smoke_only": true
+}

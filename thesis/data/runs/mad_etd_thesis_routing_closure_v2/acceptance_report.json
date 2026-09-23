@@ -1,0 +1,10 @@
+{
+  "status": "completed_unified_four_mode_routing_reanalysis",
+  "source_rows": 336000,
+  "paired_sample_median_rows": 48000,
+  "all_four_modes_present": true,
+  "seven_repetitions_present": true,
+  "test_or_acceptance_used_for_selection": false,
+  "fake_metric_count": 0,
+  "runtime_safe_v3_0_modified": false
+}

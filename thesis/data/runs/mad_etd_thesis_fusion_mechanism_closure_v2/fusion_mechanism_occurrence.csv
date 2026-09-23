@@ -1,0 +1,11 @@
+mechanism,trigger_sample_count,trigger_rate,comparison_before,comparison_after,verdict_changed,confidence_changed,uncertainty_changed,causal_scope
+feature_group_reliability_below_one,2644,0.44066666666666665,yager_no_reliability_ood_off,reliability_yager_ood_off,0,2644,2644,stage comparison on triggered samples; mechanisms can overlap
+calibration_quality_below_one,6000,1.0,yager_no_reliability_ood_off,reliability_yager_ood_off,0,6000,6000,stage comparison on triggered samples; mechanisms can overlap
+model_reliability_below_one,254,0.042333333333333334,reliability_yager_ood_off,full_fusion,224,254,254,stage comparison on triggered samples; mechanisms can overlap
+case_input_completeness_below_one,0,0.0,yager_no_reliability_ood_off,reliability_yager_ood_off,0,0,0,stage comparison on triggered samples; mechanisms can overlap
+any_source_reliability_below_one,6000,1.0,yager_no_reliability_ood_off,reliability_yager_ood_off,0,6000,6000,stage comparison on triggered samples; mechanisms can overlap
+ood_warning,215,0.035833333333333335,reliability_yager_ood_off,full_fusion,185,215,215,stage comparison on triggered samples; mechanisms can overlap
+hard_abstain,52,0.008666666666666666,reliability_yager_ood_off,full_fusion,52,52,52,stage comparison on triggered samples; mechanisms can overlap
+stats_temporal_prediction_conflict,10,0.0016666666666666668,probability_average,yager_no_reliability_ood_off,10,10,10,stage comparison on triggered samples; mechanisms can overlap
+cumulative_conflict_ge_0_30,10,0.0016666666666666668,reliability_yager_ood_off,full_fusion,0,10,10,stage comparison on triggered samples; mechanisms can overlap
+key_missing,0,0.0,reliability_yager_ood_off,full_fusion,0,0,0,stage comparison on triggered samples; mechanisms can overlap

@@ -1,0 +1,16 @@
+mutation_type,probe_count,schema_valid_count,schema_valid_rate,rejected_count,rejection_rate,schema_valid_rejected_count
+missing_prediction,334,0,0.0,334,1.0,0
+illegal_final_verdict,334,0,0.0,334,1.0,0
+ood_override,334,0,0.0,334,1.0,0
+feature_policy_hash_mismatch,334,334,1.0,334,1.0,334
+artifact_hash_mismatch,334,334,1.0,334,1.0,334
+capability_mismatch,333,333,1.0,333,1.0,333
+safety_flag,333,333,1.0,333,1.0,333
+llm_source,333,333,1.0,333,1.0,333
+rag_source,333,333,1.0,333,1.0,333
+stale_evidence,333,333,1.0,333,1.0,333
+future_evidence,333,333,1.0,333,1.0,333
+unregistered_specialist,333,333,1.0,333,1.0,333
+invalid_source_hash,333,333,1.0,333,1.0,333
+unsupported_evidence,333,333,1.0,333,1.0,333
+replay,333,333,1.0,333,1.0,333

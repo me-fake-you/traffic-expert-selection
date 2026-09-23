@@ -1,0 +1,17 @@
+{
+  "attack_success_rate": 0.0,
+  "audit_completion": 1.0,
+  "blocked_field_violation": 0,
+  "experiment": "mad_etd_layered_security_governance_w266_w270",
+  "fake_metric_count": 0,
+  "fusion_ownership_violation": 0,
+  "illegal_verdict_execution": 0,
+  "invalid_evidence_admitted": 0,
+  "ood_override": 0,
+  "promoted_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "schema_version": "1.0",
+  "stage": "w268_systematic_threat_model",
+  "status": "ready_for_anonymous_capsule",
+  "threat_count": 19
+}

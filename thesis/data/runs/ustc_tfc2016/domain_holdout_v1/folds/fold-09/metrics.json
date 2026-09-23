@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0",
+  "fold": 9,
+  "holdout": {
+    "benign_application": "Facetime",
+    "malware_family": "Virut"
+  },
+  "systems": {
+    "full": {
+      "schema_version": "1.0",
+      "mode": "full",
+      "metrics_status": "computed",
+      "sample_count": 87624,
+      "labeled_sample_count": 87624,
+      "accuracy": 0.9432127344756813,
+      "macro_f1": 0.6434529521450596,
+      "precision": 0.9426498155650964,
+      "recall": 0.9997819394561314,
+      "PR_AUC": 0.9999619636541911,
+      "Brier_score": 0.046646177651540104,
+      "ECE": 0.050425497037371196,
+      "coverage": 0.9564046379987218,
+      "unknown_rate": 0.0018716333424632521,
+      "suspicious_rate": 0.041723728658814935,
+      "average_agent_calls": 2.9927987765908886,
+      "average_latency_ms": 4.780301211975083,
+      "confusion_on_covered": {
+        "tp": 77943,
+        "fp": 4742,
+        "tn": 1102,
+        "fn": 17
+      }
+    },
+    "stats_only": {
+      "schema_version": "1.0",
+      "mode": "stats_only",
+      "metrics_status": "computed",
+      "sample_count": 87624,
+      "labeled_sample_count": 87624,
+      "accuracy": 0.9432014796253206,
+      "macro_f1": 0.6434272057355331,
+      "precision": 0.9426498155650964,
+      "recall": 0.9997691153268942,
+      "PR_AUC": 0.9999609246520148,
+      "Brier_score": 0.04667806101055432,
+      "ECE": 0.05051940215556357,
+      "coverage": 0.9564160503971515,
+      "unknown_rate": 0.0018830457408929061,
+      "suspicious_rate": 0.04170090386195563,
+      "average_agent_calls": 1.0,
+      "average_latency_ms": 0.0,
+      "confusion_on_covered": {
+        "tp": 77943,
+        "fp": 4742,
+        "tn": 1102,
+        "fn": 18
+      }
+    },
+    "temporal_only": {
+      "schema_version": "1.0",
+      "mode": "temporal_only",
+      "metrics_status": "computed",
+      "sample_count": 87624,
+      "labeled_sample_count": 87624,
+      "accuracy": 1.0,
+      "macro_f1": 0.5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "PR_AUC": 1.0,
+      "Brier_score": 0.2147927509493116,
+      "ECE": 0.36111220231100166,
+      "coverage": 0.09912809275997443,
+      "unknown_rate": 0.85917100337807,
+      "suspicious_rate": 0.04170090386195563,
+      "average_agent_calls": 1.0,
+      "average_latency_ms": 0.0,
+      "confusion_on_covered": {
+        "tp": 8686,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      }
+    },
+    "no_reject": {
+      "schema_version": "1.0",
+      "mode": "no_reject",
+      "metrics_status": "computed",
+      "sample_count": 87624,
+      "labeled_sample_count": 87624,
+      "accuracy": 0.9455970966858395,
+      "macro_f1": 0.658540561092797,
+      "precision": 0.9450782362956185,
+      "recall": 0.9996937175340586,
+      "PR_AUC": 0.9999619636541911,
+      "Brier_score": 0.046646177651540104,
+      "ECE": 0.050425497037371196,
+      "coverage": 1.0,
+      "unknown_rate": 0.0,
+      "suspicious_rate": 0.0,
+      "average_agent_calls": 2.9927987765908886,
+      "average_latency_ms": 0.0,
+      "confusion_on_covered": {
+        "tp": 81599,
+        "fp": 4742,
+        "tn": 1258,
+        "fn": 25
+      }
+    }
+  },
+  "temporal_abstain_rate": 0.85917100337807,
+  "audit_summary": {
+    "schema_version": "1.0",
+    "sample_count": 87624,
+    "completed_chain_count": 87624,
+    "audit_chain_completion_rate": 1.0,
+    "blocked_field_violation_count": 0,
+    "policy_adjustment_count": 0,
+    "event_counts": {
+      "FLOW_VALIDATED": 87624,
+      "FIELD_POLICY_APPLIED": 87624,
+      "RELIABILITY_ASSESSED": 87624,
+      "ROUTING_DECISION": 261586,
+      "POLICY_GUARD_EVALUATION": 261586,
+      "AGENT_EVIDENCE": 262241,
+      "INTERIM_FUSION": 174617,
+      "FINAL_FUSION": 87624,
+      "REPORT_GENERATED": 87624
+    },
+    "actor_counts": {
+      "FeatureCapture": 87624,
+      "FieldAuditAgent": 87624,
+      "PseudoFeatureGuardAgent": 87624,
+      "CoordinatorAgent": 261586,
+      "PolicyGuard": 261586,
+      "StatsDetectorAgent": 87624,
+      "TemporalBehaviorAgent": 87624,
+      "FusionAgent": 262241,
+      "ReporterAgent": 87624,
+      "FamilyAttributionAgent": 86338,
+      "TLSProtocolAgent": 655
+    }
+  }
+}

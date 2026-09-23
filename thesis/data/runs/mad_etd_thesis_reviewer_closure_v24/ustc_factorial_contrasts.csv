@@ -1,0 +1,6 @@
+contrast,left,right,macro_f1_delta,accuracy_delta,bootstrap_iterations,bootstrap_seed,bootstrap_resampling_unit,bootstrap_mean,bootstrap_ci95_lower,bootstrap_ci95_upper
+sequence_effect_with_hgb,hgb_stats,hgb_hybrid,0.08125515130913286,0.07897500000000002,1000,42,application_or_family_group,0.08145110023024893,0.01049331995539952,0.20404739369888045
+sequence_effect_with_tree,tree_stats,tree_hybrid,0.009042344085001597,0.008850000000000025,1000,42,application_or_family_group,0.009417195539300526,-0.0014177620611920988,0.02021523067153549
+model_effect_with_stats,hgb_stats,tree_stats,0.03845247426462817,0.037150000000000016,1000,42,application_or_family_group,0.038783390752091376,-0.008179945635753577,0.13049429617021827
+model_effect_with_hybrid,hgb_hybrid,tree_hybrid,-0.03376033295950309,-0.03297499999999998,1000,42,application_or_family_group,-0.03325051393885701,-0.15568703674171355,0.047263206132148954
+original_joint_contrast,hgb_stats,tree_hybrid,0.047494818349629764,0.04600000000000004,1000,42,application_or_family_group,0.0482005862913919,0.004702353242287513,0.13500547200929824

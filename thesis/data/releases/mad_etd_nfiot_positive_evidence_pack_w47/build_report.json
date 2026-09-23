@@ -1,0 +1,36 @@
+{
+  "document": "docs/MAD_ETD_NFIOT_POSITIVE_EVIDENCE_PACK_W47.md",
+  "document_cn": "docs/MAD_ETD_NFIOT_POSITIVE_EVIDENCE_PACK_W47_CN.md",
+  "experiment": "mad_etd_nfiot_positive_evidence_pack_w47",
+  "fake_metric_count": 0,
+  "governance_dir": "data/runs/mad_etd_architecture_governance_v6_0",
+  "macro_f1_delta": 0.026535132777504522,
+  "macro_f1_delta_ci95_lower": 0.023287568413681188,
+  "macro_f1_delta_ci95_upper": 0.029959485209741985,
+  "pdf": "output/pdf/MAD_ETD_W47_NFIOT_Positive_Evidence_Pack_CN.pdf",
+  "pdf_render": {
+    "montage": "output\\pdf\\MAD_ETD_W47_NFIOT_Positive_Evidence_Pack_preview_montage.png",
+    "pdftoppm_available": true,
+    "rendered_pages": 6
+  },
+  "performance_dir": "data/runs/mad_etd_performance_evidence_v5_11",
+  "promoted_general_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "schema_version": "1.0",
+  "source_status": {
+    "all_present": true,
+    "baseline_path": "data/runs/mad_etd_baseline_comparison/acceptance_report.json",
+    "baseline_status": "passed",
+    "presence": {
+      "baseline_acceptance_report": true,
+      "w45_acceptance_report": true,
+      "w46_acceptance_report": true
+    },
+    "schema_version": "1.0",
+    "w45_path": "data/runs/mad_etd_nfiot_positive_replication_w45/acceptance_report.json",
+    "w45_status": "accepted_dataset_specific_positive_replication",
+    "w46_path": "data/runs/mad_etd_nfiot_positive_statistical_validation_w46/acceptance_report.json",
+    "w46_status": "accepted_statistically_supported_dataset_specific_positive_result"
+  },
+  "status": "built"
+}

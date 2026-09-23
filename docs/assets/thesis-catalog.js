@@ -1,0 +1,447 @@
+window.THESIS_CATALOG = {
+  "families": [
+    {
+      "id": "admission_gate_resilience_addendum_w274",
+      "source_family": "data/releases/mad_etd_admission_gate_resilience_addendum_w274",
+      "path": "thesis/data/releases/mad_etd_admission_gate_resilience_addendum_w274",
+      "aggregate_files": 9,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "anonymous_reproducibility_capsule_w269",
+      "source_family": "data/releases/mad_etd_anonymous_reproducibility_capsule_w269",
+      "path": "thesis/data/releases/mad_etd_anonymous_reproducibility_capsule_w269",
+      "aggregate_files": 9,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "multidataset_skill_evidence_pack_w102",
+      "source_family": "data/releases/mad_etd_multidataset_skill_evidence_pack_w102",
+      "path": "thesis/data/releases/mad_etd_multidataset_skill_evidence_pack_w102",
+      "aggregate_files": 6,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "nfiot_positive_evidence_pack_w47",
+      "source_family": "data/releases/mad_etd_nfiot_positive_evidence_pack_w47",
+      "path": "thesis/data/releases/mad_etd_nfiot_positive_evidence_pack_w47",
+      "aggregate_files": 9,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "routing_efficiency_evidence_pack_w325",
+      "source_family": "data/releases/mad_etd_routing_efficiency_evidence_pack_w325",
+      "path": "thesis/data/releases/mad_etd_routing_efficiency_evidence_pack_w325",
+      "aggregate_files": 9,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "future_framework",
+      "source_family": "data/runs/future_framework",
+      "path": "thesis/data/runs/future_framework",
+      "aggregate_files": 108,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "architecture_governance_v6_0",
+      "source_family": "data/runs/mad_etd_architecture_governance_v6_0",
+      "path": "thesis/data/runs/mad_etd_architecture_governance_v6_0",
+      "aggregate_files": 4,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "baseline_comparison",
+      "source_family": "data/runs/mad_etd_baseline_comparison",
+      "path": "thesis/data/runs/mad_etd_baseline_comparison",
+      "aggregate_files": 9,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "dohbrw_fresh_tls_performance_w282_w286",
+      "source_family": "data/runs/mad_etd_dohbrw_fresh_tls_performance_w282_w286",
+      "path": "thesis/data/runs/mad_etd_dohbrw_fresh_tls_performance_w282_w286",
+      "aggregate_files": 9,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "dohbrw_independent_robustness_w287_w290",
+      "source_family": "data/runs/mad_etd_dohbrw_independent_robustness_w287_w290",
+      "path": "thesis/data/runs/mad_etd_dohbrw_independent_robustness_w287_w290",
+      "aggregate_files": 6,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "external_citable_multiagent_v13",
+      "source_family": "data/runs/mad_etd_external_citable_multiagent_v13",
+      "path": "thesis/data/runs/mad_etd_external_citable_multiagent_v13",
+      "aggregate_files": 9,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "external_citable_thesis_v14",
+      "source_family": "data/runs/mad_etd_external_citable_thesis_v14",
+      "path": "thesis/data/runs/mad_etd_external_citable_thesis_v14",
+      "aggregate_files": 11,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "feature_forensics_v1",
+      "source_family": "data/runs/mad_etd_feature_forensics_v1",
+      "path": "thesis/data/runs/mad_etd_feature_forensics_v1",
+      "aggregate_files": 10,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "feature_policy_effectiveness_v1",
+      "source_family": "data/runs/mad_etd_feature_policy_effectiveness_v1",
+      "path": "thesis/data/runs/mad_etd_feature_policy_effectiveness_v1",
+      "aggregate_files": 7,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "hybrid_multiagent_evidence_v1",
+      "source_family": "data/runs/mad_etd_hybrid_multiagent_evidence_v1",
+      "path": "thesis/data/runs/mad_etd_hybrid_multiagent_evidence_v1",
+      "aggregate_files": 17,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "layered_security_governance_w266_w270",
+      "source_family": "data/runs/mad_etd_layered_security_governance_w266_w270",
+      "path": "thesis/data/runs/mad_etd_layered_security_governance_w266_w270",
+      "aggregate_files": 9,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "nfiot_bot_targeted_performance_w96",
+      "source_family": "data/runs/mad_etd_nfiot_bot_targeted_performance_w96",
+      "path": "thesis/data/runs/mad_etd_nfiot_bot_targeted_performance_w96",
+      "aggregate_files": 11,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "nfiot_positive_replication_w45",
+      "source_family": "data/runs/mad_etd_nfiot_positive_replication_w45",
+      "path": "thesis/data/runs/mad_etd_nfiot_positive_replication_w45",
+      "aggregate_files": 8,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "nfiot_positive_statistical_validation_w46",
+      "source_family": "data/runs/mad_etd_nfiot_positive_statistical_validation_w46",
+      "path": "thesis/data/runs/mad_etd_nfiot_positive_statistical_validation_w46",
+      "aggregate_files": 8,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "thesis_agent_framework_closure_v25",
+      "source_family": "data/runs/mad_etd_thesis_agent_framework_closure_v25",
+      "path": "thesis/data/runs/mad_etd_thesis_agent_framework_closure_v25",
+      "aggregate_files": 1,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "thesis_blindreview_closure_v26",
+      "source_family": "data/runs/mad_etd_thesis_blindreview_closure_v26",
+      "path": "thesis/data/runs/mad_etd_thesis_blindreview_closure_v26",
+      "aggregate_files": 9,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "thesis_fieldaudit_batch_pairing_v1",
+      "source_family": "data/runs/mad_etd_thesis_fieldaudit_batch_pairing_v1",
+      "path": "thesis/data/runs/mad_etd_thesis_fieldaudit_batch_pairing_v1",
+      "aggregate_files": 2,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "thesis_fieldaudit_pairing_v1",
+      "source_family": "data/runs/mad_etd_thesis_fieldaudit_pairing_v1",
+      "path": "thesis/data/runs/mad_etd_thesis_fieldaudit_pairing_v1",
+      "aggregate_files": 1,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "thesis_final_evidence_v21",
+      "source_family": "data/runs/mad_etd_thesis_final_evidence_v21",
+      "path": "thesis/data/runs/mad_etd_thesis_final_evidence_v21",
+      "aggregate_files": 65,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "thesis_final_experiment_closure_v20",
+      "source_family": "data/runs/mad_etd_thesis_final_experiment_closure_v20",
+      "path": "thesis/data/runs/mad_etd_thesis_final_experiment_closure_v20",
+      "aggregate_files": 12,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "thesis_fusion_ablation_v1",
+      "source_family": "data/runs/mad_etd_thesis_fusion_ablation_v1",
+      "path": "thesis/data/runs/mad_etd_thesis_fusion_ablation_v1",
+      "aggregate_files": 4,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "thesis_fusion_mechanism_closure_v2",
+      "source_family": "data/runs/mad_etd_thesis_fusion_mechanism_closure_v2",
+      "path": "thesis/data/runs/mad_etd_thesis_fusion_mechanism_closure_v2",
+      "aggregate_files": 6,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "thesis_fusion_ranking_sensitivity_v1",
+      "source_family": "data/runs/mad_etd_thesis_fusion_ranking_sensitivity_v1",
+      "path": "thesis/data/runs/mad_etd_thesis_fusion_ranking_sensitivity_v1",
+      "aggregate_files": 4,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "thesis_hitl_protocol_closure_v1",
+      "source_family": "data/runs/mad_etd_thesis_hitl_protocol_closure_v1",
+      "path": "thesis/data/runs/mad_etd_thesis_hitl_protocol_closure_v1",
+      "aggregate_files": 1,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "thesis_method_closure_v34",
+      "source_family": "data/runs/mad_etd_thesis_method_closure_v34",
+      "path": "thesis/data/runs/mad_etd_thesis_method_closure_v34",
+      "aggregate_files": 8,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "thesis_nfiot_matched_coverage_v1",
+      "source_family": "data/runs/mad_etd_thesis_nfiot_matched_coverage_v1",
+      "path": "thesis/data/runs/mad_etd_thesis_nfiot_matched_coverage_v1",
+      "aggregate_files": 4,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "thesis_reviewer_closure_v24",
+      "source_family": "data/runs/mad_etd_thesis_reviewer_closure_v24",
+      "path": "thesis/data/runs/mad_etd_thesis_reviewer_closure_v24",
+      "aggregate_files": 276,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "thesis_routing_branch_coverage_v1",
+      "source_family": "data/runs/mad_etd_thesis_routing_branch_coverage_v1",
+      "path": "thesis/data/runs/mad_etd_thesis_routing_branch_coverage_v1",
+      "aggregate_files": 3,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "thesis_routing_closure_v2",
+      "source_family": "data/runs/mad_etd_thesis_routing_closure_v2",
+      "path": "thesis/data/runs/mad_etd_thesis_routing_closure_v2",
+      "aggregate_files": 4,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "thesis_routing_reason_replay_v1",
+      "source_family": "data/runs/mad_etd_thesis_routing_reason_replay_v1",
+      "path": "thesis/data/runs/mad_etd_thesis_routing_reason_replay_v1",
+      "aggregate_files": 2,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "thesis_ustc_statistical_closure_v1",
+      "source_family": "data/runs/mad_etd_thesis_ustc_statistical_closure_v1",
+      "path": "thesis/data/runs/mad_etd_thesis_ustc_statistical_closure_v1",
+      "aggregate_files": 5,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "v8_external_faithful_reproduction",
+      "source_family": "data/runs/mad_etd_v8_external_faithful_reproduction",
+      "path": "thesis/data/runs/mad_etd_v8_external_faithful_reproduction",
+      "aggregate_files": 12,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "ustc_tfc2016",
+      "source_family": "data/runs/ustc_tfc2016",
+      "path": "thesis/data/runs/ustc_tfc2016",
+      "aggregate_files": 310,
+      "scope": "historical_thesis_evidence",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "baseline_upgrade",
+      "source_family": "output/thesis_luna_team_20260922/next_round/baseline_upgrade",
+      "path": "thesis/output/thesis_luna_team_20260922/next_round/baseline_upgrade",
+      "aggregate_files": 4,
+      "scope": "thesis_development_extension",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "decision_headroom_v61",
+      "source_family": "output/thesis_luna_team_20260922/next_round/decision_headroom_v61",
+      "path": "thesis/output/thesis_luna_team_20260922/next_round/decision_headroom_v61",
+      "aggregate_files": 2,
+      "scope": "thesis_development_extension",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "gain_upgrade",
+      "source_family": "output/thesis_luna_team_20260922/next_round/gain_upgrade",
+      "path": "thesis/output/thesis_luna_team_20260922/next_round/gain_upgrade",
+      "aggregate_files": 5,
+      "scope": "thesis_development_extension",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "group_support",
+      "source_family": "output/thesis_luna_team_20260922/next_round/group_support",
+      "path": "thesis/output/thesis_luna_team_20260922/next_round/group_support",
+      "aggregate_files": 5,
+      "scope": "thesis_development_extension",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "independent_validation_v61",
+      "source_family": "output/thesis_luna_team_20260922/next_round/independent_validation_v61",
+      "path": "thesis/output/thesis_luna_team_20260922/next_round/independent_validation_v61",
+      "aggregate_files": 2,
+      "scope": "thesis_development_extension",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "jev_gain_v61",
+      "source_family": "output/thesis_luna_team_20260922/next_round/jev_gain_v61",
+      "path": "thesis/output/thesis_luna_team_20260922/next_round/jev_gain_v61",
+      "aggregate_files": 7,
+      "scope": "thesis_development_extension",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "llm_atomic_v61",
+      "source_family": "output/thesis_luna_team_20260922/next_round/llm_atomic_v61",
+      "path": "thesis/output/thesis_luna_team_20260922/next_round/llm_atomic_v61",
+      "aggregate_files": 1,
+      "scope": "thesis_development_extension",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "llm_gain_v61",
+      "source_family": "output/thesis_luna_team_20260922/next_round/llm_gain_v61",
+      "path": "thesis/output/thesis_luna_team_20260922/next_round/llm_gain_v61",
+      "aggregate_files": 5,
+      "scope": "thesis_development_extension",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "outer_confirmation_v62",
+      "source_family": "output/thesis_luna_team_20260922/next_round/outer_confirmation_v62",
+      "path": "thesis/output/thesis_luna_team_20260922/next_round/outer_confirmation_v62",
+      "aggregate_files": 5,
+      "scope": "thesis_development_extension",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "prefix_runtime_v62",
+      "source_family": "output/thesis_luna_team_20260922/next_round/prefix_runtime_v62",
+      "path": "thesis/output/thesis_luna_team_20260922/next_round/prefix_runtime_v62",
+      "aggregate_files": 3,
+      "scope": "thesis_development_extension",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "risk_upgrade",
+      "source_family": "output/thesis_luna_team_20260922/next_round/risk_upgrade",
+      "path": "thesis/output/thesis_luna_team_20260922/next_round/risk_upgrade",
+      "aggregate_files": 5,
+      "scope": "thesis_development_extension",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "runtime_protocol",
+      "source_family": "output/thesis_luna_team_20260922/next_round/runtime_protocol",
+      "path": "thesis/output/thesis_luna_team_20260922/next_round/runtime_protocol",
+      "aggregate_files": 1,
+      "scope": "thesis_development_extension",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "runtime_upgrade",
+      "source_family": "output/thesis_luna_team_20260922/next_round/runtime_upgrade",
+      "path": "thesis/output/thesis_luna_team_20260922/next_round/runtime_upgrade",
+      "aggregate_files": 3,
+      "scope": "thesis_development_extension",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "planner",
+      "source_family": "output/thesis_luna_team_20260922/planner",
+      "path": "thesis/output/thesis_luna_team_20260922/planner",
+      "aggregate_files": 2,
+      "scope": "thesis_development_extension",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "protocol",
+      "source_family": "output/thesis_luna_team_20260922/protocol",
+      "path": "thesis/output/thesis_luna_team_20260922/protocol",
+      "aggregate_files": 11,
+      "scope": "thesis_development_extension",
+      "status": "recorded_files_not_a_new_reproduction"
+    },
+    {
+      "id": "verified_prefix_and_outer",
+      "source_family": "verified_prefix_and_outer",
+      "path": "thesis/results/verified_prefix_and_outer",
+      "aggregate_files": 5,
+      "scope": "thesis_development_extension",
+      "status": "recorded_files_not_a_new_reproduction"
+    }
+  ],
+  "family_count": 54,
+  "counts": {
+    "code": 162,
+    "test": 29,
+    "config": 18,
+    "knowledge": 9,
+    "historical_protocol": 9,
+    "synthetic_fixture": 1,
+    "aggregate": 1063
+  },
+  "scope": "Historical code and aggregate evidence; no thesis full text, raw traffic, or checkpoints."
+};

@@ -1,0 +1,22 @@
+{
+  "blocked_field_violation": 0,
+  "component_status": {
+    "matched_perturbation": "completed_v34_matched_perturbation_replay",
+    "matched_rejection": "completed_v34_matched_rejection_replay"
+  },
+  "fake_metric_count": 0,
+  "fusion_ownership_violation": 0,
+  "illegal_verdict_execution": 0,
+  "invalid_evidence_admitted": 0,
+  "missing_components": [],
+  "model_training_performed": false,
+  "ood_override": 0,
+  "promoted_runtime_created": false,
+  "runtime_hash_matches_expected": true,
+  "runtime_safe_v3_0_remains_default": true,
+  "runtime_sha256": "c8d87e022b55ec30ffa98a51e021985720becffe13a8083887aaa91421773a59",
+  "status": "completed_thesis_method_closure_v34",
+  "test_count": 1807,
+  "test_used_for_selection": false,
+  "tests_passed": true
+}

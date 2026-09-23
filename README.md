@@ -7,6 +7,12 @@
 
 > Research artifact accompanying an **author-review manuscript**, not an accepted-paper or deployment-readiness claim. Source code is released under the MIT license; data and manuscript rights are described separately.
 
+## Master's research companion
+
+The repository now also includes the broader **MAD-ETD thesis code and experimental record**: field-use isolation and shortcut-risk tests, specialist evidence, fusion and budgeted routing, group-shift evaluations, read-only advice, and later gain/risk and packet-prefix experiments. [Explore the thesis page](https://me-fake-you.github.io/traffic-expert-selection/thesis.html) · [Code and research map](thesis/README.md) · [实验中文说明](thesis/README.zh-CN.md).
+
+Only code, configurations and screened aggregate evidence are released—**not the thesis full text**. These historical protocols are separate from the controlled short-paper study below. See the thesis [release scope](thesis/RELEASE_SCOPE.md) and [validation record](thesis/VALIDATION.md).
+
 ![Corrections and introduced errors for the original HGB experts](docs/assets/correction-damage.svg)
 
 ## The question

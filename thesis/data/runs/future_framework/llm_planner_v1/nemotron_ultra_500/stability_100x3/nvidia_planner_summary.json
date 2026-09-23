@@ -1,0 +1,17 @@
+{
+  "mode": "nvidia_planner",
+  "status": "completed",
+  "sample_count": 100,
+  "repeat_count": 3,
+  "metrics": {
+    "plan_consistency": 0.65,
+    "verdict_invariance": 1.0,
+    "fallback_stability": 0.9,
+    "policy_guard_rejection_consistency": 0.9,
+    "illegal_verdict_execution_count": 0,
+    "audit_completion_rate": 1.0,
+    "blocked_field_violation_count": 0,
+    "fusion_ownership_violation_count": 0,
+    "ood_override_count": 0
+  }
+}

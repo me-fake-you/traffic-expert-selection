@@ -1,0 +1,2 @@
+case_state_hash,dataset_scope,repeat,real_llm_call,valid_guarded_plan,sanitized_plan,api_latency_ms,total_tokens,error
+c67815640f7232ed7bd43c12fa4a74f5cec4b2cfde01c0a181be21f8515af08c,CICIoT2023,1,True,True,"{""requests"":[{""budget"":1,""expected_output"":""AgentEvidence"",""purpose"":""Analyze inter-arrival timing patterns and burst characteristics to validate or challenge the high-confidence malicious volume prediction"",""requested_agent"":""TimingBehaviorAgent""}],""stop"":false}",2231.2564000021666,476,HTTPError

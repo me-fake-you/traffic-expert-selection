@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "name": "paper_v1_reproduction",
+  "description": "Legacy field-policy profile that reproduces the accepted paper_v1 learned/hybrid pipeline.",
+  "promoted": true,
+  "acceptance_allowed": false,
+  "field_audit_mode": "legacy",
+  "field_audit_required": true,
+  "coordinator": "rule",
+  "detector_backend": "learned",
+  "model_dir": "data/models/ustc_tfc2016/v1",
+  "ood_policy": "hybrid",
+  "ood_gate_dir": "data/models/ustc_tfc2016/ood_v1",
+  "base_ood_policy": "off",
+  "base_ood_gate_dir": null,
+  "evidence_stability_policy": "off",
+  "feature_flags": {},
+  "automatic_training": false,
+  "automatic_deployment": false,
+  "selection_uses_test_or_external": false,
+  "cipherspectrum_locked_test_used_for_selection": false
+}

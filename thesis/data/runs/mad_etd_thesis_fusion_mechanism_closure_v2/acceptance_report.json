@@ -1,0 +1,10 @@
+{
+  "status": "completed_frozen_evidence_fusion_mechanism_closure",
+  "sample_count": 6000,
+  "mechanism_rows": 10,
+  "matched_coverage_count": 1402,
+  "sensitivity_is_selection": false,
+  "test_or_acceptance_used_for_selection": false,
+  "fake_metric_count": 0,
+  "runtime_safe_v3_0_modified": false
+}

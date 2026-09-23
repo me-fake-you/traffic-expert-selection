@@ -1,0 +1,77 @@
+{
+  "avg_evidence_calls": 1.0487,
+  "bootstrap": {
+    "application_or_family_grouped_bootstrap": {
+      "ci95_lower": 0.0003142512640619044,
+      "ci95_upper": 0.09807100031220121,
+      "mean": 0.032853866970211164
+    },
+    "iterations": 1000,
+    "sample_bootstrap": {
+      "ci95_lower": 0.02790575806999333,
+      "ci95_upper": 0.03435968817747402,
+      "mean": 0.031180028122845687
+    },
+    "seed": 42
+  },
+  "call_reduction_vs_static_two_call": 0.47565,
+  "candidate_default_enabled": false,
+  "candidate_metrics": {
+    "accuracy": 0.9333,
+    "coverage": 1.0,
+    "macro_f1": 0.9330178706011507,
+    "macro_precision": 0.9407253584684915,
+    "malicious_recall": 0.9982,
+    "selective_error": 0.06669999999999998,
+    "weighted_f1": 0.9330178706011506
+  },
+  "classification_gain_owner": "frozen independent detector evidence plus group-blind meta-policy; not LLM, group identity, or Critic class output",
+  "corrected_reference_error_count": 306,
+  "deltas": {
+    "accuracy": 0.03060000000000007,
+    "coverage": 0.0,
+    "macro_f1": 0.031198362085022358,
+    "macro_precision": 0.023042073296830945,
+    "malicious_recall": 0.0008000000000000229,
+    "selective_error": -0.03060000000000007,
+    "weighted_f1": 0.031198362085022247
+  },
+  "fake_metric_count": 0,
+  "followup_rate": 0.0487,
+  "fusion_owner": "FusionAgent",
+  "introduced_error_count": 0,
+  "negative_group_count": 0,
+  "ood_decision_agreement": 1.0,
+  "ood_interpretation": "fixed procedural state only",
+  "positive_group_count": 5,
+  "promoted_runtime_created": false,
+  "reference_metrics": {
+    "accuracy": 0.9027,
+    "coverage": 1.0,
+    "macro_f1": 0.9018195085161284,
+    "macro_precision": 0.9176832851716605,
+    "malicious_recall": 0.9974,
+    "selective_error": 0.09730000000000005,
+    "weighted_f1": 0.9018195085161284
+  },
+  "runtime_safe_v3_0_remains_default": true,
+  "sample_count": 10000,
+  "sample_limited": false,
+  "security": {
+    "audit_completion": 1.0,
+    "blocked_field_violation": 0,
+    "fake_metric_count": 0,
+    "fusion_ownership_violation": 0,
+    "illegal_verdict_execution": 0,
+    "invalid_evidence_admitted": 0,
+    "label_or_group_entered_runtime_policy": false,
+    "llm_or_advisory_evidence_entered_fusion": 0,
+    "ood_override": 0,
+    "policy_rejection_count": 0,
+    "unsupported_calls": 0
+  },
+  "stats_selected_rate": 0.0306,
+  "status": "cross_view_group_robust_v6_1_acceptance_completed",
+  "verdict_agreement_vs_reference": 0.9694,
+  "worst_group_class_f1_delta": 0.0
+}

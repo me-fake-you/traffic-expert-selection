@@ -1,0 +1,72 @@
+{
+  "base_experts_retrained": false,
+  "blocked_field_violation": 0,
+  "claim_scope": "Post-hoc learned-gating/DCS baseline on frozen experts; it tests the routing boundary and does not become a MAD-ETD runtime component.",
+  "comparisons": {
+    "logistic_gate_vs_fixed_cascade": {
+      "average_call_delta": 0.4593750000000001,
+      "grouped_bootstrap": {
+        "ci95_lower": -0.009996459531893747,
+        "ci95_upper": 0.006982793218009221,
+        "iterations": 1000,
+        "mean": -0.0008185975262622123,
+        "resampling_unit": "application_or_family_group",
+        "seed": 42
+      },
+      "macro_f1_delta": -0.000912649517234243
+    }
+  },
+  "fake_metric_count": 0,
+  "fusion_ownership_violation": 0,
+  "gate_features": [
+    "eight_safe_stats_features",
+    "stats_probability",
+    "stats_confidence",
+    "stats_uncertainty",
+    "stats_entropy"
+  ],
+  "gate_host_local_batch_p95_us_per_case": 0.3462024999999999,
+  "gate_target": "validation action with lower per-sample binary log loss",
+  "group_count": 20,
+  "heldout_used_for_gate_fit_or_selection": false,
+  "illegal_verdict_execution": 0,
+  "invalid_evidence_admitted": 0,
+  "metrics": {
+    "fixed_confidence_cascade_0_90": {
+      "accuracy": 0.925,
+      "average_evidence_model_invocations": 1.2489,
+      "macro_f1": 0.9246817805227084,
+      "malicious_recall": 0.99,
+      "request_temporal_rate": 0.2489
+    },
+    "logistic_gate": {
+      "accuracy": 0.924125,
+      "average_evidence_model_invocations": 1.708275,
+      "macro_f1": 0.9237691310054742,
+      "malicious_recall": 0.99245,
+      "request_temporal_rate": 0.708275
+    },
+    "static_two_view_average": {
+      "accuracy": 0.92765,
+      "average_evidence_model_invocations": 2.0,
+      "macro_f1": 0.9273377848121251,
+      "malicious_recall": 0.9932,
+      "request_temporal_rate": 1.0
+    },
+    "stats_only": {
+      "accuracy": 0.881,
+      "average_evidence_model_invocations": 1.0,
+      "macro_f1": 0.8798424717639464,
+      "malicious_recall": 0.97915,
+      "request_temporal_rate": 0.0
+    }
+  },
+  "ood_override": 0,
+  "promoted_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "sample_count": 40000,
+  "seed": 42,
+  "selection_partition": "fold-specific validation groups only",
+  "status": "completed_v26_ustc_learned_gate_baseline",
+  "test_used_for_selection": false
+}

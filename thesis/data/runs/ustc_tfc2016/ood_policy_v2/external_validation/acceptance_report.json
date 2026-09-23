@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0",
+  "stage": "frozen_external_validation_complete",
+  "policy_sha256": "d6ce019fb72e5a00cbdfaacf81230ef5c8fd16a44558c00e1c0af7bf11e81c20",
+  "external_validation": {
+    "schema_version": "2.0",
+    "dataset": "CESNET-TLS22",
+    "metrics_status": "skipped_no_labels",
+    "sample_count": 499997,
+    "verdict_counts": {
+      "benign": 1161,
+      "malicious": 140187,
+      "suspicious": 280361,
+      "unknown": 78288
+    },
+    "coverage": 0.2826976961861771,
+    "malicious_rate": 0.28037568225409354,
+    "suspicious_rate": 0.5607253643521861,
+    "unknown_rate": 0.15657693946163678,
+    "alert_rate": 0.8411010466062796,
+    "external_ood_auroc": 0.939533187464521,
+    "policy_sha256": "d6ce019fb72e5a00cbdfaacf81230ef5c8fd16a44558c00e1c0af7bf11e81c20",
+    "policy_file_sha256_before": "02b5938db8946aca73289be35c2d1b5dfcb2204d17bc546187114df57028feb2",
+    "external_dataset_used_for_training_or_thresholds": false,
+    "rag_enabled": false
+  },
+  "acceptance": {
+    "combined_ood_auroc_at_least_0_97": false,
+    "cesnet_malicious_rate_at_most_0_10": false,
+    "cesnet_alert_rate_at_most_0_40": false,
+    "cesnet_unknown_rate_at_least_0_50": false,
+    "all_external_targets_met": false
+  }
+}

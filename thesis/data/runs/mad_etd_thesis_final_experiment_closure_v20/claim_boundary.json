@@ -1,0 +1,18 @@
+{
+  "n_baiot_acceptance_reopened": false,
+  "not_supported": [
+    "The USTC grouped interval versus probability averaging has a strictly positive lower bound.",
+    "N-BaIoT ordinary ensembles were evaluated on the sealed acceptance set.",
+    "Fusion improves full-coverage classification accuracy.",
+    "MAD-ETD faithfully reproduces or universally outperforms external multi-agent systems."
+  ],
+  "promoted_runtime_created": false,
+  "supported": [
+    "On the frozen USTC acceptance, MAD-ETD has a positive Macro-F1 point estimate versus equal probability averaging.",
+    "On the frozen paired perturbation diagnostic, reliability/OOD-aware Fusion reduces harmful binary transitions relative to equal probability averaging.",
+    "The N-BaIoT locked candidate is positive versus ordinary static baselines on the validation selection diagnostic only.",
+    "Five citable external systems are available as tiered numerical context."
+  ],
+  "test_or_acceptance_used_for_selection": false,
+  "training_performed": false
+}

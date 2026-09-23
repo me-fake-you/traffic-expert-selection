@@ -1,0 +1,24 @@
+{
+  "architecture_mode_count": 11,
+  "detector_training_performed": false,
+  "dynamic_vs_static": {
+    "agent_call_reduction": 0.3333333333333333,
+    "dynamic_average_agent_calls": 2.0,
+    "dynamic_unsupported_calls": 0.0,
+    "ood_agreement": 1.0,
+    "sample_count": 6000,
+    "static_average_agent_calls": 3.0,
+    "static_unsupported_calls": 1.0,
+    "verdict_agreement": 1.0
+  },
+  "experiment": "mad_etd_layered_security_governance_w266_w270",
+  "fake_metric_count": 0,
+  "layer_rows_are_transparent_frozen_replays": true,
+  "macro_f1_improvement_claimed_for_security_layers": false,
+  "new_prediction_run_performed": false,
+  "promoted_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "schema_version": "1.0",
+  "stage": "w267_frozen_same_data_layered_ablation",
+  "status": "ready_for_systematic_threat_model"
+}

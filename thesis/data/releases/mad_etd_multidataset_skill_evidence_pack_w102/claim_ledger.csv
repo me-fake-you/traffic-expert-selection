@@ -1,0 +1,5 @@
+claim_id,safe_to_claim,claim,scope,supporting_artifact,forbidden_overclaim
+W102-C1,True,W96 improved NF-BoT-IoT-v2 full-coverage Macro-F1 by 0.01316 with a positive bootstrap CI.,NF-BoT-IoT-v2 only,data/runs/mad_etd_nfiot_bot_targeted_performance_w96/acceptance_report.json,general NF-IoT improvement
+W102-C2,True,W98 improved USTC application/family-held-out Macro-F1 by 0.04749 and Accuracy by 0.04600.,USTC group-held-out cross-validation only,data/runs/mad_etd_ustc_group_heldout_hybrid_w98/acceptance_report.json,universal cross-dataset improvement
+W102-C3,True,Capability-aware routing reduced evidence-agent calls from 3.0 to 2.0 and unsupported calls from 1.0 to 0.0 with verdict/OOD agreement 1.0.,"6,000-sample same-data baseline protocol",data/runs/mad_etd_baseline_comparison/acceptance_report.json,classification SOTA over external papers
+W102-C4,True,"Failed generalisation, TLS, and packet-sequence candidates were retained as negative results.",W97-W100 governance,data/releases/mad_etd_multidataset_skill_evidence_pack_w102/negative_result_ledger.csv,all skills promoted

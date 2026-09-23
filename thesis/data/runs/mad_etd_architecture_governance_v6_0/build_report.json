@@ -1,0 +1,11 @@
+{
+  "default_runtime": "runtime_safe_v3_0",
+  "document": "docs/MAD_ETD_ARCHITECTURE_GOVERNANCE_V6_0.md",
+  "document_cn": "docs/MAD_ETD_ARCHITECTURE_GOVERNANCE_V6_0_CN.md",
+  "experiment": "mad_etd_architecture_governance_v6_0",
+  "fake_metric_count": 0,
+  "promoted_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "schema_version": "1.0",
+  "status": "built"
+}

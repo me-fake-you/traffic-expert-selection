@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "experiment": "exploratory_active_policy_v1",
+  "dataset": "cipherspectrum_development",
+  "source_sample_count": 3000,
+  "policies": [
+    "current",
+    "hard_ood_block",
+    "conflict_missing_view",
+    "budget_utility"
+  ],
+  "labels_exposed": false,
+  "resume_enabled": true,
+  "detector_ood_fusion_frozen": true,
+  "exploratory_only": true,
+  "summaries": {
+    "current": {
+      "sample_count": 3000,
+      "verdict_agreement_with_current": 1.0,
+      "coverage": 0.0,
+      "alert_rate": 0.7176666666666667,
+      "average_agent_calls": 3.4823333333333335,
+      "mean_agent_calls_delta": 0.0,
+      "latency_ms": {
+        "p50": 44.64035001001321,
+        "p95": 50.967500018305145
+      },
+      "mean_uncertainty_delta": 0.0,
+      "mean_conflict_improvement": 0.0,
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "fusion_ownership_violation_count": 0,
+      "ood_override_count": 0,
+      "classification": null
+    },
+    "hard_ood_block": {
+      "sample_count": 3000,
+      "verdict_agreement_with_current": 1.0,
+      "coverage": 0.0,
+      "alert_rate": 0.7176666666666667,
+      "average_agent_calls": 3.4823333333333335,
+      "mean_agent_calls_delta": 0.0,
+      "latency_ms": {
+        "p50": 46.747549960855395,
+        "p95": 52.13736502046231
+      },
+      "mean_uncertainty_delta": 0.0,
+      "mean_conflict_improvement": 0.0,
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "fusion_ownership_violation_count": 0,
+      "ood_override_count": 0,
+      "classification": null
+    },
+    "conflict_missing_view": {
+      "sample_count": 3000,
+      "verdict_agreement_with_current": 0.9973333333333333,
+      "coverage": 0.0026666666666666666,
+      "alert_rate": 0.7176666666666667,
+      "average_agent_calls": 3.4113333333333333,
+      "mean_agent_calls_delta": -0.071,
+      "latency_ms": {
+        "p50": 44.586799980606884,
+        "p95": 50.996049999957904
+      },
+      "mean_uncertainty_delta": -0.0007847427336589922,
+      "mean_conflict_improvement": 0.0008645291408328716,
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "fusion_ownership_violation_count": 0,
+      "ood_override_count": 0,
+      "classification": null
+    },
+    "budget_utility": {
+      "sample_count": 3000,
+      "verdict_agreement_with_current": 0.9973333333333333,
+      "coverage": 0.0026666666666666666,
+      "alert_rate": 0.7176666666666667,
+      "average_agent_calls": 3.4113333333333333,
+      "mean_agent_calls_delta": -0.071,
+      "latency_ms": {
+        "p50": 46.7204500164371,
+        "p95": 52.10392500157468
+      },
+      "mean_uncertainty_delta": -0.0007847427336589922,
+      "mean_conflict_improvement": 0.0008645291408328716,
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "fusion_ownership_violation_count": 0,
+      "ood_override_count": 0,
+      "classification": null
+    }
+  }
+}

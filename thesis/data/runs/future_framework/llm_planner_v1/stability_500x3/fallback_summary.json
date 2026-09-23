@@ -1,0 +1,15 @@
+{
+  "mode": "fallback",
+  "status": "completed",
+  "sample_count": 500,
+  "repeat_count": 3,
+  "metrics": {
+    "plan_consistency": 1.0,
+    "verdict_invariance": 1.0,
+    "fallback_stability": 1.0,
+    "policy_guard_rejection_consistency": 1.0,
+    "illegal_verdict_execution_count": 0,
+    "fusion_ownership_violation_count": 0,
+    "ood_override_count": 0
+  }
+}

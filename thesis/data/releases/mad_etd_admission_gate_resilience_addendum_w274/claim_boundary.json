@@ -1,0 +1,15 @@
+{
+  "forbidden_claims": [
+    "Full W82 probability payloads were re-executed in W272.",
+    "AdmissionGate improves Accuracy or F1.",
+    "The default runtime was replaced.",
+    "The system is production-ready."
+  ],
+  "safe_claims": [
+    "All 12,002 real frozen handoff metadata records passed executable admission.",
+    "The fixed-seed synthetic mutation corpus was rejected fail-closed.",
+    "Schema-valid policy/context mutations were rejected by AdmissionGate.",
+    "Admission decisions were deterministic and fully audited.",
+    "Contract-conforming semantic perturbations were admitted, showing that AdmissionGate does not establish evidence truth."
+  ]
+}

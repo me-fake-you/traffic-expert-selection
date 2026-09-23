@@ -1,0 +1,6 @@
+experiment,candidate,failure_type,failure_reason,safe_claim,forbidden_claim,fake_metric_count
+W97,IoTBotnetSkill cross-source generalisation,recall_and_calibration_gate,per-source malicious recall and aggregate ECE failed,"Macro-F1 improved aggregate, but cross-source promotion failed",W96 generalises across all NF-IoT sources,0
+W99,Learned TLS Skill,historical_locked_acceptance_closed,W71/W83/W84 did not pass and were opened once,Learned TLS remained unpromoted,Learned TLS v4 completed,0
+W100,CICIDS PacketSequenceSkill,fresh_large_coverage_failure,v26 closed the packet-sequence promotion lane,small-scale positive signal retained with no runtime promotion,CICIDS packet runtime promoted,0
+W98,HIKARI group-held-out detector,insufficient_group_metadata,single collection group,HIKARI retained as diagnostic-only,HIKARI group-held-out result completed,0
+W100,CESNET/CipherSpectrum supervised comparison,unlabeled_external_data,supervised truth unavailable or prohibited,external OOD behavior reported without F1,CESNET/CipherSpectrum Accuracy or F1 improved,0

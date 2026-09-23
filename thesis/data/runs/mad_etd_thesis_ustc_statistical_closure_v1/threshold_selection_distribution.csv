@@ -1,0 +1,10 @@
+candidate_model_id,candidate_threshold,selected_fold_count
+hybrid_extra_trees,0.2,2
+hybrid_extra_trees,0.49,1
+hybrid_extra_trees,0.55,1
+hybrid_extra_trees,0.58,1
+hybrid_extra_trees,0.6,4
+hybrid_rf,0.2,8
+hybrid_rf,0.35,1
+hybrid_rf,0.53,1
+hybrid_rf,0.59,1

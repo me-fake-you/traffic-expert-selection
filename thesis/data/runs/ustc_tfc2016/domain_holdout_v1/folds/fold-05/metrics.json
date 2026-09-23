@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0",
+  "fold": 5,
+  "holdout": {
+    "benign_application": "WorldOfWarcraft",
+    "malware_family": "Zeus"
+  },
+  "systems": {
+    "full": {
+      "schema_version": "1.0",
+      "mode": "full",
+      "metrics_status": "computed",
+      "sample_count": 29483,
+      "labeled_sample_count": 29483,
+      "accuracy": 0.998729728585341,
+      "macro_f1": 0.9985732629160353,
+      "precision": 1.0,
+      "recall": 0.998093301131308,
+      "PR_AUC": 0.9999999721439272,
+      "Brier_score": 0.005450430262604972,
+      "ECE": 0.02986159066968768,
+      "coverage": 0.8010378862395279,
+      "unknown_rate": 0.0013227961876335515,
+      "suspicious_rate": 0.1976393175728386,
+      "average_agent_calls": 2.7303191669775804,
+      "average_latency_ms": 5.35047227219132,
+      "confusion_on_covered": {
+        "tp": 15704,
+        "fp": 0,
+        "tn": 7883,
+        "fn": 30
+      }
+    },
+    "stats_only": {
+      "schema_version": "1.0",
+      "mode": "stats_only",
+      "metrics_status": "computed",
+      "sample_count": 29483,
+      "labeled_sample_count": 29483,
+      "accuracy": 0.998349136471385,
+      "macro_f1": 0.9981459266913811,
+      "precision": 1.0,
+      "recall": 0.9975225511370855,
+      "PR_AUC": 0.9999973658090453,
+      "Brier_score": 0.005769189377285783,
+      "ECE": 0.03044697433757078,
+      "coverage": 0.8012753111962826,
+      "unknown_rate": 0.0010853712308788114,
+      "suspicious_rate": 0.1976393175728386,
+      "average_agent_calls": 1.0,
+      "average_latency_ms": 0.0,
+      "confusion_on_covered": {
+        "tp": 15703,
+        "fp": 0,
+        "tn": 7882,
+        "fn": 39
+      }
+    },
+    "temporal_only": {
+      "schema_version": "1.0",
+      "mode": "temporal_only",
+      "metrics_status": "computed",
+      "sample_count": 29483,
+      "labeled_sample_count": 29483,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "PR_AUC": 1.0,
+      "Brier_score": 0.17234508023593698,
+      "ECE": 0.34377626743614104,
+      "coverage": 0.2800596954176983,
+      "unknown_rate": 0.6893803208628702,
+      "suspicious_rate": 0.030559983719431538,
+      "average_agent_calls": 1.0,
+      "average_latency_ms": 0.0,
+      "confusion_on_covered": {
+        "tp": 401,
+        "fp": 0,
+        "tn": 7856,
+        "fn": 0
+      }
+    },
+    "no_reject": {
+      "schema_version": "1.0",
+      "mode": "no_reject",
+      "metrics_status": "computed",
+      "sample_count": 29483,
+      "labeled_sample_count": 29483,
+      "accuracy": 0.998168436047892,
+      "macro_f1": 0.9976675173929486,
+      "precision": 1.0,
+      "recall": 0.9975,
+      "PR_AUC": 0.9999999721439272,
+      "Brier_score": 0.005450430262604972,
+      "ECE": 0.02986159066968768,
+      "coverage": 1.0,
+      "unknown_rate": 0.0,
+      "suspicious_rate": 0.0,
+      "average_agent_calls": 2.7303191669775804,
+      "average_latency_ms": 0.0,
+      "confusion_on_covered": {
+        "tp": 21546,
+        "fp": 0,
+        "tn": 7883,
+        "fn": 54
+      }
+    }
+  },
+  "temporal_abstain_rate": 0.6893803208628702,
+  "audit_summary": {
+    "schema_version": "1.0",
+    "sample_count": 29483,
+    "completed_chain_count": 29483,
+    "audit_chain_completion_rate": 1.0,
+    "blocked_field_violation_count": 0,
+    "policy_adjustment_count": 0,
+    "event_counts": {
+      "FLOW_VALIDATED": 29483,
+      "FIELD_POLICY_APPLIED": 29483,
+      "RELIABILITY_ASSESSED": 29483,
+      "ROUTING_DECISION": 80491,
+      "POLICY_GUARD_EVALUATION": 80491,
+      "AGENT_EVIDENCE": 80498,
+      "INTERIM_FUSION": 51015,
+      "FINAL_FUSION": 29483,
+      "REPORT_GENERATED": 29483
+    },
+    "actor_counts": {
+      "FeatureCapture": 29483,
+      "FieldAuditAgent": 29483,
+      "PseudoFeatureGuardAgent": 29483,
+      "CoordinatorAgent": 80491,
+      "PolicyGuard": 80491,
+      "StatsDetectorAgent": 29483,
+      "TemporalBehaviorAgent": 29483,
+      "FusionAgent": 80498,
+      "ReporterAgent": 29483,
+      "FamilyAttributionAgent": 21523,
+      "TLSProtocolAgent": 9
+    }
+  }
+}

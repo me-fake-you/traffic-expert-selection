@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "name": "deep_v2_experimental",
+  "description": "Non-promoted deep_v2 experimental comparator with conformal_v3.",
+  "promoted": false,
+  "acceptance_allowed": false,
+  "field_audit_mode": "strict",
+  "field_audit_required": true,
+  "coordinator": "rule",
+  "detector_backend": "deep_v2",
+  "model_dir": "data/models/mad_etd_v2",
+  "ood_policy": "conformal_v3",
+  "ood_gate_dir": "data/models/mad_etd_v2",
+  "base_ood_policy": "hybrid",
+  "base_ood_gate_dir": "data/models/ustc_tfc2016/ood_v1",
+  "evidence_stability_policy": "off",
+  "feature_flags": {},
+  "automatic_training": false,
+  "automatic_deployment": false,
+  "selection_uses_test_or_external": false,
+  "cipherspectrum_locked_test_used_for_selection": false
+}

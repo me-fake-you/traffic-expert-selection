@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "sample_count": 634630,
+  "completed_chain_count": 634630,
+  "audit_chain_completion_rate": 1.0,
+  "blocked_field_violation_count": 0,
+  "policy_adjustment_count": 0,
+  "event_counts": {
+    "FLOW_VALIDATED": 634630,
+    "FIELD_POLICY_APPLIED": 634630,
+    "RELIABILITY_ASSESSED": 634630,
+    "ROUTING_DECISION": 1598187,
+    "POLICY_GUARD_EVALUATION": 1598187,
+    "AGENT_EVIDENCE": 1600327,
+    "INTERIM_FUSION": 965697,
+    "FINAL_FUSION": 634630,
+    "REPORT_GENERATED": 634630
+  },
+  "actor_counts": {
+    "FeatureCapture": 634630,
+    "FieldAuditAgent": 634630,
+    "PseudoFeatureGuardAgent": 634630,
+    "CoordinatorAgent": 1598187,
+    "PolicyGuard": 1598187,
+    "StatsDetectorAgent": 634630,
+    "TemporalBehaviorAgent": 634630,
+    "FusionAgent": 1600327,
+    "ReporterAgent": 634630,
+    "FamilyAttributionAgent": 325542,
+    "TLSProtocolAgent": 5525
+  }
+}

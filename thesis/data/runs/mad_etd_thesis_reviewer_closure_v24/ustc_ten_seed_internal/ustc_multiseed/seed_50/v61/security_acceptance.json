@@ -1,0 +1,13 @@
+{
+  "audit_completion": 1.0,
+  "blocked_field_violation": 0,
+  "fake_metric_count": 0,
+  "fusion_ownership_violation": 0,
+  "illegal_verdict_execution": 0,
+  "invalid_evidence_admitted": 0,
+  "label_or_group_entered_runtime_policy": false,
+  "llm_or_advisory_evidence_entered_fusion": 0,
+  "ood_override": 0,
+  "policy_rejection_count": 0,
+  "unsupported_calls": 0
+}

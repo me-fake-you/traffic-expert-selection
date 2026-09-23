@@ -1,0 +1,33 @@
+{
+  "status": "completed_v24_ustc_ten_seed_robustness",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "seed_count": 10,
+  "positive_seed_count": 4,
+  "zero_seed_count": 6,
+  "negative_seed_count": 0,
+  "macro_f1_delta_mean": 0.007113494952696575,
+  "macro_f1_delta_std": 0.01125346266591648,
+  "acceptance_used_for_seed_selection": false,
+  "post_acceptance_robustness_analysis": true,
+  "claim_scope": "fixed-seed robustness diagnostic, not a fresh acceptance",
+  "blocked_field_violation": 0,
+  "fusion_ownership_violation": 0,
+  "ood_override": 0,
+  "illegal_verdict_execution": 0,
+  "invalid_evidence_admitted": 0,
+  "fake_metric_count": 0,
+  "test_used_for_selection": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "promoted_runtime_created": false
+}

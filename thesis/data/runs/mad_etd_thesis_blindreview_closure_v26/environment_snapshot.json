@@ -1,0 +1,12 @@
+{
+  "implementation": "CPython",
+  "machine": "AMD64",
+  "package_versions": {
+    "joblib": "1.5.3",
+    "numpy": "1.26.4",
+    "pydantic": "2.13.4",
+    "scikit-learn": "1.5.1"
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.7"
+}

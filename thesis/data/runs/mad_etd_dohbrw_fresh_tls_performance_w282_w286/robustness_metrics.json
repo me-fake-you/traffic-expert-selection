@@ -1,0 +1,14 @@
+{
+  "hgb": {
+    "harmful_flip_rate": 0.007916666666666667,
+    "perturbed_coverage": 0.9866666666666667,
+    "perturbed_wrong_binary_rate": 0.00875,
+    "sample_count": 2400
+  },
+  "records_only": {
+    "harmful_flip_rate": 0.0016666666666666668,
+    "perturbed_coverage": 0.9858333333333333,
+    "perturbed_wrong_binary_rate": 0.002916666666666667,
+    "sample_count": 2400
+  }
+}

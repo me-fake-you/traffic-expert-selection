@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "name": "runtime_safe_v2_7",
+  "description": "Promoted safe runtime: strict FieldAudit, learned v1 detectors, OOD v1 hybrid, Rule Planner.",
+  "promoted": true,
+  "acceptance_allowed": true,
+  "field_audit_mode": "strict",
+  "field_audit_required": true,
+  "coordinator": "rule",
+  "detector_backend": "learned",
+  "model_dir": "data/models/ustc_tfc2016/v1",
+  "ood_policy": "hybrid",
+  "ood_gate_dir": "data/models/ustc_tfc2016/ood_v1",
+  "base_ood_policy": "off",
+  "base_ood_gate_dir": null,
+  "evidence_stability_policy": "off",
+  "feature_flags": {},
+  "automatic_training": false,
+  "automatic_deployment": false,
+  "selection_uses_test_or_external": false,
+  "cipherspectrum_locked_test_used_for_selection": false
+}

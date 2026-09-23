@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "experiment": "mad_etd_fiveg_nidd_end_to_end_lifecycle_cost_v1",
+  "output_dir": "data/runs/mad_etd_fiveg_nidd_end_to_end_lifecycle_cost_v1",
+  "inputs": {
+    "dataset_path": "data/raw/5g_nidd/fairdata_v1/Encoded.csv",
+    "model_bundle_path": "data/runs/mad_etd_fiveg_nidd_rsrat_confirmation_v1/model_bundle.joblib",
+    "probability_cache_path": "data/runs/mad_etd_fiveg_nidd_rsrat_confirmation_v1/evaluation_probabilities.npz",
+    "core_protocol_path": "data/configs/fiveg_nidd_rsrat_confirmation_v1.json",
+    "stack_source_path": "src/mad_etd/lago_networked_deployment.py",
+    "expected_sha256": {
+      "dataset": "7c238e2d5dabbc1afcd01c50db91372d6f6808f7572bb92baeb2df03a18af90c",
+      "model_bundle": "99c4061bf865b4b9ef1320ed12d9ce3647a4611c35c71d864618c237db85f991",
+      "probability_cache": "34353d8bc1f7f374963d737e91c50c90fb715a98cc84d619f19bcb44f252a3af",
+      "core_protocol": "2b74db04477cdbf559d06b85db40ec2a48428f308c69c0b958aef1389442083a"
+    }
+  },
+  "measurement": {
+    "independent_batches": 10,
+    "warmup_cases_per_batch": 2,
+    "cases_per_phase": 8,
+    "time_order_control_stack_per_batch": true,
+    "row_selection_seed": 20260901,
+    "replay_tolerance": 1e-12,
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260902,
+    "transport": "HTTP/1.0 over 127.0.0.1",
+    "persistent_store": "SQLite WAL",
+    "specialist_identity_count": 4,
+    "specialist_process_count": 1,
+    "governance_process_count": 6
+  },
+  "claim_boundary": {
+    "systems_measurement_only": true,
+    "analyst_blind": false,
+    "multi_host": false,
+    "raw_packet_feature_extraction_included": false
+  }
+}

@@ -1,0 +1,5 @@
+metric,point,ci95_lower,ci95_upper,gate,passed
+macro_f1_delta,0.026535132777504522,0.023287568413681188,0.029959485209741985,ci95_lower > 0,True
+selective_error_delta,-0.011716609771708963,,-0.010220268088908486,ci95_upper <= 0,True
+ece_delta,-0.0017976211767643225,,-0.0007160821370140297,not worse by +0.005,True
+coverage,0.9374,0.93389875,,coverage >= 0.90,True

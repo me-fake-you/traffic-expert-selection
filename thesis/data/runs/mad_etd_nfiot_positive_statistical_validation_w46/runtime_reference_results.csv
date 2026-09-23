@@ -1,0 +1,3 @@
+runtime,model_id,threshold,training_seconds,inference_seconds,default_enabled,accept_confidence
+runtime_safe_v3_0,hgb_reference,0.5,7.709484099992551,0.020746599999256432,True,
+runtime_nf_iot_calibrated_v5_12,random_forest_reference,0.49,1.669868699973449,0.10928440000861883,False,0.9901750976639484

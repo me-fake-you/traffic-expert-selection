@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "experiment": "exploratory_active_policy_v1",
+  "dataset": "cipherspectrum_validation",
+  "source_sample_count": 3200,
+  "policies": [
+    "current",
+    "budget_utility"
+  ],
+  "labels_exposed": false,
+  "resume_enabled": true,
+  "detector_ood_fusion_frozen": true,
+  "exploratory_only": true,
+  "summaries": {
+    "current": {
+      "sample_count": 3200,
+      "verdict_agreement_with_current": 1.0,
+      "coverage": 0.0,
+      "alert_rate": 0.5659375,
+      "average_agent_calls": 3.293125,
+      "mean_agent_calls_delta": 0.0,
+      "latency_ms": {
+        "p50": 46.88290000194684,
+        "p95": 52.888509974582114
+      },
+      "mean_uncertainty_delta": 0.0,
+      "mean_conflict_improvement": 0.0,
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "fusion_ownership_violation_count": 0,
+      "ood_override_count": 0,
+      "classification": null
+    },
+    "budget_utility": {
+      "sample_count": 3200,
+      "verdict_agreement_with_current": 0.9865625,
+      "coverage": 0.0134375,
+      "alert_rate": 0.5659375,
+      "average_agent_calls": 3.2046875,
+      "mean_agent_calls_delta": -0.0884375,
+      "latency_ms": {
+        "p50": 44.51875004451722,
+        "p95": 51.29864002228714
+      },
+      "mean_uncertainty_delta": -0.0039268011857468595,
+      "mean_conflict_improvement": 0.004337552248425484,
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "fusion_ownership_violation_count": 0,
+      "ood_override_count": 0,
+      "classification": null
+    }
+  }
+}

@@ -1,0 +1,7 @@
+dataset,policy,selected_policy,sample_count,coverage,verdict_agreement_with_current,average_agent_calls,latency_p95_ms,mean_uncertainty_delta,mean_conflict_improvement,selective_macro_f1
+ustc,current,budget_utility,6000,0.13816666666666666,1.0,2.5086666666666666,48.983955036965206,0.0,0.0,1.0
+ustc,budget_utility,budget_utility,6000,0.13816666666666666,1.0,2.5085,49.499445015680976,0.0,0.0,1.0
+cesnet,current,budget_utility,50000,0.00074,1.0,2.03138,50.61759997624904,0.0,0.0,
+cesnet,budget_utility,budget_utility,50000,0.00074,1.0,2.03138,50.65134500036947,0.0,0.0,
+cipherspectrum,current,budget_utility,3200,0.0,1.0,3.293125,52.888509974582114,0.0,0.0,
+cipherspectrum,budget_utility,budget_utility,3200,0.0134375,0.9865625,3.2046875,51.29864002228714,-0.0039268011857468595,0.004337552248425484,

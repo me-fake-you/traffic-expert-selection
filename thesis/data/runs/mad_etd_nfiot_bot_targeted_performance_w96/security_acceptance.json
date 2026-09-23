@@ -1,0 +1,14 @@
+{
+  "acceptance_opened_exactly_once": true,
+  "audit_completion": 1.0,
+  "automatic_deployment": false,
+  "blocked_field_violation": 0,
+  "candidate_default_enabled": false,
+  "fake_metric_count": 0,
+  "fusion_ownership_violation": 0,
+  "illegal_verdict_execution_count": 0,
+  "ood_override_count": 0,
+  "promoted_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "status": "passed"
+}

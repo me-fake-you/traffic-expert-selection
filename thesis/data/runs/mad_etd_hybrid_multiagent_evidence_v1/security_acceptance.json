@@ -1,0 +1,16 @@
+{
+  "audit_completion": 1.0,
+  "blocked_field_violation": 0,
+  "failed_cases": [],
+  "fake_metric_count": 0,
+  "fallback_identity_confusion": 0,
+  "fusion_ownership_violation": 0,
+  "illegal_verdict_execution_count": 0,
+  "invalid_evidence_admitted": 0,
+  "ood_override_count": 0,
+  "promoted_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "status": "passed_hybrid_policy_and_admission_security",
+  "structured_case_count": 16,
+  "test_or_acceptance_used_for_selection": false
+}

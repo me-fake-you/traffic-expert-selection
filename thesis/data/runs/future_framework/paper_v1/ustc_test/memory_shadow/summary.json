@@ -1,0 +1,99 @@
+{
+  "sample_count": 93822,
+  "verdict_rates": {
+    "benign": 0.07955490183539042,
+    "malicious": 0.058770863976466074,
+    "suspicious": 0.45235659013877344,
+    "unknown": 0.4093176440493701
+  },
+  "coverage": 0.1383257658118565,
+  "alert_rate": 0.5111274541152395,
+  "human_review_rate": 0.8616742341881435,
+  "average_agent_calls": 2.53393660335529,
+  "latency_ms": {
+    "mean": 32.82960339353124,
+    "p50": 29.921450011897832,
+    "p95": 46.33298500266392
+  },
+  "verdict_invariance_rate": 1.0,
+  "mean_uncertainty_delta": 0.0,
+  "mean_conflict_delta": 0.0,
+  "memory_match_rate": 1.0,
+  "memory_top1_relevance": 0.8413271940483042,
+  "memory_topk_relevance": 0.9349939246658566,
+  "deliberation_trigger_rate": 0.0,
+  "supplemental_dispatch_rate": 0.0,
+  "compliance_failure_count": 0,
+  "audit_completion_rate": 1.0,
+  "blocked_field_violation_count": 0,
+  "ood_signature_invariance_rate": 1.0,
+  "classification": {
+    "labeled_count": 93822,
+    "covered_labeled_count": 12978,
+    "labeled_coverage": 0.1383257658118565,
+    "selective_accuracy": 1.0,
+    "selective_macro_f1": 1.0,
+    "confusion": {
+      "tp": 5514,
+      "fp": 0,
+      "tn": 7464,
+      "fn": 0
+    }
+  },
+  "grouped_bootstrap_95ci": {
+    "coverage": {
+      "low": 0.09651950438551432,
+      "high": 0.17690655882640693
+    },
+    "alert_rate": {
+      "low": 0.37064644429946436,
+      "high": 0.7707447156706472
+    },
+    "human_review_rate": {
+      "low": 0.8230934411735931,
+      "high": 0.9034804956144856
+    },
+    "average_agent_calls": {
+      "low": 2.400529819755067,
+      "high": 2.7815003383266266
+    },
+    "average_latency_ms": {
+      "low": 30.476125936488923,
+      "high": 35.50904744543398
+    },
+    "verdict_invariance_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "audit_completion_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "blocked_field_violation_rate": {
+      "low": 0.0,
+      "high": 0.0
+    },
+    "ood_signature_invariance_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "uncertainty_delta": {
+      "low": 0.0,
+      "high": 0.0
+    },
+    "conflict_delta": {
+      "low": 0.0,
+      "high": 0.0
+    }
+  },
+  "feature_flags": {
+    "schema_version": "1.0",
+    "memory": true,
+    "planner_executor": false,
+    "deliberation": false,
+    "reflection": false,
+    "audit_critic": false,
+    "learning_queue": false,
+    "shadow_mode": true
+  }
+}

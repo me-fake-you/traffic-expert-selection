@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "package_version": "0.1.0",
+  "mode": "nvidia_coordinator",
+  "input_path": ".\\data\\processed\\ustc_tfc2016\\v1\\flows",
+  "sample_count": 500,
+  "created_at": "2026-06-18T16:54:47.669745+00:00",
+  "nvidia_model": "meta/llama-3.1-8b-instruct",
+  "nvidia_api_key_configured": false,
+  "field_audit_enabled": true,
+  "pseudo_guard_enabled": true,
+  "reliability_discount_enabled": true,
+  "reject_option_enabled": true,
+  "execution_policy": "dynamic",
+  "coordinator_backend": "nvidia_with_rule_fallback"
+}

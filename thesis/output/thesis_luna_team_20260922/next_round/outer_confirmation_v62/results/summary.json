@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETED_OUTER_ROLE_REEVALUATION_V62",
+  "seed": 42,
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "rows": 40000,
+  "unique_hash": 40000,
+  "not_blind": true,
+  "not_independent_confirmation": true,
+  "no_refit": true,
+  "duration_seconds": 5.6100564999997005
+}

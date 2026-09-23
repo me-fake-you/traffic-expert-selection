@@ -1,0 +1,90 @@
+{
+  "sample_count": 3200,
+  "verdict_rates": {
+    "benign": 0.0,
+    "malicious": 0.0,
+    "suspicious": 0.5884375,
+    "unknown": 0.4115625
+  },
+  "coverage": 0.0,
+  "alert_rate": 0.5884375,
+  "human_review_rate": 1.0,
+  "average_agent_calls": 3.3253125,
+  "latency_ms": {
+    "mean": 33.58166556274227,
+    "p50": 33.8632500206586,
+    "p95": 38.95332998363301
+  },
+  "verdict_invariance_rate": 0.998125,
+  "mean_uncertainty_delta": 0.0004797699186616583,
+  "mean_conflict_delta": -0.0005506646371782817,
+  "memory_match_rate": 0.0,
+  "memory_top1_relevance": null,
+  "memory_topk_relevance": null,
+  "deliberation_trigger_rate": 1.0,
+  "supplemental_dispatch_rate": 0.3253125,
+  "compliance_failure_count": 0,
+  "audit_completion_rate": 1.0,
+  "blocked_field_violation_count": 0,
+  "ood_signature_invariance_rate": 1.0,
+  "classification": {
+    "labeled_count": 0,
+    "covered_labeled_count": 0
+  },
+  "grouped_bootstrap_95ci": {
+    "coverage": {
+      "low": 0.0,
+      "high": 0.0
+    },
+    "alert_rate": {
+      "low": 0.40807031250000003,
+      "high": 0.7553671875
+    },
+    "human_review_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "average_agent_calls": {
+      "low": 3.1893671875000003,
+      "high": 3.490953125
+    },
+    "average_latency_ms": {
+      "low": 33.47453968588252,
+      "high": 33.69492825882344
+    },
+    "verdict_invariance_rate": {
+      "low": 0.995625,
+      "high": 0.9996953125
+    },
+    "audit_completion_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "blocked_field_violation_rate": {
+      "low": 0.0,
+      "high": 0.0
+    },
+    "ood_signature_invariance_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "uncertainty_delta": {
+      "low": 8.59943598563641e-05,
+      "high": 0.0010751852457376943
+    },
+    "conflict_delta": {
+      "low": -0.0012498219192583451,
+      "high": -9.574778695521832e-05
+    }
+  },
+  "feature_flags": {
+    "schema_version": "1.0",
+    "memory": true,
+    "planner_executor": true,
+    "deliberation": true,
+    "reflection": true,
+    "audit_critic": true,
+    "learning_queue": false,
+    "shadow_mode": false
+  }
+}

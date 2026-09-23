@@ -1,0 +1,185 @@
+{
+  "blocked_field_violation": 0,
+  "bootstrap": {
+    "group_count": 41,
+    "iterations": 1000,
+    "macro_f1_delta_ci95": [
+      -0.014934945940993205,
+      0.012957571338980506
+    ],
+    "macro_f1_delta_mean": 3.549702407983118e-05,
+    "method": "capture_id_grouped_bootstrap",
+    "seed": 42
+  },
+  "candidate_default_enabled": false,
+  "experiment": "mad_etd_dohbrw_fresh_tls_performance_w282_w286",
+  "failed_gates": [
+    "macro_f1_beats_hgb",
+    "bootstrap_ci_lower_above_zero"
+  ],
+  "fake_metric_count": 0,
+  "fresh_acceptance_access_count": 1,
+  "fusion_ownership_violation": 0,
+  "gates": {
+    "blocked_field_violation_zero": true,
+    "bootstrap_ci_lower_above_zero": false,
+    "fake_metric_count_zero": true,
+    "frozen_hashes_unchanged": true,
+    "fusion_ownership_violation_zero": true,
+    "macro_f1_beats_hgb": false,
+    "records_only_coverage": true,
+    "records_only_ece": true,
+    "records_only_macro_f1": true,
+    "records_only_malicious_recall": true,
+    "selection_to_acceptance_drop": true,
+    "tests_passed": true,
+    "wrong_binary_not_worse": true
+  },
+  "harmful_flip_rate_delta_vs_hgb": -0.00625,
+  "hgb_result": {
+    "accuracy": 0.999546485260771,
+    "coverage": 1.0,
+    "ece": 0.00044715660469295265,
+    "macro_f1": 0.9959462515236028,
+    "macro_precision": 0.9997665732959851,
+    "macro_recall": 0.9921875,
+    "malicious_recall": 0.984375,
+    "sample_count": 2205,
+    "selective": {
+      "coverage": 1.0,
+      "ece": 0.00044715660469295265,
+      "per_malicious_tool_recall": {
+        "dns2tcp": null,
+        "dnscat2": 0.9696969696969697,
+        "iodine": 1.0
+      },
+      "quad9": {
+        "coverage": 1.0,
+        "sample_count": 2156,
+        "selective_macro_f1": 1.0
+      },
+      "sample_count": 2205,
+      "selective_error": 0.00045351473922902497,
+      "selective_macro_f1": 0.9959462515236028
+    },
+    "selective_error": 0.00045351473922902497,
+    "weighted_f1": 0.9995447527132556
+  },
+  "historical_w71_locked_test_reopened": false,
+  "illegal_verdict_execution_count": 0,
+  "macro_f1_delta_vs_hgb": -0.004818213155152851,
+  "ood_override_count": 0,
+  "optional_runtime_profile_created": false,
+  "perturbed_wrong_binary_rate_delta_vs_hgb": -0.0058333333333333345,
+  "production_ready": false,
+  "promoted_general_runtime_created": false,
+  "records_handshake_result": {
+    "accuracy": 0.9972789115646259,
+    "coverage": 0.9977324263038548,
+    "ece": 0.0016812555681922057,
+    "macro_f1": 0.9914792434072639,
+    "macro_precision": 0.9997661365762395,
+    "macro_recall": 0.9834408570761326,
+    "malicious_recall": 0.96875,
+    "sample_count": 2205,
+    "selective": {
+      "coverage": 0.9977324263038548,
+      "ece": 0.0016812555681922057,
+      "per_malicious_tool_recall": {
+        "dns2tcp": null,
+        "dnscat2": 0.9696969696969697,
+        "iodine": 0.967741935483871
+      },
+      "quad9": {
+        "coverage": 0.9981447124304267,
+        "sample_count": 2156,
+        "selective_macro_f1": 1.0
+      },
+      "sample_count": 2205,
+      "selective_error": 0.00045454545454545455,
+      "selective_macro_f1": 0.9958830409356725
+    },
+    "selective_error": 0.00045454545454545455,
+    "weighted_f1": 0.998404704869913
+  },
+  "records_only_result": {
+    "accuracy": 0.9959183673469387,
+    "coverage": 0.9963718820861678,
+    "ece": 0.0011879851470897294,
+    "macro_f1": 0.99112803836845,
+    "macro_precision": 0.9997658079625293,
+    "macro_recall": 0.982740249883232,
+    "malicious_recall": 0.96875,
+    "sample_count": 2205,
+    "selective": {
+      "coverage": 0.9963718820861678,
+      "ece": 0.0011879851470897294,
+      "per_malicious_tool_recall": {
+        "dns2tcp": null,
+        "dnscat2": 0.9696969696969697,
+        "iodine": 0.967741935483871
+      },
+      "quad9": {
+        "coverage": 0.9967532467532467,
+        "sample_count": 2156,
+        "selective_macro_f1": 1.0
+      },
+      "sample_count": 2205,
+      "selective_error": 0.0004551661356395084,
+      "selective_macro_f1": 0.9958828765518857
+    },
+    "selective_error": 0.0004551661356395084,
+    "weighted_f1": 0.997722682204969
+  },
+  "robustness": {
+    "hgb": {
+      "harmful_flip_rate": 0.007916666666666667,
+      "perturbed_coverage": 0.9866666666666667,
+      "perturbed_wrong_binary_rate": 0.00875,
+      "sample_count": 2400
+    },
+    "records_only": {
+      "harmful_flip_rate": 0.0016666666666666668,
+      "perturbed_coverage": 0.9858333333333333,
+      "perturbed_wrong_binary_rate": 0.002916666666666667,
+      "sample_count": 2400
+    }
+  },
+  "robustness_positive_signal_not_promoted": true,
+  "rule_tls_result": {
+    "accuracy": 0.9709750566893424,
+    "coverage": 1.0,
+    "ece": 0.23991647805933755,
+    "macro_f1": 0.49263690750115047,
+    "macro_precision": 0.4854875283446712,
+    "macro_recall": 0.5,
+    "malicious_recall": 0.0,
+    "sample_count": 2205,
+    "selective": {
+      "coverage": 1.0,
+      "ece": 0.23991647805933755,
+      "per_malicious_tool_recall": {
+        "dns2tcp": null,
+        "dnscat2": 0.0,
+        "iodine": 0.0
+      },
+      "quad9": {
+        "coverage": 1.0,
+        "sample_count": 2156,
+        "selective_macro_f1": 0.49825459622992785
+      },
+      "sample_count": 2205,
+      "selective_error": 0.029024943310657598,
+      "selective_macro_f1": 0.49263690750115047
+    },
+    "selective_error": 0.029024943310657598,
+    "weighted_f1": 0.9566762983763838
+  },
+  "runtime_safe_v3_0_remains_default": true,
+  "schema_version": "1.0",
+  "selection_to_acceptance_macro_f1_drop": 0.008871961631550018,
+  "status": "not_promoted_fresh_learned_tls_w286",
+  "test_count": 1415,
+  "test_or_acceptance_used_for_selection": false,
+  "tests_passed": true
+}

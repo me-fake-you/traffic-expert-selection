@@ -1,0 +1,16 @@
+{
+  "forbidden_claims": [
+    "Registry, PolicyGuard or AdmissionGate automatically improves Accuracy/F1.",
+    "CICIoT2023 0.99345 was caused by Skills or multi-agent governance.",
+    "External multi-agent faithful reproduction was completed.",
+    "MAD-ETD fairly outperforms every external paper.",
+    "MAD-ETD is production-ready."
+  ],
+  "safe_claims": [
+    "Registry, PolicyGuard and AdmissionGate provide layered governance.",
+    "Capability-aware routing reduces calls and unsupported calls on the frozen same-data protocol.",
+    "AdmissionGate rejects forged, stale and advisory evidence before Fusion.",
+    "FusionAgent remains the sole final verdict owner.",
+    "The evidence chain and anonymous capsule are auditable and reproducible."
+  ]
+}

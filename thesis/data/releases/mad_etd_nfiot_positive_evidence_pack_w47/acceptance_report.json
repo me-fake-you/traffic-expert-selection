@@ -1,0 +1,52 @@
+{
+  "acceptance_gates": {
+    "blocked_field_violation": 0,
+    "cicids2017_claim_not_introduced": true,
+    "coverage_ge_0_90": true,
+    "external_paper_metrics_not_mixed": true,
+    "fake_metric_count": 0,
+    "forbidden_phrase_scan_passed": true,
+    "fusion_ownership_violation": 0,
+    "macro_f1_delta_ci95_lower_gt_zero": true,
+    "promoted_general_runtime_created": false,
+    "runtime_safe_v3_0_remains_default": true,
+    "selective_error_delta_ci95_upper_le_zero": true,
+    "source_rows_present": true,
+    "w45_accepted": true,
+    "w46_accepted": true
+  },
+  "claim_boundary": "NF-IoT-only, default-off evidence pack; not CICIDS2017 and not a general runtime promotion",
+  "coverage": 0.9374,
+  "experiment": "mad_etd_nfiot_positive_evidence_pack_w47",
+  "fake_metric_count": 0,
+  "forbidden_phrase_scan": {
+    "CICIDS2017 calibration accepted": false,
+    "NF-IoT calibration applies to CICIDS2017": false,
+    "external faithful reproduction completed": false,
+    "general promoted runtime": false,
+    "outperforms all external multi-agent IDS": false,
+    "runtime_safe_v3_0 replaced": false
+  },
+  "macro_f1_delta": 0.026535132777504522,
+  "macro_f1_delta_ci95_lower": 0.023287568413681188,
+  "macro_f1_delta_ci95_upper": 0.029959485209741985,
+  "pdf": "output/pdf/MAD_ETD_W47_NFIOT_Positive_Evidence_Pack_CN.pdf",
+  "preview_montage": "output/pdf/MAD_ETD_W47_NFIOT_Positive_Evidence_Pack_preview_montage.png",
+  "promoted_general_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "schema_version": "1.0",
+  "security": {
+    "blocked_field_violation": 0,
+    "experiment": "mad_etd_nfiot_positive_evidence_pack_w47",
+    "external_paper_metrics_used": false,
+    "fake_metric_count": 0,
+    "fusion_ownership_violation": 0,
+    "runtime_safe_v3_0_hash_after": "60082e76e387913676fd109b0c120bd68b6a2b80035e9083fe52b9d329d58f61",
+    "runtime_safe_v3_0_remains_default": true,
+    "schema_version": "1.0",
+    "status": "passed"
+  },
+  "selective_error_delta": -0.011716609771708963,
+  "selective_error_delta_ci95_upper": -0.010220268088908486,
+  "status": "accepted_nfiot_positive_evidence_pack_w47"
+}

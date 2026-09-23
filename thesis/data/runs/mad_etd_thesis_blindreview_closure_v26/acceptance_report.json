@@ -1,0 +1,28 @@
+{
+  "acceptance_gates": {
+    "all_diagnostics_completed": true,
+    "all_required_reports_present": true,
+    "fake_metric_count_zero": true,
+    "promoted_runtime_created_false": true,
+    "runtime_hash_unchanged": true,
+    "test_used_for_selection_false": true,
+    "tests_passed": true
+  },
+  "blocked_field_violation": 0,
+  "claim_boundary": "V26 supplies reviewer-requested boundary diagnostics. Learned gates are baselines, TLS is an execution-semantic extension example, and the risk-coverage projection is not a runtime verdict rule.",
+  "expected_runtime_hash": "c8d87e022b55ec30ffa98a51e021985720becffe13a8083887aaa91421773a59",
+  "fake_metric_count": 0,
+  "fusion_ownership_violation": 0,
+  "illegal_verdict_execution": 0,
+  "immutable_release_id": null,
+  "immutable_release_todo": "No valid Git repository metadata is available in the workspace; create a real archival tag before public release rather than fabricating an ID.",
+  "invalid_evidence_admitted": 0,
+  "missing_reports": [],
+  "ood_override": 0,
+  "promoted_runtime_created": false,
+  "runtime_hash": "c8d87e022b55ec30ffa98a51e021985720becffe13a8083887aaa91421773a59",
+  "runtime_safe_v3_0_remains_default": true,
+  "status": "completed_thesis_blindreview_closure_v26",
+  "test_count": 1802,
+  "test_used_for_selection": false
+}

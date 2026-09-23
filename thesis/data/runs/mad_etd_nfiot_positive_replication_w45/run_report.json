@@ -1,0 +1,13 @@
+{
+  "baseline_count": 3,
+  "calibration_count": 1,
+  "dataset": "NF-BoT-IoT/NF-ToN-IoT",
+  "experiment": "mad_etd_nfiot_positive_replication_w45",
+  "fake_metric_count": 0,
+  "feature_count": 39,
+  "promoted_general_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "schema_version": "1.0",
+  "status": "ran",
+  "test_used_for_selection": false
+}

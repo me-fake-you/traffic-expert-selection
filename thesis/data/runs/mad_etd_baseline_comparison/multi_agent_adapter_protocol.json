@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "experiment": "adapted_multi_agent_baseline_comparison_v1",
+  "baselines": [
+    {
+      "mode": "ma_ids_style_rag_planner",
+      "related_work_key": "ma_ids_2026",
+      "source_mode": "runtime_safe_v3_0",
+      "comparison_role": "same_data_architecture_adapter",
+      "description": "RAG/experience-library planner topology adapted to MAD-ETD's safe state summary; memory remains advisory-only.",
+      "control_plane_calls": 2.0,
+      "dynamic_routing": true,
+      "llm_based": true,
+      "rag_or_memory": true,
+      "online_learning_disabled": true
+    },
+    {
+      "mode": "marl_budget_router",
+      "related_work_key": "marl_nids_2024",
+      "source_mode": "runtime_safe_v3_0",
+      "comparison_role": "same_data_architecture_adapter",
+      "description": "Budget-aware MARL-style routing surrogate constrained to the existing safe action set; no RL policy is trained on acceptance data.",
+      "control_plane_calls": 1.0,
+      "dynamic_routing": true,
+      "llm_based": false,
+      "rag_or_memory": false,
+      "online_learning_disabled": true
+    },
+    {
+      "mode": "adaptive_online_ensemble",
+      "related_work_key": "adaptive_online_ids_2024",
+      "source_mode": "static_multi_agent_ensemble",
+      "comparison_role": "same_data_architecture_adapter",
+      "description": "Adaptive/online ensemble topology with automatic learning disabled; all verdict-stage evidence agents are called under strict FieldAudit.",
+      "control_plane_calls": 1.0,
+      "dynamic_routing": false,
+      "llm_based": false,
+      "rag_or_memory": false,
+      "online_learning_disabled": true
+    },
+    {
+      "mode": "llm_collaborative_planner",
+      "related_work_key": "low_altitude_agentic_ids_2026",
+      "source_mode": "runtime_safe_v3_0",
+      "comparison_role": "same_data_architecture_adapter",
+      "description": "LLM-collaborative planner topology constrained by PolicyGuard; LLM advice cannot emit or execute verdicts.",
+      "control_plane_calls": 1.0,
+      "dynamic_routing": true,
+      "llm_based": true,
+      "rag_or_memory": false,
+      "online_learning_disabled": true
+    }
+  ],
+  "not_external_paper_reproduction": true,
+  "external_numeric_results_used": false,
+  "field_audit_enforced": true,
+  "fusion_owner": "FusionAgent",
+  "llm_memory_rag_enter_fusion": false,
+  "automatic_training": false
+}

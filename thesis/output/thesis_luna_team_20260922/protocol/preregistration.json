@@ -1,0 +1,60 @@
+{
+  "protocol_id": "thesis-luna-e0-e1-pilot-fold0-v1",
+  "created_date": "2026-09-22",
+  "status": "pre_registered_development_diagnostic",
+  "scope": "One predeclared outer fold (fold 0) using train-role group-OOF rows for fitting and the independent selection role for matched-budget development diagnostics; evaluation labels are not read or scored.",
+  "outer_fold": 0,
+  "direction": ["temporal", "stats"],
+  "expert_order": "Temporal first, Stats second",
+  "combination_after_acquisition": "fixed_equal_average: h1 = ((pT + pS) / 2 >= 0.5)",
+  "first_only": "h0 = (pT >= 0.5)",
+  "router_state": {
+    "features": ["pT", "abs(pT - 0.5)", "binary_entropy(pT)"],
+    "derived_only_from": ["pT"],
+    "forbidden": ["pS", "stats features", "second-view features", "second expert output", "label", "group", "family", "capture", "future full-flow statistics", "evaluation rows"]
+  },
+  "loss": "equal_weight_0_1",
+  "delta": "Delta = 1[ h0 != y ] - 1[ h1 != y ], values in {-1,0,+1}; +1 is a correction, -1 is an introduced error",
+  "training_target": "train-role genuine group-OOF predictions from seed_42_fold_0/oof_predictions.npz only",
+  "regressor": {
+    "class": "sklearn.ensemble.HistGradientBoostingRegressor",
+    "max_iter": 100,
+    "max_leaf_nodes": 7,
+    "l2_regularization": 2.0,
+    "random_state": 20260922,
+    "early_stopping": false
+  },
+  "selection_comparisons": [
+    "first_only",
+    "all_average",
+    "confidence_budget_gate",
+    "hash_random",
+    "predicted_delta"
+  ],
+  "budgets": [1.1, 1.25, 1.5],
+  "budget_definition": "expected evidence calls per row; second-call quota K = round((budget - 1) * N_selection), with deterministic tie handling; effective budget is reported",
+  "matched_budget": "confidence and predicted-delta gates acquire exactly K selection rows; hash-random uses SHA256(sample_hash) ascending and the same K; all_average acquires every selection row and is reported as a 2.0-call reference",
+  "selection_lock": "No model, feature, threshold, budget, or policy may be changed after selection diagnostics; no evaluation scoring is performed.",
+  "outputs": [
+    "train_delta_support_-1_0_1",
+    "selection_delta_support_-1_0_1",
+    "train_group_C_D_potential_gain",
+    "selection_group_C_D_potential_gain",
+    "selection_policy_metrics_by_budget",
+    "per_sample_train_and_selection_predictions",
+    "input_hashes",
+    "split_roles",
+    "run_log",
+    "summary"
+  ],
+  "stop_rules": [
+    "role/capture/session mismatch or input hash change",
+    "evaluation labels accessed or evaluation rows scored",
+    "router state contains forbidden second-view information",
+    "no correctable space (all train Delta == 0 and no selection policy can differ)",
+    "no effective selection difference after matched-budget accounting",
+    "insufficient support for the fixed regressor fit or group-level diagnostics",
+    "negative damage being zero is not treated as a safety guarantee"
+  ],
+  "interpretation": "Development diagnostic on previously exposed USTC data; no final generalization, fresh blind-test, or real end-to-end latency claim. Zero or negative damage is retained as an observed outcome only."
+}

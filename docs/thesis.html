@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MAD-ETD master's research: field governance, expert evidence, routing, and an inspectable experimental archive. Code and aggregates, without thesis full text or raw traffic.">
+  <title>MAD-ETD · Thesis Research Companion</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="thesis.css">
+  <script src="assets/thesis-catalog.js" defer></script>
+  <script src="thesis.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">te.</span><span>TRAFFIC<br>RESEARCH COLLECTION</span></a>
+    <nav aria-label="Primary"><a href="index.html">Short paper</a><a href="#research">Research</a><a href="#archive">Experiments</a><a class="github" href="https://github.com/me-fake-you/traffic-expert-selection/tree/main/thesis">GitHub ↗</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap thesis-hero">
+      <div>
+        <p class="eyebrow"><span class="dot"></span> MASTER'S RESEARCH · OPEN CODE &amp; EVIDENCE</p>
+        <h1>From traffic fields<br>to accountable<br>decisions<span class="title-period">.</span></h1>
+        <p class="subtitle">The MAD-ETD research companion</p>
+        <p class="lead">Explore how inputs become expert evidence, how evidence is scheduled and combined, and where the experiments reveal the limits.</p>
+        <p class="authors"><a href="https://orcid.org/0009-0006-1295-2262">Haowen Liu</a> <span>·</span> <a href="https://orcid.org/0009-0007-4489-309X">Lei Zhang</a><br><span class="affiliation">Capital Normal University</span></p>
+        <div class="hero-actions"><a class="button primary" href="https://github.com/me-fake-you/traffic-expert-selection/tree/main/thesis">Explore the code <span>↗</span></a><a class="text-link" href="#archive">Browse the evidence ↓</a></div>
+        <p class="release-note">代码与实验开放 · 大论文全文暂不发布<br>A separate companion to the controlled short-paper study.</p>
+      </div>
+      <aside class="collection-card" aria-label="Collection contents">
+        <p class="eyebrow">ONE SYSTEM. AN INSPECTABLE RECORD.</p>
+        <ol class="collection-path"><li><span>01</span><div><strong>Govern the input</strong><p>Field purpose · feature isolation</p></div></li><li><span>02</span><div><strong>Request the evidence</strong><p>Statistics · temporal behavior · TLS</p></div></li><li><span>03</span><div><strong>Make the tradeoff visible</strong><p>Errors · coverage · execution cost</p></div></li></ol>
+        <div class="collection-stats"><div><strong id="code-count">—</strong><span>archived source files</span></div><div><strong id="family-count">—</strong><span>evidence folders</span></div></div>
+        <p class="small">Archive counts describe this release, not independent experiments or validated contributions.</p>
+      </aside>
+    </section>
+    <div class="scope-ribbon"><div class="wrap"><span>INCLUDED</span><p>Research code · configurations · aggregate results · synthetic tests</p><span>KEPT PRIVATE</span><p>Thesis full text · raw traffic · row-level records · model weights</p></div></div>
+    <section class="wrap section" id="research">
+      <div class="section-heading"><div><p class="eyebrow">THE RESEARCH MAP</p><h2>A broader system.<br>Specific, testable questions.</h2></div><p>The archive connects each research area to implementation and actual result files. System capabilities are not automatically proven performance gains.</p></div>
+      <div class="research-grid">
+        <article><span class="number">01 / INPUTS</span><h3>Field use &amp; shortcut risk</h3><p>Separate detection features from context and blocked fields. Inspect paired mutations and feature-forensics comparisons.</p><a href="https://github.com/me-fake-you/traffic-expert-selection/blob/main/thesis/src/mad_etd/field_audit.py">FieldAudit source ↗</a></article>
+        <article><span class="number">02 / EVIDENCE</span><h3>Specialists &amp; fusion</h3><p>Statistical, temporal and conditional TLS evidence; reliability, conflict and rejection. Keep coverage beside detection scores.</p><a href="https://github.com/me-fake-you/traffic-expert-selection/tree/main/thesis/data/runs/mad_etd_thesis_fusion_ablation_v1">Fusion ablations ↗</a></article>
+        <article><span class="number">03 / DECISIONS</span><h3>Budgets &amp; ownership</h3><p>Control expert requests and who can write a final verdict. Separate strategy calls from measured processing time.</p><a href="https://github.com/me-fake-you/traffic-expert-selection/blob/main/thesis/src/mad_etd/engine.py">Runtime implementation ↗</a></article>
+        <article><span class="number">04 / CONDITIONS</span><h3>Groups &amp; distribution shift</h3><p>Device, source and perturbation conditions each keep their own protocol. Failure cases stay in the record.</p><a href="https://github.com/me-fake-you/traffic-expert-selection/tree/main/thesis/data/runs/mad_etd_thesis_reviewer_closure_v24">Grouped evaluations ↗</a></article>
+        <article><span class="number">05 / ADVICE</span><h3>Read-only assistance</h3><p>RAG, memory, LLM advice and human feedback without unrestricted fusion writes. Pilot limits and cancellations remain visible.</p><a href="https://github.com/me-fake-you/traffic-expert-selection/tree/main/thesis/data/runs/future_framework">Pilot evidence ↗</a></article>
+        <article><span class="number">06 / EXTENSIONS</span><h3>Selection &amp; packet prefixes</h3><p>Gain/risk fitting, frozen outer confirmation and matched-prefix execution. Check the support population before interpreting a score.</p><a href="https://github.com/me-fake-you/traffic-expert-selection/tree/main/thesis/output/thesis_luna_team_20260922/next_round">Later experiments ↗</a></article>
+      </div>
+      <p class="map-link"><a class="text-link" href="https://github.com/me-fake-you/traffic-expert-selection/blob/main/thesis/RESEARCH_MAP.md">Open the full implementation–evidence map ↗</a></p>
+    </section>
+    <section class="framework-section section">
+      <div class="wrap"><div class="section-heading"><div><p class="eyebrow">THE ORIGINAL ENGLISH FRAMEWORK</p><h2>Keep the complete picture.</h2></div><p>The author's selected English architecture is retained. Each experiment evaluates only the modules and conditions named in its own protocol.</p></div><figure class="architecture"><a href="assets/architecture.svg" aria-label="Open the full English architecture"><img src="assets/architecture.svg" alt="Complete architecture from field governance and scheduling to structured evidence and fusion, with read-only advisers and audit records." loading="lazy"></a><figcaption>System context, not a claim that every module improved every result.</figcaption></figure></div>
+    </section>
+    <section class="wrap section prefix-example">
+      <div><p class="eyebrow">ONE EXAMPLE · TWO DENOMINATORS</p><h2>A high score is only<br>part of the result.</h2><p>The recorded matched-prefix replay includes 4,938 unique requests, of which 2,145 are malicious. Supported-only Macro-F1 is 1.0, but many requests lack enough supported input.</p><a class="text-link" href="https://github.com/me-fake-you/traffic-expert-selection/blob/main/thesis/results/verified_prefix_and_outer/prefix_quality_verified.csv">Inspect the complete quality table ↗</a></div>
+      <div class="prefix-table"><table><caption>Recorded local prefix replay · not live deployment</caption><thead><tr><th>Window</th><th>Coverage</th><th>All-malicious recall</th></tr></thead><tbody><tr><td>8 packets</td><td>55.55%</td><td>8.30%</td></tr><tr><td>16 packets</td><td>52.61%</td><td>6.48%</td></tr></tbody></table><p>Coverage uses all 4,938 requests. Malicious recall uses all 2,145 malicious requests, including unsupported ones. Repeated timings are not independent captures.</p></div>
+    </section>
+    <section class="archive-section section" id="archive">
+      <div class="wrap"><div class="section-heading"><div><p class="eyebrow">BROWSE THE EXPERIMENTAL RECORD</p><h2>Find a question.<br>Follow its files.</h2></div><p>Historical thesis records and later development extensions are labeled separately. Internal suffixes preserve provenance, not a versioned leaderboard.</p></div>
+        <div class="catalog-controls"><label for="experiment-search">Search research topics or historical folder names<input id="experiment-search" type="search" placeholder="Try: fieldaudit, fusion, prefix, risk…"></label><label for="experiment-scope">Record type<select id="experiment-scope"><option value="all">All records</option><option value="historical_thesis_evidence">Historical thesis evidence</option><option value="thesis_development_extension">Development extensions</option></select></label></div>
+        <p id="catalog-status" class="small" aria-live="polite">Loading the experiment index…</p>
+        <div class="catalog-grid" id="catalog-list"></div><noscript><p><a href="https://github.com/me-fake-you/traffic-expert-selection/blob/main/thesis/EXPERIMENT_INDEX.csv">Open the complete CSV index.</a></p></noscript>
+        <div class="links-row"><a class="text-link" href="https://github.com/me-fake-you/traffic-expert-selection/blob/main/thesis/EXPERIMENT_INDEX.csv">Complete experiment index ↗</a><a class="text-link" href="https://github.com/me-fake-you/traffic-expert-selection/blob/main/thesis/SOURCE_MANIFEST.csv">Source hashes &amp; transformations ↗</a></div>
+      </div>
+    </section>
+    <section class="wrap section reproduction" id="reproduce">
+      <div><p class="eyebrow">START SMALL. KNOW WHAT RAN.</p><h2>Try the offline example.</h2><p>The public demo uses two synthetic flow records, rule-based experts and a deterministic coordinator. No API calls, dataset downloads or research-model training.</p><ul class="plain-list"><li><span>01</span> Run the demo and inspect the audit trail.</li><li><span>02</span> Verify artifact hashes and saved arithmetic.</li><li><span>03</span> Supply authorized inputs for historical experiment runners.</li></ul><p class="small">Historical training is not a data-free, one-click reproduction. Private matrices and checkpoints are not bundled.</p><div class="links-row"><a class="text-link" href="https://github.com/me-fake-you/traffic-expert-selection/blob/main/thesis/REPRODUCING.md">Reproduction guide ↗</a><a class="text-link" href="https://github.com/me-fake-you/traffic-expert-selection/blob/main/thesis/VALIDATION.md">Checks actually run ↗</a></div></div>
+      <div class="code-panel"><div class="code-bar"><span>FROM THE REPOSITORY ROOT</span><button id="copy-thesis-command" type="button">Copy</button></div><pre><code id="thesis-command">cd thesis
+python -m pip install -e ".[dev]"
+python -m mad_etd.cli demo --output runs/demo_001
+python scripts/verify_release.py
+python -m pytest tests -q</code></pre><div class="code-note"><strong>Code and experiments, not the thesis full text.</strong><p>MIT covers authorized software. Data providers retain their rights; figures and the manuscript retain author rights.</p></div><p id="thesis-copy-status" class="copy-status" aria-live="polite"></p></div>
+    </section>
+  </main>
+  <footer class="wrap"><div><strong>MAD-ETD · Thesis Research Companion</strong><p>Haowen Liu · Lei Zhang · Capital Normal University</p><p><a href="index.html">Return to the controlled short-paper study ↗</a></p></div><div><a href="https://github.com/me-fake-you/traffic-expert-selection">me-fake-you/traffic-expert-selection ↗</a><p><a href="https://github.com/me-fake-you/traffic-expert-selection/blob/main/thesis/RELEASE_SCOPE.md">Publication scope and exclusions</a><br>No thesis full text, raw traffic or private author records.</p></div></footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "status": "COMPLETED_FIVEFOLD_TRAIN_OOF_SUPPORT_DIAGNOSTIC",
+  "seed": 42,
+  "outer_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "folds_processed": 5,
+  "evaluation_predictions_read": false,
+  "evaluation_labels_read": false,
+  "retraining": false,
+  "fold_selection": false,
+  "train_oof_rows_total": 120000,
+  "totals": {
+    "rows": 120000,
+    "both_correct": 98614,
+    "only_temporal_correct": 13772,
+    "only_stats_correct": 1101,
+    "both_wrong": 6513,
+    "expert_disagreement": 14873,
+    "equal_average_switches": 5286,
+    "delta_-1_D": 4350,
+    "delta_0": 114714,
+    "delta_+1_C": 936,
+    "C_minus_D": -3414
+  },
+  "positive_negative_zero_fold_counts": [
+    0,
+    5,
+    0
+  ],
+  "positive_negative_zero_group_counts": [
+    6,
+    8,
+    6
+  ],
+  "shared_source_groups_across_folds": true,
+  "independence_claim": false,
+  "judgment_direction": "固定等权组合在多数训练OOF折有净损害，优先改进调用前预判路由并保留组合负结果。",
+  "duration_seconds": 0.3252396000002591
+}

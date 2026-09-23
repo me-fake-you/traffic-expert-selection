@@ -1,0 +1,18 @@
+{
+  "status": "completed_v24_budgeted_cascade_comparison",
+  "sample_count": 40000,
+  "thresholds_fixed_without_test_selection": true,
+  "comparison_scope": "same frozen USTC predictions; post-hoc mechanism diagnostic",
+  "ordinary_cascade_rows": 4,
+  "mad_etd_rows": 2,
+  "claim_boundary": "Any quality-cost gain reproduced by the fixed confidence cascade is attributed to sequential acquisition; MAD-ETD-specific claims are limited to capability, evidence, OOD, and audit contracts.",
+  "blocked_field_violation": 0,
+  "fusion_ownership_violation": 0,
+  "ood_override": 0,
+  "illegal_verdict_execution": 0,
+  "invalid_evidence_admitted": 0,
+  "fake_metric_count": 0,
+  "test_used_for_selection": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "promoted_runtime_created": false
+}

@@ -1,0 +1,4 @@
+dataset,comparison,sample_count,verdict_agreement_rate,agent_calls_delta,latency_p50_delta_ms,fallback_rate_delta
+cesnet,fallback_vs_rule_planner,2000,1.0,0.0,1.1955000227317214,1.0
+cipherspectrum,fallback_vs_rule_planner,2000,1.0,0.0,-0.3918999864254147,1.0
+ustc,fallback_vs_rule_planner,2000,1.0,0.0,1.289099978748709,1.0

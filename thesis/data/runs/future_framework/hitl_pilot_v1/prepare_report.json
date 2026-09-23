@@ -1,0 +1,10 @@
+{
+  "status": "phase1_ready",
+  "sample_count": 200,
+  "phase1_task_count": 80,
+  "phase2_reserved_count": 120,
+  "phase2_hint_visible_count": 60,
+  "phase2_hint_hidden_count": 60,
+  "frozen_artifacts_unchanged": true,
+  "labels_exposed_to_reviewer": false
+}

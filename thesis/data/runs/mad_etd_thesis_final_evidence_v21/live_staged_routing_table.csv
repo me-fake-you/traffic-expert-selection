@@ -1,0 +1,2 @@
+experiment,sample_count,reference,reference_accuracy,candidate_accuracy,accuracy_delta_pp,reference_macro_f1,candidate_macro_f1,macro_f1_delta_pp,grouped_ci95_lower,grouped_ci95_upper,average_calls,static_calls,call_reduction_percent,claim_scope
+USTC true staged evidence routing,10000,Temporal strongest single Agent,0.9279,0.9492,2.1300000000000097,0.9275480217690761,0.9490777356432796,2.1529713874203438,0.00020803026852777296,0.06411393346538403,1.0671,2.0,46.645,fresh group-held-out USTC only

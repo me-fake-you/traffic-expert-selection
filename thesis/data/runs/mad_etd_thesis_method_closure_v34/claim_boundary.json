@@ -1,0 +1,22 @@
+{
+  "blocked_field_violation": 0,
+  "claim": "Frozen-evidence matched-budget diagnostics separate rejection and ranking effects from detector training effects.",
+  "experiment": "mad_etd_thesis_method_closure_v34",
+  "faithful_external_reproduction_count": 0,
+  "fake_metric_count": 0,
+  "fusion_ownership_violation": 0,
+  "illegal_verdict_execution": 0,
+  "invalid_evidence_admitted": 0,
+  "model_training_performed": false,
+  "negative_results_retained": true,
+  "not_claimed": [
+    "full Fusion is universally more accurate than simple rejection",
+    "zero harmful flips are uniquely caused by full Fusion",
+    "the 6,000 fixed cases establish cross-dataset generalization",
+    "a new runtime or detector was promoted"
+  ],
+  "ood_override": 0,
+  "promoted_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "test_used_for_selection": false
+}

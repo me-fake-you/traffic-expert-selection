@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "experiment": "mad_etd_robosac_mafsid_evidence_adapter_v1",
+  "source_artifact": "data/runs/mad_etd_mafsid_live_semantic_resilience_v1/official_agent_probabilities.npz",
+  "source_sha256": "d012b014ddca2d0187bcfd1d5685557d64808917248521465c42e61e91a66edc",
+  "official_repository": "https://github.com/coperception/ROBOSAC",
+  "official_commit": "4642aa2e436ab1cfde4423687fa0e82910ce9d65",
+  "official_license": "MIT",
+  "official_source_file": "data/external/ROBOSAC/coperception/tools/det/robosac.py",
+  "official_source_file_sha256": "50e471a78c8bf563b81f103932f5f40fae4bc3df2b4bfeec1684f97f170dc570",
+  "official_formula_sha256": {
+    "cal_robosac_steps": "ce4cea71f65f18f82a30601c691a2fb26e062d5abe914e6e3a0d90ac72ad7b4c",
+    "cal_robosac_consensus": "197dd69f2244dc08560221733fa4112654335a526efaaa614300bf8cc1cecae8"
+  },
+  "official_default_step_budget": 3,
+  "output_dir": "data/runs/mad_etd_robosac_mafsid_evidence_adapter_v1",
+  "adapter": {
+    "trusted_ego_selection": "highest calibration-only macro-F1, then lowest agent index",
+    "sample_size": 1,
+    "step_budget": "official cal_robosac_steps for p=0.99 and each compromised-source count",
+    "collaborative_output": "arithmetic mean of the trusted ego and sampled teammate probability vectors",
+    "consensus_distance": "total variation between ego-only and collaborative probability vectors",
+    "clean_calibration_quantile": 0.95,
+    "sensitivity_quantiles": [0.9, 0.95, 0.99],
+    "failure_action": "trusted ego-only probability",
+    "evaluation_labels_used_for_calibration": false
+  },
+  "attack_types": [
+    "probability_permutation",
+    "extreme_wrong",
+    "runner_up_hijack",
+    "targeted_blend"
+  ],
+  "compromised_counts": [1, 2],
+  "attack_fraction": 1.0,
+  "repeats": 100,
+  "seed": 20260901,
+  "rsrat": {
+    "audit_rate": 0.005,
+    "replay_tolerance": 1e-9,
+    "response": "locked-copy takeover after first audited mismatch"
+  },
+  "statistics": {
+    "bootstrap_seed": 20260901,
+    "bootstrap_repeats": 10000,
+    "paired_unit": "attack scenario after averaging 100 random schedules",
+    "paired_test": "two-sided Wilcoxon signed-rank with Pratt zeros",
+    "multiplicity": "Holm across the two compromised-source counts"
+  },
+  "claim_boundary": {
+    "official_v2x_sim_reproduction": false,
+    "official_3d_detection_runtime_executed": false,
+    "official_sampling_formula_functions_executed": true,
+    "probability_evidence_adapter": true,
+    "trusted_ego_assumption": true,
+    "attacks_restricted_to_teammates": true,
+    "default_three_step_budget_compatible_with_five_agents": false,
+    "safe_description": "source-locked official-formula-participating ROBOSAC probability-evidence adapter"
+  }
+}

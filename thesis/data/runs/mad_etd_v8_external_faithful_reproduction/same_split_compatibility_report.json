@@ -1,0 +1,12 @@
+{
+  "can_accept_external_split": false,
+  "experiment": "mad_etd_v8_external_faithful_reproduction",
+  "paper_reported_metrics_imported": false,
+  "reason": "packet-vector/native npy data and internal permutations prevent direct MAD-ETD frozen split reproduction",
+  "requires_packet_vector_or_sequence_format": true,
+  "same_split_compatibility_checked": true,
+  "same_split_compatible": false,
+  "schema_version": "1.0",
+  "target_repo": "INL-Laboratory/Continual-Federated-IDS",
+  "uses_internal_split_or_permutations": true
+}

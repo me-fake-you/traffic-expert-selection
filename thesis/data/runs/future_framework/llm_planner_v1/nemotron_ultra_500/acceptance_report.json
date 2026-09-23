@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.1",
+  "experiment": "real_nvidia_planner_v1",
+  "acceptance_status": "passed",
+  "protocol_checks_status": "passed",
+  "protocol_scope": "500_case_feasibility_supplement",
+  "full_6000_online_completed": false,
+  "nvidia_online_status": "completed",
+  "expected_sample_count": 500,
+  "failures": [],
+  "fallback_available": true,
+  "illegal_verdict_execution_count": 0,
+  "blocked_field_violation_count": 0,
+  "fusion_ownership_violation_count": 0,
+  "ood_override_count": 0,
+  "audit_completion_rate": 1.0,
+  "frozen_artifacts_unchanged": true,
+  "cipherspectrum_locked_test_used": false,
+  "fallback_is_not_counted_as_real_llm": true,
+  "fake_llm_metrics_generated": false,
+  "reaggregated_without_api_calls": true,
+  "pricing_status": "pricing_not_configured"
+}

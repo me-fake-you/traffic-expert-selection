@@ -1,0 +1,653 @@
+{
+  "schema_version": "1.0",
+  "experiment": "future_framework_paper_v1",
+  "dataset": "CipherSpectrum-validation",
+  "expected_sample_count": 3200,
+  "modes": {
+    "baseline": {
+      "sample_count": 3200,
+      "verdict_rates": {
+        "benign": 0.0,
+        "malicious": 0.0134375,
+        "suspicious": 0.5525,
+        "unknown": 0.4340625
+      },
+      "coverage": 0.0134375,
+      "alert_rate": 0.5659375,
+      "human_review_rate": 0.9865625,
+      "average_agent_calls": 3.2046875,
+      "latency_ms": {
+        "mean": 32.86699593725643,
+        "p50": 31.08990000328049,
+        "p95": 34.204694972140715
+      },
+      "verdict_invariance_rate": 1.0,
+      "mean_uncertainty_delta": 0.0,
+      "mean_conflict_delta": 0.0,
+      "memory_match_rate": 0.0,
+      "memory_top1_relevance": null,
+      "memory_topk_relevance": null,
+      "deliberation_trigger_rate": 0.0,
+      "supplemental_dispatch_rate": 0.0,
+      "compliance_failure_count": 0,
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "ood_signature_invariance_rate": 1.0,
+      "classification": {
+        "labeled_count": 0,
+        "covered_labeled_count": 0
+      },
+      "grouped_bootstrap_95ci": {
+        "coverage": {
+          "low": 0.0025,
+          "high": 0.0321875
+        },
+        "alert_rate": {
+          "low": 0.343734375,
+          "high": 0.773765625
+        },
+        "human_review_rate": {
+          "low": 0.9678125,
+          "high": 0.9975
+        },
+        "average_agent_calls": {
+          "low": 3.0681171875000004,
+          "high": 3.38625
+        },
+        "average_latency_ms": {
+          "low": 31.283003405569616,
+          "high": 35.93265538916148
+        },
+        "verdict_invariance_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "audit_completion_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "blocked_field_violation_rate": {
+          "low": 0.0,
+          "high": 0.0
+        },
+        "ood_signature_invariance_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "uncertainty_delta": {
+          "low": 0.0,
+          "high": 0.0
+        },
+        "conflict_delta": {
+          "low": 0.0,
+          "high": 0.0
+        }
+      },
+      "feature_flags": {
+        "schema_version": "1.0",
+        "memory": false,
+        "planner_executor": false,
+        "deliberation": false,
+        "reflection": false,
+        "audit_critic": false,
+        "learning_queue": false,
+        "shadow_mode": true
+      }
+    },
+    "memory_shadow": {
+      "sample_count": 3200,
+      "verdict_rates": {
+        "benign": 0.0,
+        "malicious": 0.0134375,
+        "suspicious": 0.5525,
+        "unknown": 0.4340625
+      },
+      "coverage": 0.0134375,
+      "alert_rate": 0.5659375,
+      "human_review_rate": 0.9865625,
+      "average_agent_calls": 3.2046875,
+      "latency_ms": {
+        "mean": 32.264751437542145,
+        "p50": 32.031599985202774,
+        "p95": 34.82824500242714
+      },
+      "verdict_invariance_rate": 1.0,
+      "mean_uncertainty_delta": 0.0,
+      "mean_conflict_delta": 0.0,
+      "memory_match_rate": 0.0,
+      "memory_top1_relevance": null,
+      "memory_topk_relevance": null,
+      "deliberation_trigger_rate": 0.0,
+      "supplemental_dispatch_rate": 0.0,
+      "compliance_failure_count": 0,
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "ood_signature_invariance_rate": 1.0,
+      "classification": {
+        "labeled_count": 0,
+        "covered_labeled_count": 0
+      },
+      "grouped_bootstrap_95ci": {
+        "coverage": {
+          "low": 0.0025,
+          "high": 0.0321875
+        },
+        "alert_rate": {
+          "low": 0.343734375,
+          "high": 0.773765625
+        },
+        "human_review_rate": {
+          "low": 0.9678125,
+          "high": 0.9975
+        },
+        "average_agent_calls": {
+          "low": 3.0681171875000004,
+          "high": 3.38625
+        },
+        "average_latency_ms": {
+          "low": 32.13253818514204,
+          "high": 32.41562002894807
+        },
+        "verdict_invariance_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "audit_completion_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "blocked_field_violation_rate": {
+          "low": 0.0,
+          "high": 0.0
+        },
+        "ood_signature_invariance_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "uncertainty_delta": {
+          "low": 0.0,
+          "high": 0.0
+        },
+        "conflict_delta": {
+          "low": 0.0,
+          "high": 0.0
+        }
+      },
+      "feature_flags": {
+        "schema_version": "1.0",
+        "memory": true,
+        "planner_executor": false,
+        "deliberation": false,
+        "reflection": false,
+        "audit_critic": false,
+        "learning_queue": false,
+        "shadow_mode": true
+      }
+    },
+    "planner_executor": {
+      "sample_count": 3200,
+      "verdict_rates": {
+        "benign": 0.0,
+        "malicious": 0.0134375,
+        "suspicious": 0.5525,
+        "unknown": 0.4340625
+      },
+      "coverage": 0.0134375,
+      "alert_rate": 0.5659375,
+      "human_review_rate": 0.9865625,
+      "average_agent_calls": 3.2046875,
+      "latency_ms": {
+        "mean": 32.55154790571396,
+        "p50": 32.33469999395311,
+        "p95": 36.17035998031497
+      },
+      "verdict_invariance_rate": 1.0,
+      "mean_uncertainty_delta": 0.0,
+      "mean_conflict_delta": 0.0,
+      "memory_match_rate": 0.0,
+      "memory_top1_relevance": null,
+      "memory_topk_relevance": null,
+      "deliberation_trigger_rate": 0.0,
+      "supplemental_dispatch_rate": 0.0,
+      "compliance_failure_count": 0,
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "ood_signature_invariance_rate": 1.0,
+      "classification": {
+        "labeled_count": 0,
+        "covered_labeled_count": 0
+      },
+      "grouped_bootstrap_95ci": {
+        "coverage": {
+          "low": 0.0025,
+          "high": 0.0321875
+        },
+        "alert_rate": {
+          "low": 0.343734375,
+          "high": 0.773765625
+        },
+        "human_review_rate": {
+          "low": 0.9678125,
+          "high": 0.9975
+        },
+        "average_agent_calls": {
+          "low": 3.0681171875000004,
+          "high": 3.38625
+        },
+        "average_latency_ms": {
+          "low": 32.505430467826955,
+          "high": 32.59838649329731
+        },
+        "verdict_invariance_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "audit_completion_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "blocked_field_violation_rate": {
+          "low": 0.0,
+          "high": 0.0
+        },
+        "ood_signature_invariance_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "uncertainty_delta": {
+          "low": 0.0,
+          "high": 0.0
+        },
+        "conflict_delta": {
+          "low": 0.0,
+          "high": 0.0
+        }
+      },
+      "feature_flags": {
+        "schema_version": "1.0",
+        "memory": false,
+        "planner_executor": true,
+        "deliberation": false,
+        "reflection": false,
+        "audit_critic": false,
+        "learning_queue": false,
+        "shadow_mode": true
+      }
+    },
+    "deliberation_shadow": {
+      "sample_count": 3200,
+      "verdict_rates": {
+        "benign": 0.0,
+        "malicious": 0.0134375,
+        "suspicious": 0.5525,
+        "unknown": 0.4340625
+      },
+      "coverage": 0.0134375,
+      "alert_rate": 0.5659375,
+      "human_review_rate": 0.9865625,
+      "average_agent_calls": 3.2046875,
+      "latency_ms": {
+        "mean": 31.98991537450638,
+        "p50": 33.12900001765229,
+        "p95": 37.22535998094827
+      },
+      "verdict_invariance_rate": 1.0,
+      "mean_uncertainty_delta": 0.0,
+      "mean_conflict_delta": 0.0,
+      "memory_match_rate": 0.0,
+      "memory_top1_relevance": null,
+      "memory_topk_relevance": null,
+      "deliberation_trigger_rate": 1.0,
+      "supplemental_dispatch_rate": 0.0,
+      "compliance_failure_count": 0,
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "ood_signature_invariance_rate": 1.0,
+      "classification": {
+        "labeled_count": 0,
+        "covered_labeled_count": 0
+      },
+      "grouped_bootstrap_95ci": {
+        "coverage": {
+          "low": 0.0025,
+          "high": 0.0321875
+        },
+        "alert_rate": {
+          "low": 0.343734375,
+          "high": 0.773765625
+        },
+        "human_review_rate": {
+          "low": 0.9678125,
+          "high": 0.9975
+        },
+        "average_agent_calls": {
+          "low": 3.0681171875000004,
+          "high": 3.38625
+        },
+        "average_latency_ms": {
+          "low": 31.908555861910372,
+          "high": 32.06412868708867
+        },
+        "verdict_invariance_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "audit_completion_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "blocked_field_violation_rate": {
+          "low": 0.0,
+          "high": 0.0
+        },
+        "ood_signature_invariance_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "uncertainty_delta": {
+          "low": 0.0,
+          "high": 0.0
+        },
+        "conflict_delta": {
+          "low": 0.0,
+          "high": 0.0
+        }
+      },
+      "feature_flags": {
+        "schema_version": "1.0",
+        "memory": false,
+        "planner_executor": false,
+        "deliberation": true,
+        "reflection": false,
+        "audit_critic": false,
+        "learning_queue": false,
+        "shadow_mode": true
+      }
+    },
+    "reflection_critic": {
+      "sample_count": 3200,
+      "verdict_rates": {
+        "benign": 0.0,
+        "malicious": 0.0134375,
+        "suspicious": 0.5525,
+        "unknown": 0.4340625
+      },
+      "coverage": 0.0134375,
+      "alert_rate": 0.5659375,
+      "human_review_rate": 0.9865625,
+      "average_agent_calls": 3.2046875,
+      "latency_ms": {
+        "mean": 32.05519893690507,
+        "p50": 33.06520002661273,
+        "p95": 37.28100504959002
+      },
+      "verdict_invariance_rate": 1.0,
+      "mean_uncertainty_delta": 0.0,
+      "mean_conflict_delta": 0.0,
+      "memory_match_rate": 0.0,
+      "memory_top1_relevance": null,
+      "memory_topk_relevance": null,
+      "deliberation_trigger_rate": 0.0,
+      "supplemental_dispatch_rate": 0.0,
+      "compliance_failure_count": 0,
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "ood_signature_invariance_rate": 1.0,
+      "classification": {
+        "labeled_count": 0,
+        "covered_labeled_count": 0
+      },
+      "grouped_bootstrap_95ci": {
+        "coverage": {
+          "low": 0.0025,
+          "high": 0.0321875
+        },
+        "alert_rate": {
+          "low": 0.343734375,
+          "high": 0.773765625
+        },
+        "human_review_rate": {
+          "low": 0.9678125,
+          "high": 0.9975
+        },
+        "average_agent_calls": {
+          "low": 3.0681171875000004,
+          "high": 3.38625
+        },
+        "average_latency_ms": {
+          "low": 31.921336203601186,
+          "high": 32.2326374578588
+        },
+        "verdict_invariance_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "audit_completion_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "blocked_field_violation_rate": {
+          "low": 0.0,
+          "high": 0.0
+        },
+        "ood_signature_invariance_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "uncertainty_delta": {
+          "low": 0.0,
+          "high": 0.0
+        },
+        "conflict_delta": {
+          "low": 0.0,
+          "high": 0.0
+        }
+      },
+      "feature_flags": {
+        "schema_version": "1.0",
+        "memory": false,
+        "planner_executor": false,
+        "deliberation": false,
+        "reflection": true,
+        "audit_critic": true,
+        "learning_queue": false,
+        "shadow_mode": true
+      }
+    },
+    "full_shadow": {
+      "sample_count": 3200,
+      "verdict_rates": {
+        "benign": 0.0,
+        "malicious": 0.0134375,
+        "suspicious": 0.5525,
+        "unknown": 0.4340625
+      },
+      "coverage": 0.0134375,
+      "alert_rate": 0.5659375,
+      "human_review_rate": 0.9865625,
+      "average_agent_calls": 3.2046875,
+      "latency_ms": {
+        "mean": 33.52920418699796,
+        "p50": 34.36420002253726,
+        "p95": 39.129229984246194
+      },
+      "verdict_invariance_rate": 1.0,
+      "mean_uncertainty_delta": 0.0,
+      "mean_conflict_delta": 0.0,
+      "memory_match_rate": 0.0,
+      "memory_top1_relevance": null,
+      "memory_topk_relevance": null,
+      "deliberation_trigger_rate": 1.0,
+      "supplemental_dispatch_rate": 0.0,
+      "compliance_failure_count": 0,
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "ood_signature_invariance_rate": 1.0,
+      "classification": {
+        "labeled_count": 0,
+        "covered_labeled_count": 0
+      },
+      "grouped_bootstrap_95ci": {
+        "coverage": {
+          "low": 0.0025,
+          "high": 0.0321875
+        },
+        "alert_rate": {
+          "low": 0.343734375,
+          "high": 0.773765625
+        },
+        "human_review_rate": {
+          "low": 0.9678125,
+          "high": 0.9975
+        },
+        "average_agent_calls": {
+          "low": 3.0681171875000004,
+          "high": 3.38625
+        },
+        "average_latency_ms": {
+          "low": 33.41462955877432,
+          "high": 33.65071077326411
+        },
+        "verdict_invariance_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "audit_completion_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "blocked_field_violation_rate": {
+          "low": 0.0,
+          "high": 0.0
+        },
+        "ood_signature_invariance_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "uncertainty_delta": {
+          "low": 0.0,
+          "high": 0.0
+        },
+        "conflict_delta": {
+          "low": 0.0,
+          "high": 0.0
+        }
+      },
+      "feature_flags": {
+        "schema_version": "1.0",
+        "memory": true,
+        "planner_executor": true,
+        "deliberation": true,
+        "reflection": true,
+        "audit_critic": true,
+        "learning_queue": false,
+        "shadow_mode": true
+      }
+    },
+    "full_active": {
+      "sample_count": 3200,
+      "verdict_rates": {
+        "benign": 0.0,
+        "malicious": 0.0,
+        "suspicious": 0.5659375,
+        "unknown": 0.4340625
+      },
+      "coverage": 0.0,
+      "alert_rate": 0.5659375,
+      "human_review_rate": 1.0,
+      "average_agent_calls": 3.293125,
+      "latency_ms": {
+        "mean": 33.29488759382002,
+        "p50": 33.49630002048798,
+        "p95": 39.1031149571063
+      },
+      "verdict_invariance_rate": 0.9865625,
+      "mean_uncertainty_delta": 0.0039268011857468595,
+      "mean_conflict_delta": -0.004337552248425484,
+      "memory_match_rate": 0.0,
+      "memory_top1_relevance": null,
+      "memory_topk_relevance": null,
+      "deliberation_trigger_rate": 1.0,
+      "supplemental_dispatch_rate": 0.293125,
+      "compliance_failure_count": 0,
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "ood_signature_invariance_rate": 1.0,
+      "classification": {
+        "labeled_count": 0,
+        "covered_labeled_count": 0
+      },
+      "grouped_bootstrap_95ci": {
+        "coverage": {
+          "low": 0.0,
+          "high": 0.0
+        },
+        "alert_rate": {
+          "low": 0.343734375,
+          "high": 0.773765625
+        },
+        "human_review_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "average_agent_calls": {
+          "low": 3.1387265625,
+          "high": 3.4731796875
+        },
+        "average_latency_ms": {
+          "low": 33.199015914753545,
+          "high": 33.38044138772557
+        },
+        "verdict_invariance_rate": {
+          "low": 0.9678125,
+          "high": 0.9975
+        },
+        "audit_completion_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "blocked_field_violation_rate": {
+          "low": 0.0,
+          "high": 0.0
+        },
+        "ood_signature_invariance_rate": {
+          "low": 1.0,
+          "high": 1.0
+        },
+        "uncertainty_delta": {
+          "low": 0.0007063817242716219,
+          "high": 0.009440346147064908
+        },
+        "conflict_delta": {
+          "low": -0.01041279446612374,
+          "high": -0.0007901999692815803
+        }
+      },
+      "feature_flags": {
+        "schema_version": "1.0",
+        "memory": true,
+        "planner_executor": true,
+        "deliberation": true,
+        "reflection": true,
+        "audit_critic": true,
+        "learning_queue": false,
+        "shadow_mode": false
+      }
+    }
+  },
+  "seed": 42,
+  "bootstrap_resamples": 1000,
+  "detector_backend": "learned",
+  "ood_policy": "hybrid",
+  "memory_is_advisory": true,
+  "automatic_retraining": false,
+  "external_llm_used": false,
+  "frozen_artifacts_unchanged": true,
+  "boundaries": {
+    "memory_is_agent_evidence": false,
+    "llm_is_classifier": false,
+    "reflection_modifies_current_verdict": false,
+    "critic_outputs_labels": false,
+    "automatic_retraining": false
+  }
+}

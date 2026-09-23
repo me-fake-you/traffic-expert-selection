@@ -1,0 +1,6 @@
+config,ranking_score,tie_break,labels_used_for_ranking,accepted_count,accepted_benign_count,accepted_malicious_count,accepted_malicious_ratio,matched_macro_f1,matched_selective_error,jaccard_with_full_fusion
+probability_average,confidence*(1-uncertainty),sample_id ascending,False,1402,1402,0,0.0,0.5,0.0,0.07721859393008068
+yager_no_reliability_ood_off,confidence*(1-uncertainty),sample_id ascending,False,1402,1402,0,0.0,0.5,0.0,0.15485996705107083
+reliability_yager_ood_off,confidence*(1-uncertainty),sample_id ascending,False,1402,982,420,0.2995720399429387,1.0,0.0,0.8958755916159568
+ood_yager_no_reliability,confidence*(1-uncertainty),sample_id ascending,False,1402,1027,375,0.2674750356633381,1.0,0.0,0.9746478873239437
+full_fusion,confidence*(1-uncertainty),sample_id ascending,False,1402,1024,378,0.26961483594864477,1.0,0.0,1.0

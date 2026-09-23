@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "experiment": "nvidia_planner_smoke_v1",
+  "status": "failed",
+  "sample_count": 2,
+  "nvidia_model": "nvidia/nemotron-3-ultra-550b-a55b",
+  "failures": [
+    "no valid real NVIDIA plan was accepted"
+  ],
+  "metrics": {
+    "sample_count": 2,
+    "coordinator_decision_count": 5,
+    "valid_plan_rate": 0.0,
+    "policy_guard_rejection_rate": 0.0,
+    "policy_guard_adjustment_rate": 0.0,
+    "fallback_rate": 1.0,
+    "llm_call_attempt_count": 5,
+    "real_llm_decision_count": 0,
+    "request_attempt_count": 6,
+    "retry_count": 1,
+    "illegal_verdict_attempt_count": 0,
+    "illegal_verdict_execution_count": 0,
+    "blocked_field_access_attempt_count": 0,
+    "average_agent_calls": 2.5,
+    "latency_ms": {
+      "p50": 115545.2856500051,
+      "p95": 166921.50894501247
+    },
+    "api_latency_ms": {
+      "p50": 112336.17360002245,
+      "p95": 160848.25296002964
+    },
+    "token_usage": null,
+    "api_cost_estimate_usd": 0.0,
+    "pricing_status": "no_real_api_calls",
+    "audit_completion_rate": 1.0,
+    "blocked_field_violation_count": 0,
+    "fusion_ownership_violation_count": 0,
+    "ood_override_count": 0,
+    "classification": {
+      "labeled_count": 2,
+      "covered_count": 1,
+      "coverage": 0.5,
+      "selective_accuracy": 1.0,
+      "selective_macro_f1": 0.5,
+      "confusion": {
+        "tp": 0,
+        "tn": 1,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  }
+}

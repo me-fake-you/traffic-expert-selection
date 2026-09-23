@@ -1,0 +1,22 @@
+{
+  "figure_policy": {
+    "do_not_mix": "local MAD-ETD metric intervals must not be plotted as paired external-system delta intervals",
+    "filled_circle_with_error_bar": "official-code-participating local adapted paired delta",
+    "open_diamond_without_error_bar": "paper-reported cross-protocol point delta"
+  },
+  "forbidden_claims": [
+    "A third citable official-code comparison was completed.",
+    "All five systems were faithfully or fairly reproduced.",
+    "Paper-reported cross-protocol rows have paired external-system delta confidence intervals.",
+    "MAD-ETD universally outperforms all five systems across datasets or protocols.",
+    "MAS-LSTM Recall or F1 improved.",
+    "Repository-only projects are paper-level external systems."
+  ],
+  "supported_claims": [
+    "The refreshed search found no third system satisfying all citable-identity, official-code, license, compatible-data, and safe-input requirements.",
+    "Five citable systems retain at least one positive numerical metric in the frozen v13 evidence.",
+    "Continual-Federated-IDS and ZTA-FL are official-code-participating local adapted comparisons with paired delta intervals.",
+    "MARL-NIDS, MA-IDS, and MAS-LSTM are paper-reported cross-protocol numerical references shown as point-only deltas.",
+    "MAS-LSTM Recall and F1 remain negative and are retained in the thesis appendix table."
+  ]
+}

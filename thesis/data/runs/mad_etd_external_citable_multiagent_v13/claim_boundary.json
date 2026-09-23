@@ -1,0 +1,26 @@
+{
+  "blocked_references": {
+    "10.1016/j.jisa.2021.102923": "original metric table not directly accessible; secondary copied values excluded"
+  },
+  "evidence_tier_policy": {
+    "official_code_participating_adapted_same_query": "locally executed adapted comparison with paired local query units; not a faithful paper-scale reproduction",
+    "paper_reported_cross_protocol": "paper scalar versus separately frozen local result; no paired external inference or formal paired delta significance"
+  },
+  "forbidden_claims": [
+    "All five external systems were faithfully reproduced.",
+    "The paper-reported systems were run locally on identical samples or splits.",
+    "Local metric bootstrap intervals are paired external-system delta intervals.",
+    "MAD-ETD universally outperforms the five systems across datasets, tasks, or protocols.",
+    "MAS-LSTM Recall or F1 improved in the frozen comparison.",
+    "The inaccessible JISA 2021 numerical table was directly verified or used.",
+    "MAFSID or SHAP-Agentic IDS has a verified paper identity in this capsule."
+  ],
+  "supported_claims": [
+    "Five paper-identified multi-agent systems have at least one positive numerical metric in the frozen tiered matrix.",
+    "Continual-Federated-IDS and ZTA-FL use official-code-participating local adapted comparisons.",
+    "MARL-NIDS, MA-IDS, and MAS-LSTM are paper-reported cross-protocol references.",
+    "The intervals for paper-reported references are local MAD-ETD metric bootstrap intervals, not paired external-system delta intervals.",
+    "MAS-LSTM Accuracy and Precision are positive while Recall and F1 remain negative in the complete evidence ledger.",
+    "MAFSID and SHAP-Agentic IDS remain supplementary repository/checkpoint evidence rather than paper-level main-table systems."
+  ]
+}

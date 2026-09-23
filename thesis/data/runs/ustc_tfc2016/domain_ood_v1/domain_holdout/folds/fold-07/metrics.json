@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "strategies": {
+    "off": {
+      "schema_version": "1.0",
+      "mode": "off",
+      "metrics_status": "computed",
+      "sample_count": 63913,
+      "labeled_sample_count": 63913,
+      "accuracy": 0.9674955908289241,
+      "macro_f1": 0.9358521164549622,
+      "precision": 1.0,
+      "recall": 0.9625277026614887,
+      "PR_AUC": 0.9999999977993674,
+      "Brier_score": 0.03239929469256401,
+      "ECE": 0.04440905123398685,
+      "coverage": 0.8871434606418099,
+      "unknown_rate": 0.005038098665373242,
+      "suspicious_rate": 0.10781844069281679,
+      "average_agent_calls": 2.8329291380470325,
+      "average_latency_ms": 5.217325515943066,
+      "selective_error_rate": 0.03250440917107584,
+      "benign_false_positive_rate": 0.0,
+      "malicious_detection_rate": 0.8394212355486205,
+      "confusion_on_covered": {
+        "tp": 47340,
+        "fp": 0,
+        "tn": 7517,
+        "fn": 1843
+      }
+    },
+    "soft": {
+      "schema_version": "1.0",
+      "mode": "soft",
+      "metrics_status": "computed",
+      "sample_count": 63913,
+      "labeled_sample_count": 63913,
+      "accuracy": 1.0,
+      "macro_f1": 0.5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "PR_AUC": 0.9999999977993674,
+      "Brier_score": 0.03283576910376315,
+      "ECE": 0.04622331579818606,
+      "coverage": 0.0751959695210677,
+      "unknown_rate": 0.277830801245443,
+      "suspicious_rate": 0.6469732292334893,
+      "average_agent_calls": 2.8329291380470325,
+      "average_latency_ms": 5.217325515943066,
+      "selective_error_rate": 0.0,
+      "benign_false_positive_rate": 0.0,
+      "malicious_detection_rate": 0.08521880984466984,
+      "confusion_on_covered": {
+        "tp": 4806,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      }
+    },
+    "hybrid": {
+      "schema_version": "1.0",
+      "mode": "hybrid",
+      "metrics_status": "computed",
+      "sample_count": 63913,
+      "labeled_sample_count": 63913,
+      "accuracy": 1.0,
+      "macro_f1": 0.5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "PR_AUC": 0.9999874879666033,
+      "Brier_score": 0.033011676604108586,
+      "ECE": 0.04632323297929801,
+      "coverage": 0.0751959695210677,
+      "unknown_rate": 0.277830801245443,
+      "suspicious_rate": 0.6469732292334893,
+      "average_agent_calls": 2.8329291380470325,
+      "average_latency_ms": 5.217325515943066,
+      "selective_error_rate": 0.0,
+      "benign_false_positive_rate": 0.0,
+      "malicious_detection_rate": 0.08521880984466984,
+      "confusion_on_covered": {
+        "tp": 4806,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      }
+    },
+    "stats_gate_only": {
+      "schema_version": "1.0",
+      "mode": "stats_gate_only",
+      "metrics_status": "computed",
+      "sample_count": 63913,
+      "labeled_sample_count": 63913,
+      "accuracy": 1.0,
+      "macro_f1": 0.5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "PR_AUC": 0.9999876460638103,
+      "Brier_score": 0.03227393709788372,
+      "ECE": 0.04388731790405528,
+      "coverage": 0.16580351415205044,
+      "unknown_rate": 0.21776477398964217,
+      "suspicious_rate": 0.6164317118583074,
+      "average_agent_calls": 2.8329291380470325,
+      "average_latency_ms": 5.217325515943066,
+      "selective_error_rate": 0.0,
+      "benign_false_positive_rate": 0.0,
+      "malicious_detection_rate": 0.18790339740407122,
+      "confusion_on_covered": {
+        "tp": 10597,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      }
+    },
+    "temporal_gate_only": {
+      "schema_version": "1.0",
+      "mode": "temporal_gate_only",
+      "metrics_status": "computed",
+      "sample_count": 63913,
+      "labeled_sample_count": 63913,
+      "accuracy": 0.9674955908289241,
+      "macro_f1": 0.9358521164549622,
+      "precision": 1.0,
+      "recall": 0.9625277026614887,
+      "PR_AUC": 0.9999999977993674,
+      "Brier_score": 0.033313612514774826,
+      "ECE": 0.047292513326391804,
+      "coverage": 0.8871434606418099,
+      "unknown_rate": 0.011985042166695352,
+      "suspicious_rate": 0.10087149719149469,
+      "average_agent_calls": 2.8329291380470325,
+      "average_latency_ms": 5.217325515943066,
+      "selective_error_rate": 0.03250440917107584,
+      "benign_false_positive_rate": 0.0,
+      "malicious_detection_rate": 0.8394212355486205,
+      "confusion_on_covered": {
+        "tp": 47340,
+        "fp": 0,
+        "tn": 7517,
+        "fn": 1843
+      }
+    }
+  },
+  "audit_summary": {
+    "schema_version": "1.0",
+    "sample_count": 63913,
+    "completed_chain_count": 63913,
+    "audit_chain_completion_rate": 1.0,
+    "blocked_field_violation_count": 0,
+    "policy_adjustment_count": 0,
+    "event_counts": {
+      "FLOW_VALIDATED": 63913,
+      "FIELD_POLICY_APPLIED": 63913,
+      "RELIABILITY_ASSESSED": 63913,
+      "ROUTING_DECISION": 181061,
+      "POLICY_GUARD_EVALUATION": 181061,
+      "AGENT_EVIDENCE": 181061,
+      "INTERIM_FUSION": 117148,
+      "FINAL_FUSION": 63913,
+      "REPORT_GENERATED": 63913
+    },
+    "actor_counts": {
+      "FeatureCapture": 63913,
+      "FieldAuditAgent": 63913,
+      "PseudoFeatureGuardAgent": 63913,
+      "CoordinatorAgent": 181061,
+      "PolicyGuard": 181061,
+      "StatsDetectorAgent": 63913,
+      "TemporalBehaviorAgent": 63913,
+      "FusionAgent": 181061,
+      "ReporterAgent": 63913,
+      "FamilyAttributionAgent": 53235
+    }
+  },
+  "shift_distribution": {
+    "stats": {
+      "p05": 0.06280936454849498,
+      "p25": 0.4064715719063545,
+      "p50": 0.5381270903010034,
+      "p75": 0.9213377926421404,
+      "p95": 0.990752508361204
+    },
+    "temporal": {
+      "p05": 0.2619130607976896,
+      "p25": 0.6836379027037793,
+      "p50": 0.9497585022158044,
+      "p75": 0.9693770850968481,
+      "p95": 0.9778917492406513
+    },
+    "combined": {
+      "p05": 0.06280936454849498,
+      "p25": 0.4064715719063545,
+      "p50": 0.5381270903010034,
+      "p75": 0.9313847532739132,
+      "p95": 0.990752508361204
+    }
+  }
+}

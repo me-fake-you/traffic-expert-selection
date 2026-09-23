@@ -1,0 +1,13 @@
+{
+  "status": "accepted_frozen_no_double_discount_ranking_diagnostic",
+  "primary_score": "confidence",
+  "legacy_sensitivity_score": "confidence*(1-uncertainty)",
+  "top_k": 1402,
+  "full_fusion_primary_malicious_n": 379,
+  "full_fusion_primary_selective_error": 0.0,
+  "full_fusion_primary_vs_legacy_set_jaccard": 0.9943100995732574,
+  "conclusion_stable": true,
+  "fake_metric_count": 0,
+  "training_performed": false,
+  "runtime_modified": false
+}

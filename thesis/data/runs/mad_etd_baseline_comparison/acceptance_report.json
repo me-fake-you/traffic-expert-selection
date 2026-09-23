@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "experiment": "mad_etd_baseline_comparison_v1",
+  "status": "passed",
+  "clean_row_count": 60000,
+  "robustness_row_count": 6400,
+  "paired_dynamic_vs_static": {
+    "sample_count": 6000,
+    "verdict_agreement": 1.0,
+    "ood_agreement": 1.0,
+    "dynamic_average_agent_calls": 2.0,
+    "static_average_agent_calls": 3.0,
+    "agent_call_reduction": 0.3333333333333333,
+    "dynamic_unsupported_calls": 0.0,
+    "static_unsupported_calls": 1.0
+  },
+  "adapted_multi_agent_baselines": {
+    "count": 4,
+    "modes": [
+      "ma_ids_style_rag_planner",
+      "marl_budget_router",
+      "adaptive_online_ensemble",
+      "llm_collaborative_planner"
+    ],
+    "external_numeric_results_used": false,
+    "external_paper_reproduction_claimed": false
+  },
+  "multi_agent_upgrade_gate": {
+    "schema_version": "1.0",
+    "gate": "multi_agent_baseline_upgrade_gate_v1",
+    "default_runtime": "runtime_safe_v3_0",
+    "adapted_baselines": [
+      "ma_ids_style_rag_planner",
+      "marl_budget_router",
+      "adaptive_online_ensemble",
+      "llm_collaborative_planner"
+    ],
+    "external_numeric_results_used": false,
+    "external_paper_reproduction_claimed": false,
+    "classification_improvement_over_runtime_safe_v3_0": false,
+    "best_macro_f1_delta_vs_runtime_safe_v3_0": 0.0,
+    "runtime_average_evidence_agent_calls": 2.0,
+    "static_average_evidence_agent_calls": 3.0,
+    "runtime_call_reduction_vs_static": 0.3333333333333333,
+    "best_adapted_average_total_agent_calls": 3.0,
+    "adapted_baseline_lower_total_cost_than_runtime": false,
+    "safety_gate_passed": true,
+    "detector_upgrade_required": false,
+    "routing_or_utility_upgrade_required": false,
+    "default_runtime_changed": false,
+    "recommended_action": "retain_runtime_safe_v3_0_and_report_efficiency_safety_claims",
+    "reason": "The adapted multi-agent baselines do not provide a real classification improvement under the same safe inputs and Fusion owner. MAD-ETD keeps the directly measured evidence-call advantage over the static full-call baseline; no detector upgrade is justified by this comparison."
+  },
+  "security": {
+    "schema_version": "1.0",
+    "audit_completion_rate": 1.0,
+    "blocked_field_violation_count": 0,
+    "fusion_ownership_violation_count": 0,
+    "ood_override_count": 0,
+    "illegal_verdict_execution_count": 0,
+    "total_violation_count": 0,
+    "frozen_artifacts_unchanged": true,
+    "baseline_protocol_source_changed_since_prior_run": true,
+    "test_used": false,
+    "external_used_for_selection": false,
+    "cipherspectrum_locked_test_used": false
+  },
+  "tests_passed": true,
+  "test_count": 420,
+  "external_numeric_results_fabricated": false,
+  "default_runtime_changed": false
+}

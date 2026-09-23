@@ -1,0 +1,25 @@
+{
+  "status": "completed_thesis_reviewer_closure_v24",
+  "acceptance_gates": {
+    "all_required_reports_present": true,
+    "tests_passed": true,
+    "runtime_hash_unchanged": true,
+    "fake_metric_count_zero": true,
+    "test_used_for_selection_false": true,
+    "promoted_runtime_created_false": true
+  },
+  "missing_reports": [],
+  "test_count": 1796,
+  "runtime_hash": "c8d87e022b55ec30ffa98a51e021985720becffe13a8083887aaa91421773a59",
+  "expected_runtime_hash": "c8d87e022b55ec30ffa98a51e021985720becffe13a8083887aaa91421773a59",
+  "claim_boundary": "V24 closes reviewer-requested attribution and robustness diagnostics. It does not create a new detector, claim universal superiority, or promote a runtime.",
+  "blocked_field_violation": 0,
+  "fusion_ownership_violation": 0,
+  "ood_override": 0,
+  "illegal_verdict_execution": 0,
+  "invalid_evidence_admitted": 0,
+  "fake_metric_count": 0,
+  "test_used_for_selection": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "promoted_runtime_created": false
+}

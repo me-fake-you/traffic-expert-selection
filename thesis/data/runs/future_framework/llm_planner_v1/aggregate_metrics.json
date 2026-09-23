@@ -1,0 +1,373 @@
+{
+  "schema_version": "1.0",
+  "experiment": "real_nvidia_planner_v1",
+  "seed": 42,
+  "temperature": 0,
+  "prompt_version": "coordinator-v1",
+  "nvidia_model": "meta/llama-3.1-8b-instruct",
+  "api_available": false,
+  "expected_sample_count": 6000,
+  "repeat_sample_count": 500,
+  "repeat_count": 3,
+  "input_price_per_million": null,
+  "output_price_per_million": null,
+  "detector_backend": "learned",
+  "ood_policy": "hybrid",
+  "cipherspectrum_locked_test_used": false,
+  "llm_is_classifier": false,
+  "fallback_is_real_llm": false,
+  "modes": {
+    "rule_planner": {
+      "schema_version": "1.0",
+      "mode": "rule_planner",
+      "status": "completed",
+      "sample_count": 6000,
+      "metrics": {
+        "sample_count": 6000,
+        "coordinator_decision_count": 15104,
+        "valid_plan_rate": null,
+        "policy_guard_rejection_rate": 0.0,
+        "policy_guard_adjustment_rate": 0.0,
+        "fallback_rate": 0.0,
+        "illegal_verdict_attempt_count": 0,
+        "illegal_verdict_execution_count": 0,
+        "blocked_field_access_attempt_count": 0,
+        "average_agent_calls": 2.656,
+        "latency_ms": {
+          "p50": 21.307199989678338,
+          "p95": 27.49278001720086
+        },
+        "api_latency_ms": {
+          "p50": null,
+          "p95": null
+        },
+        "token_usage": null,
+        "api_cost_estimate_usd": 0.0,
+        "pricing_status": "no_real_api_calls",
+        "audit_completion_rate": 1.0,
+        "blocked_field_violation_count": 0,
+        "fusion_ownership_violation_count": 0,
+        "ood_override_count": 0,
+        "classification": {
+          "labeled_count": 2000,
+          "covered_count": 260,
+          "coverage": 0.13,
+          "selective_accuracy": 1.0,
+          "selective_macro_f1": 1.0,
+          "confusion": {
+            "tp": 112,
+            "tn": 148,
+            "fp": 0,
+            "fn": 0
+          }
+        }
+      },
+      "datasets": {
+        "cesnet": {
+          "sample_count": 2000,
+          "coordinator_decision_count": 4074,
+          "valid_plan_rate": null,
+          "policy_guard_rejection_rate": 0.0,
+          "policy_guard_adjustment_rate": 0.0,
+          "fallback_rate": 0.0,
+          "illegal_verdict_attempt_count": 0,
+          "illegal_verdict_execution_count": 0,
+          "blocked_field_access_attempt_count": 0,
+          "average_agent_calls": 2.037,
+          "latency_ms": {
+            "p50": 21.359399979701266,
+            "p95": 26.33555000065826
+          },
+          "api_latency_ms": {
+            "p50": null,
+            "p95": null
+          },
+          "token_usage": null,
+          "api_cost_estimate_usd": 0.0,
+          "pricing_status": "no_real_api_calls",
+          "audit_completion_rate": 1.0,
+          "blocked_field_violation_count": 0,
+          "fusion_ownership_violation_count": 0,
+          "ood_override_count": 0,
+          "classification": null
+        },
+        "cipherspectrum": {
+          "sample_count": 2000,
+          "coordinator_decision_count": 6000,
+          "valid_plan_rate": null,
+          "policy_guard_rejection_rate": 0.0,
+          "policy_guard_adjustment_rate": 0.0,
+          "fallback_rate": 0.0,
+          "illegal_verdict_attempt_count": 0,
+          "illegal_verdict_execution_count": 0,
+          "blocked_field_access_attempt_count": 0,
+          "average_agent_calls": 3.4155,
+          "latency_ms": {
+            "p50": 23.39655000832863,
+            "p95": 28.991735028102994
+          },
+          "api_latency_ms": {
+            "p50": null,
+            "p95": null
+          },
+          "token_usage": null,
+          "api_cost_estimate_usd": 0.0,
+          "pricing_status": "no_real_api_calls",
+          "audit_completion_rate": 1.0,
+          "blocked_field_violation_count": 0,
+          "fusion_ownership_violation_count": 0,
+          "ood_override_count": 0,
+          "classification": null
+        },
+        "ustc": {
+          "sample_count": 2000,
+          "coordinator_decision_count": 5030,
+          "valid_plan_rate": null,
+          "policy_guard_rejection_rate": 0.0,
+          "policy_guard_adjustment_rate": 0.0,
+          "fallback_rate": 0.0,
+          "illegal_verdict_attempt_count": 0,
+          "illegal_verdict_execution_count": 0,
+          "blocked_field_access_attempt_count": 0,
+          "average_agent_calls": 2.5155,
+          "latency_ms": {
+            "p50": 13.032450020546094,
+            "p95": 25.1139750063885
+          },
+          "api_latency_ms": {
+            "p50": null,
+            "p95": null
+          },
+          "token_usage": null,
+          "api_cost_estimate_usd": 0.0,
+          "pricing_status": "no_real_api_calls",
+          "audit_completion_rate": 1.0,
+          "blocked_field_violation_count": 0,
+          "fusion_ownership_violation_count": 0,
+          "ood_override_count": 0,
+          "classification": {
+            "labeled_count": 2000,
+            "covered_count": 260,
+            "coverage": 0.13,
+            "selective_accuracy": 1.0,
+            "selective_macro_f1": 1.0,
+            "confusion": {
+              "tp": 112,
+              "tn": 148,
+              "fp": 0,
+              "fn": 0
+            }
+          }
+        }
+      }
+    },
+    "nvidia_planner": {
+      "schema_version": "1.0",
+      "mode": "nvidia_planner",
+      "status": "api_unavailable",
+      "sample_count": 0,
+      "real_llm_calls_completed": 0,
+      "token_usage": null,
+      "api_cost_estimate_usd": null,
+      "metrics": null
+    },
+    "fallback": {
+      "schema_version": "1.0",
+      "mode": "fallback",
+      "status": "completed",
+      "sample_count": 6000,
+      "metrics": {
+        "sample_count": 6000,
+        "coordinator_decision_count": 15104,
+        "valid_plan_rate": null,
+        "policy_guard_rejection_rate": 0.0,
+        "policy_guard_adjustment_rate": 0.0,
+        "fallback_rate": 1.0,
+        "illegal_verdict_attempt_count": 0,
+        "illegal_verdict_execution_count": 0,
+        "blocked_field_access_attempt_count": 0,
+        "average_agent_calls": 2.656,
+        "latency_ms": {
+          "p50": 22.08340002107434,
+          "p95": 28.311709975241683
+        },
+        "api_latency_ms": {
+          "p50": null,
+          "p95": null
+        },
+        "token_usage": null,
+        "api_cost_estimate_usd": 0.0,
+        "pricing_status": "no_real_api_calls",
+        "audit_completion_rate": 1.0,
+        "blocked_field_violation_count": 0,
+        "fusion_ownership_violation_count": 0,
+        "ood_override_count": 0,
+        "classification": {
+          "labeled_count": 2000,
+          "covered_count": 260,
+          "coverage": 0.13,
+          "selective_accuracy": 1.0,
+          "selective_macro_f1": 1.0,
+          "confusion": {
+            "tp": 112,
+            "tn": 148,
+            "fp": 0,
+            "fn": 0
+          }
+        }
+      },
+      "datasets": {
+        "cesnet": {
+          "sample_count": 2000,
+          "coordinator_decision_count": 4074,
+          "valid_plan_rate": null,
+          "policy_guard_rejection_rate": 0.0,
+          "policy_guard_adjustment_rate": 0.0,
+          "fallback_rate": 1.0,
+          "illegal_verdict_attempt_count": 0,
+          "illegal_verdict_execution_count": 0,
+          "blocked_field_access_attempt_count": 0,
+          "average_agent_calls": 2.037,
+          "latency_ms": {
+            "p50": 22.554900002432987,
+            "p95": 28.351279988419265
+          },
+          "api_latency_ms": {
+            "p50": null,
+            "p95": null
+          },
+          "token_usage": null,
+          "api_cost_estimate_usd": 0.0,
+          "pricing_status": "no_real_api_calls",
+          "audit_completion_rate": 1.0,
+          "blocked_field_violation_count": 0,
+          "fusion_ownership_violation_count": 0,
+          "ood_override_count": 0,
+          "classification": null
+        },
+        "cipherspectrum": {
+          "sample_count": 2000,
+          "coordinator_decision_count": 6000,
+          "valid_plan_rate": null,
+          "policy_guard_rejection_rate": 0.0,
+          "policy_guard_adjustment_rate": 0.0,
+          "fallback_rate": 1.0,
+          "illegal_verdict_attempt_count": 0,
+          "illegal_verdict_execution_count": 0,
+          "blocked_field_access_attempt_count": 0,
+          "average_agent_calls": 3.4155,
+          "latency_ms": {
+            "p50": 23.004650021903217,
+            "p95": 28.639060017303564
+          },
+          "api_latency_ms": {
+            "p50": null,
+            "p95": null
+          },
+          "token_usage": null,
+          "api_cost_estimate_usd": 0.0,
+          "pricing_status": "no_real_api_calls",
+          "audit_completion_rate": 1.0,
+          "blocked_field_violation_count": 0,
+          "fusion_ownership_violation_count": 0,
+          "ood_override_count": 0,
+          "classification": null
+        },
+        "ustc": {
+          "sample_count": 2000,
+          "coordinator_decision_count": 5030,
+          "valid_plan_rate": null,
+          "policy_guard_rejection_rate": 0.0,
+          "policy_guard_adjustment_rate": 0.0,
+          "fallback_rate": 1.0,
+          "illegal_verdict_attempt_count": 0,
+          "illegal_verdict_execution_count": 0,
+          "blocked_field_access_attempt_count": 0,
+          "average_agent_calls": 2.5155,
+          "latency_ms": {
+            "p50": 14.321549999294803,
+            "p95": 27.775320017826743
+          },
+          "api_latency_ms": {
+            "p50": null,
+            "p95": null
+          },
+          "token_usage": null,
+          "api_cost_estimate_usd": 0.0,
+          "pricing_status": "no_real_api_calls",
+          "audit_completion_rate": 1.0,
+          "blocked_field_violation_count": 0,
+          "fusion_ownership_violation_count": 0,
+          "ood_override_count": 0,
+          "classification": {
+            "labeled_count": 2000,
+            "covered_count": 260,
+            "coverage": 0.13,
+            "selective_accuracy": 1.0,
+            "selective_macro_f1": 1.0,
+            "confusion": {
+              "tp": 112,
+              "tn": 148,
+              "fp": 0,
+              "fn": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "stability": {
+    "nvidia_planner": {
+      "mode": "nvidia_planner",
+      "status": "api_unavailable",
+      "sample_count": 0,
+      "repeat_count": 3,
+      "metrics": null
+    },
+    "fallback": {
+      "mode": "fallback",
+      "status": "completed",
+      "sample_count": 500,
+      "repeat_count": 3,
+      "metrics": {
+        "plan_consistency": 1.0,
+        "verdict_invariance": 1.0,
+        "fallback_stability": 1.0,
+        "policy_guard_rejection_consistency": 1.0,
+        "illegal_verdict_execution_count": 0,
+        "fusion_ownership_violation_count": 0,
+        "ood_override_count": 0
+      }
+    }
+  },
+  "paired_comparisons": [
+    {
+      "dataset": "cesnet",
+      "comparison": "fallback_vs_rule_planner",
+      "sample_count": 2000,
+      "verdict_agreement_rate": 1.0,
+      "agent_calls_delta": 0.0,
+      "latency_p50_delta_ms": 1.1955000227317214,
+      "fallback_rate_delta": 1.0
+    },
+    {
+      "dataset": "cipherspectrum",
+      "comparison": "fallback_vs_rule_planner",
+      "sample_count": 2000,
+      "verdict_agreement_rate": 1.0,
+      "agent_calls_delta": 0.0,
+      "latency_p50_delta_ms": -0.3918999864254147,
+      "fallback_rate_delta": 1.0
+    },
+    {
+      "dataset": "ustc",
+      "comparison": "fallback_vs_rule_planner",
+      "sample_count": 2000,
+      "verdict_agreement_rate": 1.0,
+      "agent_calls_delta": 0.0,
+      "latency_p50_delta_ms": 1.289099978748709,
+      "fallback_rate_delta": 1.0
+    }
+  ],
+  "frozen_artifacts_unchanged": true
+}

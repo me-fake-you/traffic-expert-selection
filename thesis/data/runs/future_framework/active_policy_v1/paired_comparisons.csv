@@ -1,0 +1,10 @@
+dataset,policy,sample_count,verdict_agreement_with_current,coverage_delta,selective_macro_f1_delta,agent_calls_delta,p95_latency_delta_ms,mean_uncertainty_delta,mean_conflict_improvement
+selection_ustc,hard_ood_block,6000,1.0,0.0,0.0,0.0,0.17769495607353747,0.0,0.0
+selection_ustc,conflict_missing_view,6000,1.0,0.0,0.0,0.0,0.2607699512736872,0.0,0.0
+selection_ustc,budget_utility,6000,1.0,0.0,0.0,0.0,0.2656749828020111,0.0,0.0
+selection_cipherspectrum,hard_ood_block,3000,1.0,0.0,,0.0,1.1698650021571666,0.0,0.0
+selection_cipherspectrum,conflict_missing_view,3000,0.9973333333333333,0.0026666666666666666,,-0.07100000000000017,0.028549981652759016,-0.0007847427336589922,0.0008645291408328716
+selection_cipherspectrum,budget_utility,3000,0.9973333333333333,0.0026666666666666666,,-0.07100000000000017,1.136424983269535,-0.0007847427336589922,0.0008645291408328716
+validation_ustc,budget_utility,6000,1.0,0.0,0.0,-0.00016666666666642627,0.5154899787157703,0.0,0.0
+validation_cesnet,budget_utility,50000,1.0,0.0,,0.0,0.03374502412042801,0.0,0.0
+validation_cipherspectrum,budget_utility,3200,0.9865625,0.0134375,,-0.08843749999999995,-1.5898699522949755,-0.0039268011857468595,0.004337552248425484

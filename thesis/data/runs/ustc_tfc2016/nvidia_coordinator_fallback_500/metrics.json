@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "mode": "nvidia_coordinator",
+  "metrics_status": "computed",
+  "classification_metric_scope": "covered_labeled_samples",
+  "ranking_metric_scope": "all_labeled_samples",
+  "sample_count": 500,
+  "labeled_sample_count": 500,
+  "accuracy": 0.0,
+  "macro_f1": 0.0,
+  "precision": 0.0,
+  "recall": 0.0,
+  "PR_AUC": null,
+  "Brier_score": 0.34296400125247845,
+  "ECE": 0.5695555306569657,
+  "coverage": 0.0,
+  "unknown_rate": 0.294,
+  "suspicious_rate": 0.706,
+  "average_agent_calls": 2.0,
+  "average_latency_ms": 1.0210603991290554,
+  "llm_call_count": 0,
+  "confusion_on_covered": {
+    "tp": 0,
+    "fp": 0,
+    "tn": 0,
+    "fn": 0
+  }
+}

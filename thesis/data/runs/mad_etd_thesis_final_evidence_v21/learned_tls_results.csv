@@ -1,0 +1,4 @@
+experiment,reference,candidate,reference_macro_f1,candidate_macro_f1,macro_f1_delta,robustness_metric,robustness_delta,promotion_status
+fresh capture clean classification,safe aggregation HGB,records-only TCN,0.9959462515236028,0.99112803836845,-0.004818213155152851,harmful flip delta,-0.00625,not_promoted_fresh_learned_tls_w286
+independent capture robustness,safe aggregation HGB,records-only TCN,0.9982817869415808,0.9878812039067171,-0.010400583034863686,harmful flip delta,-0.10465116279069767,not_promoted_independent_robustness_w290
+robust TLS Skill v2,safe aggregation HGB,robust TLS Skill v2,0.9821428571428572,0.9581643002028397,-0.023978556940017492,harmful flip delta,-0.034482758620689655,not_promoted_robust_tls_skill_v2_w295

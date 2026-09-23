@@ -1,0 +1,14 @@
+{
+  "application_or_family_grouped_bootstrap": {
+    "ci95_lower": 0.0,
+    "ci95_upper": 0.015583412064983742,
+    "mean": 0.00502402499364931
+  },
+  "iterations": 1000,
+  "sample_bootstrap": {
+    "ci95_lower": 0.003452566570124954,
+    "ci95_upper": 0.006155708897027972,
+    "mean": 0.00474242789927067
+  },
+  "seed": 42
+}

@@ -1,0 +1,3 @@
+visual,responsibility,claim_supported,must_not_claim,source_data
+figure_p95_latency_bootstrap_w325,show cross-dataset p95 governance-replay latency reduction and paired bootstrap uncertainty,W325-C3,production end-to-end latency reduction,latency_bootstrap_table_w325.csv
+figure_call_semantics_w325,"distinguish request attempts, executed evidence calls, and unsupported request attempts",W325-C1;W325-C2,three-to-one executed detector inference,call_semantics_table_w325.csv

@@ -1,0 +1,138 @@
+{
+  "audit_completion": 1.0,
+  "automatic_deployment": false,
+  "blocked_field_violation": 0,
+  "candidate_default_enabled": false,
+  "fake_metric_count": 0,
+  "fusion_ownership_violation": 0,
+  "illegal_verdict_execution_count": 0,
+  "ood_override_count": 0,
+  "promoted_runtime_created": false,
+  "runtime_safe_v3_0_remains_default": true,
+  "selection_lock": {
+    "acceptance_used_for_selection": false,
+    "candidate": {
+      "accuracy": 0.9955445544554455,
+      "candidate_type": "single",
+      "coverage": 1.0,
+      "ece": 0.0030093126604655877,
+      "macro_f1": 0.9955419312265648,
+      "malicious_recall": 0.9914098029307731,
+      "members": [
+        "random_forest_native"
+      ],
+      "selective_error": 0.004455445544554459,
+      "threshold": 0.33,
+      "weighted_f1": 0.9955441261731793,
+      "weights": [
+        1.0
+      ]
+    },
+    "experiment": "mad_etd_nfiot_bot_targeted_performance_w96",
+    "feature_pack_hash": "4ceee9311ba08ceedabac657f5a436f94b6cc6ed8ff40d8dd2f018de17a911dd",
+    "full_coverage_only": true,
+    "model_registry": {
+      "catboost_native": {
+        "artifact": "data/models/mad_etd_nfiot_bot_targeted_performance_w96/catboost_native.joblib",
+        "artifact_hash": "f3bb4984e71fc797acc7e4b32867a956516cac95e5b1b1ef63821788b58619e6",
+        "feature_pack": "native",
+        "kind": "joblib"
+      },
+      "extra_trees_common": {
+        "artifact": "data/models/mad_etd_nfiot_bot_targeted_performance_w96/extra_trees_common.joblib",
+        "artifact_hash": "e67923f3a8c9acc9080dac0f9e51bc06602fc136ea26cfde990d6d0b5a9bda54",
+        "feature_pack": "common",
+        "kind": "joblib"
+      },
+      "extra_trees_native": {
+        "artifact": "data/models/mad_etd_nfiot_bot_targeted_performance_w96/extra_trees_native.joblib",
+        "artifact_hash": "4e998c6f0eac25ae556944b995dbda371698aaa9ddfeadce0223420116547abf",
+        "feature_pack": "native",
+        "kind": "joblib"
+      },
+      "hgb_common": {
+        "artifact": "data/models/mad_etd_nfiot_bot_targeted_performance_w96/hgb_common.joblib",
+        "artifact_hash": "bd40d2545d954001f0dd29420bcd775921d3c29ace18e88de116dc9cc77d33b7",
+        "feature_pack": "common",
+        "kind": "joblib"
+      },
+      "hgb_native": {
+        "artifact": "data/models/mad_etd_nfiot_bot_targeted_performance_w96/hgb_native.joblib",
+        "artifact_hash": "a0bf2073df4890ce9e64cbaefb29885c1572861f789dcb34cf2539167d3193df",
+        "feature_pack": "native",
+        "kind": "joblib"
+      },
+      "random_forest_common": {
+        "artifact": "data/models/mad_etd_nfiot_bot_targeted_performance_w96/random_forest_common.joblib",
+        "artifact_hash": "a7209198976e2a2a395a2f3b2487968908dc74a5d664f30df9e1fa1a4dd40fc9",
+        "feature_pack": "common",
+        "kind": "joblib"
+      },
+      "random_forest_native": {
+        "artifact": "data/models/mad_etd_nfiot_bot_targeted_performance_w96/random_forest_native.joblib",
+        "artifact_hash": "073e3c96b4b8d9c9e0278040cd70620e1035cb95361bb93a9a3fc984a385b27e",
+        "feature_pack": "native",
+        "kind": "joblib"
+      },
+      "tabm_native": {
+        "artifact": "data/models/mad_etd_nfiot_bot_targeted_performance_w96/tabm_native.pt",
+        "artifact_hash": "374cae02cd86405475362d06fa47b2b8993721a85fc809856e802b243740072d",
+        "feature_pack": "native",
+        "kind": "tabm"
+      }
+    },
+    "reference": {
+      "metrics": {
+        "accuracy": 0.9834158415841584,
+        "coverage": 1.0,
+        "ece": 0.01282355999201859,
+        "feature_pack": "common",
+        "inference_seconds": 0.11516530002700165,
+        "macro_f1": 0.9834120598639076,
+        "malicious_recall": 0.988377968671046,
+        "model_id": "extra_trees_common",
+        "selective_error": 0.0165841584158416,
+        "threshold": 0.4,
+        "training_seconds": 0.6625155000074301,
+        "weighted_f1": 0.9834171434878513
+      },
+      "model_id": "extra_trees_common",
+      "threshold": 0.4
+    },
+    "schema_version": "1.0",
+    "selected_features": [
+      "SERVER_TCP_FLAGS",
+      "CLIENT_TCP_FLAGS",
+      "SRC_TO_DST_SECOND_BYTES",
+      "SRC_TO_DST_AVG_THROUGHPUT",
+      "SHORTEST_FLOW_PKT",
+      "DURATION_IN",
+      "TCP_FLAGS",
+      "IN_PKTS",
+      "LONGEST_FLOW_PKT",
+      "MIN_IP_PKT_LEN",
+      "TCP_WIN_MAX_IN",
+      "DST_TO_SRC_AVG_THROUGHPUT",
+      "DST_TO_SRC_SECOND_BYTES",
+      "FLOW_DURATION_MILLISECONDS",
+      "OUT_PKTS",
+      "TCP_WIN_MAX_OUT",
+      "NUM_PKTS_128_TO_256_BYTES",
+      "NUM_PKTS_UP_TO_128_BYTES",
+      "DURATION_OUT",
+      "RETRANSMITTED_IN_BYTES",
+      "RETRANSMITTED_IN_PKTS",
+      "ICMP_TYPE",
+      "ICMP_IPV4_TYPE",
+      "DNS_QUERY_TYPE"
+    ],
+    "selected_on": "validation_only",
+    "status": "w95_validation_selection_locked",
+    "validation_accuracy_delta": 0.01212871287128714,
+    "validation_macro_f1_delta": 0.012129871362657196,
+    "validation_malicious_recall_floor": 0.988377968671046
+  },
+  "status": "w95_validation_selection_locked",
+  "train_count": 11857,
+  "validation_count": 4040
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "experiment": "mad_etd_foolsgold_mafsid_evidence_adapter_v1",
+  "repository": "data/external/FoolsGold",
+  "repository_remote": "https://github.com/DistributedML/FoolsGold.git",
+  "repository_commit": "0aa55114296a2d3c2bcb6f544a6fae31e8e7b8b4",
+  "repository_license": "MIT",
+  "license_sha256": "9f2e136c9606d26184dc52d81beb9e5e0bb0b26ec6c7d70ac134f69830c3e02d",
+  "official_function_path": "deep-fg/fg/foolsgold.py",
+  "official_function_sha256": "4ceaeb0e7b3bf4404ccfa97f2a449d5b15b545ec92f79920e4e58dceb8e63cd8",
+  "paper": {
+    "title": "The Limitations of Federated Learning in Sybil Settings",
+    "venue": "RAID 2020",
+    "url": "https://www.usenix.org/conference/raid2020/presentation/fung"
+  },
+  "source_artifact": "data/runs/mad_etd_mafsid_live_semantic_resilience_v1/official_agent_probabilities.npz",
+  "source_sha256": "d012b014ddca2d0187bcfd1d5685557d64808917248521465c42e61e91a66edc",
+  "output_dir": "data/runs/mad_etd_foolsgold_mafsid_evidence_adapter_v1",
+  "calibration_episode_rule": "even episode indexes",
+  "evaluation_episode_rule": "odd episode indexes",
+  "guard_target_clean_coverage": 0.95,
+  "attack_types": [
+    "probability_permutation",
+    "extreme_wrong",
+    "runner_up_hijack",
+    "targeted_blend"
+  ],
+  "compromised_counts": [1, 2],
+  "attack_fraction": 1.0,
+  "defenses": [
+    "official_equal_mean",
+    "coordinate_median",
+    "one_trimmed_mean",
+    "semantic_consensus_guard",
+    "foolsgold_official_evidence_adapter"
+  ],
+  "adapter": {
+    "batch_size": 100,
+    "round_mapping": "mean per-batch probability minus uniform neutral vector",
+    "history": "cumulative sum of clean calibration rounds followed by evaluation rounds",
+    "fusion": "normalize nonnegative official FoolsGold weights to unit sum, then convex probability fusion",
+    "degenerate_weight_policy": "uniform fallback for nonfinite or zero-sum official weights",
+    "evaluation_labels_used": false,
+    "attack_results_used_for_mapping_selection": false
+  },
+  "statistics": {
+    "bootstrap_seed": 20260901,
+    "bootstrap_repeats": 10000,
+    "paired_test": "two-sided Wilcoxon signed-rank with Pratt zeros",
+    "multiplicity": "Holm across eight count-by-comparator tests"
+  },
+  "claim_boundary": {
+    "official_code_participating": true,
+    "official_function_modified": false,
+    "faithful_foolsgold_paper_reproduction": false,
+    "gradient_level_federated_learning": false,
+    "same_frozen_mafsid_evidence": true,
+    "external_mafsid_checkpoint_redistributable": false,
+    "safe_description": "RAID 2020 FoolsGold official-code-participating probability-evidence adapter"
+  }
+}

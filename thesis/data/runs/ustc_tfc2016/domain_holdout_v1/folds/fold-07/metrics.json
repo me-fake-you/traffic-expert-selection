@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "fold": 7,
+  "holdout": {
+    "benign_application": "BitTorrent",
+    "malware_family": "Geodo"
+  },
+  "systems": {
+    "full": {
+      "schema_version": "1.0",
+      "mode": "full",
+      "metrics_status": "computed",
+      "sample_count": 63913,
+      "labeled_sample_count": 63913,
+      "accuracy": 0.9674955908289241,
+      "macro_f1": 0.9358521164549622,
+      "precision": 1.0,
+      "recall": 0.9625277026614887,
+      "PR_AUC": 0.9999999977993674,
+      "Brier_score": 0.03239929469256401,
+      "ECE": 0.04440905123398685,
+      "coverage": 0.8871434606418099,
+      "unknown_rate": 0.005038098665373242,
+      "suspicious_rate": 0.10781844069281679,
+      "average_agent_calls": 2.8329291380470325,
+      "average_latency_ms": 5.174805025548787,
+      "confusion_on_covered": {
+        "tp": 47340,
+        "fp": 0,
+        "tn": 7517,
+        "fn": 1843
+      }
+    },
+    "stats_only": {
+      "schema_version": "1.0",
+      "mode": "stats_only",
+      "metrics_status": "computed",
+      "sample_count": 63913,
+      "labeled_sample_count": 63913,
+      "accuracy": 0.9673591027720957,
+      "macro_f1": 0.9356004430962073,
+      "precision": 1.0,
+      "recall": 0.9623711654570958,
+      "PR_AUC": 0.9999999839656993,
+      "Brier_score": 0.03714370044221265,
+      "ECE": 0.0523437823695576,
+      "coverage": 0.887268630794987,
+      "unknown_rate": 0.011906810820959741,
+      "suspicious_rate": 0.10082455838405333,
+      "average_agent_calls": 1.0,
+      "average_latency_ms": 0.0,
+      "confusion_on_covered": {
+        "tp": 47340,
+        "fp": 0,
+        "tn": 7517,
+        "fn": 1851
+      }
+    },
+    "temporal_only": {
+      "schema_version": "1.0",
+      "mode": "temporal_only",
+      "metrics_status": "computed",
+      "sample_count": 63913,
+      "labeled_sample_count": 63913,
+      "accuracy": 1.0,
+      "macro_f1": 0.5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "PR_AUC": 1.0,
+      "Brier_score": 0.18525573828789202,
+      "ECE": 0.2529005803096402,
+      "coverage": 0.17290692034484378,
+      "unknown_rate": 0.7410229530768389,
+      "suspicious_rate": 0.0860701265783174,
+      "average_agent_calls": 1.0,
+      "average_latency_ms": 0.0,
+      "confusion_on_covered": {
+        "tp": 11051,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      }
+    },
+    "no_reject": {
+      "schema_version": "1.0",
+      "mode": "no_reject",
+      "metrics_status": "computed",
+      "sample_count": 63913,
+      "labeled_sample_count": 63913,
+      "accuracy": 0.9594448703706601,
+      "macro_f1": 0.9147118213215382,
+      "precision": 1.0,
+      "recall": 0.9540392935669196,
+      "PR_AUC": 0.9999999977993674,
+      "Brier_score": 0.03239929469256401,
+      "ECE": 0.04440905123398685,
+      "coverage": 1.0,
+      "unknown_rate": 0.0,
+      "suspicious_rate": 0.0,
+      "average_agent_calls": 2.8329291380470325,
+      "average_latency_ms": 0.0,
+      "confusion_on_covered": {
+        "tp": 53804,
+        "fp": 0,
+        "tn": 7517,
+        "fn": 2592
+      }
+    }
+  },
+  "temporal_abstain_rate": 0.7410229530768389,
+  "audit_summary": {
+    "schema_version": "1.0",
+    "sample_count": 63913,
+    "completed_chain_count": 63913,
+    "audit_chain_completion_rate": 1.0,
+    "blocked_field_violation_count": 0,
+    "policy_adjustment_count": 0,
+    "event_counts": {
+      "FLOW_VALIDATED": 63913,
+      "FIELD_POLICY_APPLIED": 63913,
+      "RELIABILITY_ASSESSED": 63913,
+      "ROUTING_DECISION": 181061,
+      "POLICY_GUARD_EVALUATION": 181061,
+      "AGENT_EVIDENCE": 181061,
+      "INTERIM_FUSION": 117148,
+      "FINAL_FUSION": 63913,
+      "REPORT_GENERATED": 63913
+    },
+    "actor_counts": {
+      "FeatureCapture": 63913,
+      "FieldAuditAgent": 63913,
+      "PseudoFeatureGuardAgent": 63913,
+      "CoordinatorAgent": 181061,
+      "PolicyGuard": 181061,
+      "StatsDetectorAgent": 63913,
+      "TemporalBehaviorAgent": 63913,
+      "FusionAgent": 181061,
+      "ReporterAgent": 63913,
+      "FamilyAttributionAgent": 53235
+    }
+  }
+}

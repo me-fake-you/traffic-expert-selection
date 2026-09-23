@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0",
+  "mode": "nvidia_planner",
+  "status": "completed",
+  "sample_count": 500,
+  "metrics": {
+    "sample_count": 500,
+    "coordinator_decision_count": 1238,
+    "valid_plan_rate": 1.0,
+    "policy_guard_rejection_rate": 0.26009693053311794,
+    "policy_guard_adjustment_rate": 0.23990306946688206,
+    "fallback_rate": 0.26009693053311794,
+    "llm_call_attempt_count": 589,
+    "real_llm_decision_count": 589,
+    "request_attempt_count": 627,
+    "retry_count": 38,
+    "illegal_verdict_attempt_count": 0,
+    "illegal_verdict_execution_count": 0,
+    "blocked_field_access_attempt_count": 0,
+    "average_agent_calls": 3.262,
+    "latency_ms": {
+      "p50": 40468.63575000316,
+      "p95": 187666.56190998325
+    },
+    "api_latency_ms": {
+      "p50": 40443.3568000095,
+      "p95": 187618.1571999972
+    },
+    "token_usage": {
+      "prompt_tokens": 354394,
+      "completion_tokens": 89580,
+      "total_tokens": 443974
+    },
+    "api_cost_estimate_usd": null,
+    "pricing_status": "pricing_not_configured",
+    "audit_completion_rate": 1.0,
+    "blocked_field_violation_count": 0,
+    "fusion_ownership_violation_count": 0,
+    "ood_override_count": 0,
+    "classification": {
+      "labeled_count": 200,
+      "covered_count": 26,
+      "coverage": 0.13,
+      "selective_accuracy": 1.0,
+      "selective_macro_f1": 1.0,
+      "confusion": {
+        "tp": 13,
+        "tn": 13,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  },
+  "datasets": {
+    "cesnet": {
+      "sample_count": 150,
+      "coordinator_decision_count": 442,
+      "valid_plan_rate": 1.0,
+      "policy_guard_rejection_rate": 0.3212669683257919,
+      "policy_guard_adjustment_rate": 0.3212669683257919,
+      "fallback_rate": 0.3212669683257919,
+      "llm_call_attempt_count": 203,
+      "real_llm_decision_count": 203,
+      "request_attempt_count": 224,
+      "retry_count": 21,
+      "illegal_verdict_attempt_count": 0,
+      "illegal_verdict_execution_count": 0,
+      "blocked_field_access_attempt_count": 0,
+      "average_agent_calls": 3.0533333333333332,
+      "latency_ms": {
+        "p50": 72797.89324998274,
+        "p95": 249692.97725998322
+      },
+      "api_latency_ms": {
+        "p50": 72752.17684998643,
+        "p95": 249646.44892000643
+      },
+      "token_usage": {
+        "prompt_tokens": 108470,
+        "completion_tokens": 32180,
+        "total_tokens": 140650
+      },
+      "api_cost_estimate_usd": null,
+      "pricing_status": "pricing_not_configured",
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "fusion_ownership_violation_count": 0,
+      "ood_override_count": 0,
+      "classification": null
+    },
+    "cipherspectrum": {
+      "sample_count": 150,
+      "coordinator_decision_count": 300,
+      "valid_plan_rate": 1.0,
+      "policy_guard_rejection_rate": 0.2966666666666667,
+      "policy_guard_adjustment_rate": 0.19666666666666666,
+      "fallback_rate": 0.2966666666666667,
+      "llm_call_attempt_count": 116,
+      "real_llm_decision_count": 116,
+      "request_attempt_count": 120,
+      "retry_count": 4,
+      "illegal_verdict_attempt_count": 0,
+      "illegal_verdict_execution_count": 0,
+      "blocked_field_access_attempt_count": 0,
+      "average_agent_calls": 3.4066666666666667,
+      "latency_ms": {
+        "p50": 14795.375250017969,
+        "p95": 55981.3364400179
+      },
+      "api_latency_ms": {
+        "p50": 14750.1257500262,
+        "p95": 55933.054605030324
+      },
+      "token_usage": {
+        "prompt_tokens": 80607,
+        "completion_tokens": 18924,
+        "total_tokens": 99531
+      },
+      "api_cost_estimate_usd": null,
+      "pricing_status": "pricing_not_configured",
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "fusion_ownership_violation_count": 0,
+      "ood_override_count": 0,
+      "classification": null
+    },
+    "ustc": {
+      "sample_count": 200,
+      "coordinator_decision_count": 496,
+      "valid_plan_rate": 1.0,
+      "policy_guard_rejection_rate": 0.18346774193548387,
+      "policy_guard_adjustment_rate": 0.1935483870967742,
+      "fallback_rate": 0.18346774193548387,
+      "llm_call_attempt_count": 270,
+      "real_llm_decision_count": 270,
+      "request_attempt_count": 283,
+      "retry_count": 13,
+      "illegal_verdict_attempt_count": 0,
+      "illegal_verdict_execution_count": 0,
+      "blocked_field_access_attempt_count": 0,
+      "average_agent_calls": 3.31,
+      "latency_ms": {
+        "p50": 49362.00634998386,
+        "p95": 155063.72541498562
+      },
+      "api_latency_ms": {
+        "p50": 49322.450500010746,
+        "p95": 155044.61142999638
+      },
+      "token_usage": {
+        "prompt_tokens": 165317,
+        "completion_tokens": 38476,
+        "total_tokens": 203793
+      },
+      "api_cost_estimate_usd": null,
+      "pricing_status": "pricing_not_configured",
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "fusion_ownership_violation_count": 0,
+      "ood_override_count": 0,
+      "classification": {
+        "labeled_count": 200,
+        "covered_count": 26,
+        "coverage": 0.13,
+        "selective_accuracy": 1.0,
+        "selective_macro_f1": 1.0,
+        "confusion": {
+          "tp": 13,
+          "tn": 13,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    }
+  }
+}

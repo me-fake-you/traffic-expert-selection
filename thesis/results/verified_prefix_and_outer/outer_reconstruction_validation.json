@@ -1,0 +1,9 @@
+{
+  "status": "PASS_INDEPENDENT_RECONSTRUCTION",
+  "checked_policy_rows": 245,
+  "rows": 40000,
+  "unique_hash": 40000,
+  "delta_definition": "error(first_temporal)-error(equal_average)",
+  "no_refitting": true,
+  "not_new_blind_test": true
+}

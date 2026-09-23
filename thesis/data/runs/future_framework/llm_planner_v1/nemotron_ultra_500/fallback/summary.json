@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "mode": "fallback",
+  "status": "completed",
+  "sample_count": 500,
+  "metrics": {
+    "sample_count": 500,
+    "coordinator_decision_count": 1254,
+    "valid_plan_rate": null,
+    "policy_guard_rejection_rate": 0.0,
+    "policy_guard_adjustment_rate": 0.0,
+    "fallback_rate": 1.0,
+    "llm_call_attempt_count": 0,
+    "real_llm_decision_count": 0,
+    "request_attempt_count": 0,
+    "retry_count": 0,
+    "illegal_verdict_attempt_count": 0,
+    "illegal_verdict_execution_count": 0,
+    "blocked_field_access_attempt_count": 0,
+    "average_agent_calls": 2.628,
+    "latency_ms": {
+      "p50": 42.304999980842695,
+      "p95": 45.71282998949755
+    },
+    "api_latency_ms": {
+      "p50": null,
+      "p95": null
+    },
+    "token_usage": null,
+    "api_cost_estimate_usd": 0.0,
+    "pricing_status": "no_real_api_calls",
+    "audit_completion_rate": 1.0,
+    "blocked_field_violation_count": 0,
+    "fusion_ownership_violation_count": 0,
+    "ood_override_count": 0,
+    "classification": {
+      "labeled_count": 200,
+      "covered_count": 26,
+      "coverage": 0.13,
+      "selective_accuracy": 1.0,
+      "selective_macro_f1": 1.0,
+      "confusion": {
+        "tp": 13,
+        "tn": 13,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  },
+  "datasets": {
+    "cesnet": {
+      "sample_count": 150,
+      "coordinator_decision_count": 308,
+      "valid_plan_rate": null,
+      "policy_guard_rejection_rate": 0.0,
+      "policy_guard_adjustment_rate": 0.0,
+      "fallback_rate": 1.0,
+      "llm_call_attempt_count": 0,
+      "real_llm_decision_count": 0,
+      "request_attempt_count": 0,
+      "retry_count": 0,
+      "illegal_verdict_attempt_count": 0,
+      "illegal_verdict_execution_count": 0,
+      "blocked_field_access_attempt_count": 0,
+      "average_agent_calls": 2.0533333333333332,
+      "latency_ms": {
+        "p50": 42.9815000097733,
+        "p95": 45.34820500703063
+      },
+      "api_latency_ms": {
+        "p50": null,
+        "p95": null
+      },
+      "token_usage": null,
+      "api_cost_estimate_usd": 0.0,
+      "pricing_status": "no_real_api_calls",
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "fusion_ownership_violation_count": 0,
+      "ood_override_count": 0,
+      "classification": null
+    },
+    "cipherspectrum": {
+      "sample_count": 150,
+      "coordinator_decision_count": 450,
+      "valid_plan_rate": null,
+      "policy_guard_rejection_rate": 0.0,
+      "policy_guard_adjustment_rate": 0.0,
+      "fallback_rate": 1.0,
+      "llm_call_attempt_count": 0,
+      "real_llm_decision_count": 0,
+      "request_attempt_count": 0,
+      "retry_count": 0,
+      "illegal_verdict_attempt_count": 0,
+      "illegal_verdict_execution_count": 0,
+      "blocked_field_access_attempt_count": 0,
+      "average_agent_calls": 3.4,
+      "latency_ms": {
+        "p50": 43.958500027656555,
+        "p95": 46.70796999707818
+      },
+      "api_latency_ms": {
+        "p50": null,
+        "p95": null
+      },
+      "token_usage": null,
+      "api_cost_estimate_usd": 0.0,
+      "pricing_status": "no_real_api_calls",
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "fusion_ownership_violation_count": 0,
+      "ood_override_count": 0,
+      "classification": null
+    },
+    "ustc": {
+      "sample_count": 200,
+      "coordinator_decision_count": 496,
+      "valid_plan_rate": null,
+      "policy_guard_rejection_rate": 0.0,
+      "policy_guard_adjustment_rate": 0.0,
+      "fallback_rate": 1.0,
+      "llm_call_attempt_count": 0,
+      "real_llm_decision_count": 0,
+      "request_attempt_count": 0,
+      "retry_count": 0,
+      "illegal_verdict_attempt_count": 0,
+      "illegal_verdict_execution_count": 0,
+      "blocked_field_access_attempt_count": 0,
+      "average_agent_calls": 2.48,
+      "latency_ms": {
+        "p50": 22.981450019869953,
+        "p95": 44.75597499695141
+      },
+      "api_latency_ms": {
+        "p50": null,
+        "p95": null
+      },
+      "token_usage": null,
+      "api_cost_estimate_usd": 0.0,
+      "pricing_status": "no_real_api_calls",
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "fusion_ownership_violation_count": 0,
+      "ood_override_count": 0,
+      "classification": {
+        "labeled_count": 200,
+        "covered_count": 26,
+        "coverage": 0.13,
+        "selective_accuracy": 1.0,
+        "selective_macro_f1": 1.0,
+        "confusion": {
+          "tp": 13,
+          "tn": 13,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    }
+  }
+}

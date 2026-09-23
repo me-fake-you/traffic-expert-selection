@@ -1,0 +1,13 @@
+dataset,mode,sample_count,repeat_count,aggregation,avg_request_attempts,avg_executed_inferences,avg_unsupported_attempts,p50_latency_ms,p95_latency_ms
+CICIoT2023,static_full_call,4000,7,per_sample_median_then_distribution_quantile,3.0,1.0,2.0,0.4110831,0.44298809999999994
+CICIoT2023,fixed_supported_full_call,4000,7,per_sample_median_then_distribution_quantile,1.0,1.0,0.0,0.3524831,0.3770831
+CICIoT2023,ordinary_rule_routing,4000,7,per_sample_median_then_distribution_quantile,1.2505,1.0,0.2505,0.3574831,0.3963831
+CICIoT2023,capability_aware_mad_etd,4000,7,per_sample_median_then_distribution_quantile,1.0,1.0,0.0,0.3574831,0.3828831
+NF-IoT,static_full_call,4000,7,per_sample_median_then_distribution_quantile,3.0,1.0,2.0,0.397,0.4311
+NF-IoT,fixed_supported_full_call,4000,7,per_sample_median_then_distribution_quantile,1.0,1.0,0.0,0.3445,0.3726
+NF-IoT,ordinary_rule_routing,4000,7,per_sample_median_then_distribution_quantile,1.034,1.0,0.034,0.3422,0.3776
+NF-IoT,capability_aware_mad_etd,4000,7,per_sample_median_then_distribution_quantile,1.0,1.0,0.0,0.345,0.3719
+USTC-TFC2016,static_full_call,4000,7,per_sample_median_then_distribution_quantile,3.0,1.0,2.0,0.2828,0.30931
+USTC-TFC2016,fixed_supported_full_call,4000,7,per_sample_median_then_distribution_quantile,1.0,1.0,0.0,0.2316,0.25320499999999996
+USTC-TFC2016,ordinary_rule_routing,4000,7,per_sample_median_then_distribution_quantile,1.03025,1.0,0.03025,0.23045,0.255305
+USTC-TFC2016,capability_aware_mad_etd,4000,7,per_sample_median_then_distribution_quantile,1.0,1.0,0.0,0.232,0.2531

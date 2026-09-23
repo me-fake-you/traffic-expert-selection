@@ -1,0 +1,319 @@
+{
+  "schema_version": "1.0",
+  "dataset": "CESNET-TLS22-v3-sample-1m",
+  "split": "test",
+  "metrics": {
+    "schema_version": "1.0",
+    "mode": "cesnet_ood",
+    "metrics_status": "skipped_no_labels",
+    "sample_count": 499997,
+    "labeled_sample_count": 0,
+    "accuracy": null,
+    "macro_f1": null,
+    "precision": null,
+    "recall": null,
+    "PR_AUC": null,
+    "Brier_score": null,
+    "ECE": null,
+    "coverage": 0.2888097328583972,
+    "unknown_rate": 0.061372368234209405,
+    "suspicious_rate": 0.6498178989073935,
+    "average_agent_calls": 2.9069914419486516,
+    "average_latency_ms": 7.931613072882912,
+    "selective_error_rate": null,
+    "benign_false_positive_rate": null,
+    "malicious_detection_rate": null,
+    "confusion_on_covered": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 0,
+      "fn": 0
+    }
+  },
+  "verdict_distribution": {
+    "sample_count": 499997,
+    "benign_rate": 0.0023220139320835925,
+    "malicious_rate": 0.2864877189263136,
+    "suspicious_rate": 0.6498178989073935,
+    "unknown_rate": 0.061372368234209405,
+    "alert_rate": 0.936305617833707,
+    "average_risk_score": 0.950310746876674,
+    "average_agent_calls": 2.9069914419486516
+  },
+  "score_distribution": {
+    "confidence_quantiles": {
+      "p05": 0.12446056321184598,
+      "p25": 0.8772190557036497,
+      "p50": 0.9396594967377203,
+      "p75": 0.941817065298764,
+      "p95": 0.9818500852086548
+    },
+    "uncertainty_quantiles": {
+      "p05": 0.01810890795338058,
+      "p25": 0.029544880072994308,
+      "p50": 0.030465027878420214,
+      "p75": 0.08359926036597161,
+      "p95": 0.5712552680617218
+    },
+    "risk_score_quantiles": {
+      "p05": 0.5714724662986249,
+      "p25": 0.9823461291394661,
+      "p50": 0.9994951390377692,
+      "p75": 0.9998466813276203,
+      "p95": 0.9999691967116675
+    }
+  },
+  "audit_summary": {
+    "schema_version": "1.0",
+    "sample_count": 499997,
+    "completed_chain_count": 499997,
+    "audit_chain_completion_rate": 1.0,
+    "blocked_field_violation_count": 0,
+    "policy_adjustment_count": 0,
+    "event_counts": {
+      "FLOW_VALIDATED": 499997,
+      "FIELD_POLICY_APPLIED": 499997,
+      "RELIABILITY_ASSESSED": 499997,
+      "ROUTING_DECISION": 1453487,
+      "POLICY_GUARD_EVALUATION": 1453487,
+      "AGENT_EVIDENCE": 1453487,
+      "INTERIM_FUSION": 953490,
+      "FINAL_FUSION": 499997,
+      "REPORT_GENERATED": 499997
+    },
+    "actor_counts": {
+      "FeatureCapture": 499997,
+      "FieldAuditAgent": 499997,
+      "PseudoFeatureGuardAgent": 499997,
+      "CoordinatorAgent": 1453487,
+      "PolicyGuard": 1453487,
+      "StatsDetectorAgent": 499997,
+      "TemporalBehaviorAgent": 499997,
+      "FusionAgent": 1453487,
+      "FamilyAttributionAgent": 453493,
+      "ReporterAgent": 499997
+    }
+  },
+  "high_alert_applications": [
+    {
+      "application": "autodesk",
+      "sample_count": 5425,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.8527188940092166,
+      "suspicious_rate": 0.14728110599078342,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.9959526780151146,
+      "average_agent_calls": 2.9931797235023043
+    },
+    {
+      "application": "eset-edf",
+      "sample_count": 5035,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.9692154915590864,
+      "suspicious_rate": 0.030784508440913606,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.9998519486006959,
+      "average_agent_calls": 3.0
+    },
+    {
+      "application": "accuweather",
+      "sample_count": 2303,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.37646547980894485,
+      "suspicious_rate": 0.6235345201910552,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.9816196895458822,
+      "average_agent_calls": 2.996526270082501
+    },
+    {
+      "application": "malwarebytes-telemetry",
+      "sample_count": 1997,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.9969954932398598,
+      "suspicious_rate": 0.0030045067601402104,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.999799391201511,
+      "average_agent_calls": 3.0
+    },
+    {
+      "application": "docker-registry",
+      "sample_count": 1655,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.4501510574018127,
+      "suspicious_rate": 0.5498489425981873,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.9997693805494038,
+      "average_agent_calls": 3.0
+    },
+    {
+      "application": "vmware-vcsa",
+      "sample_count": 1607,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.7535780958307405,
+      "suspicious_rate": 0.2464219041692595,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.99896157149532,
+      "average_agent_calls": 2.999377722464219
+    },
+    {
+      "application": "docker-auth",
+      "sample_count": 1249,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.018414731785428344,
+      "suspicious_rate": 0.9815852682145717,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.9995602650166303,
+      "average_agent_calls": 3.0
+    },
+    {
+      "application": "mozilla-location",
+      "sample_count": 1108,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.3989169675090253,
+      "suspicious_rate": 0.6010830324909747,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.9997101527022142,
+      "average_agent_calls": 3.0
+    },
+    {
+      "application": "mcafee-ccs",
+      "sample_count": 1093,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.15827996340347666,
+      "suspicious_rate": 0.8417200365965233,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.9990295549002954,
+      "average_agent_calls": 3.0
+    },
+    {
+      "application": "loggly",
+      "sample_count": 1068,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.5617977528089888,
+      "suspicious_rate": 0.43820224719101125,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.9951256877609688,
+      "average_agent_calls": 2.993445692883895
+    },
+    {
+      "application": "adobe-authentication",
+      "sample_count": 1029,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.5587949465500486,
+      "suspicious_rate": 0.4412050534499514,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.9995022545912601,
+      "average_agent_calls": 3.0
+    },
+    {
+      "application": "firefox-accounts",
+      "sample_count": 920,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.6521739130434783,
+      "suspicious_rate": 0.34782608695652173,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.9999688522479936,
+      "average_agent_calls": 3.0
+    },
+    {
+      "application": "thunderbird-telemetry",
+      "sample_count": 881,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.094211123723042,
+      "suspicious_rate": 0.905788876276958,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.9958725170283675,
+      "average_agent_calls": 2.9977298524404086
+    },
+    {
+      "application": "adobe-cloud",
+      "sample_count": 831,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.15403128760529483,
+      "suspicious_rate": 0.8459687123947052,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.9983960053392351,
+      "average_agent_calls": 2.996389891696751
+    },
+    {
+      "application": "eset-esa",
+      "sample_count": 830,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.7156626506024096,
+      "suspicious_rate": 0.28433734939759037,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.9987044585526678,
+      "average_agent_calls": 3.0
+    },
+    {
+      "application": "adobe-notifications",
+      "sample_count": 823,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.07897934386391252,
+      "suspicious_rate": 0.9210206561360875,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.999893796419918,
+      "average_agent_calls": 3.0
+    },
+    {
+      "application": "mozilla-push",
+      "sample_count": 803,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.8530510585305106,
+      "suspicious_rate": 0.14694894146948942,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.9998978041425808,
+      "average_agent_calls": 3.0
+    },
+    {
+      "application": "eset-epns",
+      "sample_count": 712,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.30758426966292135,
+      "suspicious_rate": 0.6924157303370787,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.9998414952996082,
+      "average_agent_calls": 3.0
+    },
+    {
+      "application": "webex",
+      "sample_count": 635,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.2440944881889764,
+      "suspicious_rate": 0.7559055118110236,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.9918917832845311,
+      "average_agent_calls": 2.9937007874015746
+    },
+    {
+      "application": "gfe-events",
+      "sample_count": 592,
+      "benign_rate": 0.0,
+      "malicious_rate": 0.8868243243243243,
+      "suspicious_rate": 0.11317567567567567,
+      "unknown_rate": 0.0,
+      "alert_rate": 1.0,
+      "average_risk_score": 0.981255389359797,
+      "average_agent_calls": 3.0
+    }
+  ]
+}

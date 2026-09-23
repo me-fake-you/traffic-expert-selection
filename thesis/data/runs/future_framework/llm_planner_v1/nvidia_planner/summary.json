@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "mode": "nvidia_planner",
+  "status": "api_unavailable",
+  "sample_count": 0,
+  "real_llm_calls_completed": 0,
+  "token_usage": null,
+  "api_cost_estimate_usd": null,
+  "metrics": null
+}

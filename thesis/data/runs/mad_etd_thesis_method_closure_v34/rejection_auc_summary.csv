@@ -1,0 +1,5 @@
+method,coverage_grid_min,coverage_grid_max,aurc_trapezoid_reported_grid,balanced_acceptance_area_reported_grid,labels_used_for_ranking
+probability_average_confidence_reject,0.1,1.0,0.0,0.49980887934346807,False
+probability_average_ood_score_reject,0.1,1.0,0.0,0.49031632101991096,False
+yager_confidence_reject,0.1,1.0,0.0,0.5000154373782971,False
+full_fusion_score_ranking,0.1,1.0,4.5833333333333374e-05,0.49765391210748683,False

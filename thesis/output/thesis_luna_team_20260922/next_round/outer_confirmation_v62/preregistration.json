@@ -1,0 +1,123 @@
+{
+  "protocol_id": "luna-outer-confirmation-v62",
+  "created_date": "2026-09-23",
+  "status": "locked_by_root_review",
+  "purpose": "Outer-role replay of frozen v60/v61 gain policies on the already saved seed42 nested-controls evaluation predictions.",
+  "interpretation": "Historical source data and cross-fold development results were exposed; outer-role re-evaluation only, not a new blind or globally independent confirmation.",
+  "execution_guard": "run_outer_confirmation_v62.py requires --execute; this protocol-writing turn does not execute it.",
+  "roles": {
+    "fit": "None. No refitting, calibration, threshold search or parameter tuning.",
+    "outer_evaluation": "seed42 nested_controls_001 temporal_stats_predictions.csv for outer folds 0..4; labels and saved expert predictions are read only when the locked execution is explicitly run.",
+    "selection": "Not used in v62 execution; v60/v61 selection artifacts are frozen inputs only."
+  },
+  "outer_input_contract": {
+    "run": "output/mad_etd_icassp2027_v55_r1/runs/nested_controls_001",
+    "seed": 42,
+    "folds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "file_per_fold": "seed_42_fold_{fold}/temporal_stats_predictions.csv",
+    "schema": [
+      "sample_hash",
+      "group",
+      "label",
+      "first_probability",
+      "second_probability",
+      "first_only",
+      "second_only",
+      "equal_average",
+      "confidence_average",
+      "fixed_rule",
+      "directional_hgb",
+      "directional_logistic",
+      "same_trigger_fixed",
+      "same_trigger_hgb_half",
+      "same_arbiter_all_second"
+    ],
+    "preflight_observation": "Five files have 8000 rows each, 40000 rows total, and 40000 unique sample_hash values when checking only sample_hash/group columns; labels and score values are not read during protocol preflight.",
+    "expert_order": "temporal then stats; first_probability is Temporal and second_probability is Stats. first_stats uses the Stats prediction as its base classifier; C/D remains referenced to first Temporal where reported.",
+    "source_features": "At execution, only SOURCE x_hybrid/sample_hash/group are loaded for post-first 40-feature state; SOURCE y is never loaded.",
+    "entropy_contract": "binary entropy uses log2, matching protocol/run_e0_e1_pilot.py and the frozen v60/v61 models.",
+    "provenance": "raw_audit_001/selected_provenance.csv is hash-tracked for role lineage."
+  },
+  "frozen_models": {
+    "v60_regression": "next_round/gain_upgrade/models/fold_{fold}_probability_only_gain.joblib and fold_{fold}_post_first_temporal_gain.joblib",
+    "v61_classifier": "next_round/jev_gain_v61/models/fold_{fold}_probability_only_3d.joblib and fold_{fold}_post_first_temporal_43d.joblib",
+    "use": "Load only; do not fit, calibrate, alter or select among models.",
+    "states": {
+      "3d": [
+        "p_temporal",
+        "abs(p_temporal-0.5)",
+        "binary_entropy(p_temporal)"
+      ],
+      "43d": [
+        "the 3d state",
+        "the same 40 Temporal input features already paid by the first expert"
+      ]
+    },
+    "scope": "43d is post-first-expert/offline, not early-prefix and not zero-cost."
+  },
+  "policies": {
+    "fixed_baselines": [
+      "first_temporal",
+      "first_stats",
+      "all_average",
+      "confidence_budget",
+      "hashrandom_budget"
+    ],
+    "frozen_gain_policies": [
+      "probability_only_gain_regression",
+      "post_first_temporal_gain_regression",
+      "probability_only_gain_classifier",
+      "post_first_temporal_gain_classifier"
+    ],
+    "budgets": [
+      1.0,
+      1.1,
+      1.25,
+      1.5,
+      2.0
+    ],
+    "budget_rule": "K=floor((budget-1)*N_outer+0.5), exact K; deterministic sample_hash tie break",
+    "score_rule": "For classifier, P(delta=+1)-P(delta=-1); for regression, predicted_delta; descending within exact quota. All four frozen model scores/probabilities are saved per outer row.",
+    "positive_stop": "For each frozen gain policy, acquire rows with score > 0 and report realized simulated calls; not a fixed quota.",
+    "all_average_semantics": "Repeated comparison panel at each target_budget; effective_budget remains 2.0."
+  },
+  "metrics": {
+    "classification": [
+      "macro_f1",
+      "malicious_recall",
+      "false_positive_rate",
+      "C",
+      "D",
+      "C_minus_D",
+      "simulated_second_calls",
+      "effective_budget"
+    ],
+    "utility": "mean_delta=(C-D)/rows; utility_lambda=mean_delta-lambda*call_rate, lambda in [0,0.01,0.05], primary 0.01",
+    "reporting": "Per fold, per group, and pooled 40000-row outer result; zero-denominator group recall/FPR are null; no CI and no independent-test claim.",
+    "no_claims": [
+      "no real latency/speedup",
+      "no new blind test",
+      "no global independent confirmation",
+      "no Jev/RLCD reproduction"
+    ]
+  },
+  "required_outputs": [
+    "results/policy_metrics.csv",
+    "results/pooled_policy_metrics.csv",
+    "results/group_policy_metrics.csv",
+    "results/pooled_group_policy_metrics.csv",
+    "results/outer_predictions.csv.gz",
+    "results/summary.json",
+    "models/model_manifest.json",
+    "input_hashes.json",
+    "boundary_tests.json",
+    "logs/run_log.txt",
+    "THESIS_READY.md"
+  ]
+}

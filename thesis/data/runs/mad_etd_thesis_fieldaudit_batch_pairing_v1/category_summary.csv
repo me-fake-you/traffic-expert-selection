@@ -1,0 +1,5 @@
+category,pair_count,tls_available_pair_count,detector_input_agreement_count,agent_evidence_agreement_count,fusion_verdict_agreement_count,ood_signature_agreement_count,blocked_field_violation_count
+in_domain_benign,100,0,100,100,100,100,0
+in_domain_malicious,100,0,100,100,100,100,0
+ood_warning_or_hard,100,0,100,100,100,100,0
+tls_capability_example,2,2,2,2,2,2,0

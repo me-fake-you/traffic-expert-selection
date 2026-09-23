@@ -1,0 +1,16 @@
+policy,target_budget,rows,second_calls,effective_budget,macro_f1,malicious_recall,false_positive_rate,tn,fp,fn,tp,corrected_C,introduced_D,net_C_minus_D,first_only_macro_f1,diagnostic_scope
+first_only,1.1,4000,0,1.0,0.9997499999843751,0.9995,0.0,2000,0,1,1999,0,0,0,0.9997499999843751,fold0 selection development; fixed equal average after acquisition; no latency claim
+all_average,1.1,4000,4000,2.0,0.9997499999843751,0.9995,0.0,2000,0,1,1999,0,0,0,0.9997499999843751,fold0 selection development; fixed equal average after acquisition; no latency claim
+confidence_budget_gate,1.1,4000,400,1.1,0.9997499999843751,0.9995,0.0,2000,0,1,1999,0,0,0,0.9997499999843751,fold0 selection development; fixed equal average after acquisition; no latency claim
+hash_random,1.1,4000,400,1.1,0.9997499999843751,0.9995,0.0,2000,0,1,1999,0,0,0,0.9997499999843751,fold0 selection development; fixed equal average after acquisition; no latency claim
+predicted_delta,1.1,4000,400,1.1,0.9997499999843751,0.9995,0.0,2000,0,1,1999,0,0,0,0.9997499999843751,fold0 selection development; fixed equal average after acquisition; no latency claim
+first_only,1.25,4000,0,1.0,0.9997499999843751,0.9995,0.0,2000,0,1,1999,0,0,0,0.9997499999843751,fold0 selection development; fixed equal average after acquisition; no latency claim
+all_average,1.25,4000,4000,2.0,0.9997499999843751,0.9995,0.0,2000,0,1,1999,0,0,0,0.9997499999843751,fold0 selection development; fixed equal average after acquisition; no latency claim
+confidence_budget_gate,1.25,4000,1000,1.25,0.9997499999843751,0.9995,0.0,2000,0,1,1999,0,0,0,0.9997499999843751,fold0 selection development; fixed equal average after acquisition; no latency claim
+hash_random,1.25,4000,1000,1.25,0.9997499999843751,0.9995,0.0,2000,0,1,1999,0,0,0,0.9997499999843751,fold0 selection development; fixed equal average after acquisition; no latency claim
+predicted_delta,1.25,4000,1000,1.25,0.9997499999843751,0.9995,0.0,2000,0,1,1999,0,0,0,0.9997499999843751,fold0 selection development; fixed equal average after acquisition; no latency claim
+first_only,1.5,4000,0,1.0,0.9997499999843751,0.9995,0.0,2000,0,1,1999,0,0,0,0.9997499999843751,fold0 selection development; fixed equal average after acquisition; no latency claim
+all_average,1.5,4000,4000,2.0,0.9997499999843751,0.9995,0.0,2000,0,1,1999,0,0,0,0.9997499999843751,fold0 selection development; fixed equal average after acquisition; no latency claim
+confidence_budget_gate,1.5,4000,2000,1.5,0.9997499999843751,0.9995,0.0,2000,0,1,1999,0,0,0,0.9997499999843751,fold0 selection development; fixed equal average after acquisition; no latency claim
+hash_random,1.5,4000,2000,1.5,0.9997499999843751,0.9995,0.0,2000,0,1,1999,0,0,0,0.9997499999843751,fold0 selection development; fixed equal average after acquisition; no latency claim
+predicted_delta,1.5,4000,2000,1.5,0.9997499999843751,0.9995,0.0,2000,0,1,1999,0,0,0,0.9997499999843751,fold0 selection development; fixed equal average after acquisition; no latency claim

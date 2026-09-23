@@ -1,0 +1,26 @@
+{
+  "audit_completion": 1.0,
+  "blocked_field_violation": 0,
+  "expected_runtime_hash": "c8d87e022b55ec30ffa98a51e021985720becffe13a8083887aaa91421773a59",
+  "fake_metric_count": 0,
+  "fusion_ownership_violation": 0,
+  "illegal_verdict_execution_count": 0,
+  "missing_artifacts": [],
+  "no_new_detector_required_for_existing_gaps": true,
+  "ood_override_count": 0,
+  "promoted_runtime_created": false,
+  "runtime_hash": "c8d87e022b55ec30ffa98a51e021985720becffe13a8083887aaa91421773a59",
+  "runtime_safe_v3_0_remains_default": true,
+  "status": "ready_for_thesis_final_evidence_v21",
+  "status_checks": {
+    "cfids_official_code_available": true,
+    "live_routing_accepted": true,
+    "n_baiot_positive_frozen": true,
+    "ood_supervised_available": true,
+    "runtime_hash_matches_frozen_default": true,
+    "tls_fresh_completed": true,
+    "tls_independent_completed": true,
+    "ztafl_official_code_available": true
+  },
+  "test_or_acceptance_used_for_selection": false
+}

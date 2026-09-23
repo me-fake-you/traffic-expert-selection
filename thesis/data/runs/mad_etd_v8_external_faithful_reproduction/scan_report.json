@@ -1,0 +1,11 @@
+{
+  "candidate_count": 1,
+  "commit_hash_recorded": true,
+  "experiment": "mad_etd_v8_external_faithful_reproduction",
+  "fake_metric_count": 0,
+  "local_checkout_count": 1,
+  "official_code_available": true,
+  "schema_version": "1.0",
+  "status": "scanned",
+  "target_repo": "INL-Laboratory/Continual-Federated-IDS"
+}

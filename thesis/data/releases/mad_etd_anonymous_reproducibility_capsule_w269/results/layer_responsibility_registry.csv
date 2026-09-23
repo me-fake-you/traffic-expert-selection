@@ -1,0 +1,4 @@
+layer,stage,responsibility,must_not_do,existing_implementation,w266_action
+Registry,declaration,"Declare agent capability, safe feature policy, artifact identity, dataset scope, lifecycle and Fusion eligibility.",execute a plan or emit a final verdict,W85 SpecialistRegistryV1 plus traffic-skill/runtime registries,normalized into a Fusion-admission contract
+PolicyGuard,pre_execution,"Review Planner actions, agent allow-list, capability, duplicate dispatch and budget before execution.",classify traffic or override OOD,src/mad_etd/coordinator.py::PolicyGuard,reused without semantic modification
+AdmissionGate,pre_fusion,"Fail-closed validation of AgentEvidenceV2 identity, hashes, capability, freshness, safety flags, source and schema.",call Fusion or own verdict/confidence/uncertainty,W85 EvidenceAdmissionGateV1 prototype,"formal common gate adds replay/freshness, advisory-source, safety-flag and illegal-output controls"

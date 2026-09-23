@@ -1,0 +1,25 @@
+{
+  "status": "completed_posthoc_development_diagnostic",
+  "record_count": 20000,
+  "fold_records_overlap": true,
+  "independent_sample_count_claimed": false,
+  "oracle_is_scorer_only": true,
+  "fresh_test": false,
+  "live_inference": false,
+  "at_budget_1_1_total_overlapping_records": {
+    "confidence": {
+      "C": 73,
+      "D": 4,
+      "net": 69
+    },
+    "evaluator_oracle": {
+      "C": 73,
+      "D": 0,
+      "net": 73
+    }
+  },
+  "headroom_net_errors_total": 4,
+  "source_sha256": "51fc605d97336e90586ea56cc061f1d9ee2411f959129e3ca3bd6d78204d2c88",
+  "script_sha256": "4a946c264efd4a92cab9454d162b14ad2759fab754ccae2d13db14b624afe36e",
+  "interpretation": "Oracle is an upper bound on this fixed pair of experts and this exposed development cohort, not an upper bound on new data or other experts."
+}

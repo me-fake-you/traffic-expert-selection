@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "experiment": "future_framework_ablation",
+  "metrics_scope": "routing, audit, conflict, latency, and verdict invariance; not a new classifier training experiment",
+  "modes": {
+    "baseline": {
+      "sample_count": 100,
+      "verdict_rates": {
+        "benign": 0.0,
+        "malicious": 0.0,
+        "suspicious": 0.0,
+        "unknown": 1.0
+      },
+      "average_agent_calls": 2.0,
+      "average_latency_ms": 20.123378001735546,
+      "verdict_invariance_rate": 1.0,
+      "memory_match_rate": 0.0,
+      "deliberation_trigger_rate": 0.0,
+      "compliance_failure_rate": 0.0,
+      "audit_finding_count": 0,
+      "coordinator_fallback_count": 0,
+      "feature_flags": {
+        "schema_version": "1.0",
+        "memory": false,
+        "planner_executor": false,
+        "deliberation": false,
+        "reflection": false,
+        "audit_critic": false,
+        "learning_queue": false,
+        "shadow_mode": true
+      }
+    },
+    "memory_shadow": {
+      "sample_count": 100,
+      "verdict_rates": {
+        "benign": 0.0,
+        "malicious": 0.0,
+        "suspicious": 0.0,
+        "unknown": 1.0
+      },
+      "average_agent_calls": 2.0,
+      "average_latency_ms": 19.2173620001995,
+      "verdict_invariance_rate": 1.0,
+      "memory_match_rate": 0.0,
+      "deliberation_trigger_rate": 0.0,
+      "compliance_failure_rate": 0.0,
+      "audit_finding_count": 0,
+      "coordinator_fallback_count": 0,
+      "feature_flags": {
+        "schema_version": "1.0",
+        "memory": true,
+        "planner_executor": false,
+        "deliberation": false,
+        "reflection": false,
+        "audit_critic": false,
+        "learning_queue": false,
+        "shadow_mode": true
+      }
+    },
+    "planner_executor": {
+      "sample_count": 100,
+      "verdict_rates": {
+        "benign": 0.0,
+        "malicious": 0.0,
+        "suspicious": 0.0,
+        "unknown": 1.0
+      },
+      "average_agent_calls": 2.0,
+      "average_latency_ms": 18.762920000299346,
+      "verdict_invariance_rate": 1.0,
+      "memory_match_rate": 0.0,
+      "deliberation_trigger_rate": 0.0,
+      "compliance_failure_rate": 0.0,
+      "audit_finding_count": 0,
+      "coordinator_fallback_count": 0,
+      "feature_flags": {
+        "schema_version": "1.0",
+        "memory": false,
+        "planner_executor": true,
+        "deliberation": false,
+        "reflection": false,
+        "audit_critic": false,
+        "learning_queue": false,
+        "shadow_mode": true
+      }
+    },
+    "deliberation_shadow": {
+      "sample_count": 100,
+      "verdict_rates": {
+        "benign": 0.0,
+        "malicious": 0.0,
+        "suspicious": 0.0,
+        "unknown": 1.0
+      },
+      "average_agent_calls": 2.0,
+      "average_latency_ms": 18.167046000889968,
+      "verdict_invariance_rate": 1.0,
+      "memory_match_rate": 0.0,
+      "deliberation_trigger_rate": 0.0,
+      "compliance_failure_rate": 0.0,
+      "audit_finding_count": 0,
+      "coordinator_fallback_count": 0,
+      "feature_flags": {
+        "schema_version": "1.0",
+        "memory": false,
+        "planner_executor": false,
+        "deliberation": true,
+        "reflection": false,
+        "audit_critic": false,
+        "learning_queue": false,
+        "shadow_mode": true
+      }
+    },
+    "reflection_critic": {
+      "sample_count": 100,
+      "verdict_rates": {
+        "benign": 0.0,
+        "malicious": 0.0,
+        "suspicious": 0.0,
+        "unknown": 1.0
+      },
+      "average_agent_calls": 2.0,
+      "average_latency_ms": 18.884206999500748,
+      "verdict_invariance_rate": 1.0,
+      "memory_match_rate": 0.0,
+      "deliberation_trigger_rate": 0.0,
+      "compliance_failure_rate": 0.0,
+      "audit_finding_count": 0,
+      "coordinator_fallback_count": 0,
+      "feature_flags": {
+        "schema_version": "1.0",
+        "memory": false,
+        "planner_executor": false,
+        "deliberation": false,
+        "reflection": true,
+        "audit_critic": true,
+        "learning_queue": false,
+        "shadow_mode": true
+      }
+    },
+    "full_shadow": {
+      "sample_count": 100,
+      "verdict_rates": {
+        "benign": 0.0,
+        "malicious": 0.0,
+        "suspicious": 0.0,
+        "unknown": 1.0
+      },
+      "average_agent_calls": 2.0,
+      "average_latency_ms": 19.358409999113064,
+      "verdict_invariance_rate": 1.0,
+      "memory_match_rate": 0.0,
+      "deliberation_trigger_rate": 0.0,
+      "compliance_failure_rate": 0.0,
+      "audit_finding_count": 0,
+      "coordinator_fallback_count": 0,
+      "feature_flags": {
+        "schema_version": "1.0",
+        "memory": true,
+        "planner_executor": true,
+        "deliberation": true,
+        "reflection": true,
+        "audit_critic": true,
+        "learning_queue": false,
+        "shadow_mode": true
+      }
+    },
+    "full_active": {
+      "sample_count": 100,
+      "verdict_rates": {
+        "benign": 0.0,
+        "malicious": 0.0,
+        "suspicious": 0.0,
+        "unknown": 1.0
+      },
+      "average_agent_calls": 2.0,
+      "average_latency_ms": 18.35686499980511,
+      "verdict_invariance_rate": 1.0,
+      "memory_match_rate": 0.0,
+      "deliberation_trigger_rate": 0.0,
+      "compliance_failure_rate": 0.0,
+      "audit_finding_count": 0,
+      "coordinator_fallback_count": 0,
+      "feature_flags": {
+        "schema_version": "1.0",
+        "memory": true,
+        "planner_executor": true,
+        "deliberation": true,
+        "reflection": true,
+        "audit_critic": true,
+        "learning_queue": false,
+        "shadow_mode": false
+      }
+    }
+  },
+  "boundaries": {
+    "memory_is_agent_evidence": false,
+    "llm_is_classifier": false,
+    "reflection_modifies_current_verdict": false,
+    "critic_outputs_labels": false,
+    "automatic_retraining": false
+  }
+}

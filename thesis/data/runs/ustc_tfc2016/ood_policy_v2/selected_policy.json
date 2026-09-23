@@ -1,0 +1,32 @@
+{
+  "schema_version": "2.0",
+  "policy_name": "ood_policy_v2",
+  "created_at": "2026-06-19T11:34:44.228381+00:00",
+  "seed": 42,
+  "combiner": {
+    "name": "min",
+    "type": "rule",
+    "complexity": 0
+  },
+  "warning_percentile": 0.99,
+  "hard_percentile": 0.999,
+  "warning_threshold": 0.9990737953550837,
+  "hard_threshold": 0.9990969504712066,
+  "selection_metrics": {
+    "macro_f1": 0.9771747232241315,
+    "coverage": 0.7846824133747223,
+    "selective_error_rate": 0.02275981308598888,
+    "benign_false_positive_rate": 0.024608811542197368,
+    "benign_coverage": 0.7667777817218423,
+    "malicious_coverage": 0.8017681783328868,
+    "minimum_class_coverage": 0.7667777817218423,
+    "ood_auroc": 0.5146176899317768
+  },
+  "source_fold_count": 10,
+  "experiment_manifest_sha256": "8b856266e97c1a14fbe3f80af0489a8b662d37bbea2c841ebdb30da9139e062c",
+  "external_dataset_used_for_training_or_thresholds": false,
+  "binary_classification_labels_used_by_logistic_combiner": false,
+  "monotonic_reject_only": true,
+  "rag_enabled": false,
+  "policy_sha256": "d6ce019fb72e5a00cbdfaacf81230ef5c8fd16a44558c00e1c0af7bf11e81c20"
+}

@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "experiment": "mad_etd_fiveg_nidd_rsrat_confirmation_v1",
+  "protocol_status": "ready_to_freeze_before_rsrat_evaluation",
+  "claim_scope": "Prospective method-locked RSRA-T confirmation on a new workload with attack-type-held-out evaluation; not analyst-blind because 5G-NIDD labels were previously opened during the X-MAG reproducibility audit.",
+  "dataset": {
+    "name": "5G-NIDD",
+    "version": "Fairdata record 10.23729/e80ac9df-d9fb-47e7-8d0d-01384a415361",
+    "license": "CC BY 4.0",
+    "path": "data/raw/5g_nidd/fairdata_v1/Encoded.csv",
+    "bytes": 489226785,
+    "sha256": "7c238e2d5dabbc1afcd01c50db91372d6f6808f7572bb92baeb2df03a18af90c",
+    "label_column": "Label",
+    "group_column": "Attack Type",
+    "positive_label": "Malicious"
+  },
+  "split": {
+    "seed": 20260901,
+    "hash_modulus": 10000,
+    "train_range": [0, 7000],
+    "calibration_range": [7000, 8500],
+    "evaluation_benign_range": [8500, 10000],
+    "training_attack_types": [
+      "HTTPFlood",
+      "SYNFlood",
+      "SYNScan",
+      "SlowrateDoS",
+      "UDPFlood"
+    ],
+    "evaluation_attack_types": [
+      "ICMPFlood",
+      "TCPConnectScan",
+      "UDPScan"
+    ],
+    "caps": {
+      "train_benign": 30000,
+      "train_per_attack": 15000,
+      "calibration_benign": 10000,
+      "calibration_per_attack": 5000,
+      "evaluation_benign": 15000,
+      "evaluation_per_attack": 10000
+    }
+  },
+  "feature_views": {
+    "volume": [
+      "Dur", "RunTime", "Mean", "Sum", "Min", "Max", "TotPkts",
+      "SrcPkts", "DstPkts", "TotBytes", "SrcBytes", "DstBytes",
+      "sMeanPktSz", "dMeanPktSz"
+    ],
+    "rate_loss": [
+      "Load", "SrcLoad", "DstLoad", "Loss", "SrcLoss", "DstLoss",
+      "pLoss", "SrcGap", "DstGap", "Rate", "SrcRate", "DstRate"
+    ],
+    "tcp_path": [
+      "sTos", "dTos", "sTtl", "dTtl", "sHops", "dHops", "SrcWin",
+      "DstWin", "TcpRtt", "SynAck", "AckDat"
+    ],
+    "protocol_flags": [
+      "arp", "icmp", "ipv6-icmp", "llc", "lldp", "sctp", "tcp",
+      "udp", "ACC", "CON", "ECO", "FIN", "INT", "NRS", "REQ",
+      "RSP", "RST", "TST", "URP"
+    ]
+  },
+  "model": {
+    "family": "sklearn.ensemble.ExtraTreesClassifier",
+    "n_estimators": 160,
+    "max_depth": 18,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "class_weight": "balanced",
+    "n_jobs": -1,
+    "random_seed": 20260902,
+    "missing_value_policy": "training-median imputation per view"
+  },
+  "calibration": {
+    "weight_score": "macro_f1_times_one_minus_brier",
+    "fusion_threshold_grid": [0.05, 0.95, 0.01],
+    "selection_partition": "calibration only",
+    "evaluation_labels_used_for_model_weight_or_threshold_selection": false
+  },
+  "attack": {
+    "compromise_count": 1,
+    "source_positions": "all four feature-view specialists",
+    "type": "label-aware extreme-wrong post-inference probability replacement",
+    "fractions": [0.25, 1.0],
+    "replacement_probabilities": {"malicious": 0.001, "benign": 0.999},
+    "selection_seed": 20260903
+  },
+  "replay": {
+    "audit_rates": [0.0, 0.001, 0.005],
+    "secret_schedule_repeats": 100,
+    "schedule_seed": 20260904,
+    "tolerance": 1e-12,
+    "recovery_strategies": ["no_defense", "peer_removal", "trusted_takeover"]
+  },
+  "acceptance_gates": {
+    "clean_macro_f1_minimum": 0.70,
+    "full_stream_detection_rate_at_0_005_minimum": 0.95,
+    "trusted_takeover_mean_harmful_flip_at_0_005_maximum": 0.01,
+    "trusted_takeover_vs_no_defense_bootstrap_upper_below_zero": true,
+    "post_detection_clean_fusion_max_abs_difference_maximum": 1e-12,
+    "protocol_and_source_hashes_unchanged": true
+  },
+  "output_dir": "data/runs/mad_etd_fiveg_nidd_rsrat_confirmation_v1",
+  "forbidden_claims": [
+    "The experiment is analyst-blind or a first opening of 5G-NIDD labels.",
+    "The attack-type-held-out split proves universal zero-day detection.",
+    "A trusted copy protects against a compromised coordinator, feature store, replay runtime, or model artifact.",
+    "Sparse replay prevents every harmful decision before detection."
+  ]
+}

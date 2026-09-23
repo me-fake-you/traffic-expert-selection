@@ -1,0 +1,49 @@
+{
+  "status": "COMPLETED_DEVELOPMENT_BASELINE_COMPARISON",
+  "models_trained": 5,
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "source_y_array_read": false,
+  "evaluation_scored": false,
+  "selection_rows_per_fold": 4000,
+  "overlapping_folds": true,
+  "fresh_blind_test": false,
+  "wall_seconds": 8.716061000000082,
+  "descriptive_mean": [
+    {
+      "method": "stats",
+      "macro_f1": 0.8963074545209837,
+      "malicious_recall": 0.9921000000000001,
+      "false_positive_rate": 0.1654
+    },
+    {
+      "method": "temporal",
+      "macro_f1": 0.8970831635781071,
+      "malicious_recall": 0.9916,
+      "false_positive_rate": 0.1654
+    },
+    {
+      "method": "probability_average",
+      "macro_f1": 0.8995079524663854,
+      "malicious_recall": 0.9984999999999999,
+      "false_positive_rate": 0.1654
+    },
+    {
+      "method": "oof_weighted_average",
+      "macro_f1": 0.8970831635781071,
+      "malicious_recall": 0.9916,
+      "false_positive_rate": 0.1654
+    },
+    {
+      "method": "feature_concatenation",
+      "macro_f1": 0.8969331581311465,
+      "malicious_recall": 0.9913000000000001,
+      "false_positive_rate": 0.1654
+    }
+  ]
+}

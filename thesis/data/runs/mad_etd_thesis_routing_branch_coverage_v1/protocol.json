@@ -1,0 +1,14 @@
+{
+  "experiment_type": "deterministic code-path coverage, not a performance benchmark",
+  "case_state_source": "six preregistered deterministic states",
+  "labels_used": false,
+  "models_trained": false,
+  "runtime_modified": false,
+  "components_exercised": [
+    "RuleCoordinator",
+    "PolicyGuard",
+    "FusionAgent",
+    "AuditLogger"
+  ],
+  "scenario_count": 6
+}

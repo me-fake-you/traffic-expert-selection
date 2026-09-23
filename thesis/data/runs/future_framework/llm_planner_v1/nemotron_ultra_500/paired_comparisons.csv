@@ -1,0 +1,7 @@
+dataset,comparison,sample_count,verdict_agreement_rate,agent_calls_delta,latency_p50_delta_ms,fallback_rate_delta
+cesnet,nvidia_planner_vs_rule_planner,150,1.0,1.0,72780.63184997882,0.3212669683257919
+cipherspectrum,nvidia_planner_vs_rule_planner,150,1.0,0.006666666666666667,14777.11785005522,0.2966666666666667
+ustc,nvidia_planner_vs_rule_planner,200,1.0,0.83,49350.09205000824,0.18346774193548387
+cesnet,fallback_vs_rule_planner,150,1.0,0.0,25.720100005855784,1.0
+cipherspectrum,fallback_vs_rule_planner,150,1.0,0.0,25.701100064907223,1.0
+ustc,fallback_vs_rule_planner,200,1.0,0.0,11.067150044254959,1.0

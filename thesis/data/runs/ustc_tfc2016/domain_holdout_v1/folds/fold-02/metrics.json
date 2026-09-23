@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "fold": 2,
+  "holdout": {
+    "benign_application": "Weibo",
+    "malware_family": "Tinba"
+  },
+  "systems": {
+    "full": {
+      "schema_version": "1.0",
+      "mode": "full",
+      "metrics_status": "computed",
+      "sample_count": 50589,
+      "labeled_sample_count": 50589,
+      "accuracy": 0.9998240830328086,
+      "macro_f1": 0.9998233406514341,
+      "precision": 1.0,
+      "recall": 0.999623848034606,
+      "PR_AUC": 0.9997040054276759,
+      "Brier_score": 0.00010315562071478605,
+      "ECE": 0.0004447491765929414,
+      "coverage": 0.4494652987803673,
+      "unknown_rate": 0.5504556326474135,
+      "suspicious_rate": 7.906857221925715e-05,
+      "average_agent_calls": 2.210203799244895,
+      "average_latency_ms": 7.2123781573377475,
+      "confusion_on_covered": {
+        "tp": 10630,
+        "fp": 0,
+        "tn": 12104,
+        "fn": 4
+      }
+    },
+    "stats_only": {
+      "schema_version": "1.0",
+      "mode": "stats_only",
+      "metrics_status": "computed",
+      "sample_count": 50589,
+      "labeled_sample_count": 50589,
+      "accuracy": 0.9998240830328086,
+      "macro_f1": 0.9998233406514341,
+      "precision": 1.0,
+      "recall": 0.999623848034606,
+      "PR_AUC": 0.9999935539643355,
+      "Brier_score": 0.00010315560522133388,
+      "ECE": 0.000445154154287643,
+      "coverage": 0.4494652987803673,
+      "unknown_rate": 0.5504556326474135,
+      "suspicious_rate": 7.906857221925715e-05,
+      "average_agent_calls": 1.0,
+      "average_latency_ms": 0.0,
+      "confusion_on_covered": {
+        "tp": 10630,
+        "fp": 0,
+        "tn": 12104,
+        "fn": 4
+      }
+    },
+    "temporal_only": {
+      "schema_version": "1.0",
+      "mode": "temporal_only",
+      "metrics_status": "computed",
+      "sample_count": 50589,
+      "labeled_sample_count": 50589,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "PR_AUC": 1.0,
+      "Brier_score": 0.054404124712875535,
+      "ECE": 0.09570765490167343,
+      "coverage": 0.23190812231908123,
+      "unknown_rate": 0.7680128091086995,
+      "suspicious_rate": 7.906857221925715e-05,
+      "average_agent_calls": 1.0,
+      "average_latency_ms": 0.0,
+      "confusion_on_covered": {
+        "tp": 288,
+        "fp": 0,
+        "tn": 11444,
+        "fn": 0
+      }
+    },
+    "no_reject": {
+      "schema_version": "1.0",
+      "mode": "no_reject",
+      "metrics_status": "computed",
+      "sample_count": 50589,
+      "labeled_sample_count": 50589,
+      "accuracy": 0.9999209314277807,
+      "macro_f1": 0.9998809502820571,
+      "precision": 1.0,
+      "recall": 0.9996239894717052,
+      "PR_AUC": 0.9997040054276759,
+      "Brier_score": 0.00010315562071478605,
+      "ECE": 0.0004447491765929414,
+      "coverage": 1.0,
+      "unknown_rate": 0.0,
+      "suspicious_rate": 0.0,
+      "average_agent_calls": 2.210203799244895,
+      "average_latency_ms": 0.0,
+      "confusion_on_covered": {
+        "tp": 10634,
+        "fp": 0,
+        "tn": 39951,
+        "fn": 4
+      }
+    }
+  },
+  "temporal_abstain_rate": 0.2176164778904505,
+  "audit_summary": {
+    "schema_version": "1.0",
+    "sample_count": 50589,
+    "completed_chain_count": 50589,
+    "audit_chain_completion_rate": 1.0,
+    "blocked_field_violation_count": 0,
+    "policy_adjustment_count": 0,
+    "event_counts": {
+      "FLOW_VALIDATED": 50589,
+      "FIELD_POLICY_APPLIED": 50589,
+      "RELIABILITY_ASSESSED": 50589,
+      "ROUTING_DECISION": 111812,
+      "POLICY_GUARD_EVALUATION": 111812,
+      "AGENT_EVIDENCE": 111812,
+      "INTERIM_FUSION": 61223,
+      "FINAL_FUSION": 50589,
+      "REPORT_GENERATED": 50589
+    },
+    "actor_counts": {
+      "FeatureCapture": 50589,
+      "FieldAuditAgent": 50589,
+      "PseudoFeatureGuardAgent": 50589,
+      "CoordinatorAgent": 111812,
+      "PolicyGuard": 111812,
+      "StatsDetectorAgent": 50589,
+      "TemporalBehaviorAgent": 50589,
+      "FusionAgent": 111812,
+      "ReporterAgent": 50589,
+      "FamilyAttributionAgent": 10634
+    }
+  }
+}

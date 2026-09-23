@@ -12,8 +12,12 @@ venv/
 *.pkl
 *.npz
 *.csv.gz
-data/
+/data/
 checkpoints/
-runs/
+/runs/
+thesis/runs/
+.pytest_cache/
+.cache/
+*.egg-info/
 private/
 .DS_Store

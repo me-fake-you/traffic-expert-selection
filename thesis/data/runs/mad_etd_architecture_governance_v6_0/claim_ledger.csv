@@ -1,0 +1,14 @@
+claim_id,claim_text,claim_scope,supporting_artifact,safe_to_claim,forbidden_overclaim
+field_audit_input_governance,FieldAudit / Input Governance prevents shortcut-prone fields from entering DetectorInput.,all runtimes,agent_evidence_v2_schema.json;detector_registry.json,True,
+capability_aware_routing,PolicyGuard and capability-aware routing separate supported from unsupported evidence calls.,runtime_safe_v3_0,detector_registry.json;promotion_gate_registry.json,True,
+fusion_final_owner,FusionAgent is the sole final verdict owner.,all promoted/default runtime claims,runtime_profile_registry.json;promotion_gate_registry.json,True,
+negative_results_first_class,Negative and blocked results are retained as audit artifacts.,v5/v6 evidence governance,negative_result_ledger.json,True,
+nfiot_dataset_specific_positive,The only accepted performance-class positive result is the NF-IoT dataset-specific optional calibration/runtime.,NF-BoT-IoT/NF-ToN-IoT only,data/runs/mad_etd_nf_iot_runtime_v5_12/acceptance_report.json,True,
+external_outperforms_all,,global,,False,MAD-ETD outperforms all external multi-agent IDS papers.
+faithful_external_completed,,external baselines,,False,External multi-agent faithful reproduction completed.
+cicids_calibration_accepted,,CICIDS2017,,False,CICIDS2017 calibration accepted.
+pcap_supervised_completed,,CICIDS2017 PCAP,,False,PCAP packet-sequence supervised detector completed.
+boosting_promoted,,v5.8,,False,Boosting detector promoted.
+runtime_replaced,,runtime,,False,runtime_safe_v3_0 replaced.
+nfiot_generalized,,all datasets,,False,NF-IoT calibration applies to all datasets.
+adapted_equals_faithful,,external baselines,,False,Adapted baseline equals original paper reproduction.

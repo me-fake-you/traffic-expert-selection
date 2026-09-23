@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "mode": "rule_coordinator",
+  "metrics_status": "computed",
+  "classification_metric_scope": "covered_labeled_samples",
+  "ranking_metric_scope": "all_labeled_samples",
+  "sample_count": 93822,
+  "labeled_sample_count": 93822,
+  "accuracy": 0.9998851875543309,
+  "macro_f1": 0.9998828368491408,
+  "precision": 1.0,
+  "recall": 0.9997988852496696,
+  "PR_AUC": 0.999981733050519,
+  "Brier_score": 0.0016461270007552828,
+  "ECE": 0.008502086885494822,
+  "coverage": 0.6498369252414146,
+  "unknown_rate": 0.20241521178401653,
+  "suspicious_rate": 0.14774786297456888,
+  "average_agent_calls": 2.519505020144529,
+  "average_latency_ms": 23.100973526541853,
+  "llm_call_count": 0,
+  "confusion_on_covered": {
+    "tp": 34799,
+    "fp": 0,
+    "tn": 26163,
+    "fn": 7
+  }
+}

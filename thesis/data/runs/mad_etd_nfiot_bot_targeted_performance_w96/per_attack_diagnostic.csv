@@ -1,0 +1,5 @@
+attack,row_count,reference_recall,candidate_recall
+Benign,2067,0.0,0.0
+DDoS,1012,0.9851778656126482,0.9851778656126482
+DoS,903,1.0,1.0
+Reconnaissance,121,0.9421487603305785,0.9834710743801653

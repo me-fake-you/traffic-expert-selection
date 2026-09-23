@@ -1,0 +1,60 @@
+{
+  "status": "LOCKED_FIT_BEFORE_EXECUTION",
+  "version": "v62",
+  "outer_fold": 0,
+  "role": "fit_only_train_groups",
+  "train_groups": [
+    "benign:SMB",
+    "benign:BitTorrent",
+    "benign:Skype",
+    "benign:FTP",
+    "benign:Facetime",
+    "benign:Gmail",
+    "malware:Nsis-ay",
+    "malware:Miuref",
+    "malware:Geodo",
+    "malware:Cridex",
+    "malware:Shifu",
+    "malware:Neris"
+  ],
+  "train_capture_count": 13,
+  "prefix_packets": [
+    8,
+    16
+  ],
+  "frame_cap_per_capture": 20000,
+  "hard_cap": [
+    "tshark -c 20000",
+    "bounded_scan.bounded_lines"
+  ],
+  "model": "sklearn HistGradientBoostingClassifier",
+  "model_params": {
+    "max_iter": 100,
+    "max_leaf_nodes": 7,
+    "l2_regularization": 2.0,
+    "random_state": 20260923,
+    "early_stopping": false
+  },
+  "feature_scope": {
+    "stats": "PrefixSnapshot.stats_record then frozen _stats_vector; first P only",
+    "temporal": "PrefixSnapshot.sequence_record then frozen _sequence_vector; first P only",
+    "dimensions": {
+      "stats": 8,
+      "temporal": 40
+    },
+    "labels": "group metadata only for y; never feature input",
+    "future_access": false,
+    "filename_feature": false
+  },
+  "input_hashes": {
+    "source_manifest": "ECCA65DAB2900F839114472F863292DBD3834A34BE8E05DC997BD201180D353A",
+    "split_manifest": "E195A1BB8D5F0BE986D67D19FB95D3B4048581FC91073FBD3889E4D8A3BE7CBA",
+    "raw_all": "2816E63DFAD98F23F6AF0822D6F7C6A463B4F1525FE7ADF15C2C2BEC82DD95B9",
+    "feature_source": "1B0637DBC59746F53DC22127754585AC59B0F6B3986FC47B25CC18EE485B1C7E",
+    "fit_script": "3F2E1C5DD426FD2AE0E4FC3D21613EC9E96F72D46ACE2BFB138D8C5087B91ED9",
+    "prefix_runtime_script": "EAFE127DE346D144DEB3D773F9B73AE27EA78585C54369A36D4EA4B8005A9CFC"
+  },
+  "evaluation_read": false,
+  "network_used": false,
+  "new_labels": false
+}

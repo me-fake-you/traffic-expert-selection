@@ -1,0 +1,6 @@
+external_system,metric,external_value,mad_etd_value,delta_percentage_points,comparison_group,visual_mark,delta_error_bar_allowed,delta_ci95_lower_percentage_points,delta_ci95_upper_percentage_points,local_metric_ci_available_separately,interval_warning
+Continual-Federated-IDS,macro_f1,0.994594661478513,0.9983573719626884,0.37627104841753134,A_official_code_participating_local_adapted,filled_circle,True,0.27399972478382995,0.5016326073251437,False,paired delta CI
+ZTA-FL,macro_f1,0.7599762311596887,0.9043006310430965,14.432439988340784,A_official_code_participating_local_adapted,filled_circle,True,2.586119445202395,33.59390434628645,False,paired delta CI
+MARL-NIDS,weighted_f1,0.99,0.9972882769020581,0.7288276902058133,B_paper_reported_cross_protocol_reference,open_diamond,False,,,True,point-only delta; interval belongs to local MAD-ETD metric
+MA-IDS,macro_f1,0.8975,0.9627557537612672,6.525575376126724,B_paper_reported_cross_protocol_reference,open_diamond,False,,,True,point-only delta; interval belongs to local MAD-ETD metric
+MAS-LSTM,accuracy,0.9522,0.9590929192668665,0.6892919266866415,B_paper_reported_cross_protocol_reference,open_diamond,False,,,True,point-only delta; interval belongs to local MAD-ETD metric

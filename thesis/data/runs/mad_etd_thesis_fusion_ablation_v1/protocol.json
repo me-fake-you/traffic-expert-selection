@@ -1,0 +1,19 @@
+{
+  "experiment": "mad_etd_thesis_fusion_ablation_v1",
+  "dataset": "USTC-TFC2016 validation",
+  "sample_count": 6000,
+  "selection_manifest": ".\\data\\runs\\mad_etd_baseline_comparison\\selection_manifest.json",
+  "selection_manifest_sha256": "fa12331770631ffe4d80f8b085c8b246846e34e9cc193d8e52afe3816a380948",
+  "runtime_reference": "runtime_safe_v3_0",
+  "model_retraining": false,
+  "test_or_external_selection": false,
+  "configs": [
+    "probability_average",
+    "yager_no_reliability_ood_off",
+    "reliability_yager_ood_off",
+    "ood_yager_no_reliability",
+    "full_fusion"
+  ],
+  "probability_average_definition": "arithmetic mean of usable OOD-off local benign/malicious supports, followed by binary argmax",
+  "matched_coverage_definition": "rank by confidence*(1-uncertainty), accept the same number of samples as full Fusion, break ties by sample_id; labels are not used for ranking"
+}

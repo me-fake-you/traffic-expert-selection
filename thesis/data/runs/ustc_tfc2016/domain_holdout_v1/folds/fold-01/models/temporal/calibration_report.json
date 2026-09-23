@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "agent": "temporal",
+  "candidate_cross_validation": [
+    {
+      "candidate": "hist_small",
+      "family": "hist_gradient_boosting",
+      "folds": [
+        {
+          "PR_AUC": 0.9999937449498397,
+          "macro_f1": 0.9882663282314053
+        },
+        {
+          "PR_AUC": 1.0,
+          "macro_f1": 0.9986994369126321
+        },
+        {
+          "PR_AUC": 0.8708793474634802,
+          "macro_f1": 0.5630044180780215
+        }
+      ],
+      "mean_PR_AUC": 0.9569576974711067,
+      "mean_macro_f1": 0.8499900610740196
+    },
+    {
+      "candidate": "hist_medium",
+      "family": "hist_gradient_boosting",
+      "folds": [
+        {
+          "PR_AUC": 0.9999937321750749,
+          "macro_f1": 0.9882663282314053
+        },
+        {
+          "PR_AUC": 1.0,
+          "macro_f1": 0.9986994369126321
+        },
+        {
+          "PR_AUC": 0.8708793474634802,
+          "macro_f1": 0.5630044180780215
+        }
+      ],
+      "mean_PR_AUC": 0.9569576932128516,
+      "mean_macro_f1": 0.8499900610740196
+    },
+    {
+      "candidate": "logistic_c10",
+      "family": "logistic_regression",
+      "folds": [
+        {
+          "PR_AUC": 0.9868623347774701,
+          "macro_f1": 0.8948886814250712
+        },
+        {
+          "PR_AUC": 0.996343025104218,
+          "macro_f1": 0.9149968062807219
+        },
+        {
+          "PR_AUC": 0.8086608436545214,
+          "macro_f1": 0.5919775693464041
+        }
+      ],
+      "mean_PR_AUC": 0.9306220678454031,
+      "mean_macro_f1": 0.8006210190173991
+    },
+    {
+      "candidate": "logistic_c1",
+      "family": "logistic_regression",
+      "folds": [
+        {
+          "PR_AUC": 0.994568571495351,
+          "macro_f1": 0.9887413867874222
+        },
+        {
+          "PR_AUC": 0.9980587519224455,
+          "macro_f1": 0.8674901981141409
+        },
+        {
+          "PR_AUC": 0.7975752102708618,
+          "macro_f1": 0.568381893388473
+        }
+      ],
+      "mean_PR_AUC": 0.9300675112295528,
+      "mean_macro_f1": 0.8082044927633453
+    },
+    {
+      "candidate": "logistic_c0.1",
+      "family": "logistic_regression",
+      "folds": [
+        {
+          "PR_AUC": 0.9958481936941825,
+          "macro_f1": 0.989106442602917
+        },
+        {
+          "PR_AUC": 0.9936981620854041,
+          "macro_f1": 0.8259783337004794
+        },
+        {
+          "PR_AUC": 0.7350493504156399,
+          "macro_f1": 0.48633610896948104
+        }
+      ],
+      "mean_PR_AUC": 0.9081985687317422,
+      "mean_macro_f1": 0.7671402950909592
+    }
+  ],
+  "calibrated_finalists": [
+    {
+      "candidate": "logistic_c10",
+      "family": "logistic_regression",
+      "PR_AUC": 0.9969246162207605,
+      "Brier_score": 0.03886311266767051,
+      "ECE": 0.04229088530960695
+    },
+    {
+      "candidate": "hist_small",
+      "family": "hist_gradient_boosting",
+      "PR_AUC": 1.0,
+      "Brier_score": 6.405463567467496e-11,
+      "ECE": 6.898915548205331e-06
+    }
+  ],
+  "selected_candidate": "hist_small",
+  "selected_metrics": {
+    "PR_AUC": 1.0,
+    "Brier_score": 6.405463567467496e-11,
+    "ECE": 6.898915548205331e-06
+  },
+  "decision_policy": {
+    "benign_max_probability": 0.05,
+    "malicious_min_probability": 0.55,
+    "coverage": 1.0,
+    "selective_risk": 0.0,
+    "benign_false_positive_rate": 0.0,
+    "malicious_recall": 1.0,
+    "constraints_satisfied": true,
+    "max_selective_risk": 0.1,
+    "max_benign_false_positive_rate": 0.05
+  },
+  "coverage_risk_curve": [
+    {
+      "target_risk": 0.01,
+      "coverage": 1.0,
+      "observed_risk": 0.0,
+      "minimum_confidence_margin": 0.4997994554725713
+    },
+    {
+      "target_risk": 0.05,
+      "coverage": 1.0,
+      "observed_risk": 0.0,
+      "minimum_confidence_margin": 0.4997994554725713
+    },
+    {
+      "target_risk": 0.1,
+      "coverage": 1.0,
+      "observed_risk": 0.0,
+      "minimum_confidence_margin": 0.4997994554725713
+    }
+  ]
+}

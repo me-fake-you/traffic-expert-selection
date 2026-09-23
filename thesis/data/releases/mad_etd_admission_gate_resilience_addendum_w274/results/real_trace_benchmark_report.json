@@ -1,0 +1,21 @@
+{
+  "admitted_count": 12002,
+  "audit_completion": 1.0,
+  "classification_metrics_generated": false,
+  "determinism": 1.0,
+  "evidence_invariance": 1.0,
+  "experiment": "mad_etd_admission_gate_resilience_w271_w275",
+  "fake_metric_count": 0,
+  "full_payload_claimed": false,
+  "ood_invariance": 1.0,
+  "p50_admission_overhead_ms": 0.0189,
+  "p95_admission_overhead_ms": 0.0301,
+  "rejected_count": 0,
+  "request_count": 12002,
+  "schema_version": "1.0",
+  "stage": "w272_executable_real_metadata_admission",
+  "status": "ready_for_mutation_resilience",
+  "throughput_per_second": 47544.74304169891,
+  "valid_default_evidence_admission_rate": 1.0,
+  "verdict_invariance": 1.0
+}

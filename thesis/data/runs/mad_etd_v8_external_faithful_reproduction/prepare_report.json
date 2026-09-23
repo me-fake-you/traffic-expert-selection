@@ -1,0 +1,12 @@
+{
+  "dependency_pass_count": 0,
+  "dependency_probe_completed": true,
+  "entrypoint_probe_completed": true,
+  "experiment": "mad_etd_v8_external_faithful_reproduction",
+  "fake_metric_count": 0,
+  "safe_input_compatible_count": 0,
+  "same_split_compatible_count": 0,
+  "schema_version": "1.0",
+  "status": "prepared",
+  "target_repo": "INL-Laboratory/Continual-Federated-IDS"
+}

@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "mode": "fallback",
+  "status": "completed",
+  "sample_count": 6000,
+  "metrics": {
+    "sample_count": 6000,
+    "coordinator_decision_count": 15104,
+    "valid_plan_rate": null,
+    "policy_guard_rejection_rate": 0.0,
+    "policy_guard_adjustment_rate": 0.0,
+    "fallback_rate": 1.0,
+    "illegal_verdict_attempt_count": 0,
+    "illegal_verdict_execution_count": 0,
+    "blocked_field_access_attempt_count": 0,
+    "average_agent_calls": 2.656,
+    "latency_ms": {
+      "p50": 22.08340002107434,
+      "p95": 28.311709975241683
+    },
+    "api_latency_ms": {
+      "p50": null,
+      "p95": null
+    },
+    "token_usage": null,
+    "api_cost_estimate_usd": 0.0,
+    "pricing_status": "no_real_api_calls",
+    "audit_completion_rate": 1.0,
+    "blocked_field_violation_count": 0,
+    "fusion_ownership_violation_count": 0,
+    "ood_override_count": 0,
+    "classification": {
+      "labeled_count": 2000,
+      "covered_count": 260,
+      "coverage": 0.13,
+      "selective_accuracy": 1.0,
+      "selective_macro_f1": 1.0,
+      "confusion": {
+        "tp": 112,
+        "tn": 148,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  },
+  "datasets": {
+    "cesnet": {
+      "sample_count": 2000,
+      "coordinator_decision_count": 4074,
+      "valid_plan_rate": null,
+      "policy_guard_rejection_rate": 0.0,
+      "policy_guard_adjustment_rate": 0.0,
+      "fallback_rate": 1.0,
+      "illegal_verdict_attempt_count": 0,
+      "illegal_verdict_execution_count": 0,
+      "blocked_field_access_attempt_count": 0,
+      "average_agent_calls": 2.037,
+      "latency_ms": {
+        "p50": 22.554900002432987,
+        "p95": 28.351279988419265
+      },
+      "api_latency_ms": {
+        "p50": null,
+        "p95": null
+      },
+      "token_usage": null,
+      "api_cost_estimate_usd": 0.0,
+      "pricing_status": "no_real_api_calls",
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "fusion_ownership_violation_count": 0,
+      "ood_override_count": 0,
+      "classification": null
+    },
+    "cipherspectrum": {
+      "sample_count": 2000,
+      "coordinator_decision_count": 6000,
+      "valid_plan_rate": null,
+      "policy_guard_rejection_rate": 0.0,
+      "policy_guard_adjustment_rate": 0.0,
+      "fallback_rate": 1.0,
+      "illegal_verdict_attempt_count": 0,
+      "illegal_verdict_execution_count": 0,
+      "blocked_field_access_attempt_count": 0,
+      "average_agent_calls": 3.4155,
+      "latency_ms": {
+        "p50": 23.004650021903217,
+        "p95": 28.639060017303564
+      },
+      "api_latency_ms": {
+        "p50": null,
+        "p95": null
+      },
+      "token_usage": null,
+      "api_cost_estimate_usd": 0.0,
+      "pricing_status": "no_real_api_calls",
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "fusion_ownership_violation_count": 0,
+      "ood_override_count": 0,
+      "classification": null
+    },
+    "ustc": {
+      "sample_count": 2000,
+      "coordinator_decision_count": 5030,
+      "valid_plan_rate": null,
+      "policy_guard_rejection_rate": 0.0,
+      "policy_guard_adjustment_rate": 0.0,
+      "fallback_rate": 1.0,
+      "illegal_verdict_attempt_count": 0,
+      "illegal_verdict_execution_count": 0,
+      "blocked_field_access_attempt_count": 0,
+      "average_agent_calls": 2.5155,
+      "latency_ms": {
+        "p50": 14.321549999294803,
+        "p95": 27.775320017826743
+      },
+      "api_latency_ms": {
+        "p50": null,
+        "p95": null
+      },
+      "token_usage": null,
+      "api_cost_estimate_usd": 0.0,
+      "pricing_status": "no_real_api_calls",
+      "audit_completion_rate": 1.0,
+      "blocked_field_violation_count": 0,
+      "fusion_ownership_violation_count": 0,
+      "ood_override_count": 0,
+      "classification": {
+        "labeled_count": 2000,
+        "covered_count": 260,
+        "coverage": 0.13,
+        "selective_accuracy": 1.0,
+        "selective_macro_f1": 1.0,
+        "confusion": {
+          "tp": 112,
+          "tn": 148,
+          "fp": 0,
+          "fn": 0
+        }
+      }
+    }
+  }
+}

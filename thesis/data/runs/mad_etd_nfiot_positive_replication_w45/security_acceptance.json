@@ -1,0 +1,15 @@
+{
+  "adapted_metrics_mixed": false,
+  "blocked_field_violation": 0,
+  "experiment": "mad_etd_nfiot_positive_replication_w45",
+  "external_paper_metrics_used": false,
+  "fake_metric_count": 0,
+  "fusion_ownership_violation": 0,
+  "illegal_verdict_execution": 0,
+  "ood_override": 0,
+  "runtime_safe_v3_0_hash_after": "60082e76e387913676fd109b0c120bd68b6a2b80035e9083fe52b9d329d58f61",
+  "runtime_safe_v3_0_remains_default": true,
+  "schema_version": "1.0",
+  "status": "passed",
+  "test_or_acceptance_used_for_selection": false
+}

@@ -1,0 +1,2 @@
+seed,sample_count,reference_accuracy,candidate_accuracy,accuracy_delta,reference_macro_f1,candidate_macro_f1,macro_f1_delta,malicious_recall_delta,grouped_ci95_lower,grouped_ci95_upper,worst_group_class_f1_delta,average_evidence_calls,call_reduction_vs_static_two_call,blocked_field_violation,fusion_ownership_violation,acceptance_used_for_seed_selection
+47,10000,0.9131,0.9265,0.013399999999999967,0.9124869104234847,0.9261349522863449,0.013648041862860172,0.0,0.0,0.04667713660124937,0.0,1.0496,0.47519999999999996,0,0,False

@@ -1,0 +1,3 @@
+model,aurc,definition
+hgb,0.00030183050573754337,mean cumulative classification risk when samples are accepted in descending max-class-probability order
+candidate,0.000570250279613704,mean cumulative classification risk when samples are accepted in descending max-class-probability order

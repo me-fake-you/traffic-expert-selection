@@ -1,0 +1,15 @@
+{
+  "python": "3.12.7",
+  "implementation": "CPython",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+  "package_versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.0",
+    "scikit-learn": "1.5.1",
+    "torch": "2.11.0",
+    "pydantic": "2.13.4"
+  },
+  "measurement_scope": "environment snapshot for artifact replay; no claim of container-level bitwise reproducibility"
+}

@@ -1,0 +1,2 @@
+dataset,evidence_role,sample_count,static_request_attempts,capability_aware_request_attempts,static_executed_evidence_calls,capability_aware_executed_evidence_calls,static_unsupported_calls,capability_aware_unsupported_calls,p95_latency_reduction_percent,verdict_agreement,fixed_in_domain_ood_signature_agreement,macro_f1_delta,audit_completion,statistical_ci_available,claim_scope
+Gotham IoT,development_context_not_W324_statistical_lane,6000,3.0,1.0,1.0,1.0,2.0,0.0,13.269917788224106,1.0,1.0,0.0,1.0,False,development context only; W324 supplies statistical support

@@ -1,0 +1,7 @@
+arm,n,extra_calls_simulated,calls_per_case_simulated,errors,corrected,introduced,macro_f1,malicious_recall,tn,fp,fn,tp
+first_only,24,0,1.0,0,0,0,1.0,1.0,12,0,0,12
+all_average,24,24,2.0,0,0,0,1.0,1.0,12,0,0,12
+confidence,24,6,1.25,0,0,0,1.0,1.0,12,0,0,12
+same_card_rule,24,6,1.25,0,0,0,1.0,1.0,12,0,0,12
+hash_random,24,6,1.25,0,0,0,1.0,1.0,12,0,0,12
+hgb_delta,24,6,1.25,0,0,0,1.0,1.0,12,0,0,12

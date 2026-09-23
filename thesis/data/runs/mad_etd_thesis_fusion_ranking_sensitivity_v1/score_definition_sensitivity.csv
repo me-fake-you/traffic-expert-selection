@@ -1,0 +1,6 @@
+config,display_name,primary_benign_n,legacy_benign_n,primary_malicious_n,legacy_malicious_n,primary_selective_error,legacy_selective_error,same_config_set_jaccard
+probability_average,概率平均,1402,1402,0,0,0.0,0.0,1.0
+yager_no_reliability_ood_off,Yager，无可靠性/OOD,1402,1402,0,0,0.0,0.0,1.0
+reliability_yager_ood_off,可靠性+Yager，OOD关闭,982,982,420,420,0.0,0.0,1.0
+ood_yager_no_reliability,OOD+Yager，无可靠性,1024,1027,378,375,0.0,0.0,0.9943100995732574
+full_fusion,完整Fusion,1023,1024,379,378,0.0,0.0,0.9943100995732574

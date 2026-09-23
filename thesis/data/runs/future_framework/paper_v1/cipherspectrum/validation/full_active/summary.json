@@ -1,0 +1,90 @@
+{
+  "sample_count": 3200,
+  "verdict_rates": {
+    "benign": 0.0,
+    "malicious": 0.0,
+    "suspicious": 0.5659375,
+    "unknown": 0.4340625
+  },
+  "coverage": 0.0,
+  "alert_rate": 0.5659375,
+  "human_review_rate": 1.0,
+  "average_agent_calls": 3.293125,
+  "latency_ms": {
+    "mean": 33.29488759382002,
+    "p50": 33.49630002048798,
+    "p95": 39.1031149571063
+  },
+  "verdict_invariance_rate": 0.9865625,
+  "mean_uncertainty_delta": 0.0039268011857468595,
+  "mean_conflict_delta": -0.004337552248425484,
+  "memory_match_rate": 0.0,
+  "memory_top1_relevance": null,
+  "memory_topk_relevance": null,
+  "deliberation_trigger_rate": 1.0,
+  "supplemental_dispatch_rate": 0.293125,
+  "compliance_failure_count": 0,
+  "audit_completion_rate": 1.0,
+  "blocked_field_violation_count": 0,
+  "ood_signature_invariance_rate": 1.0,
+  "classification": {
+    "labeled_count": 0,
+    "covered_labeled_count": 0
+  },
+  "grouped_bootstrap_95ci": {
+    "coverage": {
+      "low": 0.0,
+      "high": 0.0
+    },
+    "alert_rate": {
+      "low": 0.343734375,
+      "high": 0.773765625
+    },
+    "human_review_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "average_agent_calls": {
+      "low": 3.1387265625,
+      "high": 3.4731796875
+    },
+    "average_latency_ms": {
+      "low": 33.199015914753545,
+      "high": 33.38044138772557
+    },
+    "verdict_invariance_rate": {
+      "low": 0.9678125,
+      "high": 0.9975
+    },
+    "audit_completion_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "blocked_field_violation_rate": {
+      "low": 0.0,
+      "high": 0.0
+    },
+    "ood_signature_invariance_rate": {
+      "low": 1.0,
+      "high": 1.0
+    },
+    "uncertainty_delta": {
+      "low": 0.0007063817242716219,
+      "high": 0.009440346147064908
+    },
+    "conflict_delta": {
+      "low": -0.01041279446612374,
+      "high": -0.0007901999692815803
+    }
+  },
+  "feature_flags": {
+    "schema_version": "1.0",
+    "memory": true,
+    "planner_executor": true,
+    "deliberation": true,
+    "reflection": true,
+    "audit_critic": true,
+    "learning_queue": false,
+    "shadow_mode": false
+  }
+}

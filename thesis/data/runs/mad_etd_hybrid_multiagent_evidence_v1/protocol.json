@@ -1,0 +1,53 @@
+{
+  "audit_completion": 1.0,
+  "blocked_field_violation": 0,
+  "bootstrap_iterations": 1000,
+  "bootstrap_seed": 42,
+  "experiment": "mad_etd_hybrid_multiagent_evidence_v1",
+  "fake_metric_count": 0,
+  "fallback_identity_confusion": 0,
+  "fusion_ownership_violation": 0,
+  "group_count": 20,
+  "illegal_verdict_execution_count": 0,
+  "invalid_evidence_admitted": 0,
+  "llm_protocol": {
+    "base_url": "https://integrate.api.nvidia.com/v1",
+    "feasibility_per_dataset": 500,
+    "max_retry": 1,
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "prompt_version": "hybrid-evidence-request-v1",
+    "provider": "NVIDIA",
+    "stability_cases": 300,
+    "stability_repeats": 3,
+    "temperature": 0,
+    "thinking": "disabled",
+    "timeout_seconds": 60
+  },
+  "ood_override_count": 0,
+  "performance_gate": {
+    "accuracy_drop_max": 0.005,
+    "bootstrap_ci_lower_gt": 0.0,
+    "ece_worsening_max": 0.005,
+    "macro_f1_delta_min": 0.01,
+    "malicious_recall_drop_max": 0.0,
+    "worst_group_class_f1_drop_max": 0.0
+  },
+  "promoted_runtime_created": false,
+  "routing_gate": {
+    "coverage_drop_max": 0.01,
+    "executed_inference_reduction_min": 0.2,
+    "macro_f1_drop_max": 0.005,
+    "ood_agreement_min": 0.98,
+    "p95_latency_reduction_min": 0.1,
+    "verdict_agreement_min": 0.98
+  },
+  "runtime_safe_v3_0_remains_default": true,
+  "sample_count": 40000,
+  "schema_version": "1.0",
+  "source_acceptance": "data/runs/mad_etd_ustc_group_heldout_hybrid_w98/acceptance_report.json",
+  "source_artifact": "data/runs/mad_etd_ustc_group_heldout_hybrid_w98/sealed_group_cv.npz",
+  "source_artifact_sha256": "26a47d33290ec317f028df737ce7bf90586b27c452ea505d75df79f1741398f5",
+  "split_protocol": "20-fold application/family-held-out; validation groups are disjoint",
+  "status": "ready_for_independent_evidence_training",
+  "test_or_acceptance_used_for_selection": false
+}

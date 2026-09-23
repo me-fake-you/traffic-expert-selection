@@ -1,0 +1,21 @@
+{
+  "source_artifact": ".\\data\\runs\\mad_etd_routing_latency_stat_validation_w324\\per_sample_latency_w324.parquet",
+  "source_sha256": "a7aba90ef008f25de0a5c19de64a89161ee77e7d3fc184c37fa23012415e0e47",
+  "modes": [
+    "static_full_call",
+    "fixed_supported_full_call",
+    "ordinary_rule_routing",
+    "capability_aware_mad_etd"
+  ],
+  "repeat_count": 7,
+  "repeat_order": "W324 deterministic balanced Latin/reverse schedule",
+  "warmup": "64 cases per source/mode/repetition; excluded in W324",
+  "timer": "time.perf_counter_ns",
+  "primary_estimator": "median latency across seven repetitions per sample, then p95",
+  "bootstrap_unit": "paired sample_key after median aggregation",
+  "bootstrap_iterations": 1000,
+  "bootstrap_seed": 42,
+  "labels_used_for_timing_or_routing": false,
+  "model_retraining": false,
+  "runtime_modified": false
+}
