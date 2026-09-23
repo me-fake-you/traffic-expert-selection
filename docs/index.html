@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A controlled study of development support in traffic expert selection. Research question, recorded evidence, and reproducible finite-candidate analysis.">
+  <title>Traffic Expert Selection · Liu &amp; Zhang</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="assets/results-data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#main" aria-label="Traffic expert selection home"><span class="brand-mark">te.</span><span>TRAFFIC<br>EXPERT SELECTION</span></a>
+    <nav aria-label="Primary"><a href="#evidence">Evidence</a><a href="#framework">Framework</a><a href="#reproduce">Reproduce</a><a class="github" href="https://github.com/me-fake-you/traffic-expert-selection" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="paper-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> NETWORK SECURITY · CONTROLLED EMPIRICAL STUDY</p>
+        <h1 id="paper-title">Expert Selection<br>in Traffic Detection<span class="title-period">.</span></h1>
+        <p class="subtitle">A Controlled Study of Development Support</p>
+        <p class="lead">When experts disagree, what information actually supports the choice?</p>
+        <p class="authors">Haowen Liu <span>·</span> Lei Zhang<br><span class="affiliation">Capital Normal University</span></p>
+        <div class="hero-actions"><a class="button primary" href="downloads/author-review.pdf">Read the manuscript <span>↗</span></a><a class="text-link" href="#reproduce">Explore the artifact <span>↓</span></a></div>
+        <p class="release-note">Author-review manuscript · MIT-licensed code<br><a href="https://github.com/me-fake-you/traffic-expert-selection">me-fake-you/traffic-expert-selection ↗</a></p>
+      </div>
+      <aside class="finding" aria-labelledby="finding-title">
+        <p class="eyebrow">A CASE THAT CHANGES THE QUESTION</p>
+        <h2 id="finding-title">A unique development optimum.<br>A worse outer-fold tradeoff.</h2>
+        <div class="error-pair"><div><strong>+77</strong><span>false alarms</span></div><div><strong>−5</strong><span>misses</span></div></div>
+        <p>Logistic, fold 1: the development-selected policy versus the same arbiter at 0.5.</p>
+        <div class="finding-bottom">The issue is not always a tie.<br><a href="#evidence">Follow the evidence <span>↘</span></a></div>
+      </aside>
+    </section>
+    <section class="thesis-band">
+      <div class="wrap"><p class="eyebrow">THREE QUESTIONS. THREE DISTINCT OBJECTS.</p>
+      <div class="questions"><article><span class="number">01</span><h2>What can be fitted?</h2><p>OOF expert disagreements supply the arbiter’s fitting examples.</p></article><article><span class="number">02</span><h2>What can be distinguished?</h2><p>Complete prediction vectors reveal which threshold candidates the selection role can tell apart.</p></article><article><span class="number">03</span><h2>What changes in evaluation?</h2><p>False alarms and misses expose the cost of the selected policy on held-out groups.</p></article></div></div>
+    </section>
+    <section id="evidence" class="wrap section">
+      <div class="section-heading"><div><p class="eyebrow">THE EMPIRICAL RECORD</p><h2>See the decisions.<br>Keep the tradeoffs.</h2></div><p>A fixed candidate grid, direct controls, and one backend sensitivity test. Positive, zero, and negative outcomes stay together.</p></div>
+      <div class="evidence-layout"><figure class="result-figure"><img src="assets/correction-damage.svg" alt="Recorded absolute corrections and introduced errors for original HGB experts." loading="lazy"><figcaption>Original HGB experts. Corrections and introduced errors are relative to Temporal; “Dev” denotes Dev16.</figcaption></figure><div class="evidence-copy"><h3>More net corrections is not a stability claim.</h3><p>Logistic-0.5 has 44 more net corrections than Fixed. Its Macro-F1 difference is +0.110 percentage points, with a conditional 95% interval of [−0.037, +0.357]. The development-selected version does not retain the point advantage.</p><h3>Greater coverage can change the choice, not guarantee its value.</h3><p>Matched-quota high-coverage subsets produce more Logistic errors but fewer HGB errors in one fold. The recall-filter ablation leaves all 90 dependent choices unchanged.</p><a class="text-link" href="downloads/evidence-map.md">Claim-to-file evidence map ↗</a></div></div>
+      <div class="results-head"><h3>Recorded policy results</h3><label for="population">Evaluation population <select id="population"><option value="controlled">Controlled 40k · original HGB</option><option value="backend">Controlled 40k · Stats ExtraTrees</option><option value="raw">Raw execution · natural frequencies</option><option value="external">IoT-23 · frozen external transfer</option></select></label></div>
+      <p id="population-note" class="population-note" aria-live="polite">Separate populations are displayed separately; they must not be ranked against one another.</p>
+      <div class="table-scroll" tabindex="0" aria-label="Scrollable policy results"><table><caption class="sr-only">Recorded metrics for the selected evaluation population</caption><thead><tr><th scope="col">Policy</th><th scope="col">Macro-F1</th><th scope="col">Mal. recall</th><th scope="col">FPR</th><th scope="col">Corrected</th><th scope="col">Introduced</th></tr></thead><tbody id="result-rows"><tr><td colspan="6">Loading recorded results…</td></tr></tbody></table></div>
+      <div class="table-footer"><p>F1 is computed from pooled confusion counts. Counts and percentage points are not interchangeable.</p><a id="download-results" class="text-link" href="downloads/controlled.csv" download>Download this table ↓</a></div>
+    </section>
+    <section id="framework" class="framework-section section">
+      <div class="wrap"><div class="section-heading"><div><p class="eyebrow">SYSTEM CONTEXT</p><h2>The complete framework.<br>A precisely scoped comparison.</h2></div><p>The binary study evaluates the Temporal / Stats path. TLS, advisers, Yager fusion, and four-way outputs remain system background.</p></div><figure class="architecture"><a href="assets/architecture.svg" target="_blank" rel="noopener" aria-label="Open the full English architecture figure"><img src="assets/architecture.svg" alt="Full English architecture: input governance, capability scheduling, structured evidence, reliable fusion and output, with read-only advisers and run records." loading="lazy"></a><figcaption>English thesis-derived architecture retained. Open the figure for a full-size view.</figcaption></figure></div>
+    </section>
+    <section id="reproduce" class="wrap section reproduction">
+      <div><p class="eyebrow">INSPECTABLE BY DESIGN</p><h2>From a table cell<br>back to its computation.</h2><p>The portable component replays frozen candidate predictions. It saves selection decisions before reading outer-role matrices and checks exact-vector equivalence, simple controls, and the finite-set error decomposition.</p><ul class="plain-list"><li><span>01</span> Run synthetic rule tests and aggregate arithmetic checks.</li><li><span>02</span> Supply legally held frozen matrices to replay the original comparisons.</li><li><span>03</span> Inspect archived execution code and provenance hashes.</li></ul><p class="small">Raw traffic, endpoints, checkpoints, and row-level data are not bundled. The historical source archive is not a turnkey training package.</p><div class="links-row"><a class="text-link" href="downloads/reproducing.md">Reproduction guide ↗</a><a class="text-link" href="downloads/data.md">Data &amp; scope ↗</a></div></div>
+      <div class="code-panel"><div class="code-bar"><span>LOCAL QUICK START</span><button id="copy-command" type="button">Copy</button></div><pre><code id="commands">python -m pip install -r requirements.txt
+python -m unittest discover -s tests -v
+python scripts/check_results.py</code></pre><div class="code-note"><strong>No new training required.</strong><p>These checks verify code behavior and saved arithmetic. Full frozen-prediction replay additionally requires the original matrix inputs.</p></div><p id="copy-status" class="copy-status" aria-live="polite"></p></div>
+    </section>
+  </main>
+  <footer class="wrap"><div><strong>Traffic Expert Selection</strong><p>Haowen Liu · Lei Zhang · Capital Normal University</p></div><div><a href="https://github.com/me-fake-you" target="_blank" rel="noopener noreferrer">github.com/me-fake-you ↗</a><p>Source code: MIT · Manuscript &amp; figures: authors’ rights retained.<br>No acceptance or deployment-readiness claim.</p></div></footer>
+</body>
+</html>

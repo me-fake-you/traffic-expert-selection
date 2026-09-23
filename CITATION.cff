@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Research artifact accompanying an unpublished author-review manuscript. Confirm the final bibliographic record before citation."
+title: "Expert Selection in Traffic Detection: A Controlled Study of Development Support"
+type: software
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/me-fake-you/traffic-expert-selection"
+url: "https://me-fake-you.github.io/traffic-expert-selection/"
+authors:
+  - family-names: Liu
+    given-names: Haowen
+    affiliation: Capital Normal University
+  - family-names: Zhang
+    given-names: Lei
+    affiliation: Capital Normal University
+abstract: "Controlled analysis of fitting support, finite-candidate distinguishability, and error transfer in traffic expert selection."
+keywords:
+  - traffic detection
+  - expert selection
+  - development support

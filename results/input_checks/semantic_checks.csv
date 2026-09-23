@@ -1,0 +1,16 @@
+fold_id,variant,pairs,allowed_inputs_identical,pT_max_abs_delta,pS_max_abs_delta,trigger_max_abs_delta,q_logistic_max_abs_delta,q_hgb_max_abs_delta,final_class_mismatches
+0,labels_identity,8000,True,0.0,0.0,0.0,0.0,0.0,0
+0,context,8000,True,0.0,0.0,0.0,0.0,0.0,0
+0,provenance_unknown,8000,True,0.0,0.0,0.0,0.0,0.0,0
+1,labels_identity,8000,True,0.0,0.0,0.0,0.0,0.0,0
+1,context,8000,True,0.0,0.0,0.0,0.0,0.0,0
+1,provenance_unknown,8000,True,0.0,0.0,0.0,0.0,0.0,0
+2,labels_identity,8000,True,0.0,0.0,0.0,0.0,0.0,0
+2,context,8000,True,0.0,0.0,0.0,0.0,0.0,0
+2,provenance_unknown,8000,True,0.0,0.0,0.0,0.0,0.0,0
+3,labels_identity,8000,True,0.0,0.0,0.0,0.0,0.0,0
+3,context,8000,True,0.0,0.0,0.0,0.0,0.0,0
+3,provenance_unknown,8000,True,0.0,0.0,0.0,0.0,0.0,0
+4,labels_identity,8000,True,0.0,0.0,0.0,0.0,0.0,0
+4,context,8000,True,0.0,0.0,0.0,0.0,0.0,0
+4,provenance_unknown,8000,True,0.0,0.0,0.0,0.0,0.0,0
